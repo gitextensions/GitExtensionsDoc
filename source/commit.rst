@@ -42,7 +42,7 @@ unstaged file.
 During your initial commit there are probably lots of files you do not want to be tracked. You can ignore these files by not 
 staging them, but they will show every time. You could also add them to the .gitignore file of you repository. Files that are 
 in the ``.gitignore`` file will not show up in the commit dialog again. You can open the ``.gitignore`` editor from the menu 
-``Working dir changes``.
+``Working dir changes`` by selecting ``Edit ignored files``.
 
 .. image:: /images/show_untracked.png
 
@@ -54,7 +54,7 @@ and press the commit button.
 
 It is also possible to add files to you last commit using the ``Amend to last commit`` button. This can be very useful when you 
 forgot some changes. This function rewrites history; it deletes the last commit and commits it again including the added 
-changes. Make sure you only use ‘Amend to last commit’ when the commit is not yet published to other developers.
+changes. Make sure you only use ``Amend to last commit`` when the commit is not yet published to other developers.
 
 There is a build in spelling checker that checks the commit message. Incorrect spelled words are underlined with a red wave line. 
 By right-clicking on the misspelled word you can choose the correct spelling or one of the other options.

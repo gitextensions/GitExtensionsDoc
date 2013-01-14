@@ -1,6 +1,9 @@
 Git Extensions Manual
 =====================
 
+This repository contains the new Git extensions Manual. Feel free to help us improve this manual by sending pull requests
+or by opening issues.
+
 HTML Help Files
 ---------------
 
