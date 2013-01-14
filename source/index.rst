@@ -19,7 +19,7 @@ GitExtensions Manual
    translations
    integration
    command_line
-   git_cheat_sheet
+   z_appendix
 
 
 :ref:`genindex`
