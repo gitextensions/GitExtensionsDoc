@@ -81,4 +81,4 @@ Menu map
 --------
 The following image shows GitExtensions' menu structure at one glance (v2.43):
 
-.. image:: /images/development/GitExt_Menu_Structure_2.43.jpg
+.. image:: /images/development/GitExt_Menu_Structure_2.43.png
