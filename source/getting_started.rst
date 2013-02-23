@@ -1,6 +1,9 @@
 Getting Started
 ===============
 
+This section is primarily written for Windows users. There is an extra section
+about installing Git Extensions on Linux. 
+
 .. index::
    single: Getting Started; Installation
 
@@ -29,6 +32,12 @@ The installer can be found `here <http://code.google.com/p/gitextensions/>`_.
     Choose the SSH client to use. PuTTY is the default because it has better windows integration.
 
 .. figure:: /images/install/install6.png
+
+Installation (Linux)
+--------------------
+You can watch this video as a starting point: `Install Git Extensions on Ubuntu 11.04  <http://www.youtube.com/watch?v=zk2MMUQuW4s>`_
+
+For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitextensions
 
 Settings
 --------
