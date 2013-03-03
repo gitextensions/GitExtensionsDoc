@@ -1,6 +1,9 @@
 Getting Started
 ===============
 
+This section is primarily written for Windows users. There is an extra section
+about installing Git Extensions on Linux. 
+
 .. index::
    single: Getting Started; Installation
 
@@ -29,6 +32,12 @@ The installer can be found `here <http://code.google.com/p/gitextensions/>`_.
     Choose the SSH client to use. PuTTY is the default because it has better windows integration.
 
 .. figure:: /images/install/install6.png
+
+Installation (Linux)
+--------------------
+You can watch this video as a starting point: `Install Git Extensions on Ubuntu 11.04  <http://www.youtube.com/watch?v=zk2MMUQuW4s>`_
+
+For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitextensions
 
 Settings
 --------
@@ -68,20 +77,22 @@ The ‘Git Extension’ tab contains all settings needed for Git Extension to ru
 be set here. This is only needed when these are not in the system path.
 
 +---------------------------------------------------+----------------------------------------------------------------------------+
-|Limit number of commits that will be loaded in     | Git Extensions uses lazy loading to load the commit log. Lower this number |
-|list at start-up.                                  | to increase the start-up speed. Increase the number for faster scrolling.  |
-|                                                   | Turn of revision graph for optimal result!                                 |
+|Show stash count on status bar in browse window    | When you use the stash a lot, it can be useful to show the number of       |
+|                                                   | stashed items on the toolbar. This option causes serious slowdowns in large|
+|                                                   | repositories and is turned off by default.                                 |
 +---------------------------------------------------+----------------------------------------------------------------------------+
-|Smtp server for sending patches                    | Smtp server to use for sending patches.                                    |
+|Use FileSystemWatcher to check if index is changed | Using the FileSystemWatcher to check index state improves the performance  |
+|                                                   | is some cases. Turn this off if you experience refresh problems in commit  |
+|                                                   | log.                                                                       |
 +---------------------------------------------------+----------------------------------------------------------------------------+
 |Show current working dir changes in revision graph | When enabled, two extra revisions are added to the revision graph. The     |
 |                                                   | first shows the current working directory status. The second shows the     |
 |                                                   | staged files. This option can cause slowdowns when browsing large          |
 |                                                   | repositories.                                                              |
 +---------------------------------------------------+----------------------------------------------------------------------------+
-|Show stash count on status bar in browse window    | When you use the stash a lot, it can be useful to show the number of       |
-|                                                   | stashed items on the toolbar. This option causes serious slowdowns in large|
-|                                                   | repositories and is turned off by default.                                 |
+|Limit number of commits that will be loaded in     | Git Extensions uses lazy loading to load the commit log. Lower this number |
+|list at start-up.                                  | to increase the start-up speed. Increase the number for faster scrolling.  |
+|                                                   | Turn of revision graph for optimal result!                                 |
 +---------------------------------------------------+----------------------------------------------------------------------------+
 |Close process dialog automatically when process is | When a process is finished, clause the process dialog automatically. Leave |
 |succeeded                                          | this option off if you want to see the result of processes. When a process |
@@ -94,17 +105,13 @@ be set here. This is only needed when these are not in the system path.
 |                                                   | environments it might be useful to see the command line dialog when a      |
 |                                                   | process is executed.                                                       |
 +---------------------------------------------------+----------------------------------------------------------------------------+
-|Show revision graph in commit log                  | Turn revision graph in commit log on/off.                                  |
-+---------------------------------------------------+----------------------------------------------------------------------------+
-|Use FileSystemWatcher to check if index is changed | Using the FileSystemWatcher to check index state improves the performance  |
-|                                                   | is some cases. Turn this off if you experience refresh problems in commit  |
-|                                                   | log.                                                                       |
-+---------------------------------------------------+----------------------------------------------------------------------------+
 |Follow renames in file history                     | Try to follow file renames in the file history.                            |
 +---------------------------------------------------+----------------------------------------------------------------------------+
 |Revision graph quicksearch timeout [ms]            | The timeout used for the quicksearch feature in the revision graph. The    |
 |                                                   | quicksearch will be enabled when you start typing and the revision graph is|
 |                                                   | focussed.                                                                  |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Smtp server for sending patches                    | Smtp server to use for sending patches.                                    |
 +---------------------------------------------------+----------------------------------------------------------------------------+
 
 .. image:: /images/settings/appearance.png
@@ -128,11 +135,6 @@ be set here. This is only needed when these are not in the system path.
 |Dictionary for spelling checker                    | Choose the dictionary to use for the spelling checker in the commit dialog.|
 +---------------------------------------------------+----------------------------------------------------------------------------+
 
-.. image:: /images/settings/start_page.png
-
-The items on the Start Page can be edited. In this tab you can add and remove categories. Per category you can either configure 
-a RSS feed or add repositories. The order can be changed using the context menus in the Start Page.
-
 .. image:: /images/settings/colors.png
 
 In the color tab the following items can be set:
@@ -144,6 +146,11 @@ In the color tab the following items can be set:
 +-----------------------+-------------------------------------------------------------------------------------------+
 |Application Icon       | The color of the application icon. This is useful for recognising various open instances. |
 +-----------------------+-------------------------------------------------------------------------------------------+
+
+.. image:: /images/settings/start_page.png
+
+The items on the Start Page can be edited. In this tab you can add and remove categories. Per category you can either configure 
+a RSS feed or add repositories. The order can be changed using the context menus in the Start Page.
 
 .. image:: /images/settings/global_settings.png
 

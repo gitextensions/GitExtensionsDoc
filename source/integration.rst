@@ -43,3 +43,7 @@ when Shell Extensions are installed.
 
 .. image:: /images/explorer_integration.png
 
+You can even create or clone a repository in any non git folder.
+
+.. image:: /images/explorer_integration_new.png
+
