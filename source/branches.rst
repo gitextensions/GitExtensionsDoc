@@ -38,6 +38,16 @@ branch the next commit will be committed to the new branch.
 Creating branches in Git requires only 41 bytes of space in the repository. Creating a new branch is very easy and is 
 very fast. The complete work flow of Git is optimized for branching and merging.
 
+Orphan branches
+^^^^^^^^^^^^^^^
+In special cases it is helpful to have orphan branches (see for example https://www.google.com/search?q=why+use+orphan+branches+in+git).
+Check the "Create orphan" checkbox to create an orphan branch (``--orphan`` option in git).
+
+The newly created branch will have no parent commits.
+
+The option "Clear working dir and index" (``git rm -rf``) is active by default. So the working dir and index will be cleared.
+If you uncheck the last option then the working dir and index will not be touched.
+
 Checkout branch
 ---------------
 
