@@ -25,3 +25,9 @@ When you want to merge with an unnamed branch it is good practise to tag the unn
 delete the tag again.
 
 .. image:: /images/delete_tag.png
+
+Re-Tag?
+^^^^^^^
+
+Read about "What should you do when you tag a wrong commit and you would want to re-tag?" here:
+https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging
