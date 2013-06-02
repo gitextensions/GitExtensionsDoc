@@ -21,5 +21,3 @@ GitExtensions Manual
    command_line
    z_appendix
 
-
-:ref:`genindex`
