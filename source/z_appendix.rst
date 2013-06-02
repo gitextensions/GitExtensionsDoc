@@ -21,8 +21,8 @@ Git Cheat Sheet
 +-----------------------------------------------------------------+---------------------------------------------------------+
 |Merge branch (from the branch to merge into):                    | `$ git merge PDC`                                       |
 +-----------------------------------------------------------------+---------------------------------------------------------+
-|Solve conflicts (add --tool=kdiff3 if no mergetool is specified) | `$ git mergetool`                                       |
-|                                                                 | `$ git commit`                                          |
+|Solve conflicts (add --tool=kdiff3 if no mergetool is specified) | | `$ git mergetool`                                     |
+|                                                                 | | `$ git commit`                                        |
 +-----------------------------------------------------------------+---------------------------------------------------------+
 |Create tag                                                       | `$ git tag <name>`                                      |
 +-----------------------------------------------------------------+---------------------------------------------------------+
@@ -34,9 +34,9 @@ Git Cheat Sheet
 +-----------------------------------------------------------------+---------------------------------------------------------+
 |Create patch (-M = detect renames –C = detect copies)            | `$ git format-patch –M –C origin`                       |
 +-----------------------------------------------------------------+---------------------------------------------------------+
-|Apply patch without merging                                      | `$ git apply c:/patch/0001-employee.patch`              |
+|Apply patch without merging                                      | `$ git apply c:/patch/01-emp.patch`                     |
 +-----------------------------------------------------------------+---------------------------------------------------------+
-|Merge patch                                                      | `$ git am -–3way –-signoff c:/patch/0001-employee.patch`|
+|Merge patch                                                      | `$ git am -–3way –-signoff c:/patch/01-emp.patch`       |
 +-----------------------------------------------------------------+---------------------------------------------------------+
 |Solve conflicts (add --tool=kdiff3 if no mergetool is specified) | | `$ git mergetool`                                     |
 |                                                                 | | `$ git am –-3way -–resolved`                          |
@@ -78,4 +78,4 @@ Menu map
 --------
 The following image shows GitExtensions' menu structure at one glance (v2.43):
 
-.. image:: /images/development/GitExt_Menu_Structure_2.43.png
+.. image:: /images/development/GitExt_Menu_Structure_v2_43.png

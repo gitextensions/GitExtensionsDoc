@@ -4,9 +4,6 @@ Getting Started
 This section is primarily written for Windows users. There is an extra section
 about installing Git Extensions on Linux. 
 
-.. index::
-   single: Getting Started; Installation
-
 Installation
 ------------
 
@@ -42,34 +39,32 @@ For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitex
 Installation (Mac)
 ------------------
 
-First we need to make sure you have latest mono version on your mac. This section will cover installation of mono 2.10.11 over a mac.
+First we need to make sure you have latest mono version on your Mac. This section will cover installation of mono 2.10.11 over a Mac.
 
 1) Download mono latest version, you can always check for this here http://www.go-mono.com/mono-downloads/download.html
 2) After you completed the download, you will see a .dmg file. Double click it to open the package.
 3) Inside the .dmg file you will have MonoFramework-{version}.pkg. Double click to start the installation process.
 4) Follow the wizard until it's completion.
-5) If everything went ok, you should open your terminal and check mono version:
+5) If everything went ok, you should open your terminal and check mono version::
 
-$ mono --version  
-Mono JIT compiler version 2.10.11 (mono-2-10/2baeee2 Wed Jan 16 16:40:16 EST 2013)
-Copyright (C) 2002-2012 Novell, Inc, Xamarin, Inc and Contributors. www.mono-project.com
-   TLS:           normal
-	SIGSEGV:       normal
-	Notification:  kqueue
-	Architecture:  x86
-	Disabled:      none
-	Misc:          softdebug 
-	LLVM:          yes(2.9svn-mono)
-	GC:            Included Boehm (with typed GC)
+    $ mono --version
+    Mono JIT compiler version 2.10.11 (mono-2-10/2baeee2 Wed Jan 16 16:40:16 EST 2013)
+    Copyright (C) 2002-2012 Novell, Inc, Xamarin, Inc and Contributors. www.mono-project.com
+        TLS:           normal
+        SIGSEGV:       normal
+        Notification:  kqueue
+        Architecture:  x86
+        Disabled:      none
+        Misc:          softdebug 
+        LLVM:          yes(2.9svn-mono)
+        GC:            Included Boehm (with typed GC)
 
-6) Now, download GitExtensions latest version from this website https://code.google.com/p/gitextensions/downloads/list. Remember to select the appropriate package
-otherwise you could have problems.
-7) Browser into the folder you extracted the package and just run mono command, like the example below:
+6) Now download GitExtensions latest version from https://code.google.com/p/gitextensions/downloads/list. Remember to select the appropriate package otherwise you could have problems.
+7) Browse into the folder where you extracted the package and just run mono command, like the example below::
 
-$ mono GitExtensions.exe 
+    $ mono GitExtensions.exe 
 
-This is the minimal setup you need in order to run GitExtensions
-
+This is the minimal setup you need in order to run GitExtensions.
 
 Settings
 --------
