@@ -7,10 +7,10 @@ View Online
 -----------
 The current documentation can be viewed here: https://git-extensions-documentation.readthedocs.org/en/latest/
 
-PDF and others format can be downloaded here: https://readthedocs.org/projects/git-extensions-documentation/downloads/
+PDF and other formats can be downloaded here: https://readthedocs.org/projects/git-extensions-documentation/downloads/
 
-**Note:** Only the HTML is "supported" (i.e: on the display point of view). Other format might have layout issue
-but the content remains the same for all format, wether or not you build it locally (provided your local clone is 
+**Note:** Only the HTML format is "supported" (i.e. from the display point of view). Other formats might have layout issues
+but the content remains the same for all formats, whether or not you build it locally (provided your local clone is 
 up to date).
 
 Build
@@ -22,16 +22,16 @@ file. The `make_and_start_Browser.cmd` is an alias of `make-html.cmd` that will 
 default browser the documentation main index.
 
 ### HTML Help Files
-**Warning:** This format is not completly supported (i.e: you can generate it but we don't 
-guarantee an as good display quality as for HTML).
+**Warning:** This format is not completely supported (i.e. you can generate it but we don't 
+guarantee as good a display quality as for HTML).
 
 Download HTML Help Workshop (http://www.microsoft.com/en-us/download/details.aspx?id=21138).
 
 To build the file, use `make-HTMLHelp.cmd`
 
 ### PDF
-**Warning:** This format is not completly supported (i.e: you can generate it but we don't 
-guarantee an as good display quality as for HTML).
+**Warning:** This format is not completely supported (i.e. you can generate it but we don't 
+guarantee as good a display quality as for HTML).
 
 To use the PDF builder, you'll need to install:
 
