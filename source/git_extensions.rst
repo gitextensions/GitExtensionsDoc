@@ -29,3 +29,15 @@ There are video tutorials for some basic functions on YouTube.
 #. `Handle merge conflicts <http://www.youtube.com/watch?v=Kmc39RvuGM8>`_
 #. `Install Git Extensions on Ubuntu 11.04  <http://www.youtube.com/watch?v=zk2MMUQuW4s>`_
 
+Links
+-----
+
+See the following links for the Git Extensions download page, source code and documentation. 
+
+* Download page: http://code.google.com/p/gitextensions/downloads/list
+* Source Code: https://github.com/gitextensions/gitextensions
+* Source Code Issue tracker: https://github.com/gitextensions/gitextensions/issues
+* Documentation: https://github.com/gitextensions/GitExtensionsDoc
+* Documentation Issue tracker: https://github.com/gitextensions/GitExtensionsDoc/issues
+
+Please feel free to raise any issues with Git Extensions or its documentation at the appropriate Issue tracker link as shown above.
