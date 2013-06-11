@@ -77,7 +77,7 @@ can ask Git Extensions to try to fix the setting for you by clicking on it.
 
 All settings that are specific to Git Extensions will be stored in a file either in the user's application data path or with the program. 
 The location is dependant on the IsPortable setting in the GitExtensions.exe.config file that is with the program.
-are used by Git are stored in the configuration files of Git. The global settings are stored in a file called 
+The settings that are used by Git are stored in the configuration files of Git. The global settings are stored in a file called 
 ``.gitconfig`` in the user directory. The local settings are stored in the .git\config file of the repository.
 
 .. image:: /images/settings/git.png
