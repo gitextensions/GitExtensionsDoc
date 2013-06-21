@@ -3,6 +3,8 @@ Git Extensions Manual
 This repository contains the new Git extensions Manual. Feel free to help us improve this manual by sending pull requests
 or by opening issues.
 
+Refer to the Wiki here: https://github.com/gitextensions/gitextensions/wiki for details on how to update the documentation.
+
 View Online
 -----------
 The current documentation can be viewed here: https://git-extensions-documentation.readthedocs.org/en/latest/
