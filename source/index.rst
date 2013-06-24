@@ -1,5 +1,5 @@
-GitExtensions Manual
-====================
+Git Extensions |release| Manual
+===============================
 
 .. toctree::
    :maxdepth: 2
