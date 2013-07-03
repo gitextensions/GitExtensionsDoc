@@ -39,6 +39,8 @@ For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitex
 Installation (Mac)
 ------------------
 
+This section only covers mono installation, you should have git installed in your mac at this point. Please refer to http://git-scm.com/download
+
 First, make sure you have the latest mono version on your Mac. This section will cover installation of mono 2.10.11 on a Mac.
 
 1) Download mono latest version. You can always check for this here: http://www.go-mono.com/mono-downloads/download.html
@@ -65,6 +67,12 @@ First, make sure you have the latest mono version on your Mac. This section will
     $ mono GitExtensions.exe 
 
 This is the minimal setup you need in order to run Git Extensions.
+
+Troubleshooting Mac Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1) If you gitextensions crashes with and exception that a font is missing (generic sans serif), you probably can fix this by installing xquartz. This is a version of the X.Org X Windows System that runs on OS X. I am not sure what the side effects are. This can be installed from here: http://xquartz.macosforge.org/landing/
+2) If gitextensions still crashes because it is unable to load a plugin, empty the plugins folder.
 
 .. _settings:
 
