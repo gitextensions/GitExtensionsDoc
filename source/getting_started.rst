@@ -616,8 +616,8 @@ This page allows you to turn off certain confirmation popup windows.
 |Don't ask to |Amend last commit                    |If checked, do not display the popup warning about the rewriting of history |
 |confirm to   |                                     |when you have elected to amend the last committed change.                   |
 |             +-------------------------------------+----------------------------------------------------------------------------+
-|             |Apply stashed changes                |In the Pull dialog, if ```Auto stash``` is checked, then any changes will be|
-|             |                                     |stashed before the pull is performed. Any stashed changes are then          |
+|             |Apply stashed changes after          |In the Pull dialog, if ```Auto stash``` is checked, then any changes will be|
+|             |successful pull                      |stashed before the pull is performed. Any stashed changes are then          |
 |             |                                     |re-applied after the pull is complete. If this setting is checked, the      |
 |             |                                     |stashed changes are applied with no confirmation popup.                     |
 |             +-------------------------------------+----------------------------------------------------------------------------+
@@ -629,6 +629,11 @@ This page allows you to turn off certain confirmation popup windows.
 |             |pushed branch                        |reference, you are asked to confirm whether you want to add such a          |
 |             |                                     |reference. If this setting is checked, a tracking reference will always be  |
 |             |                                     |added if it does not exist.                                                 |
+|             +-------------------------------------+----------------------------------------------------------------------------+
+|             |Apply stashed changes after          |In the Checkout Branch dialog, if ```Stash``` is checked, then any changes  |
+|             |successful checkout                  |will be stashed before the branch is checked out. If this setting is        |
+|             |                                     |checked, then the stashed changes will be automatically re-applied after    |
+|             |                                     |successful checkout of the branch with no confirmation popup.               |
 +-------------+-------------------------------------+----------------------------------------------------------------------------+
 
 .. _settings-plugins:
