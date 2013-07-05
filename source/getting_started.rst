@@ -279,6 +279,8 @@ This page contains settings that affect the appearance of the application.
 |Fonts        |Code font                            | Change the font used for the display of file contents.                     |
 |             +-------------------------------------+----------------------------------------------------------------------------+
 |             |Application font                     | Change the font used on Git Extensions windows and dialogs.                |
+|             +-------------------------------------+----------------------------------------------------------------------------+
+|             |Commit font                          | Change the font used for entering a commit message in the commit dialog.   |
 +-------------+-------------------------------------+----------------------------------------------------------------------------+
 |Language     |Language (restart required)          | Choose the language for the Git Extensions interface.                      |
 |             +-------------------------------------+----------------------------------------------------------------------------+
