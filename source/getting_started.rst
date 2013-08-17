@@ -224,6 +224,9 @@ This page contains general settings for Git Extensions.
 |             |dialog (otherwise the message will be| dialog. When the Commit button is clicked, a new editor window is opened   |
 |             |requested during commit)             | where the commit message can be entered.                                   |
 |             +-------------------------------------+----------------------------------------------------------------------------+
+|             |Default clone destination            | Git Extensions will prefill destination directory input with value of this |
+|             |                                     | setting on any form used to perform repository clone.                      |
+|             +-------------------------------------+----------------------------------------------------------------------------+
 |             |Revision grid quick search timeout   | The timeout (milliseconds) used for the quick search feature in the        |
 |             |[ms]                                 | revision graph. The quick search will be enabled when you start typing and |
 |             |                                     | the revision graph has the focus.                                          |
