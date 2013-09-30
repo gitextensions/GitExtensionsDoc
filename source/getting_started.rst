@@ -39,7 +39,9 @@ For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitex
 Installation (Mac)
 ------------------
 
-First, make sure you have the latest mono version on your Mac. This section will cover installation of mono 2.10.11 on a Mac.
+This section only covers mono installation, you should have git installed in your Mac at this point. Please refer to http://git-scm.com/download
+
+This section will cover installation of mono 2.10.11 on a Mac.
 
 1) Download mono latest version. You can always check for this here: http://www.go-mono.com/mono-downloads/download.html
 2) After you have completed the download, you will see a .dmg file. Double click it to open the package.
@@ -59,12 +61,18 @@ First, make sure you have the latest mono version on your Mac. This section will
         LLVM:          yes(2.9svn-mono)
         GC:            Included Boehm (with typed GC)
 
-6) Now download GitExtensions latest version from https://code.google.com/p/gitextensions/downloads/list. Remember to select the appropriate package otherwise you could have problems.
+6) Now download Git Extensions latest version from https://code.google.com/p/gitextensions/downloads/list. Remember to select the appropriate package otherwise you could have problems.
 7) Browse into the folder where you extracted the package and just run mono command, like the example below::
 
     $ mono GitExtensions.exe 
 
 This is the minimal setup you need in order to run Git Extensions.
+
+Troubleshooting Mac Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1) If you Git Extensions crashes with an exception that a font is missing (generic sans serif), you can probably fix this by installing XQuartz. XQuartz is a version of the X.Org X Windows System that runs on OS X. Be aware that there may be unknown side effects, please refer to XQuartz documentation. You can download and install XQuartz by following this link: http://xquartz.macosforge.org/landing/
+2) If Git Extensions still crashes because it is unable to load a plugin, empty the plugins folder.
 
 .. _settings:
 
