@@ -298,6 +298,45 @@ This page contains settings that affect the appearance of the application.
 |             |Dictionary for spelling checker      | Choose the dictionary to use for the spelling checker in the Commit dialog.|
 +-------------+-------------------------------------+----------------------------------------------------------------------------+
 
+.. _revision-links:
+
+Revision Links
+^^^^^^^^^^^^^^
+
+This page allows you to convert parts of revision data into clickable links. They will be located under commit message on ``Commit``
+tab in ``Related links`` section. 
+ 
++---------------------------------------------------+----------------------------------------------------------------------------+
+| Setting                                           | Description                                                                |
++===================================================+============================================================================+
+|Categories                                         | Lists all the currently defined Categories. Click the Add button to        |
+|                                                   | add a new empty Category. The default name is 'new'.  To remove a Category |
+|                                                   | select it and click Remove. This will delete the Category.                 |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Name                                               | This is the Category name used to match the same categories defined on     |
+|                                                   | different levels of settings.                                              |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Enabled                                            | Indicates whether the Category is enabled or not. Disabled categories are  |
+|                                                   | skipped while converting revision data into links.                         |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Search in                                          | List of revision parts that can be used for matching texts to be           |
+|                                                   | converted into links. Only checked parts will be used.                     |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Search pattern/Nested pattern                      | Regular expression to be used for matching text in chosen revision parts.  |
+|                                                   | Each matched fragment will be used to create a new link. More than one     |
+|                                                   | fragment can be used in a single link by using capturing group. Capturing  |
+|                                                   | group value can be passed to a link by using zero-based indexed            |
+|                                                   | placeholders in a link format definition. ``Nested pattern`` can be used   |
+|                                                   | when not a whole matched by ``Search pattern`` text has to be used to      |
+|                                                   | format a link. When ``Nested pattern`` is empty, matches found by          |
+|                                                   | ``Search pattern`` are used to create links.                               |
++---------------------------------------------------+----------------------------------------------------------------------------+
+|Links: Caption/URI                                 | List of links to be created from a single match. Link consists of          |
+|                                                   | ``Caption`` to be displayed and ``URI`` to be opened when link cliked on.  |
+|                                                   | In addition to standard zero-based indexed placeholders, ``%COMMIT_HASH%`` |
+|                                                   | placeholder can be used.                                                   |
++---------------------------------------------------+----------------------------------------------------------------------------+
+
 .. _settings-colors:
 
 Colors
