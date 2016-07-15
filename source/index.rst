@@ -14,6 +14,7 @@ Git Extensions |release| Manual
    patches
    remote_feature
    merge_conflicts
+   modify_history
    notes
    submodules
    maintenance
