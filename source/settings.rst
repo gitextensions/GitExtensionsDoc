@@ -916,6 +916,15 @@ The settings that are used by Git are stored in the configuration files of Git. 
       Controls whether branch name should be automatically normalised as per git branch
       naming rules. If enabled, any illegal symbols will be replaced with the replacement symbol of your choice.
 
+  .. settingsgroup:: Commit
+    
+    .. setting:: Push forced with lease when Commit & Push action is performed with Amend option checked
+    
+      In the Commit dialog, users can commit and push changes with one click. However, if changes are meant to amend
+      an already pushed commit, a standard push action will be rejected by the remote server. If this option is
+      enabled, a push action with ``--force-with-lease`` switch will be performed instead. The ``--force-with-lease``
+      switch will be added only when the ``Amend`` option is checked.
+      
   .. settingspage:: Confirmations
 
     This page allows you to turn off certain confirmation popup windows.
