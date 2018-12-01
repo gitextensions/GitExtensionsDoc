@@ -344,6 +344,10 @@ depending on whether or not they are distributed with that repository.
     The most common case is to convert an issue number given as a part of commit message into a link to the coresponding issue-tracker page.
     The screenshot below shows an example configuration for GitHub issues.
 
+    You could add this quite generic
+    `GitExtensions.settings <https://github.com/gitextensions/GitExtensionsDoc/blob/master/source/files/settings/GitExtensions.settings>`
+    file to the root of your repository.
+
     .. image:: /images/settings/revision_links.png
 
     .. setting:: Categories
