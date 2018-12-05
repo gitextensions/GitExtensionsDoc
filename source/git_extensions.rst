@@ -17,11 +17,14 @@ Features
 Specific in 2.5x releases:
 * Visual Studio (2010 - 2015) add-in
 * Runs under Linux or Mac OS X using `Mono <http://www.mono-project.com>`_
+* Basic SVN functionality
+
+For description of 2.x specific features, see the `2.x documentation <../2.51/git_extensions.html>`
 
 Video tutorials
 ---------------
 
-There are video tutorials for some basic functions on YouTube.
+There are video tutorials for some basic functions on YouTube, for older Git Extensions versions.
 
 #. `Clone <http://www.youtube.com/watch?v=TlZXSkJGKF8>`_
 #. `Commit changes <http://www.youtube.com/watch?v=B8uvje6X7lo>`_
