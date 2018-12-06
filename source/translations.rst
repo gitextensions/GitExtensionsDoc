@@ -4,12 +4,14 @@ Translations
 Change language
 ---------------
 
-In the settings dialog a translation can be chosen. The translation files are located in a directory located in the
-Git Extensions installation directory. The files are readable xml files.
+In the settings dialog the language can be chosen.
 
-.. image:: /images/choose_language.png
+.. image:: /images/install/language.png
 
 Translate Git Extensions
 ------------------------
 
 Translations are done on Transifex: https://www.transifex.com/git-extensions/git-extensions/
+
+More information in the Git Extensions wiki:
+https://github.com/gitextensions/gitextensions/wiki/Translations

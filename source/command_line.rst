@@ -9,4 +9,6 @@ when using from the command line. It is typically stored in the ``C:\Program Fil
 
 .. image:: /images/command_line_usage.png
 
+..
+
 .. image:: /images/command_line.png
