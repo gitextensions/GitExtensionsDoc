@@ -1,8 +1,8 @@
 Submodules
 ==========
 
-Large projects can be split into smaller parts using submodules. A submodule contains the name, url and revision of 
-another repository. To create a submodule in an existing git repository you need to add a link to another repository 
+Large projects can be split into smaller parts using submodules. A submodule contains the name, url and revision of
+another repository. To create a submodule in an existing git repository you need to add a link to another repository
 containing the files of the submodule.
 
 .. image:: /images/submodules.png
@@ -10,7 +10,7 @@ containing the files of the submodule.
 Manage submodules
 -----------------
 
-The current state of the submodules can be viewed with the ``Manage submodules`` function. All submodules are shown in 
+The current state of the submodules can be viewed with the ``Manage submodules`` function. All submodules are shown in
 the list on the left.
 
 .. image:: /images/submodules_dialog.png
@@ -31,7 +31,7 @@ the list on the left.
 Add submodule
 -------------
 
-To add a new submodule choose ``Add submodule`` in the ``Manage submodules`` dialog. 
+To add a new submodule choose ``Add submodule`` in the ``Manage submodules`` dialog.
 
 .. image:: /images/add_submodules.png
 
@@ -46,7 +46,7 @@ To add a new submodule choose ``Add submodule`` in the ``Manage submodules`` dia
 Remove submodule
 ----------------
 
-It is currently not possible to remove a submodule using the Git Extensions user interface. To remove a submodule you 
+It is currently not possible to remove a submodule using the Git Extensions user interface. To remove a submodule you
 need to manually:
 
 * Delete the relevant line from the ``.gitmodules`` file.

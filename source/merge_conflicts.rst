@@ -1,7 +1,7 @@
 Merge Conflicts
 ===============
 
-When merging branches or commits you can get merge conflicts. Git will try to resolve these, but some conflicts 
+When merging branches or commits you can get merge conflicts. Git will try to resolve these, but some conflicts
 need to be resolved manually. Git Extensions will show warnings when there is a merge conflict.
 
 .. image:: /images/merge_conflicts.png
@@ -9,7 +9,7 @@ need to be resolved manually. Git Extensions will show warnings when there is a 
 Handle merge conflicts
 ----------------------
 
-To solve merge conflicts just click on a warning or open the merge conflict dialog from the menu. A dialog will prompt 
+To solve merge conflicts just click on a warning or open the merge conflict dialog from the menu. A dialog will prompt
 showing all conflicts. You can solve a conflict by double-click on a filename.
 
 .. image:: /images/resolve_merge_conflicts.png
@@ -25,9 +25,9 @@ There are three kinds of conflicts:
 +---------------------------------------+-------------------------------+
 
 
-If the file is deleted in one commit and changed in another commit, a dialog will ask to keep the modified file or delete 
-the file. When there is a conflicting change the merge tool will be started. You can configure the tool you want to use for 
-merge conflicts. The image below shows Perforce P4Merge a free to use merge tool. Git Extensions is packaged with KDiff3, an 
+If the file is deleted in one commit and changed in another commit, a dialog will ask to keep the modified file or delete
+the file. When there is a conflicting change the merge tool will be started. You can configure the tool you want to use for
+merge conflicts. The image below shows Perforce P4Merge a free to use merge tool. Git Extensions is packaged with KDiff3, an
 open source merge tool.
 
 In the merge tool you will see four versions of the same file:
@@ -44,8 +44,8 @@ In the merge tool you will see four versions of the same file:
 
 .. caution::
 
-    When you are in the middle of a merge the file named local represents your file. When you are in the middle of a rebase the 
-    file named remote represents your file. This can be confusing, so double check if you are in doubt. 
+    When you are in the middle of a merge the file named local represents your file. When you are in the middle of a rebase the
+    file named remote represents your file. This can be confusing, so double check if you are in doubt.
 
 .. image:: /images/perforce_p4merge.png
 

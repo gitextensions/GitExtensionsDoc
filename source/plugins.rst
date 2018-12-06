@@ -30,6 +30,6 @@ You should have GitFlow installed to use this plugin.
 The GitFlow plugin permit to :
 - init gitflow in your git repository
 - create your feature, hotfix, release or support branch
-- manage (pull, publish or finish) your existing gitflow branches 
+- manage (pull, publish or finish) your existing gitflow branches
 
 

@@ -38,7 +38,7 @@ Almost all function can be started from the ``Git`` menu in Visual Studio.
 Windows Explorer
 ----------------
 
-The common commands can be started from Windows Explorer using the shell extensions. This option is only available 
+The common commands can be started from Windows Explorer using the shell extensions. This option is only available
 when Shell Extensions are installed.
 
 .. image:: /images/explorer_integration.png

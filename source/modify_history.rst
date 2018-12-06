@@ -1,4 +1,4 @@
-Modify Git history 
+Modify Git history
 ==================
 
 There are 2 different cases, and consequently 2 ways to do it with git when we want to modify the history:
@@ -25,7 +25,7 @@ add them to the commit.
 
 .. image:: /images/history/amend_commit.png
 
-Modify an older commit 
+Modify an older commit
 ----------------------
 
 To modify an older commit than the last one of the current branch, we must use the ``interactive rebase``.
@@ -44,7 +44,7 @@ Check the option `interactive` and click on `Rebase` to launch the process.
 
 .. image:: /images/history/rebase_interactive_option.png
 
-You will be prompted by a text editor displaying all the commits that will be rebased 
+You will be prompted by a text editor displaying all the commits that will be rebased
 
 You could have a look to this _documentation: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History to better understand all the possibilities offered.
 
@@ -92,6 +92,6 @@ Launch the rebase by clicking on `Rebase`.
 The interactive rebase will process the same way but with a major difference!
 When enabling the `Autosquash` option, git will automatically reorder the commits lines and write the good actions in front of the commits
 when it will open the text editor. You normally have just to close the editor (except if you want to do additional changes).
-And let git do the rebase. 
+And let git do the rebase.
 
 
