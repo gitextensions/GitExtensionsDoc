@@ -6,19 +6,19 @@ Installation
 
 This section only covers Git Extensions installation, you will need to have Git for Windows installed: https://git-scm.com/download/win
 
-The single click Git Extensions installer can be found `here <https://github.com/gitextensions/gitextensions/releases/latest>`_.
+The Git Extensions installer can be found `here <https://github.com/gitextensions/gitextensions/releases/latest>`_.
 
-.. image:: /images/install/welcome.png
+.. figure:: /images/install/welcome.png
 
-..
+    Start installation.
 
-.. image:: /images/install/scope.png
+.. figure:: /images/install/scope.png
 
-..
+    Installation scope.
 
-.. image:: /images/install/destination.png
+.. figure:: /images/install/destination.png
 
-..
+    Destination folder.
 
 .. figure:: /images/install/options.png
 
@@ -26,7 +26,7 @@ The single click Git Extensions installer can be found `here <https://github.com
 
 .. figure:: /images/install/ssh.png
 
-    Choose the SSH client to use. PuTTY is the default because it has better Windows integration.
+    Choose the SSH client to use. PuTTY is the default because it has better Windows integration, but Pageant must be running.
 
 .. image:: /images/install/ready.png
 

@@ -1083,5 +1083,5 @@ The settings that are used by Git are stored in the configuration files of Git. 
 
 .. settingspage:: Plugins
 
-  Plugins provide extra functionality for Git Extensions. Please refer to :ref:`plugins`
+  Plugins provide extra functionality for Git Extensions. Please refer to :ref:`plugins`.
 
