@@ -41,7 +41,7 @@ This list is incomplete.
 
     .. setting:: Fetch all submodules
 
-      If checked, also perform ``git fetch –all`` recursively on all configured
+      If checked, also perform ``git fetch -all`` recursively on all configured
       submodules as part of the periodic background fetch.
 
 .. settingspage:: Create local tracking branches
