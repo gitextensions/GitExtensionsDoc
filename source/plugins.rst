@@ -21,30 +21,28 @@ This list is incomplete.
 
       Enter any arguments to msbuild.
 
-.. settingspage:: Periodic background fetch
+.. settingspage:: Bitbucket Server
 
-    	This plugin keeps your remote tracking branches up-to-date automatically by fetching periodically.
+    If your repository is hosted on Atlassian Bitbucket Server
+    then this plugin will enable you to create a pull request for Bitbucket from Git Extensions. The plugin cannot be used for bitbucket.org.
 
-    .. setting:: Arguments of git command to run
+    For more information see: https://www.atlassian.com/software/bitbucket/server
 
-      Enter the git command and its arguments into the edit box.
-      The default command is ``fetch --all``, which will fetch all branches from all remotes.
-      You can modify the command if you would prefer, for example, to fetch only a specific remote, e.g. ``fetch upstream``.
+    .. setting:: Bitbucket Username
 
-    .. setting:: Fetch every (seconds)
+      The username required to access Bitbucket.
 
-      Enter the number of seconds to wait between each fetch. Enter 0 to disable this plugin.
+    .. setting:: Bitbucket Password
 
-    .. setting:: Refresh view after fetch
+      The password required to access Bitbucket.
 
-      If checked, the commit log and branch labels will be refreshed after the fetch.
-      If you are browsing the commit log and comparing revisions you may wish
-      to disable the refresh to avoid unexpected changes to the commit log.
+    .. setting:: Specify the base URL to Bitbucket
 
-    .. setting:: Fetch all submodules
+      The URL from which you will access Bitbucket.
 
-      If checked, also perform ``git fetch -all`` recursively on all configured
-      submodules as part of the periodic background fetch.
+    .. setting:: Disable SSL verification
+
+      Check this option if you do not require SSL verification to access Bitbucket Server.
 
 .. settingspage:: Create local tracking branches
 
@@ -80,19 +78,7 @@ This list is incomplete.
 
     For more information see: https://www.gerritcodereview.com/
 
-GitFlow
--------
-
-This plugin permit to manage your _branching model: http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension
-
-You should have GitFlow installed to use this plugin.
-
-The GitFlow plugin permit to :
-- init gitflow in your git repository
-- create your feature, hotfix, release or support branch
-- manage (pull, publish or finish) your existing gitflow branches
-
-.. settingspage:: Github
+.. settingspage:: GitHub
 
     This plugin will create an OAuth token so that some common GitHub actions can be integrated with Git Extensions.
 
@@ -102,27 +88,16 @@ The GitFlow plugin permit to :
 
       The token generated and retrieved from GitHub.
 
-.. settingspage:: Impact Graph
+.. settingspage:: GitFlow
 
-    This plugin shows in a graphical format the number of commits and counts of changed
-    lines in the repository performed by each person who has committed a change.
+This plugin permit to manage your _branching model: http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension
 
-.. settingspage:: Statistics
+You should have GitFlow installed to use this plugin.
 
-    This plugin provides various statistics (and a pie chart) about the current Git repository.
-    For example, number of commits by author, lines of code per language.
-
-    .. setting:: Code files
-
-      Specifies extensions of files that are considered code files.
-
-    .. setting:: Directories to ignore (EndsWith)
-
-      Ignore these directories when calculating statistics.
-
-    .. setting:: Ignore submodules
-
-      Ignore submodules when calculating statistics (true/false).
+The GitFlow plugin permit to :
+- init gitflow in your git repository
+- create your feature, hotfix, release or support branch
+- manage (pull, publish or finish) your existing gitflow branches
 
 .. settingspage:: Gource
 
@@ -137,6 +112,36 @@ The GitFlow plugin permit to :
     .. setting:: Arguments
 
       Enter any arguments to gource.
+
+.. settingspage:: Impact Graph
+
+    This plugin shows in a graphical format the number of commits and counts of changed
+    lines in the repository performed by each person who has committed a change.
+
+.. settingspage:: Periodic background fetch
+
+    This plugin keeps your remote tracking branches up-to-date automatically by fetching periodically.
+
+    .. setting:: Arguments of git command to run
+
+      Enter the git command and its arguments into the edit box.
+      The default command is ``fetch --all``, which will fetch all branches from all remotes.
+      You can modify the command if you would prefer, for example, to fetch only a specific remote, e.g. ``fetch upstream``.
+
+    .. setting:: Fetch every (seconds)
+
+      Enter the number of seconds to wait between each fetch. Enter 0 to disable this plugin.
+
+    .. setting:: Refresh view after fetch
+
+      If checked, the commit log and branch labels will be refreshed after the fetch.
+      If you are browsing the commit log and comparing revisions you may wish
+      to disable the refresh to avoid unexpected changes to the commit log.
+
+    .. setting:: Fetch all submodules
+
+      If checked, also perform ``git fetch -all`` recursively on all configured
+      submodules as part of the periodic background fetch.
 
 .. settingspage:: Proxy Switcher
 
@@ -164,26 +169,20 @@ The GitFlow plugin permit to :
     This involves summarising all commits between the specified from and to commit expressions
     when the plugin is started. This output can be copied to the clipboard in various formats.
 
-.. settingspage:: Bitbucket Server
+.. settingspage:: Statistics
 
-    If your repository is hosted on Atlassian Bitbucket Server
-    then this plugin will enable you to create a pull request for Bitbucket from Git Extensions. The plugin cannot be used for bitbucket.org.
+    This plugin provides various statistics (and a pie chart) about the current Git repository.
+    For example, number of commits by author, lines of code per language.
 
-    For more information see: https://www.atlassian.com/software/bitbucket/server
+    .. setting:: Code files
 
-    .. setting:: Bitbucket Username
+      Specifies extensions of files that are considered code files.
 
-      The username required to access Bitbucket.
+    .. setting:: Directories to ignore (EndsWith)
 
-    .. setting:: Bitbucket Password
+      Ignore these directories when calculating statistics.
 
-      The password required to access Bitbucket.
+    .. setting:: Ignore submodules
 
-    .. setting:: Specify the base URL to Bitbucket
-
-      The URL from which you will access Bitbucket.
-
-    .. setting:: Disable SSL verification
-
-      Check this option if you do not require SSL verification to access Bitbucket Server.
+      Ignore submodules when calculating statistics (true/false).
 
