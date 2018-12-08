@@ -15,11 +15,12 @@ Features
 * Visual Studio extension (2015-2017)
 
 Specific in 2.5x releases:
+
 * Visual Studio (2010 - 2015) add-in
 * Runs under Linux or Mac OS X using `Mono <http://www.mono-project.com>`_
 * Basic SVN functionality
 
-For description of 2.x specific features, see the `2.x documentation <../2.51/git_extensions.html>`
+For description of 2.x specific features, see the `2.x documentation <../release-2.51/git_extensions.html>`_
 
 Video tutorials
 ---------------
