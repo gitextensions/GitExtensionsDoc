@@ -135,10 +135,6 @@ depending on whether or not they are distributed with that repository.
 
       When starting Git Extensions, open the last used repository (bypassing the Start Page).
 
-    .. setting:: Play Special Startup Sound
-      :id: startup-sound
-
-      Play a sound when starting Git Extensions. It will put you in a good moooooood!
 
     .. setting:: Default clone destination
       :id: default-clone-dst
@@ -269,11 +265,6 @@ depending on whether or not they are distributed with that repository.
 
           Show commit text in gray for branches not related to the current branch.
 
-        .. setting:: Highlight authored revisions
-
-          Highlight all the revisions authored by the same author as the author of the currently selected revision (matched by email).
-          If there is no revision selected, then the current user's email is used to match revisions to be highlighted.
-
         .. setting:: Color tag
 
           Color to show tags in.
@@ -289,10 +280,6 @@ depending on whether or not they are distributed with that repository.
         .. setting:: Color other label
 
           Color to show other labels in.
-
-        .. setting:: Color authored revisions
-
-          Color to show authored revisions in.
 
       .. settingsgroup:: Difference View
 
