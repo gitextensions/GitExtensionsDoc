@@ -4,18 +4,17 @@ Browse Repository
 =================
 
 You can browse a repository by starting Git Extensions and select the repository to open. The main window contains
-the commit log. You could also open the ‘Browse’ window from the shell extensions and from the Visual Studio IDE.
+the revision graph (commit log). You could also open the ‘Browse’ window from the shell extensions and from Visual Studio.
 
-View commit log
----------------
+View revision graph
+-------------------
 
 The full commit history can be browsed. There is a graph that shows branches and merges. You can show the difference
 between any two revisions by selecting them using ctrl-click.
 
 .. image:: /images/commit_diff_view.png
 
-In the context menu of the commit log you can enable or disable the revision graph. You can also choose to only show the
-current branch instead of showing all branches. The other options will be discussed later.
+The context menu for a commit can both execute Git commands and change the appearance for the form.
 
 .. image:: /images/commit_contextual_menu.png
 
@@ -57,6 +56,7 @@ In the context menu of the commit log you can open the advanced filter dialog. T
 filter for more specific commits. To remove the filter either remove the filter in the toolbar and press enter or remove the
 filter in the advanced filter dialog.
 
+.. image:: /images/advance_filter_dialog-menu.png
 .. image:: /images/advance_filter_dialog.png
 
 Single file history
