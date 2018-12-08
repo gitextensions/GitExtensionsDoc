@@ -3,8 +3,12 @@
 Plugins
 ==========
 
-This list is incomplete.
+Git Extensions has a possibility to add functionality in external plugins. Some are distributed with the main program.
 
+Most plugins has settings in :ref:`settings`. Most plugins also have UI forms accessible from the main menu in :ref:`browse-repository`.
+
+This list is incomplete.
+ 
 .. settingspage:: Auto compile SubModules
 
     This plugin proposes (confirmation required) that you automatically build submodules after they are updated via the GitExtensions Update submodules command.
@@ -23,10 +27,10 @@ This list is incomplete.
 
 .. settingspage:: Bitbucket Server
 
-    If your repository is hosted on Atlassian Bitbucket Server
-    then this plugin will enable you to create a pull request for Bitbucket from Git Extensions. The plugin cannot be used for bitbucket.org.
-
+    For repositories is hosted on Atlassian Bitbucket Server, the plugin cannot be used for bitbucket.org.
     For more information see: https://www.atlassian.com/software/bitbucket/server
+
+    This plugin will enable you to view and create pull requests for Bitbucket.
 
     .. setting:: Bitbucket Username
 
@@ -118,6 +122,10 @@ The GitFlow plugin permit to :
     This plugin shows in a graphical format the number of commits and counts of changed
     lines in the repository performed by each person who has committed a change.
 
+.. settingspage:: Jira Commit Hint
+
+Provides hints for Atlassian Jira issues in the commit form.
+
 .. settingspage:: Periodic background fetch
 
     This plugin keeps your remote tracking branches up-to-date automatically by fetching periodically.
@@ -140,7 +148,7 @@ The GitFlow plugin permit to :
 
     .. setting:: Fetch all submodules
 
-      If checked, also perform ``git fetch -all`` recursively on all configured
+      If checked, also perform ``git fetch --all`` recursively on all configured
       submodules as part of the periodic background fetch.
 
 .. settingspage:: Proxy Switcher
