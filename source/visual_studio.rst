@@ -1,10 +1,5 @@
-Integration
-===========
-
-During installation you can choose to install the Visual Studio plug-in and shell extensions.
-
 Visual Studio
--------------
+=============
 
 There are two options in the context menu on files:
 
@@ -34,16 +29,3 @@ A Git Extensions toolbar allows you to perform the most common actions.
 Almost all function can be started from the ``Git`` menu in Visual Studio.
 
 .. image:: /images/visual_studio/git_menu.png
-
-Windows Explorer
-----------------
-
-The common commands can be started from Windows Explorer using the shell extensions. This option is only available
-when Shell Extensions are installed.
-
-.. image:: /images/explorer_integration.png
-
-You can even create or clone a repository in any non git folder.
-
-.. image:: /images/explorer_integration_new.png
-

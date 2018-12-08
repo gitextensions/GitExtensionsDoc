@@ -19,7 +19,8 @@ Git Extensions |release| Manual
    submodules
    maintenance
    translations
-   integration
+   windows_explorer
+   visual_studio
    command_line
    z_appendix
    plugins
