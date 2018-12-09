@@ -8,6 +8,7 @@ Git Extensions |release| Manual
    getting_started
    settings
    browse_repository
+   file_history
    commit
    tag
    branches
