@@ -1,5 +1,5 @@
 Windows Explorer
-===============
+================
 
 The common commands can be started from Windows Explorer using the shell extensions. This option is only available
 when Shell Extensions are installed.
