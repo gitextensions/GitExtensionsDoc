@@ -10,6 +10,7 @@ Git Extensions |release| Manual
    browse_repository
    file_history
    commit
+   stash
    tag
    branches
    patches

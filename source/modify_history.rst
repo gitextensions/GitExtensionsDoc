@@ -1,5 +1,13 @@
+.. _modify_history:
+
 Modify Git history
 ==================
+
+A Git commit cannot be changed, the sha for the commit will change at all changes. All changes will be seen as a new commit.
+
+todo:: The revert/cherry-picking should maybe be moved somewhere else
+- A commit can be reverted, the changes of a certain commit can be reverted and added as a new commit. Similar, a commit can be applied again (possibly to a new branch), known as cherry picking.
+- The commit can be added again (and all commits that are children to the commit) as new commits and git branches can be made to point to the new commit instead.
 
 There are 2 different cases, and consequently 2 ways to do it with git when we want to modify the history:
 
@@ -13,6 +21,22 @@ Note: There are 2 things to understand when working with the history with git:
 
 So, except if the history has not been already pushed, or if you have good reasons, it is a bad practice to change the history
 because you will mess the history of other developers.
+
+Cherry pick commit
+------------------
+
+A commit can be recommitted by using the cherry pick function. This can be very useful when you want to make the same change
+on multiple branches.
+
+.. image:: /images/cherry_pick.png
+
+Revert commit
+-------------
+
+A commit cannot be deleted once it is published. If you need to undo the changes made in a commit, you need to create a new
+commit that undoes the changes. This is called a revert commit.
+
+.. image:: /images/revert_commit.png
 
 Modify the last commit
 ----------------------

@@ -18,7 +18,7 @@ using a revision number. Each revision is named using a SHA1, a 41 long characte
 Commit changes
 --------------
 
-Changes can be committed to the local repository. Unlike most other source control management systems you do not need to
+Changes can be committed to the local repository. Unlike centralised source control management systems you do not need to
 checkout files before you start editing. You can just start editing files, and review all the changes you made in the commit
 dialog later. When you open the commit dialog, all changes are listed in the top-left.
 
@@ -35,8 +35,7 @@ There are three kinds of changes:
 |Deleted   | This file has been deleted.                                                                                    |
 +----------+----------------------------------------------------------------------------------------------------------------+
 
-When you rename or move a file Git will notice that this file has been moved, but currently Git Extensions does not show
-this in the commit dialog.
+When you rename or move a file Git will notice that this file has been moved and notice in index pane (not in working directory).
 
 During your initial commit there are probably lots of files you do not want to be tracked. You can ignore these files by not
 staging them, but they will show every time. You can instead add them to the ``.gitignore`` file of your repository. Files that are
@@ -47,7 +46,7 @@ in the ``.gitignore`` file will not show up in the commit dialog again. You can 
 
 Making a commit is a two step procedure:
 
-* Staging the changes to be committed, which saves a snapshot of the changes into the Git "index".
+* Adding to index (staging) the changes to be committed, which saves a snapshot of the changes into the Git "index".
 * Committing those staged changes, which records the staged changes and other information into the repository.
 
 You do not have to commit immediately after staging changes. You can close the commit dialog, make further changes to the
@@ -101,7 +100,7 @@ pane. If you have already staged the changes then you must first unstage them as
 file, select the file in the unstaged changes pane, right-click and choose ``Reset file or directory changes`` or press the
 ``[R]`` key.
 
-.. image:: /images/reset_changes.png
+.. image:: /images/commit_reset_changes.png
 
 You can reset individual changed lines in a similar way to staging and unstaging individual lines, which are described above.
 To reset an individual line, select the line or lines in the diff view on the right then right-click and choose ``Reset
@@ -116,49 +115,20 @@ When all the changes you want to commit are staged, enter a commit message into 
 
 .. image:: /images/commit_dialog_commit.png
 
-It is also possible to add changes to your last commit by checking the ``Amend Commit`` checkbox. This can be very useful when you
-forgot some changes. This function rewrites history; it deletes the last commit and commits it again including the added
-changes. Make sure you only use ``Amend Commit`` when the commit is not yet published to a remote repository.
-
 There is a built-in spelling checker that checks the commit message. Incorrectly spelled words are underlined with a wavey red line.
 Right-click on the misspelled word to choose the correct spelling or choose one of the other options.
-
-.. image:: /images/commit_dialog_spellchecker.png
 
 Git Extensions installs a number of dictionaries by default. You can choose another language in the context menu of the
 spelling checker or in the settings dialog. To add a new spelling dictionary add the dictionary file to the ``Dictionaries``
 folder inside the Git Extensions installation folder.
 
-.. image:: /images/commit_dialog_language.png
+.. image:: /images/commit_dialog_spellchecker.png
 
-Cherry pick commit
-------------------
+Amend commit
+-----------
 
-A commit can be recommitted by using the cherry pick function. This can be very useful when you want to make the same change
-on multiple branches.
+It is also possible to add changes to your last commit by checking the ``Amend Commit`` checkbox. This can be very useful when you
+forgot some changes. This function rewrites history; it deletes the last commit and commits it again including the added
+changes. 
 
-.. image:: /images/cherry_pick.png
-
-Revert commit
--------------
-
-A commit cannot be deleted once it is published. If you need to undo the changes made in a commit, you need to create a new
-commit that undoes the changes. This is called a revert commit.
-
-.. image:: /images/revert_commit.png
-
-Stash changes
--------------
-
-If there are local changes that you do not want to commit yet and not want to throw away either, you can temporarily stash
-them. This is useful when working on a feature and you need to start working on something else for a few hours. You can
-stash changes away and then reapply them to your working dir again later. Stashes are typically used for very short periods.
-
-.. image:: /images/stash_dialog.png
-
-You can create multiple stashes if needed. Stashes are shown in the commit log with the text ``[stash]``.
-
-.. image:: /images/commit_log_stash.png
-
-The stash is especially useful when pulling remote changes into a dirty working directory. If you want a more permanent
-stash, you should create a branch.
+See also :ref:`modify_history`, especially if you have published the changes to a repote repository already.
