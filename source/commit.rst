@@ -125,7 +125,7 @@ folder inside the Git Extensions installation folder.
 .. image:: /images/commit_dialog_spellchecker.png
 
 Amend commit
------------
+------------
 
 It is also possible to add changes to your last commit by checking the ``Amend Commit`` checkbox. This can be very useful when you
 forgot some changes. This function rewrites history; it deletes the last commit and commits it again including the added
