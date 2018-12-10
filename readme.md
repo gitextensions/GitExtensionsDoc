@@ -18,6 +18,11 @@ up to date).
 Build
 -----
 
+To generate the documentation, you need to have Sphinx installed: http://www.sphinx-doc.org/en/master/usage/installation.html#windows
+The following installs and build the GE html documentation for any Python package with PIP included:
+ - pip install -U sphinx
+ - sphinx-build -b html -d build/doctrees source build/html
+
 ### HTML
 Simply run `make-html.cmd`. You can also use `make-singlehtml.cmd` to generate a single HTML
 file. The `make_and_start_Browser.cmd` is an alias of `make-html.cmd` that will open in your

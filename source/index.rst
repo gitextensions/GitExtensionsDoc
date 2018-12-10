@@ -2,7 +2,7 @@ Git Extensions |release| Manual
 ===============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    git_extensions
    getting_started
