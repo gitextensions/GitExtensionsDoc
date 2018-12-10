@@ -1,9 +1,9 @@
-Remote feature
-==============
+Remotes
+=======
 
 Git is a distributed source control management system. This means that all changes you make are local. When you commit
 changes, you only commit them to your local repository. To publish your local changes you need to push. In order to get
-changes committed by others, you need to pull.
+changes committed by others, you need to fetch/pull.
 
 Manage remote repositories
 --------------------------
@@ -33,6 +33,11 @@ configure this correctly you will not need to choose a branch when you pull or p
 After cloning a repository you do not need to configure all remote branches manually. Instead you can checkout the remote
 branch and choose to create a local tracking branch.
 
+Git Credential Manager
+----------------------
+
+The Git Credential Manager can be used to authenticate http links. For more information and instructions, see https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+
 Create SSH key
 --------------
 
@@ -51,11 +56,9 @@ PuTTY and github
 PuTTY is SSH client that for Windows that is a bit more user friendly then OpenSSH. Unfortunately PuTTY does not work with
 all servers. In this paragraph I will show how to generate a key for github using putty.
 
-First make sure GitExtensions is configured to use PuTTY and all paths are correct.
+First make sure GitExtensions is configured to use PuTTY and all paths are correct, see :ref:`settings-git-extensions-ssh`
 
-.. image:: /images/github_ssh.png
-
-.. image:: /images/generate_or_import_key.png
+.. image:: /images/putty_generate_or_import_key.png
 
 can choose ``Generate or import key`` to start the key generator.
 
@@ -69,13 +72,10 @@ the private key in a file. You can choose to protect the private key with a pass
 Now you have a key pair you need to give github the public key. This can be done in ``Account Settings`` in the tab
 ``SSH Public Keys``. You can add multiple keys here, but you only need one key for all repositories.
 
-.. image:: /images/account_settings.png
+.. image:: /images/github_account_settings.png
 
 After telling github what public key to use to decrypt, you need to tell GitExtensions what private key to use to encrypt.
-In the clone dialog there is a ``Load SSH key`` button to load the private key into the PuTTY authentication agent. This can
-also be done manually by starting the PuTTY authentication agent and choose ``add key`` in the context menu in the system tray.
-
-.. image:: /images/putty_agent.png
+Load the private key into the PuTTY authentication agent in Clone dialoge or by starting the PuTTY authentication agent and choose ``add key`` in the context menu in the system tray.
 
 GitExtensions can load the private keys automatically for you when communicating with a remote. You need to configure the
 private key for the remote.
@@ -85,17 +85,15 @@ This is done in the ``Manage remote repositories`` dialog.
 OpenSSH and github
 ^^^^^^^^^^^^^^^^^^
 
-When you choose to use OpenSSH you need to configure GitExtensions as shown in the screenshot below.
-
-.. image:: /images/github_openssh.png
+To configure GitExtensions to use OpenSSH, see :ref:`settings-git-extensions-ssh`.
 
 OpenSSH is the best SSH client there is but it lacks Windows support. Therefore it is slightly more complex to use.
 Another drawback is that GitExtensions cannot control OpenSSH and needs to show the command line dialogs when OpenSSH might
 be used. GitExtensions will show the command line window for every command that might require a SSH connection. For this
-reason PuTTY is the prefered SSH client in GitExtensions.
+reason PuTTY is the preferred SSH client in GitExtensions.
 
 To generate a key pair in OpenSSH you need to go to the command line. I recommend to use the git bash because the path to
-OpenSSH is already set.
+OpenSSH is already set. Open the separate Git bash or the console tab.
 
 .. image:: /images/git_bash_toolbar.png
 
@@ -109,8 +107,6 @@ key with a password. This is not necessary. By default the public and private ke
 You do not need to tell GitExtensions about the private key because OpenSSH will load it for you. Now open the public
 key using notepad and copy the key to github. This can be done in ``Account Settings`` in the tab ``SSH Public Keys``
 on `GitHub <http://www.github.com>`_.
-
-.. image:: /images/ssh_folder.png
 
 Pull changes
 ------------
@@ -130,19 +126,19 @@ commits will be in a different branch. In the pull dialog this is illustrated in
 you want to review the changes before you want to merge them with your own changes.
 
 
-.. image:: /images/pull_dialog.png
+.. image:: /images/pull_dialog_fetch.png
 
 When you choose to merge the remote branch after fetching the changes a branch will be created, and will be merged into
 your commit. Doing this creates a lot of branches and merges, making the history harder to read.
 
-.. image:: /images/pull_dialog2.png
+.. image:: /images/pull_dialog_merge.png
 
 Instead of merging the fetched commits with your local commits, you can also choose to rebase your commits on top of the
 fetched commits. This is illustrated on the left in the image below. A rebase will first undo your local commits (c and d),
 then fetch the remote commits (e) and finally recommit your local commits. When there is a merge conflict during the rebase,
 the rebase dialog will show.
 
-.. image:: /images/pull_dialog3.png
+.. image:: /images/pull_dialog_rebase.png
 
 Next to the pull button there are some buttons that can be useful:
 
