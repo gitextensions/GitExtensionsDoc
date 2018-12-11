@@ -17,7 +17,7 @@ Git Extensions will show ``(no branch)`` in place of a branch name in the toolba
 mode". In Git you can refer to your current branch or commit by the special reference ``HEAD`` in place of the
 branch name or commit reference.
 
-.. image:: /images/branch_name.png
+.. image:: /images/branch_toolbar.png
 
 Create branch
 -------------
@@ -147,4 +147,4 @@ also part of another branch.
 You can delete a branch using ``Delete branch`` from the ``Commands`` menu. If you want to delete a branch that is not merged into
 your current branch (``HEAD`` in Git), you need to check the ``Force delete`` checkbox.
 
-.. image:: /images/delet_branch.png
+.. image:: /images/delete_branch.png
