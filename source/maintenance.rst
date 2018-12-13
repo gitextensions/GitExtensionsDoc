@@ -17,27 +17,27 @@ into a many small files compressing the database can increase performance.
 Recover lost objects
 --------------------
 
-If you accidently deleted a commit you can try to recover it using the ``Recover lost objects`` function. A dialog will
-show you all dangling objects and will allow you to review and recover them.
-
-.. image:: /images/recover_objects.png
-
 Normally Git will not delete files right away when you remove something from your repository. The reason for this is that you
 can restore deleted items if you need to. Git will delete removed items when they are older then 15 days and you run ``Compress
 git database``.
 
+Commits without branches or tags can be shown with Git reflog https://git-scm.com/docs/git-reflog
+The easiest way to view the commits is to show Git reflog in the revision graph:
+
+.. image:: /images/reflog_show.png
+
+The reflog commits are listed as gray:
+
+.. image:: /images/reflog_revision.png
+
+GE also supports the previous way to show you all dangling objects and will allow you to review and recover them. If you accidentally deleted a commit you can try to recover it using the ``Recover lost objects`` function.
+
+.. image:: /images/recover_objects.png
+
 .. image:: /images/verify_database.png
 
-There are several functions to help you find the lost items. By default Git Extensions will only show commits. To show all
-items, just uncheck the ``Show only commits`` option. The other options can be checked/unchecked to get more/less results.
-Double-click on on item to view the content. When you located the item you want to recover you can tag it using the ``Tag
-selected object`` button.
-
 Git Extensions also is able to tag all lost objects. Doing this will make all lost objects visible again making it very easy
-to locate the commit(s) you would like to recover. After recovering a commit using the ``Tag all lost commits`` button, you can
-remove all tags using the ``Delete all LOST_AND_FOUND tags`` button.
-
-.. image:: /images/lost_found.png
+to locate the commit(s) you would like to recover.
 
 Fix user names
 --------------
@@ -47,29 +47,7 @@ the username for an email address when it is set in the ``.mailmap`` file.
 
 .. image:: /images/mail_map.png
 
-Fix user name using commit email:
-
-.. code-block:: text
-
-    Proper Name <commit@email.xx>
-
-Fix email address using commit email:
-
-.. code-block:: text
-
-    <proper@email.xx> <commit@email.xx>
-
-Fix email address and name using commit email:
-
-.. code-block:: text
-
-    Proper Name <proper@email.xx> <commit@email.xx>
-
-Fix email address and name using commit name and email:
-
-.. code-block:: text
-
-    Proper Name <proper@email.xx> Commit Name <commit@email.xx>
+For more information, see https://git-scm.com/docs/git-check-mailmap.
 
 Ignore files
 ------------
@@ -99,4 +77,4 @@ A short overview of the syntax:
 |     | regular file or a symbolic link foo (this is consistent with the way how pathspec works in general in git).              |
 +-----+--------------------------------------------------------------------------------------------------------------------------+
 
-For more `detailed information <http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_.
+For more `detailed information <https://git-scm.com/docs/gitignore>`_.
