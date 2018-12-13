@@ -19,6 +19,7 @@ Git Extensions |release| Manual
    modify_history
    notes
    submodules
+   worktrees
    maintenance
    translations
    windows_explorer
