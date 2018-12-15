@@ -261,7 +261,7 @@ depending on whether or not they are distributed with that repository.
         .. setting:: Striped branch change
 
           (Unused)
-        .. todo:: Any effect?
+          .. todo Any effect?
 
         .. setting:: Draw alternate background
 
@@ -907,7 +907,7 @@ depending on whether or not they are distributed with that repository.
       .. setting:: Vertical ruler position
 
         Position for ruler.
-        .. todo:: Any effect?
+        .. todo Any effect?
 
   .. settingspage:: SSH
 

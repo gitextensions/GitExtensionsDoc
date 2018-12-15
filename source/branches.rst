@@ -1,3 +1,5 @@
+.. _branches:
+
 Branches
 ========
 
@@ -27,13 +29,13 @@ context menu in the commit log. This will create a new branch on the revision th
 
 .. image:: /images/new_branch.png
 
-I will create a new branch called ``Refactor``. In this branch I can do whatever I want without affecting others.
+I will create a new branch called ``feature/refactor``. In this branch I can do whatever I want without affecting others.
 The default in Git Extensions is to check out a new branch after it is created. If you want to create a new branch
 but remain on your current branch, uncheck the ``Checkout after create`` checkbox in the ``Create branch`` dialog.
 
 .. image:: /images/create_branch_dialog.png
 
-When the branch is created you will see the new branch ``Refactor`` in the commit log. If you chose to checkout this
+When the branch is created you will see the new branch ``feature/refactor`` in the commit log. If you chose to checkout this
 branch the next commit will be committed to the new branch.
 
 .. image:: /images/refactor_branch.png
@@ -75,31 +77,38 @@ can choose between four options for your local uncommitted changes:
 Merge branches
 --------------
 
-In the image below there are two branches, ``[Refactor]`` and ``[master]``. We can merge the commits from the master branch
-into the Refactor branch. If we do this, the Refactor branch will be up to date with the master branch, but not the other way around.
-As long as we are working on the Refactor branch we cannot touch the master branch itself. We can merge the sources of
+In the image below there are two branches, ``[feature/refactor]`` and ``[master]``. We can merge the commits from the master branch
+into the feature/refactor branch. If we do this, the feature/refactor branch will be up to date with the master branch, but not the other way around.
+As long as we are working on the feature/refactor branch we cannot touch the master branch itself. We can merge the sources of
 master into our branch, but cannot make any change to the master branch.
 
 .. image:: /images/merge1.png
 
-To merge the Refactor branch into the master branch, we first need to switch to the master branch.
+To merge the feature/refactor branch into the master branch, we first need to switch to the master branch.
 
 .. image:: /images/merge2.png
 
-Once we are on the master branch we can choose merge by choosing ``Merge branches`` from the ``Commands`` menu. In the merge
-dialog you can verify which branch you are working on. Select the branch to merge with then click the ``Merge`` button.
+Once we are on the master branch, select the feature/refactor branch and select merge. Alternatively choose ``Merge branches`` from the ``Commands`` menu and select the feature/refactor branch. 
+
+.. image:: /images/merge_context_menu.png
+
+In the merge dialog you can verify which branch you are working on. Select the branch to merge with then click the ``Merge`` button.
 
 .. image:: /images/merge_dialog.png
 
-After the merge the commit log will show the new commit containing the merge. Notice that the Refactor branch is not changed
-by this merge. If you want to continue working on the Refactor branch you can merge the Refactor branch with master. You can
-instead delete the Refactor branch if it is not used anymore.
+After the merge the commit log will show the new commit containing the merge. Notice that the feature/refactor branch is not changed
+by this merge. If you want to continue working on the feature/refactor branch you can merge the feature/refactor branch with master. You can
+instead delete the feature/refactor branch if it is not used anymore.
 
 .. image:: /images/merge3.png
 
 .. note::
 
     When you need to merge with an unnamed branch you can use a tag to give it a temporary name.
+
+.. note::
+
+  During a merge conflicts can occur. See :ref:`merge_conflicts` for more information.
 
 Rebase branch
 -------------
@@ -110,20 +119,26 @@ contrary to merges.
 
 .. image:: /images/rebase1.png
 
-A rebase of Refactor on top of master will perform the following actions:
+Select the commit where you want to to rebase the current branch.
 
-* All commits specific to the Refactor branch will be stashed in a temporary location
-* The branch Refactor will be removed
-* The branch Refactor will be recreated on the master branch
-* All commits will be recommitted in the new Refactor branch
+.. image:: /images/merge_context_menu.png
 
-During a rebase merge conflicts can occur. You need to solve the merge conflicts for each commit that is rebased. The
-rebase function in Git Extensions will guide you through all steps needed for a successful rebase.
+A rebase of feature/refactor on top of master will perform the following actions:
+
+* All commits specific to the feature/refactor branch will be stashed in a temporary location
+* The branch feature/refactor will be removed
+* The branch feature/refactor will be recreated on the master branch
+* All commits will be recommitted in the new feature/refactor branch
+
+.. note::
+
+  During a rebase merge conflicts can occur. You need to solve the merge conflicts for each commit that is rebased. The
+  rebase function in Git Extensions will guide you through all steps needed for a successful rebase. See :ref:`merge_conflicts` for more information.
 
 .. image:: /images/rebase_dialog.png
 
 The image below shows the commit log after the rebase. Notice that the history is changed and it seems like the commits on
-the Refactor branch are created after the commits on the master branch.
+the feature/refactor branch are created after the commits on the master branch.
 
 .. image:: /images/rebase2.png
 
@@ -132,6 +147,13 @@ the Refactor branch are created after the commits on the master branch.
     Because this function rewrites history you should only use this on branches that are not published to other repositories
     yet. When you rebase a branch that is already pushed it will be harder to pull or push to that remote. If you want to get
     a branch up-to-date that is already published you should merge.
+
+Interactive rebase
+------------------
+
+It is possible to modify the order, merge commits etc when committing.
+
+See :ref:`modify_history` for more information.
 
 Delete branch
 -------------

@@ -5,7 +5,8 @@ Modify Git history
 
 A Git commit cannot be changed, the sha for the commit will change at all changes. All changes will be seen as a new commit.
 
-todo:: The revert/cherry-picking should maybe be moved somewhere else
+.. todo The revert/cherry-picking should maybe be moved somewhere else
+
 - A commit can be reverted, the changes of a certain commit can be reverted and added as a new commit. Similar, a commit can be applied again (possibly to a new branch), known as cherry picking.
 - The commit can be added again (and all commits that are children to the commit) as new commits and git branches can be made to point to the new commit instead.
 
@@ -26,7 +27,11 @@ Cherry pick commit
 ------------------
 
 A commit can be recommitted by using the cherry pick function. This can be very useful when you want to make the same change
-on multiple branches.
+on multiple branches. Select the commit (or range of commits) you want to cheery pick:
+
+.. image:: /images/cherry_pick_context_menu.png
+
+The confirm dialog opens:
 
 .. image:: /images/cherry_pick.png
 
@@ -34,14 +39,19 @@ Revert commit
 -------------
 
 A commit cannot be deleted once it is published. If you need to undo the changes made in a commit, you need to create a new
-commit that undoes the changes. This is called a revert commit.
+commit that undoes the changes. This is called a revert commit. 
+A revert commit is similar to a cherry pick, but the cherry pick tries to apply the same changes as the original commit, a revert will try to reverse the changes.
 
-.. image:: /images/revert_commit.png
+.. image:: /images/revert_commit_context_menu.png
+
+The confirm dialog opens:
+
+.. image:: /images/revert_commit_dialog.png
 
 Modify the last commit
 ----------------------
 
-The easiest way to modify the history is to modify the last commit made by doing what is called an ``amend``.
+The easiest way to modify the last commit is to do an ``amend`` commit.
 To do that, open the commit windows and check the option "Amend commit".
 If the commit message text area was empty, it is now filled with the message of the last commit.
 You could now just update the commit message and commit or also add some more changes in the staging area to
@@ -52,23 +62,22 @@ add them to the commit.
 Modify an older commit
 ----------------------
 
-To modify an older commit than the last one of the current branch, we must use the ``interactive rebase``.
+To modify an older commit than the last one of the current branch, use ``interactive rebase``.
 
-Doing an interactive rebase
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Interactive rebase
+^^^^^^^^^^^^^^^^^^
 
 First, you should create a commit containing the changes you want to add to a previous commit
 (or know an existing commit that contains this changes).
 
 Then use the `rebase` feature in interactive mode on a base commit older than the one that you want to modify.
+See :ref:`branches` for how to start a rebase, start an interactive rebase from the context menu or by selecting the checkbox in the rebase dialog.
 
-.. image:: /images/history/rebase_interactive.png
-
-Check the option `interactive` and click on `Rebase` to launch the process.
-
-.. image:: /images/history/rebase_interactive_option.png
+.. image:: /images/rebase_dialog.png
 
 You will be prompted by a text editor displaying all the commits that will be rebased
+
+.. image:: /images/rebase_interactive.png
 
 You could have a look to this _documentation: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History to better understand all the possibilities offered.
 
@@ -101,10 +110,9 @@ And choose the suitable option...
 
 .. image:: /images/history/rebase_interactive_fixup_commit.png
 
+If you have not the changes prior to open the dialog, do them now.
+
 GitExtensions will open the commit window with an already filled commit message containing the needed information to find the commit to "modify".
-
-.. image:: /images/history/rebase_interactive_option.png
-
 Do not change the commit message and commit all the changes needed.
 
 Then process to the interactive rebase, like describe in the previous paragraph but with enabling the option `Autosquash`.
