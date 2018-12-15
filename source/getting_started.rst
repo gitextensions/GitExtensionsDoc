@@ -58,10 +58,10 @@ For further information see :ref:`settings`.
 
 .. _start-page:
 
-Start Page
+Dashboard
 ----------
 
-The start page contains the most common tasks, recently opened repositories and favourites. Favourite repositories can be added, grouped under Category headings in the right panel.
+The dashboard contains the most common tasks, recently opened repositories and favourites. Favourite repositories can be added, grouped under Category headings in the right panel.
 
 .. image:: /images/start_page.png
 

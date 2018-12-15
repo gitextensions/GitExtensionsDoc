@@ -587,7 +587,7 @@ depending on whether or not they are distributed with that repository.
     The Hotkeyable Items consist of the following pages
 
     1) Commit: the page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
-    2) Browse: the Revision Graph page (the page displayed after a repository is selected from the Start Page).
+    2) Browse: the Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
     3) RevisionGrid: the list of commits in Browse and other forms.
     4) FileViewer: the page displayed when viewing the contents of a file.
     5) FormMergeConflicts: the page displayed when merge conflicts are detected that need correcting.
