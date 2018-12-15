@@ -1,31 +1,33 @@
 Visual Studio
 =============
 
-There are two options in the context menu on files:
+Menu
+----
 
+Almost all function can be started from the ``GitExt`` menu in Visual Studio.
+
+.. image:: /images/visual_studio/git_menu.png
+
+Toolbar
+-------
+
+A Git Extensions toolbar allows you to perform the most common actions.
+The buttons can be customized, same functions as in the menu.
+
+.. image:: /images/visual_studio/toolbar.png
+
+The current branch name can be shown in the commit button.
+
+.. image:: /images/visual_studio/setting_branch.png
+
+Context menu
+------------
+
+Options in the context menu on files and in Solution Explorer:
+
+* Diff changes to the commit index 
 * View the file history by choosing the ‘File history’ option.
 * Reset the file changes to the last committed revision.
 
 .. image:: /images/visual_studio/context_menu.png
 
-A Git Extensions toolbar allows you to perform the most common actions.
-
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/commit.png      | Commit (branch)                                               |
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/browse.png      | Browse                                                        |
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/pull.png        | Pull                                                          |
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/push.png        | Push                                                          |
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/stash.png       | Stash changes                                                 |
-+-------------------------------------------------+---------------------------------------------------------------+
-|.. image:: /images/visual_studio/settings.png    | Settings                                                      |
-+-------------------------------------------------+---------------------------------------------------------------+
-
-.. image:: /images/visual_studio/toolbar.png
-
-Almost all function can be started from the ``Git`` menu in Visual Studio.
-
-.. image:: /images/visual_studio/git_menu.png
