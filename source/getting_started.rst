@@ -39,9 +39,11 @@ Settings
 --------
 
 Git must be installed prior to starting Git Extensions:
+
 .. image:: /images/install/git_missing.png
 
 First selection is language (depends on the installed languages):
+
 .. image:: /images/install/language.png
 
 All settings will be verified when Git Extensions is started for the first time. If Git Extensions requires
@@ -97,11 +99,11 @@ Open repository
 Opens a Git repo already existing on the file system.
 
 .. image:: /images/open_repo.png
- 
+
 Clone repository
 ----------------
 
-You can clone an existing repository using this option. 
+You can clone an existing repository using this option.
 
 .. image:: /images/clone.png
 
