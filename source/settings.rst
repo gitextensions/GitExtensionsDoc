@@ -791,7 +791,7 @@ depending on whether or not they are distributed with that repository.
 
         If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
         from at most the given number actual commits that are being merged.
-        See https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt
+        See https://git-scm.com/docs/git-merge#git-merge---logltngt
 
     .. settingspage:: Browse repository window
 
@@ -899,7 +899,7 @@ depending on whether or not they are distributed with that repository.
 
       .. setting:: Omit uninteresting changes from combined diff
 
-        Includes git `--cc` switch when generating a diff. See https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc
+        Includes git `--cc` switch when generating a diff. See https://git-scm.com/docs/git-diff-tree#git-diff-tree---cc
 
       .. setting:: Open Submodule Diff in separate window
 
