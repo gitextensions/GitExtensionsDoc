@@ -3,7 +3,7 @@
 Modify Git history
 ==================
 
-A Git commit cannot be changed, the sha for the commit will replaced at all changes. However, the contents of a commit can be modified and committed again as a new commit with a new sha and the branch/tag can be moved to the modified (new) commit.
+A Git commit cannot be changed, the sha for the commit will change at all changes. All changes will be seen as a new commit.
 
 .. todo The revert/cherry-picking should maybe be moved somewhere else
 
@@ -62,7 +62,7 @@ add them to the commit.
 Modify an older commit
 ----------------------
 
-It normally makes sense just to change the history for the current branch. To change the parents of the current branch you will have to make a ``rebase``. Git Extensions has functionality that wraps the Git rebase commands and simplifies usage in some situations.
+To modify an older commit than the last one of the current branch, use ``interactive rebase``.
 
 Interactive rebase
 ^^^^^^^^^^^^^^^^^^
@@ -126,9 +126,4 @@ When enabling the `Autosquash` option, git will automatically reorder the commit
 when it will open the text editor. You normally have just to close the editor (except if you want to do additional changes).
 And let git do the rebase.
 
-Edit/reword commit
-^^^^^^^^^^^^^^^^^^
 
-These options are the same as starting an interactive rebase on the parent to the selected commit and doing an ``edit`` (allow to amend to the commit) or ``reword`` (editing the commit message) and then run an interactive rebase in the background.
-
-Note especially that this functionality will fail if you try to edit/reword a commit that is not a parent to the current checkout.
