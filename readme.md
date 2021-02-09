@@ -7,7 +7,7 @@ Refer to the Wiki here: https://github.com/gitextensions/gitextensions/wiki for 
 
 View Online
 -----------
-The current documentation can be viewed here: https://git-extensions-documentation.readthedocs.org/en/latest/
+The current documentation can be viewed here: https://git-extensions-documentation.readthedocs.org/
 
 PDF and other formats can be downloaded here: https://readthedocs.org/projects/git-extensions-documentation/downloads/
 
