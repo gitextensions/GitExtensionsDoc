@@ -573,15 +573,47 @@ depending on whether or not they are distributed with that repository.
 
       Changes order of scripts.
 
-    .. setting:: Name
+    .. setting:: Scripts
+ 
+      .. setting:: Name
 
-      The name of the script.
+        The name of the script.
 
       .. setting:: Enabled
 
         If checked, the script is active and will be performed at the appropriate time (as determined by the On Event setting).
 
-      .. setting:: Ask for confirmation
+      .. setting:: Command
+
+        Enter the command to be run. This can be any command that your system can run e.g. an executable program,
+        a .bat script, a Python command, etc. Use the ``Browse`` button to find the command to run.
+
+        There are some special prefixes which change the way the script is executed:
+
+        * ``plugin:<plugin-name>``: Where ``<plugin-name>`` is the name of a *plugin* (refer :ref:`settings-plugins`).
+          If a plugin with that name is found, it is run.
+        * ``navigateTo:<script-path>``: Where ``<script-path>`` is the path to a file containing the script to run.
+          That script is expected to return a commit hash as the first line of its output. The UI will navigate to that commit once the script completes.
+
+      .. setting:: Arguments
+
+        Enter any arguments to be passed to the command that is run.
+        The ``Help`` button displays items that will be resolved by Git Extensions before
+        executing the command e.g. {cBranch} will resolve to the currently checked out branch,
+        {UserInput} will display a popup where you can enter data to be passed to the command when it is run.
+
+      .. setting:: Execute on event
+
+        Select when this command will be executed, either before/after certain Git commands, or displayed on the User Menu bar.
+        Since the git pull command includes a fetch, before/after fetch events are triggered on pure fetches as well as on pulls. For the pull command the script execution order ist BeforePull - BeforeFetch - git pull - AfterFetch - AfterPull.
+
+      .. setting:: Icon
+
+        Select an icon to be displayed in a menu item when the script is marked to be shown in the user menu bar.
+
+    .. setting:: Script Behavior
+
+      .. setting:: Ask confirmation
 
         If checked, then a popup window is displayed just before the script is run to confirm whether or not the script is to be run.
         Note that this popup is *not* displayed when the script is added as a command to the User Menu (On Event setting is ShowInUserMenuBar).
@@ -590,43 +622,17 @@ depending on whether or not they are distributed with that repository.
 
         If checked, the script will run in the background and Git Extensions will return to your control without waiting for the script to finish.
 
-      .. setting:: Add to revision grid context menu
-
-        If checked, the script is added to the context menu that is displayed when right-clicking on a line in the Revision Graph page.
-
-      .. setting:: Is PowerShell
+      .. setting:: Is PowerShell script
 
         If checked, the command is started through a powershell.exe process.
         If the :ref:`settings-git-extensions-scripts-name-run-in-background` is checked, the powershell console is closed after finishing. If not,
         the powershell console is left for the user to close it manually.
 
-    .. setting:: Command
+    .. setting:: Script Context
 
-      Enter the command to be run. This can be any command that your system can run e.g. an executable program,
-      a .bat script, a Python command, etc. Use the ``Browse`` button to find the command to run.
+      .. setting:: Show in RevisionGrid
 
-      There are some special prefixes which change the way the script is executed:
-
-      * ``plugin:<plugin-name>``: Where ``<plugin-name>`` is the name of a *plugin* (refer :ref:`settings-plugins`).
-        If a plugin with that name is found, it is run.
-      * ``navigateTo:<script-path>``: Where ``<script-path>`` is the path to a file containing the script to run.
-        That script is expected to return a commit hash as the first line of its output. The UI will navigate to that commit once the script completes.
-
-    .. setting:: Arguments
-
-      Enter any arguments to be passed to the command that is run.
-      The ``Help`` button displays items that will be resolved by Git Extensions before
-      executing the command e.g. {cBranch} will resolve to the currently checked out branch,
-      {UserInput} will display a popup where you can enter data to be passed to the command when it is run.
-
-    .. setting:: On Event
-
-      Select when this command will be executed, either before/after certain Git commands, or displayed on the User Menu bar.
-      Since the git pull command includes a fetch, before/after fetch events are triggered on pure fetches as well as on pulls. For the pull command the script execution order ist BeforePull - BeforeFetch - git pull - AfterFetch - AfterPull.
-
-      .. setting:: Icon
-
-        Select an icon to be displayed in a menu item when the script is marked to be shown in the user menu bar.
+        If checked, the script is added to the context menu that is displayed when right-clicking on a line in the Revision Graph page.
 
   .. settingspage:: Hotkeys
 
