@@ -30,6 +30,11 @@ the list on the left.
 |Remove        | Remove the submodule from the repository                                                                        |
 +--------------+-----------------------------------------------------------------------------------------------------------------+
 
+Change submodule path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Delete the existing submodule and add it again in the new location after changing the submodule location.
+
+
 Add submodule
 -------------
 
