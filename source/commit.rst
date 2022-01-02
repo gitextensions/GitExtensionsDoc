@@ -131,9 +131,8 @@ It is also possible to add changes to your last commit by checking the ``Amend C
 forgot some changes. This function rewrites history; it deletes the last commit and commits it again including the added
 changes. 
 
-See also :ref:`modify_history`, especially if you have published the changes to a repote repository already.
+See also :ref:`modify_history`, especially if you have published the changes to a remote repository already.
 
-Reset author
-------------
+.. image:: /images/commit_amend_reset_author.png
 
-Reset the commit author and timestamp to the current comment.
+By checking the ``Reset Author`` checkbox the author and date of the commit will also be overwritten.
