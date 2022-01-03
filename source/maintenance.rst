@@ -22,7 +22,7 @@ can restore deleted items if you need to. Git will delete removed items when the
 git database``.
 
 Commits without branches or tags can be shown with Git reflog https://git-scm.com/docs/git-reflog
-The easiest way to view the commits is to show Git reflog in the revision graph:
+The easiest way to view the commits is to show :ref:`browse-reflog` :ref:`browse-repository`.
 
 .. image:: /images/reflog_show.png
 

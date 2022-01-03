@@ -8,7 +8,10 @@ Git Extensions has a possibility to add functionality in external plugins. Some 
 Most plugins has settings in :ref:`settings`. Most plugins also have UI forms accessible from the main menu in :ref:`browse-repository`.
 
 This list is incomplete.
- 
+
+Bundled
+-------
+
 .. settingspage:: Auto compile SubModules
 
     This plugin proposes (confirmation required) that you automatically build submodules after they are updated via the GitExtensions Update submodules command.
@@ -75,13 +78,6 @@ This list is incomplete.
 
       Specify what size is considered a 'large' file.
 
-.. settingspage:: Gerrit Code Review
-
-    The Gerrit plugin provides integration with Gerrit for GitExtensions.
-    This plugin has been based on the git-review tool.
-
-    For more information see: https://www.gerritcodereview.com/
-
 .. settingspage:: GitHub
 
     This plugin will create an OAuth token so that some common GitHub actions can be integrated with Git Extensions.
@@ -121,41 +117,6 @@ The GitFlow plugin permit to :
 
     This plugin shows in a graphical format the number of commits and counts of changed
     lines in the repository performed by each person who has committed a change.
-
-.. settingspage:: Jira Commit Hint
-
-  .. image:: /images/plugins/jira_commit_hint.png
-
-Provides hints for Atlassian Jira issues in the commit form.
-For example, you can configure Key - Summary message for all your in progress tasks.
-
-    .. setting:: Jira hint plugin enabled
-
-      Whether plugin enabled or not.
-
-    .. setting:: Jira URL
-
-      Link to your Jira server.
-
-    .. setting:: Jira user
-
-      Your username.
-
-    .. setting:: Jira password
-
-      Your password.
-
-    .. setting:: JQL Query
-
-      Query to Jira, results of which you want to show in "Commit Templates" in Commit Form. For more information see: https://confluence.atlassian.com/jiracoreserver073/advanced-searching-861257209.html
-
-    .. setting:: Jira fields
-
-      Key words that you can use in Message Template.
-
-    .. setting:: Message Template
-
-      Result format to insert into message text box after some line from "Commit Templates" selected.
 
 .. settingspage:: Periodic background fetch
 
@@ -224,3 +185,48 @@ For example, you can configure Key - Summary message for all your in progress ta
     .. setting:: Ignore submodules
 
       Ignore submodules when calculating statistics (true/false).
+
+Third party extensions
+----------------------
+
+.. settingspage:: Gerrit Code Review
+
+    The Gerrit plugin provides integration with Gerrit for GitExtensions.
+    This plugin has been based on the git-review tool.
+
+    For more information see: https://www.gerritcodereview.com/
+
+.. settingspage:: Jira Commit Hint
+
+  .. image:: /images/plugins/jira_commit_hint.png
+
+Provides hints for Atlassian Jira issues in the commit form.
+For example, you can configure Key - Summary message for all your in progress tasks.
+
+    .. setting:: Jira hint plugin enabled
+
+      Whether plugin enabled or not.
+
+    .. setting:: Jira URL
+
+      Link to your Jira server.
+
+    .. setting:: Jira user
+
+      Your username.
+
+    .. setting:: Jira password
+
+      Your password.
+
+    .. setting:: JQL Query
+
+      Query to Jira, results of which you want to show in "Commit Templates" in Commit Form. For more information see: https://confluence.atlassian.com/jiracoreserver073/advanced-searching-861257209.html
+
+    .. setting:: Jira fields
+
+      Key words that you can use in Message Template.
+
+    .. setting:: Message Template
+
+      Result format to insert into message text box after some line from "Commit Templates" selected.

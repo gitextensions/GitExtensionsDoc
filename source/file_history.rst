@@ -1,8 +1,15 @@
+.. _file-history:
+
 File history
 ============
 
+``File tree`` is a separate form to view the history of a file or folder.
+Since Git Extensions 4.0 this functionality is included in :ref:`browse-repository`,
+see specifically :ref:`filter-file`.
+This form is deprecated and may be removed in future releases.
+
 To display the single file history, right click on a file name in the :ref:`browse-repository` ``File tree`` or in the ``Diff`` tab and select ``File history`` or ``Blame``.
-The single file history viewer shows all revisions of a single file. (This is available for submodules too, but the information is mostly not interesting.)
+The single file history viewer shows all revisions of a single file or submodules.
 
 .. image:: /images/context_menu_blame.png
 

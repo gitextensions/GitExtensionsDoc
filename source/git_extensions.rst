@@ -9,10 +9,10 @@ There is also a Visual Studio extension to use Git from the Visual Studio IDE.
 Features
 --------
 
-* Windows Explorer integration for Git
 * Feature rich user interface for Git
 * 32bit and 64bit support
-* Visual Studio extension (2015-2017)
+* Windows Explorer integration for Git
+* Visual Studio extension (2015-2022)
 
 Specific in 2.5x releases:
 
@@ -38,7 +38,7 @@ Links
 
 See the following links for the Git Extensions download page, source code and documentation.
 
-* Download page: https://sourceforge.net/projects/gitextensions/
+* Download page: https://github.com/gitextensions/gitextensions/releases
 * Source Code: https://github.com/gitextensions/gitextensions
 * Source Code Issue tracker: https://github.com/gitextensions/gitextensions/issues
 * Documentation: https://github.com/gitextensions/GitExtensionsDoc
