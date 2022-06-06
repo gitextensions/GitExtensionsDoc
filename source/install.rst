@@ -31,7 +31,7 @@ The Git Extensions installer can be found on `GitHub <https://github.com/gitexte
 Portable
 --------
 
-Git Extensions is also distributed as a portable .zip file, that only require unpacking to a new directory (migrate settings files and theme manually).
+Git Extensions is also distributed as a portable .zip file, that only requires unpacking to a new directory (migrate settings files and theme manually).
 Some features like :ref:`windows-explorer` is not available with this package.
 
 Settings

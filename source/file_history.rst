@@ -3,7 +3,7 @@
 File history
 ============
 
-``File tree`` is a separate form to view the history of a file or folder.
+``File history`` is a separate form to view the history of a file or folder.
 Since Git Extensions 4.0 this functionality is included in :ref:`browse-repository`,
 see specifically :ref:`filter-file`.
 This form is deprecated and may be removed in future releases.

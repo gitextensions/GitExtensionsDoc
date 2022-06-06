@@ -623,15 +623,16 @@ This page contains general settings for Git Extensions.
   commands on that page that can have a hotkey associated with them.
   The Hotkeyable Items consist of the following pages
 
-  #. Commit: the page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
-  #. Browse: the Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
-  #. RevisionGrid: the list of commits in Browse and other forms.
-  #. FileViewer: the page displayed when viewing the contents of a file.
-  #. FormMergeConflicts: the page displayed when merge conflicts are detected that need correcting.
+  #. Commit: The page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
+  #. Browse: The Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
+  #. LeftPanel: The left side panel for ``Browse`` with branches etc.
+  #. RevisionGrid: The list of commits in Browse and other forms.
+  #. FileViewer: The page displayed when viewing the contents of a file.
+  #. FormMergeConflicts: The page displayed when merge conflicts are detected that need correcting.
   #. BrowseDiff: Diff tab in Browse.
   #. RevisionFileTree: The FileTree tab in Browse.
   #. Stash
-  #. Scripts: shows scripts defined in Git Extensions and allows shortcuts to be assigned. Refer :ref:`settings-scripts`.
+  #. Scripts: Shows scripts defined in Git Extensions and allows shortcuts to be assigned. Refer :ref:`settings-scripts`.
 
   .. setting:: Hotkey
 
@@ -735,7 +736,7 @@ This page allows you to turn off certain confirmation popup windows.
 
   .. setting:: Amend last commit
 
-    If checked, do not display the popup warning about
+    If checked, display the popup warning about
     the rewriting of history when you have elected to amend the last committed change.
 
   .. setting:: Undo last commit
