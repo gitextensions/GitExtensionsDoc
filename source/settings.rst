@@ -196,10 +196,11 @@ This page contains general settings for Git Extensions.
 
     Automatically resize controls and their contents according to the current system resolution of the display, measured in dots per inch (DPI).
 
-  .. setting:: Sort by author date
+  .. setting:: Sort revisions by
     :id: sort-author-date
 
-    This setting causes commits to be sorted by author date (rather than commit date) in the revision grid. Sorting by author date may delay rendering of the revision graph.
+    This setting causes commits in the revision grid to be sorted by Git default (commit date), author date or topology.
+    Sorting by other than Git default may delay rendering of the revision graph.
 
   .. setting:: Sort branches by
     :id: sort-branches-by
@@ -323,6 +324,10 @@ This page contains general settings for Git Extensions.
   .. setting:: Highlight authored revisions
 
     Highlight revisions committed by the same author as the selected revision.
+
+  .. setting:: Fill Git ref labels
+
+    Fill labels in the revision grid.
 
 .. settingsgroup:: Theme
 
@@ -869,9 +874,9 @@ This page allows detailed settings to be modified.
 
   .. setting:: Default shell
 
-    Choose one of the predefined terminals.
+    Choose one of the predefined terminals in ``Console`` tab and browser popup.
 
-  .. setting:: Use browse for FileHistory
+  .. setting:: Show file history in the main window
 
     Open file history in :ref:`browse-repository` window instead of the deprecated :ref:`file-history` window.
 

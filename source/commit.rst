@@ -132,3 +132,8 @@ forgot some changes. This function rewrites history; it deletes the last commit 
 changes. 
 
 See also :ref:`modify_history`, especially if you have published the changes to a repote repository already.
+
+Reset author
+------------
+
+Reset the commit author and timestamp to the current comment.
