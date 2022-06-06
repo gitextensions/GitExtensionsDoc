@@ -437,9 +437,11 @@ This page contains general settings for Git Extensions.
     .. setting:: Search in
 
       Define which parts of the revision should be searched for matches.
-      :id: search-pattern
+
+      Note that the branch name is only searchable in the branch heads.
 
     .. setting:: Search pattern
+      :id: search-pattern
 
       Regular expression used for matching text in the chosen revision parts.
       Each matched fragment will be used to create a new link. More than one
@@ -1138,28 +1140,30 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
 .. settingsgroup:: Notes for WSL Git
   :id: wsl-git-notes
 
-  For Git repos stored in ``\\wsl$`` directories, execute the Git executable in WSL
-  where possible to improve performance. WSL Git commands are several
-  times faster when executed by the WSL Git executable instead of the
-  Git Extensions Windows (native) application.
+  For Git repos stored in ``\\wsl$`` directories, Git Extensions executes the WSL Git executable
+  where possible to improve performance. WSL Git is several times faster than Windows Git (native) application.
 
-  Using the WSL Git executable requires that paths provided to WSL Git
-  are adjusted from Git Extensions Windows (native/internal) format to WSL format,
-  like ``\\wsl$\Ubunto\repo`` to ``/repo`` and ``c:\repo`` to ``/mnt/c/repo``.
   The paths internal to Git Extensions are always in Windows format.
-  Therefore, paths in both inputs and outputs for Git commands must be translated.
+  Therefore, paths in both inputs and outputs for WSL Git commands must be translated.
+  For instance ``\\wsl$\Ubuntu\repo`` to ``/repo`` and ``c:\repo`` to ``/mnt/c/repo``.
 
   The Git Extensions Windows (native) Git executable is still used for the following:
-  
+
   - All handling and settings related to Git in Settings. This includes display of Git version as well.
     However, if the WSL Git version is too old to be supported, Git Extensions will report this in a popup.
   - Custom merge implementation in FormResolveConflicts.
   - Custom difftool/mergetool list, see :ref:`settings-diff-viewer-show-all-available-difftools-difftool-wsl-git`.
-  - Some built-in plugins etc, ScriptRunner and FindLargeFiles always use Windows Git.
-  
-  Note that Git repos accessed in ``\\wsl.localhost`` or mapped to a drive will not use the special WSL handling but the standard Windows Git.
-  
-  See also :ref:`worktrees` for WSL limitations.
+  - ScriptRunner and some built-in plugins like FindLargeFiles always use Windows Git.
+
+  Some notes:
+  - Git repos accessed in ``\\wsl.localhost`` or mapped to a drive letter will not use the special WSL handling but Windows Git.
+  - Files modified in WSL are not reported by Windows FileSystemWatcher, so the
+  GitStatusMonitor will only report issues at explicit refresh and every minute.
+  - The WSL executable occasionally fail (for instance when the WSL machine is busy) which will be seen as
+  a Git failure that will result in a popup. You may have to ignore the popup, refresh or even
+  reopen the application to recover from these failures.
+
+  See also :ref:`worktrees` for other limitations.
 
 .. settingspage:: Config
 
