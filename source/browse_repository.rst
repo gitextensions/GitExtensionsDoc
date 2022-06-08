@@ -4,9 +4,7 @@ Browse Repository
 =================
 
 You can browse a repository by starting Git Extensions and select the repository to open. The main window contains
-the revision graph (commit log). You could also open the ‘Browse’ window from the shell extensions and from :ref:`visual_studio`.
-
-TBD This page is incomplete
+the revision graph (commit log). You could also open the ‘Browse’ window from :ref:`windows-explorer` and from :ref:`visual_studio`.
 
 The Browse window contains of several parts:
 
@@ -15,7 +13,7 @@ The Browse window contains of several parts:
 * `Tabs`_
 * `Sidepanel`_
 
-The `Sidepanel`_ and `Tabs`_ and can be hidden from the toolbar, as well as showing the `Commit`_ tab as a panel in the revision graph.
+The `Sidepanel`_, `Tabs`_ and the toolbar can be hidden, as well as showing the `Commit`_ tab as a panel in the revision graph.
 
 .. _browse-main-toolbar:
 
@@ -82,15 +80,13 @@ author and/or the committer.
 
 .. _filter-file:
 
-xxx filter file
-
 In the context menu of the commit log you can open the advanced filter dialog. The advanced filter dialog allows you to
 filter for more specific commits. To remove the filter either remove the filter in the toolbar and press enter or remove the
 filter in the advanced filter dialog.
 
 .. image:: /images/advance_filter_dialog-menu.png
 
-xxx toolbar tooltip
+When a filter is set, the icon for the advanced filter is changed and you see the current filter as a tooltip for the button.
 
 .. image:: /images/advance_filter_dialog.png
 
@@ -98,6 +94,9 @@ xxx toolbar tooltip
 
 Reflog
 """"""
+
+By default Git will not show commits that has no branch or tag on a child. Such commits will be purged when Git runs maintenance.
+By enabling Reflog (toolbar button or ``View`` menu) these commits will be shown too.
 
 Tabs
 ----
@@ -107,7 +106,8 @@ Tabs
 Commit
 ^^^^^^
 
-also move
+Shows conformation or the currently selected commit.
+This tab can be moved to the revision grid.
 
 .. _browse-tabs-diff:
 
@@ -118,18 +118,22 @@ See also
 :ref:`settings-diff-viewer-show-file-differences-for-all-parents-in-browse-dialog`
 :ref:`settings-diff-viewer-show-all-available-difftools`
 
-describe Blame
+The file viewer will by default show the diff, but may also show Blame for the selected file.
 
 File tree
 ^^^^^^^^^
 
-Blame
+Show the file tree for the commit. By default this shows Blame for a file.
 
 GPG
 ^^^
 
+Show the GPG key for signed commits.
+
 Console
 ^^^^^^^
+
+Show Git terminal.
 
 Build report
 ^^^^^^^^^^^^
@@ -141,3 +145,5 @@ Optional, only shown if the build server plugin is configured for the repo and i
 
 Sidepanel
 ---------
+
+Show submodules, local and remote branches, tags and remotes.

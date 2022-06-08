@@ -12,6 +12,8 @@ Visual Studio Code
 .. _pmiossec: <https://marketplace.visualstudio.com/items?itemName=pmiossec.vscode-gitextensions>
 .. _ForEvolve: <https://marketplace.visualstudio.com/items?itemName=forevolve.git-extensions-for-vs-code>
 
+.. _visual_studio:
+
 Visual Studio
 =============
 
