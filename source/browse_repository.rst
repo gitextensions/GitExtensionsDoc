@@ -95,8 +95,8 @@ When a filter is set, the icon for the advanced filter is changed and you see th
 Reflog
 """"""
 
-By default Git will not show commits that has no branch or tag on a child. Such commits will be purged when Git runs maintenance.
-By enabling Reflog (toolbar button or ``View`` menu) these commits will be shown too.
+By default, Git will not show any commits that are not reachable and do not have any references, such as a branch or a tag. Such commits will be purged when Git runs maintenance.
+By enabling ``Reflog`` via the toolbar button or in the ``View`` menu these commits will be shown too.
 
 Tabs
 ----
@@ -106,7 +106,7 @@ Tabs
 Commit
 ^^^^^^
 
-Shows conformation or the currently selected commit.
+Commit information and message as well as branch and tag information for the selected commit.
 This tab can be moved to the revision grid.
 
 .. _browse-tabs-diff:
@@ -146,4 +146,4 @@ Optional, only shown if the build server plugin is configured for the repo and i
 Sidepanel
 ---------
 
-Show submodules, local and remote branches, tags and remotes.
+Show local and remote branches, git remotes, tags and submodules.
