@@ -5,6 +5,11 @@ Settings
 
 The settings dialog can be invoked at any time by selecting ``Settings`` from the ``Tools`` menu option.
 
+Git Extensions
+--------------
+
+The top level page has a checklist for settings in Git and Git Extensions.
+
 .. image:: /images/settings/settings.png
 
 The following buttons are always available on any page of the Settings dialog. Sometimes the ``Cancel``
@@ -30,381 +35,379 @@ Settings that are specific to Git Extensions but apply to only the current repos
 name, ``GitExtensions.settings``, but in either the root folder of the repository or the ``.git`` folder of the repository,
 depending on whether or not they are distributed with that repository.
 
-.. settingspage:: Git Extensions
+This page is a visual overview of the minimal settings that Git Extensions requires to work properly. Any items highlighted in red should
+be configured by clicking on the highlighted item.
 
-  This page is a visual overview of the minimal settings that Git Extensions requires to work properly. Any items highlighted in red should
-  be configured by clicking on the highlighted item.
+This page contains the following settings and buttons.
 
-  This page contains the following settings and buttons.
+.. setting:: Check settings at startup
 
-  .. setting:: Check settings at startup
+  Forces Git Extensions to re-check the minimal set of required settings the next time Git Extensions is started.
+  If all settings are 'green' this will be automatically unchecked.
 
-    Forces Git Extensions to re-check the minimal set of required settings the next time Git Extensions is started.
-    If all settings are 'green' this will be automatically unchecked.
+.. settingbutton:: Save and rescan
 
-  .. settingbutton:: Save and rescan
+  Saves any setting changes made and re-checks the settings to see if the minimal requirements are now met.
 
-    Saves any setting changes made and re-checks the settings to see if the minimal requirements are now met.
+.. settingspage:: General
 
-  .. settingspage:: General
+This page contains general settings for Git Extensions.
 
-  This page contains general settings for Git Extensions.
+.. settingsgroup:: Performance
 
-  .. settingsgroup:: Performance
+  .. setting:: Show number of changed files on commit button
+    :id: changes-no
 
-    .. setting:: Show number of changed files on commit button
-      :id: changes-no
+    When enabled, the number of pending commits are shown on the toolbar as a figure in parentheses on the Commit button.
+    Git Extensions must be stopped and restarted to activate changes to this option.
+    Turn this (and next) off if you experience slowdowns.
 
-      When enabled, the number of pending commits are shown on the toolbar as a figure in parentheses on the Commit button.
-      Git Extensions must be stopped and restarted to activate changes to this option.
-      Turn this off if you experience slowdowns.
+  .. setting:: Show number of changed files for artificial commits
+    :id: show-number-of-changed-files-for-artificial-commits
 
-    .. setting:: Show number of changed files for artificial commits
+    If artificial commits are enabled in the revision graph, show the pending commits as well as a tool tip with a summary of changes.
 
-      If artificial commits are enabled in the revision graph, show the pending commits as well as a tool tip with a summary of changes.
+  .. setting:: Show submodule status in browse window
 
-    .. setting:: Show current working directory changes as an artificial commit.
-      :id: working-dir-changes
+    Show the status for submodules (as well as supermodules) in the dropdown menu in Browse. The status is updated if
+    :ref:`settings-performance-show-number-of-changed-files-for-artificial-commits` is enabled
+    and the number of artificial commits is updated. (Changes in supermodules are not monitored).
 
-      When enabled, two artificial revisions are added to the revision graph.
-      The first shows the worktree (current working directory) status. The second shows the commit index (staged).
+  .. setting:: Show stash count on status bar in browse window
+    :id: stash-count
 
-    .. setting:: Use FileSystemWatcher to check if index is changed
-      :id: filesystemwatcher
+    When you use the stash a lot, it can be useful to show the number of stashed items on the toolbar.
+    This option is turned off by default.
 
-      Monitor if the Git index is changed due to changes outside of Git Extensions, if so show this in the Refresh button in Browse.
+  .. setting:: Show ahead and behind information on status bar in browse window
 
-    .. setting:: Show stash count on status bar in browse window
-      :id: stash-count
+    If the current local checkout branch is tracking a remote branch, show the number of commits the branch
+    is ahead (changed locally) and behind (changed on the remote) on the status bar in :ref:`browse-main-toolbar`
+    and for branches on the :ref:`browse-side-panel`.
 
-      When you use the stash a lot, it can be useful to show the number of stashed items on the toolbar.
-      This option causes serious slowdowns in large repositories and is turned off by default.
+  .. setting:: Check for uncommitted changes in checkout branch dialog
+    :id: uncommitted-changes
 
-    .. setting:: Show submodule status in browse window
-      :id: stash-count
+    Git Extensions will not allow you to checkout a branch if you have uncommitted changes on the current branch.
+    If you select this option, Git Extensions will display a dialog where you can decide
+    what to do with uncommitted changes before swapping branches.
 
-      Show the status for submodules (as well as supermodules) in the dropdown menu in Browse. The status is updated if :ref:`settings-git-extensions-performance-show-number-of-changed-files-for-artificial-commits` is enabled and the number of artificial commits is updated. (Changes in supermodules is not monitored).
-      This option causes serious slowdowns in large repositories and is turned off by default.
+  .. setting:: Limit number of commits that will be loaded at start-up
+    :id: commits-limit
 
-    .. setting:: Check for uncommitted changes in checkout branch dialog
-      :id: uncommitted-changes
+    This number specifies the maximum number of commits that Git Extensions will load when it is started.
+    These commits are shown in the Revision Graph window. To see more commits,
+    then this setting will need to be adjusted and Git Extensions restarted.
 
-      Git Extensions will not allow you to checkout a branch if you have uncommitted changes on the current branch.
-      If you select this option, Git Extensions will display a dialog where you can decide
-      what to do with uncommitted changes before swapping branches.
+.. settingsgroup:: Behaviour
 
-    .. setting:: Limit number of commits that will be loaded at start-up
-      :id: commits-limit
+  .. setting:: Close Process dialog when process succeeds
+    :id: close-process-dlg
 
-      This number specifies the maximum number of commits that Git Extensions will load when it is started.
-      These commits are shown in the Revision Graph window. To see more commits,
-      then this setting will need to be adjusted and Git Extensions restarted.
+    When a process is finished, close the process dialog automatically.
+    Leave this option off if you want to see the result of processes.
+    When a process has failed, the dialog will automatically remain open.
 
-  .. settingsgroup:: Behaviour
+  .. setting:: Show console window when executing git process
+    :id: show-console
 
-    .. setting:: Close Process dialog when process succeeds
-      :id: close-process-dlg
+    Git Extensions uses command line tools to access the git repository.
+    In some environments it might be useful to see the command line dialog when a process is executed.
+    An option on the command line dialog window displayed allows this setting to be turned off.
 
-      When a process is finished, close the process dialog automatically.
-      Leave this option off if you want to see the result of processes.
-      When a process has failed, the dialog will automatically remain open.
+  .. setting:: Use histogram diff algorithm
+    :id: histogram-diff
 
-    .. setting:: Show console window when executing git process
-      :id: show-console
+    Use the Git ‘histogram diff’ algorithm instead of the default.
+    This algorithm is useful in situations where two files have diverged significantly and the default algorithm
+    may become ‘misaligned’, resulting in a totally unusable conflict file.
 
-      Git Extensions uses command line tools to access the git repository.
-      In some environments it might be useful to see the command line dialog when a process is executed.
-      An option on the command line dialog window displayed allows this setting to be turned off.
+  .. setting:: Include untracked files in stash
+    :id: stash-untracked
 
-    .. setting:: Use patience diff algorithm
-      :id: patience-diff
+    If checked, when a stash is performed as a result of any action except a manual stash request,
+    e.g. checking out a new branch and requesting a stash then any files not tracked by git will also be saved to the stash.
 
-      Use the Git ‘patience diff’ algorithm instead of the default.
-      This algorithm is useful in situations where two files have diverged significantly and the default algorithm
-      may become ‘misaligned’, resulting in a totally unusable conflict file.
+  .. setting:: Update submodules on checkout
 
-    .. setting:: Include untracked files in stash
-      :id: stash-untracked
+    Update the commits for submodules when updating the commit for the current repository.
 
-      If checked, when a stash is performed as a result of any action except a manual stash request,
-      e.g. checking out a new branch and requesting a stash then any files not tracked by git will also be saved to the stash.
+  .. setting:: Follow renames in file history (experimental)
+    :id: follow-renames
 
-    .. setting:: Follow renames in file history (experimental)
-      :id: follow-renames
+    Try to follow file renames in the file history.
 
-      Try to follow file renames in the file history.
+  .. setting:: Follow exact renames and copies only
+    :id: follow-exact-renames
 
-    .. setting:: Follow exact renames and copies only
-      :id: follow-exact-renames
+    Follow file renames and copies for which similarity index is 100%. That is when a file
+    is renamed or copied and is committed with no changes made to its content.
 
-      Follow file renames and copies for which similarity index is 100%. That is when a file
-      is renamed or copied and is committed with no changes made to its content.
+  .. setting:: Open last working dir on startup
+    :id: open-last-repo
 
-    .. setting:: Open last working dir on startup
-      :id: open-last-repo
+    When starting Git Extensions, open the last used repository (bypassing the Dashboard).
 
-      When starting Git Extensions, open the last used repository (bypassing the Dashboard).
+  .. setting:: Default clone destination
+    :id: default-clone-dst
 
-    .. setting:: Default clone destination
-      :id: default-clone-dst
+    Git Extensions will pre-fill destination directory input with value of this setting on any form used to perform repository clone.
 
-      Git Extensions will pre-fill destination directory input with value of this setting on any form used to perform repository clone.
+  .. setting:: Default pull action
 
-    .. setting:: Revision grid quick search timeout [ms]
-      :id: quick-search-timeout
+    The default action for `Pull` in :ref:`browse-main-toolbar`, see the dropdown list.
+    
+  .. setting:: Revision grid quick search timeout [ms]
+    :id: quick-search-timeout
 
-      The timeout (milliseconds) used for the quick search feature in the revision graph.
-      The quick search will be enabled when you start typing and the revision graph has the focus.
+    The timeout (milliseconds) used for the quick search feature in the revision graph.
+    The quick search will be enabled when you start typing and the revision graph has the focus.
 
-  .. settingsgroup:: Email settings for sending patches
-    :id: patches-email
+.. settingsgroup:: Telemetry
 
-    .. setting:: SMTP server name
-      :id: server-name
+  .. setting:: Yes, I allow telemetry!
 
-      SMTP server to use for sending patches.
+    Allow that Git Extensions collect anonymous information about usage.
 
-    .. setting:: Port
+.. settingspage:: Appearance
 
-      SMTP port number to use.
+  This page contains settings that affect the appearance of the application.
 
-    .. setting:: Use SSL/TLS
-      :id: ssl-tls
+.. settingsgroup:: General
 
-      Check this box if the SMTP server uses SSL or TLS.
+  .. setting:: Show relative date instead of full date
+    :id: relative-date
 
-  .. settingspage:: Appearance
+    Show relative date, e.g. 2 weeks ago, instead of full date.
+    Displayed on the ``commit`` tab on the main Revision Graph window.
 
-    This page contains settings that affect the appearance of the application.
+  .. setting:: Show current branch names in the dashboard and the recent repositories dropdown menu
 
-    .. settingsgroup:: General
+    Also show the branch in :ref:`browse-side-panel`.
 
-      .. setting:: Show relative date instead of full date
-        :id: relative-date
+  .. setting:: Show current branch in Visual Studio
+    :id: show-current-branch-vs
 
-        Show relative date, e.g. 2 weeks ago, instead of full date.
-        Displayed on the ``commit`` tab on the main Revision Graph window.
+    Determines whether or not the currently checked out branch is displayed on
+    the Git Extensions toolbar within Visual Studio.
 
-      .. setting:: Show current branch in Visual Studio
-        :id: show-current-branch-vs
+  .. setting:: Auto scale user interface when high DPI is used
+    :id: auto-scale
 
-        Determines whether or not the currently checked out branch is displayed on
-        the Git Extensions toolbar within Visual Studio.
+    Automatically resize controls and their contents according to the current system resolution of the display, measured in dots per inch (DPI).
 
-      .. setting:: Auto scale user interface when high DPI is used
-        :id: auto-scale
+  .. setting:: Sort revisions by
+    :id: sort-author-date
 
-        Automatically resize controls and their contents according to the current system resolution of the display, measured in dots per inch (DPI).
+    This setting causes commits in the revision grid to be sorted by Git default (commit date), author date or topology.
+    Sorting by other than Git default may delay rendering of the revision graph.
 
-      .. setting:: Truncate long filenames
-        :id: truncate-long-filenames
+  .. setting:: Sort branches by
+    :id: sort-branches-by
 
-        This setting affects the display of filenames in a component of a window
-        e.g. in the Diff tab of the Revision Graph window. The options that can be
-        selected are:
+    The sort order for branches in :ref:`browse-main-toolbar` and :ref:`browse-side-panel` in a dropdown.
 
-        - ``None`` - no truncation occurs; a horizontal scroll bar is used to see the whole filename.
-        - ``Compact`` - no horizontal scroll bar. Filenames are truncated at both start and end to fit into the width of the display component.
-        - ``Trimstart`` - no horizontal scroll bar. Filenames are truncated at the start only.
-        - ``FileNameOnly`` - the path is always removed, leaving only the name of the file, even if there is space for the path.
+  .. setting:: Order branches
 
-      .. setting:: Sort by author date
-        :id: sort-author-date
+    Order the branches within the sorting in :ref:`settings-general-sort-branches-by`.
 
-        This setting causes commits to be sorted by author date (rather than commit date) in the revision grid. Sorting by author date may delay rendering of the revision graph.
+  .. setting:: Truncate long filenames
+    :id: truncate-long-filenames
 
-    .. settingsgroup:: Author images
-      :id: author-images
-      
-      .. setting:: Show author's avatar column in the commit graph
-        :id: show-avatar-commit-graph
+    This setting affects the display of filenames in a component of a window
+    e.g. in the Diff tab of the Revision Graph window. The options that can be
+    selected are:
 
-        If checked, avatar images are downloaded for commit authors and shown in the revision grid.
+    - ``None`` - no truncation occurs; a horizontal scroll bar is used to see the whole filename.
+    - ``Compact`` - no horizontal scroll bar. Filenames are truncated at both start and end to fit into the width of the display component.
+    - ``Trimstart`` - no horizontal scroll bar. Filenames are truncated at the start only.
+    - ``FileNameOnly`` - the path is always removed, leaving only the name of the file, even if there is space for the path.
 
-      .. setting:: Show author's avatar in the commit info view
-        :id: show-avatar-commit-info
+.. settingsgroup:: Author images
+  :id: author-images
+    
+  .. setting:: Show author's avatar column in the commit graph
+    :id: show-avatar-commit-graph
 
-        If checked, avatar images are downloaded for commit authors and shown in the commit info view.
+    If checked, avatar images are downloaded for commit authors and shown in the revision grid.
 
-      .. setting:: Avatar provider
-        :id: avatar-provider
+  .. setting:: Show author's avatar in the commit info view
+    :id: show-avatar-commit-info
 
-        The avatar provider setting determines the source from which avatar images are requested.
+    If checked, avatar images are downloaded for commit authors and shown in the commit info view.
 
-        - ``Default`` - The default avatar provider loads a user defined avatar images, depending on the email address, from GitHub or Gravatar.
-          If no user defined image could be found, a fallback images is used.
-        - ``None`` - If selected, no user-defined images are loaded and the fallback is evaluated immediately.
-        - ``Custom`` - An advanced mode that allows you to set one or more custom avatar provider services (e.g. Libravatar) by providing URL
-          templates.
+  .. setting:: Cache images (days)
+    :id: avatar-cache
 
-          URL Template Syntax
-            The URL template syntax consists of regular URLs to avatar images, that can be enriched with variables, which are substituted before
-            evaluation. Those variables are encoded using curly brackets ``{}`` and can be used like this: ``https://example.avatar.service/u/{email}/avatar.png``.
-            If a request fails (http 400 and 500 errors) or does not provide a valid image, the next URL is used. More URLs can be specified by chaining them
-            together with semicolons (";") like so: ``http://provider1.com/{sha1}.png;http://provider2.com/{sha1}.png``. If all custom URLs fail to provide
-            an avatar image, the applications internal fallback mechanism will provide one for that user.
+    The number of days to elapse before the avatar image source is checked for any changes to an authors image.
 
-            The variable names are case insensitive. If a variable is not found (for example because of typo or it does not exist), it is substituted
-            with an empty string, so the resulting URL never contains the curly brackets.
+  .. setting:: Avatar provider
+    :id: avatar-provider
 
-            The following variables are currently supported:
+    The avatar provider setting determines the source from which avatar images are requested.
 
-            - ``name`` - The name of the commit author (git config ``user.name``). Special characters are URL encoded.
-            - ``email`` - The email address of the commit author (git config ``user.email``). Special characters are URL encoded.
-            - ``md5`` - A lowercase hex representation of the MD5 hash of the normalized (all characters lowercase)
-              email address (without URL encoding). This hash is compatible with Gravatar and thus compatible with a lot of similar services.
-            - ``sha1`` - Like the ``md5`` variable but with SHA1 as hash algorithm.
-            - ``sha256`` - Like the ``md5`` variable but with SHA256 as hash algorithm.
-            - ``imagesize`` - Represents the requested avatar size in pixels.
+    - ``Default`` - The default avatar provider loads a user defined avatar images, depending on the email address, from GitHub or Gravatar.
+      If no user defined image could be found, a fallback images is used.
+    - ``None`` - If selected, no user-defined images are loaded and the fallback is evaluated immediately.
+    - ``Custom`` - An advanced mode that allows you to set one or more custom avatar provider services (e.g. Libravatar) by providing URL
+      templates.
 
-            A complete working configuration might look something like this:
-            ``https://www.libravatar.org/avatar/{md5}?s={imageSize}&default=404;https://avatar.tobi.sh/{md5}?size={imageSize}``
+    URL Template Syntax
 
-      .. setting:: Fallback generated avatar style
-        :id: avatar-fallback
+    The URL template syntax consists of regular URLs to avatar images, that can be enriched with variables, which are substituted before
+    evaluation. Those variables are encoded using curly brackets ``{}`` and can be used like this: ``https://example.avatar.service/u/{email}/avatar.png``.
+    If a request fails (http 400 and 500 errors) or does not provide a valid image, the next URL is used. More URLs can be specified by chaining them
+    together with semicolons (";") like so: ``http://provider1.com/{sha1}.png;http://provider2.com/{sha1}.png``. If all custom URLs fail to provide
+    an avatar image, the applications internal fallback mechanism will provide one for that user.
+    The variable names are case insensitive. If a variable is not found (for example because of typo or it does not exist), it is substituted
+    with an empty string, so the resulting URL never contains the curly brackets.
 
-        The configured fallback determines how authors without a user-defined avatar are presented. Besides ``Author Initials`` all other options are
-        provided by Gravatar. Details about their fallback modes can be found here https://en.gravatar.com/site/implement/images/ in the section "Default Image".
-        ``Author Initials`` are generated by the application internally and require no network connection to be displayed.
+    The following variables are currently supported:
 
-      .. setting:: Cache images (days)
-        :id: avatar-cache
+    - ``name`` - The name of the commit author (git config ``user.name``). Special characters are URL encoded.
+    - ``email`` - The email address of the commit author (git config ``user.email``). Special characters are URL encoded.
+    - ``md5`` - A lowercase hex representation of the MD5 hash of the normalized (all characters lowercase) email address (without URL encoding). This hash is compatible with Gravatar and thus compatible with a lot of similar services.
+    - ``sha1`` - Like the ``md5`` variable but with SHA1 as hash algorithm.
+    - ``sha256`` - Like the ``md5`` variable but with SHA256 as hash algorithm.
+    - ``imagesize`` - Represents the requested avatar size in pixels.
 
-        The number of days to elapse before the avatar image source is checked for any changes to an authors image.
+    A complete working configuration might look something like this:
+    ``https://www.libravatar.org/avatar/{md5}?s={imageSize}&default=404;https://avatar.tobi.sh/{md5}?size={imageSize}``
 
-      .. settingbutton:: Clear image cache
+  .. setting:: Fallback generated avatar style
+    :id: avatar-fallback
 
-        Clear the cached avatars.
+    The configured fallback determines how authors without a user-defined avatar are presented. Besides ``Author Initials`` all other options are
+    provided by Gravatar. Details about their fallback modes can be found here https://en.gravatar.com/site/implement/images/ in the section "Default Image".
+    ``Author Initials`` are generated by the application internally and require no network connection to be displayed.
 
-    .. settingsgroup:: Language
+  .. settingbutton:: Clear image cache
 
-      .. setting:: Language (restart required)
-        :id: language
+    Clear the cached avatars.
 
-        Choose the language for the Git Extensions interface.
+.. settingsgroup:: Language
 
-      .. setting:: Dictionary for spelling checker
-        :id: dictionary
+  .. setting:: Language (restart required)
+    :id: language
 
-        Choose the dictionary to use for the spelling checker in the Commit dialog.
+    Choose the language for the Git Extensions interface.
 
-    .. settingspage:: Colors
+  .. setting:: Dictionary for spelling checker
+    :id: dictionary
 
-      This page contains settings to define the colors used in the application.
+    Choose the dictionary to use for the spelling checker in the Commit dialog.
 
-      .. settingsgroup:: Revision graph
+.. settingspage:: Colors
 
-        .. setting:: Multicolor branches
+  This page contains settings to define the colors used in the application.
 
-          Displays branch commits in different colors if checked.
-          If unchecked, all branches are shown in the same color.
-          This color can be selected.
+.. settingsgroup:: Revision graph
 
-        .. setting:: Draw alternate background
+  .. setting:: Multicolor branches
 
-          Alternate background colour for revision rows.
+    Displays branch commits in different colors if checked.
+    If unchecked, all branches are shown in the same color.
+    This color can be selected.
 
-        .. setting:: Draw non relatives graph gray
+  .. setting:: Draw alternate background
 
-          Show commit history in gray for branches not related to the current branch.
+    Alternate background colour for revision rows.
 
-        .. setting:: Draw non relatives text gray
+  .. setting:: Draw non relatives graph gray
 
-          Show commit text in gray for branches not related to the current branch.
+    Show commit history in gray for branches not related to the current branch.
 
-        .. setting:: Highlight authored revisions
+  .. setting:: Draw non relatives text gray
 
-          Highlight revisions committed by the same author as the selected revision.
+    Show commit text in gray for branches not related to the current branch.
 
-        .. setting:: Color authored revisions
+  .. setting:: Highlight authored revisions
 
-          Color to highlight authored revisions.
+    Highlight revisions committed by the same author as the selected revision.
 
-        .. setting:: Color tag
+  .. setting:: Fill Git ref labels
 
-          Color to show tags in.
+    Fill labels in the revision grid.
 
-        .. setting:: Color branch
+.. settingsgroup:: Theme
 
-          Color to show branch names in.
+  Git Extensions allows that some application colors are changed.
+  A few themes are included.
 
-        .. setting:: Color remote branch
+  For more information see the README in the themes folder or `GitHub <https://github.com/gitextensions/gitextensions/blob/master/GitUI/Themes/README.md>`_.
 
-          Color to show remote branch names in.
+  .. settingbutton:: Open Theme folder
 
-        .. setting:: Color other label
+    Open the folder with the themes in Windows Explorer.
 
-          Color to show other labels in.
+  .. setting:: Colorblind
 
-      .. settingsgroup:: Difference View
+    Adjust the theme colors for colorblind users (if specified in the theme).
 
-        .. setting:: Color removed line
+  .. setting:: Use system-defined visual style
 
-          Highlight color for lines that have been removed.
+    Use a the system wide visual style (will not look good with all themes).
 
-        .. setting:: Color added line
+.. settingspage:: Fonts
 
-          Highlight color for lines that have been added.
+  .. settingsgroup:: Fonts
 
-        .. setting:: Color removed line highlighting
+    .. setting:: Code font
 
-          Highlight color for characters that have been removed in lines.
+      The font used for the display of file contents.
 
-        .. setting:: Color added line highlighting
+    .. setting:: Application font
+      :id: app-font
 
-          Highlight color for characters that have been added in lines.
+      The font used on Git Extensions windows and dialogs.
 
-        .. setting:: Color section
+    .. setting:: Commit font
 
-          Highlight color for a section.
+      The font used for entering a commit message in the Commit dialog.
 
-    .. settingspage:: Fonts
+    .. setting:: Monospace font
 
-      .. settingsgroup:: Fonts
+      The font used for the commit id in the revision graph.
 
-        .. setting:: Code font
+.. settingspage:: Console style
 
-          The font used for the display of file contents.
+  Settings for the ConEmu console tab.
 
-        .. setting:: Application font
-          :id: app-font
+  .. settingsgroup:: Console settings
 
-          The font used on Git Extensions windows and dialogs.
+    .. setting:: Console style
 
-        .. setting:: Commit font
+      Choose one of the predefined ConEmu schemes. See http://conemu.github.io/en/SettingsColors.html.
 
-          The font used for entering a commit message in the Commit dialog.
+    .. setting:: Font
 
-        .. setting:: Monospace font
+      Console font size.
 
-          The font used for the commit id in the revision graph.
+.. settingspage:: Revision Links
 
-  .. settingspage:: Revision Links
+  You can configure here how to convert parts of a revision data into clickable links. These links will be located under the commit message on the ``Commit``
+  tab in the ``Related links`` section.
 
-    You can configure here how to convert parts of a revision data into clickable links. These links will be located under the commit message on the ``Commit``
-    tab in the ``Related links`` section.
+  .. image:: /images/settings/related_links_location.png
 
-    .. image:: /images/settings/related_links_location.png
+  The most common case is to convert an issue number given as a part of commit message into a link to the coresponding issue-tracker page.
+  The screenshot below shows an example configuration for GitHub issues.
+  You could add this quite generic
+  `GitExtensions.settings <https://github.com/gitextensions/GitExtensionsDoc/blob/master/source/files/settings/GitExtensions.settings>`_
+  file to the root of your repository.
 
-    The most common case is to convert an issue number given as a part of commit message into a link to the coresponding issue-tracker page.
-    The screenshot below shows an example configuration for GitHub issues.
+  .. image:: /images/settings/revision_links.png
 
-    You could add this quite generic
-    `GitExtensions.settings <https://github.com/gitextensions/GitExtensionsDoc/blob/master/source/files/settings/GitExtensions.settings>`
-    file to the root of your repository.
+  .. setting:: Categories
 
-    .. image:: /images/settings/revision_links.png
+  Lists all the currently defined Categories. Click the ``Add`` button to
+  add a new empty Category. The default name is 'new'.  To remove a Category
+  select it and click the ``Remove`` button.
 
-    .. setting:: Categories
+  .. setting:: Name
 
-    Lists all the currently defined Categories. Click the ``Add`` button to
-    add a new empty Category. The default name is 'new'.  To remove a Category
-    select it and click the ``Remove`` button.
-
-    .. setting:: Name
-
-    This is the Category name used to match the same categories defined on
-    different levels of the Settings.
+  This is the Category name used to match the same categories defined on
+  different levels of the Settings.
 
   .. setting:: Enabled
 
@@ -435,8 +438,10 @@ depending on whether or not they are distributed with that repository.
 
       Define which parts of the revision should be searched for matches.
 
-      :id: search-pattern
+      Note that the branch name is only searchable in the branch heads.
+
     .. setting:: Search pattern
+      :id: search-pattern
 
       Regular expression used for matching text in the chosen revision parts.
       Each matched fragment will be used to create a new link. More than one
@@ -447,677 +452,785 @@ depending on whether or not they are distributed with that repository.
 
     .. setting:: Nested pattern
 
-      ``Nested pattern`` can be used when only a part of the text matched by the :ref:`settings-git-extensions-revision-data-search-pattern`
+      ``Nested pattern`` can be used when only a part of the text matched by the :ref:`settings-revision-links-revision-data-search-pattern`
       should be used to format a link. When the ``Nested pattern`` is empty,
-      matches found by the :ref:`settings-git-extensions-revision-data-search-pattern` are used to create links.
+      matches found by the :ref:`settings-revision-links-revision-data-search-pattern` are used to create links.
 
-    .. setting:: Links: Caption/URI
-      :id: revision-links
+  .. setting:: Links: Caption/URI
+    :id: revision-links
 
-      List of links to be created from a single match. Each link consists of
-      the ``Caption`` to be displayed and the ``URI`` to be opened when the link
-      is clicked on. In addition to the standard zero-based indexed placeholders,
-      the ``%COMMIT_HASH%`` placeholder can be used to put the commit's hash into
-      the link. For example: ``https://github.com/gitextensions/gitextensions/commit/%COMMIT_HASH%``
+    List of links to be created from a single match. Each link consists of
+    the ``Caption`` to be displayed and the ``URI`` to be opened when the link
+    is clicked on. In addition to the standard zero-based indexed placeholders,
+    the ``%COMMIT_HASH%`` placeholder can be used to put the commit's hash into
+    the link. For example: ``https://github.com/gitextensions/gitextensions/commit/%COMMIT_HASH%``
 
-  .. settingspage:: Build server integration
+.. settingspage:: Build server integration
 
-    This page allows you to configure the integration with build servers. This allows the build status of each commit
-    to be displayed directly in the revision log, as well as providing a tab for direct access to the Build Server
-    build report for the selected commit.
+  This page allows you to configure the integration with build servers. This allows the build status of each commit
+  to be displayed directly in the revision log, as well as providing a tab for direct access to the Build Server
+  build report for the selected commit.
 
-    .. setting:: Enable build server integration
+  .. setting:: Enable build server integration
 
-      Check to globally enable/disable the integration functionality.
+    Check to globally enable/disable the integration functionality.
 
-    .. setting:: Build server type
+  .. setting:: Show build result page
 
-        Select an integration target.
+    Show a page with build information in :ref:`browse-tabs`.
 
-    .. settingsgroup:: AppVeyor
+  .. setting:: Build server type
 
-      .. setting:: Account name
+      Select an integration target.
 
-        AppVeyor account name. You don't have to enter it if the projects you want to query for build status are public.
+.. settingsgroup:: AppVeyor
 
-      .. setting:: API token
+  .. setting:: Account name
 
-        AppVeyor API token. Requiered if the :ref:`settings-git-extensions-build-server-integration-appveyor-account-name` is entered.
-        See https://ci.appveyor.com/api-token
+    AppVeyor account name. You don't have to enter it if the projects you want to query for build status are public.
 
-      .. setting:: Project(s) name(s)
+  .. setting:: API token
 
-        Projects names separated with '|', e.g. `gitextensions/gitextensions|jbialobr/gitextensions`
+    AppVeyor API token. Required if the :ref:`settings-appveyor-account-name` is entered.
+    See https://ci.appveyor.com/api-token
 
-      .. setting:: Display tests results in build status summary for every build result
+  .. setting:: Project(s) name(s)
 
-        Include tests results in the build status summary for every build result.
+    Projects names separated with '|', e.g. `gitextensions/gitextensions|jbialobr/gitextensions`
 
-    .. settingsgroup:: Azure DevOps and Team Foundation Server (since TFS2015)
+  .. setting:: Display tests results in build status summary for every build result
 
-      .. setting:: Project URL
+    Include tests results in the build status summary for every build result.
 
-        Enter the URL of the server (and port, if applicable).
+.. settingsgroup:: Azure DevOps
 
-      .. setting:: Build definition name
+  .. setting:: Project URL
 
-        Limit the builds if desired.
+    Enter the URL of the server (and port, if applicable).
 
-      .. setting:: Rest API token
+  .. setting:: Build definition name
 
-        Read token for the build server.
+    Limit the builds if desired.
 
-    .. settingsgroup:: Jenkins
+  .. setting:: Rest API token
 
-      .. setting:: Jenkins server URL
+  Read token for the build server.
 
-        Enter the URL of the server (and port, if applicable).
+.. settingsgroup:: Jenkins
 
-      .. setting:: Project name
+  .. setting:: Jenkins server URL
 
-        Enter the name of the project which tracks this repository in Jenkins. Separate project names with "|". Multi-branch pipeline projects are supported by adding "?m" to the project name.
+    Enter the URL of the server (and port, if applicable).
 
-      .. setting:: Ignore build for branch
+  .. setting:: Project name
 
-        The plugin will normally display the last build for a certain commit. If Jenkins starts several builds for one commit, it is possible to ignore the non interesting builds if all builds are not interesting.
+    Enter the name of the project which tracks this repository in Jenkins. Separate project names with "|". Multi-branch pipeline projects are supported by adding "?m" to the project name.
 
-    .. settingsgroup:: TeamCity
+  .. setting:: Ignore build for branch
 
-      .. setting:: TeamCity server URL
+    The plugin will normally display the last build for a certain commit. If Jenkins starts several builds for one commit, it is possible to ignore the non interesting builds if all builds are not interesting.
 
-        Enter the URL of the server (and port, if applicable).
+.. settingsgroup:: TeamCity
 
-      .. setting:: Project name
+  .. setting:: TeamCity server URL
 
-        Enter the name of the project which tracks this repository in TeamCity. Multiple project names can be entered separated by the | character.
+    Enter the URL of the server (and port, if applicable).
 
-      .. setting:: Build Id Filter
+  .. setting:: Project name
 
-        Enter a regexp filter for which build results you want to retrieve in the case that your build project creates multiple builds. For example, if your project includes both devBuild and docBuild you may wish to apply a filter of “devBuild” to retrieve the results from only the program build.
+    Enter the name of the project which tracks this repository in TeamCity. Multiple project names can be entered separated by the | character.
 
-    .. settingsgroup:: Team Foundation Server
+  .. setting:: Build Id Filter
 
-      For TFS prior to 2015.
+    Enter a regexp filter for which build results you want to retrieve in the case that your build project creates multiple builds. For example, if your project includes both devBuild and docBuild you may wish to apply a filter of “devBuild” to retrieve the results from only the program build.
 
-      .. setting:: Tfs server (Name or URL)
+.. settingspage:: Scripts
 
-        Enter the URL of the server (and port, if applicable).
+  This page allows you to configure specific commands to run before/after Git actions or to add a new command to the User Menu.
+  The top half of the page summarises all of the scripts currently defined. If a script is selected from the summary, the bottom
+  half of the page will allow modifications to the script definition.
+  A hotkey can also be assigned to execute a specific script. See :ref:`settings-hotkeys`.
 
-      .. setting:: Team collection name
+  .. settingbutton:: Add
 
-      .. setting:: Project name
+    Adds a new script. Complete the details in the bottom half of the screen.
 
-        Enter the name of the project which tracks this repository in Tfs.
+  .. settingbutton:: Remove
 
-      .. setting:: Build definition name
+    Removes a script.
 
-        Use first found if left empty.
+  .. settingbutton:: Up/Down Arrows
 
-  .. settingspage:: Scripts
+    Changes order of scripts.
 
-    This page allows you to configure specific commands to run before/after Git actions or to add a new command to the User Menu.
-    The top half of the page summarises all of the scripts currently defined. If a script is selected from the summary, the bottom
-    half of the page will allow modifications to the script definition.
+  .. settingsgroup:: Scripts
 
-    A hotkey can also be assigned to execute a specific script. See :ref:`settings-git-extensions-hotkeys`.
+    .. setting:: Name
 
-    .. settingbutton:: Add
+      The name of the script.
 
-      Adds a new script. Complete the details in the bottom half of the screen.
+    .. setting:: Enabled
 
-    .. settingbutton:: Remove
+      If checked, the script is active and will be performed at the appropriate time (as determined by the On Event setting).
 
-      Removes a script.
+    .. setting:: Command
 
-    .. settingbutton:: Up/Down Arrows
+      Enter the command to be run. This can be any command that your system can run e.g. an executable program,
+      a .bat script, a Python command, etc. Use the ``Browse`` button to find the command to run.
+      There are some special prefixes which change the way the script is executed:
 
-      Changes order of scripts.
+      * ``plugin:<plugin-name>``: Where ``<plugin-name>`` is the name of a *plugin* (refer :ref:`plugins`).
+        If a plugin with that name is found, it is run.
+      * ``navigateTo:<script-path>``: Where ``<script-path>`` is the path to a file containing the script to run.
+        That script is expected to return a commit hash as the first line of its output. The UI will navigate to that commit once the script completes.
 
-    .. setting:: Scripts
- 
-      .. setting:: Name
+    .. setting:: Arguments
 
-        The name of the script.
+      Enter any arguments to be passed to the command that is run.
+      The ``Help`` button displays items that will be resolved by Git Extensions before
+      executing the command e.g. {cBranch} will resolve to the currently checked out branch,
+      {UserInput} will display a popup where you can enter data to be passed to the command when it is run.
 
-      .. setting:: Enabled
+    .. setting:: Execute on event
 
-        If checked, the script is active and will be performed at the appropriate time (as determined by the On Event setting).
+      Select when this command will be executed, either before/after certain Git commands, or displayed on the User Menu bar.
+      Since the git pull command includes a fetch, before/after fetch events are triggered on pure fetches as well as on pulls. For the pull command the script execution order ist BeforePull - BeforeFetch - git pull - AfterFetch - AfterPull.
 
-      .. setting:: Command
+    .. setting:: Icon
 
-        Enter the command to be run. This can be any command that your system can run e.g. an executable program,
-        a .bat script, a Python command, etc. Use the ``Browse`` button to find the command to run.
+      Select an icon to be displayed in a menu item when the script is marked to be shown in the user menu bar.
 
-        There are some special prefixes which change the way the script is executed:
+  .. settingsgroup:: Script Behavior
 
-        * ``plugin:<plugin-name>``: Where ``<plugin-name>`` is the name of a *plugin* (refer :ref:`settings-plugins`).
-          If a plugin with that name is found, it is run.
-        * ``navigateTo:<script-path>``: Where ``<script-path>`` is the path to a file containing the script to run.
-          That script is expected to return a commit hash as the first line of its output. The UI will navigate to that commit once the script completes.
+    .. setting:: Ask confirmation
 
-      .. setting:: Arguments
+      If checked, then a popup window is displayed just before the script is run to confirm whether or not the script is to be run.
+      Note that this popup is *not* displayed when the script is added as a command to the User Menu (On Event setting is ShowInUserMenuBar).
 
-        Enter any arguments to be passed to the command that is run.
-        The ``Help`` button displays items that will be resolved by Git Extensions before
-        executing the command e.g. {cBranch} will resolve to the currently checked out branch,
-        {UserInput} will display a popup where you can enter data to be passed to the command when it is run.
+    .. setting:: Run in background
 
-      .. setting:: Execute on event
+      If checked, the script will run in the background and Git Extensions will return to your control without waiting for the script to finish.
 
-        Select when this command will be executed, either before/after certain Git commands, or displayed on the User Menu bar.
-        Since the git pull command includes a fetch, before/after fetch events are triggered on pure fetches as well as on pulls. For the pull command the script execution order ist BeforePull - BeforeFetch - git pull - AfterFetch - AfterPull.
+    .. setting:: Is PowerShell script
 
-      .. setting:: Icon
+      If checked, the command is started through a powershell.exe process.
+      If the :ref:`settings-scripts-script-behavior-run-in-background` is checked, the powershell console is closed after finishing. If not,
+      the powershell console is left for the user to close it manually.
 
-        Select an icon to be displayed in a menu item when the script is marked to be shown in the user menu bar.
+  .. settingsgroup:: Script Context
 
-    .. setting:: Script Behavior
+    .. setting:: Show in RevisionGrid
 
-      .. setting:: Ask confirmation
+      If checked, the script is added to the context menu that is displayed when right-clicking on a line in the Revision Graph page.
 
-        If checked, then a popup window is displayed just before the script is run to confirm whether or not the script is to be run.
-        Note that this popup is *not* displayed when the script is added as a command to the User Menu (On Event setting is ShowInUserMenuBar).
+.. settingspage:: Hotkeys
 
-      .. setting:: Run in background
+  This page allows you to define keyboard shortcuts to actions when specific pages of Git Extensions are displayed.
+  The HotKeyable Items identifies a page within Git Extensions. Selecting a Hotkeyable Item displays the list of
+  commands on that page that can have a hotkey associated with them.
+  The Hotkeyable Items consist of the following pages
 
-        If checked, the script will run in the background and Git Extensions will return to your control without waiting for the script to finish.
+  #. Commit: The page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
+  #. Browse: The Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
+  #. LeftPanel: The left side panel for ``Browse`` with branches etc.
+  #. RevisionGrid: The list of commits in Browse and other forms.
+  #. FileViewer: The page displayed when viewing the contents of a file.
+  #. FormMergeConflicts: The page displayed when merge conflicts are detected that need correcting.
+  #. BrowseDiff: Diff tab in Browse.
+  #. RevisionFileTree: The FileTree tab in Browse.
+  #. Stash
+  #. Scripts: Shows scripts defined in Git Extensions and allows shortcuts to be assigned. Refer :ref:`settings-scripts`.
 
-      .. setting:: Is PowerShell script
+  .. setting:: Hotkey
 
-        If checked, the command is started through a powershell.exe process.
-        If the :ref:`settings-git-extensions-scripts-name-run-in-background` is checked, the powershell console is closed after finishing. If not,
-        the powershell console is left for the user to close it manually.
+    After selecting a Hotkeyable Item and the Command, the current keyboard shortcut associated with the command is displayed here.
+    To alter this shortcut, click in the box where the current hotkey is shown and press the new keyboard combination.
 
-    .. setting:: Script Context
+    .. settingbutton:: Apply
 
-      .. setting:: Show in RevisionGrid
+      Click to apply the new keyboard combination to the currently selected Command.
 
-        If checked, the script is added to the context menu that is displayed when right-clicking on a line in the Revision Graph page.
+    .. settingbutton:: Clear
 
-  .. settingspage:: Hotkeys
+      Sets the keyboard shortcut for the currently selected Command to 'None'.
 
-    This page allows you to define keyboard shortcuts to actions when specific pages of Git Extensions are displayed.
-    The HotKeyable Items identifies a page within Git Extensions. Selecting a Hotkeyable Item displays the list of
-    commands on that page that can have a hotkey associated with them.
+  .. settingbutton:: Reset all Hotkeys to defaults
 
-    The Hotkeyable Items consist of the following pages
+    Resets all keyboard shortcuts to the defaults (i.e. the values when Git Extensions was first installed).
 
-    1) Commit: the page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
-    2) Browse: the Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
-    3) RevisionGrid: the list of commits in Browse and other forms.
-    4) FileViewer: the page displayed when viewing the contents of a file.
-    5) FormMergeConflicts: the page displayed when merge conflicts are detected that need correcting.
-    6) BrowseDiff: Diff tab in Browse.
-    7) RevisionFileTree: The FileTree tab in Browse.
-    8) Scripts: shows scripts defined in Git Extensions and allows shortcuts to be assigned. Refer :ref:`settings-git-extensions-scripts`.
+.. settingspage:: Shell Extension
 
-    .. setting:: Hotkey
+When installed, Git Extensions adds items to the context menu when a file/folder is right-clicked within Windows Explorer. One of these items
+is ``Git Extensions`` from which a further (cascaded) menu can be opened.
+This settings page determines which items will appear on that cascaded
+menu and which will appear in the main context menu. Items that are checked will appear in the cascaded menu.
 
-      After selecting a Hotkeyable Item and the Command, the current keyboard shortcut associated with the command is displayed here.
-      To alter this shortcut, click in the box where the current hotkey is shown and press the new keyboard combination.
+To the right side of the list of check boxes is a preview that shows you how the Git Extensions menu items will be arranged with
+your current choices.
 
-      .. settingbutton:: Apply
+By default, what is displayed in the context menu also depends on what item is right-clicked in Windows Explorer; a file or a folder
+(and whether the folder is a Git repository or not). If you want Git Extensions to always include all of its context menu items,
+check the box ``Always show all commands``.
 
-        Click to apply the new keyboard combination to the currently selected Command.
+.. settingspage:: Advanced
 
-      .. settingbutton:: Clear
+This page allows advanced settings to be modified.
+Refer :ref:`settings-confirm-actions`.
 
-        Sets the keyboard shortcut for the currently selected Command to 'None'.
+.. settingsgroup:: Checkout
 
-    .. settingbutton:: Reset all Hotkeys to defaults
+  .. setting:: Always show checkout dialog
 
-      Resets all keyboard shortcuts to the defaults (i.e. the values when Git Extensions was first installed).
+    Always show the Checkout Branch dialog when swapping branches.
+    This dialog is normally only shown when uncommitted changes exist on the current branch
 
-  .. settingspage:: Shell Extension
+  .. setting:: Use last chosen "local changes" action as default action.
+    :id: local-changes
 
-    When installed, Git Extensions adds items to the context menu when a file/folder is right-clicked within Windows Explorer. One of these items
-    is ``Git Extensions`` from which a further (cascaded) menu can be opened. This settings page determines which items will appear on that cascaded
-    menu and which will appear in the main context menu. Items that are checked will appear in the cascaded menu.
+    This setting works in conjunction with the 'Git Extensions/Check for uncommitted changes in checkout branch dialog' setting.
+    If the 'Check for uncommitted changes' setting is checked, then the Checkout Branch dialog is shown only if this setting is unchecked.
+    If this setting is checked, then no dialog is shown and the last chosen action is used.
 
-    To the right side of the list of check boxes is a preview that shows you how the Git Extensions menu items will be arranged with
-    your current choices.
+.. settingsgroup:: General
 
-    By default, what is displayed in the context menu also depends on what item is right-clicked in Windows Explorer; a file or a folder
-    (and whether the folder is a Git repository or not). If you want Git Extensions to always include all of its context menu items,
-    check the box ``Always show all commands``.
+  .. setting:: Don’t show help images
 
-  .. settingspage:: Advanced
+    In the Pull, Merge and Rebase dialogs, images are displayed by default to explain what happens
+    with the branches and their commits and the meaning of LOCAL, BASE and REMOTE (for resolving merge conflicts)
+    in different merge or rebase scenarios. If checked, these Help images will not be displayed.
 
-    This page allows advanced settings to be modified.
-    Refer :ref:`settings-git-extensions-advanced-confirmations`.
+  .. setting:: Always show advanced options
 
-    .. settingsgroup:: Checkout
+    In the Push, Merge and Rebase dialogs, advanced options are hidden by default and shown only after you click a link or checkbox.
+    If this setting is checked then these options are always shown on those dialogs.
 
-      .. setting:: Always show checkout dialog
+  .. setting:: Use Console Emulator for console output in command dialogs
 
-        Always show the Checkout Branch dialog when swapping branches.
-        This dialog is normally only shown when uncommitted changes exist on the current branch
+    Using Console Emulator for console output in command dialogs may be useful the running
+    command requires an user input, e.g. push, pull using ssh, confirming gc.
 
-      .. setting:: Use last chosen "local changes" action as default action.
-        :id: local-changes
+  .. setting:: Auto normalise branch name
 
-        This setting works in conjunction with the 'Git Extensions/Check for uncommitted changes in checkout branch dialog' setting.
-        If the 'Check for uncommitted changes' setting is checked, then the Checkout Branch dialog is shown only if this setting is unchecked.
-        If this setting is checked, then no dialog is shown and the last chosen action is used.
+    Controls whether branch name should be automatically normalized as per git branch
+    naming rules. If checked, any illegal symbols will be replaced with the replacement symbol of your choice.
 
-    .. settingsgroup:: General
+.. settingsgroup:: Commit
 
-      .. setting:: Don’t show help images
+  .. setting:: Push forced with lease when Commit & Push action is performed with Amend option checked
 
-        In the Pull, Merge and Rebase dialogs, images are displayed by default to explain what happens
-        with the branches and their commits and the meaning of LOCAL, BASE and REMOTE (for resolving merge conflicts)
-        in different merge or rebase scenarios. If checked, these Help images will not be displayed.
+    In the Commit dialog, users can commit and push changes with one click. However, if changes are meant to amend
+    an already pushed commit, a standard push action will be rejected by the remote server. If this option is
+    checked, a push action with ``--force-with-lease`` switch will be performed instead. The ``--force-with-lease``
+    switch will be added only when the ``Amend`` option is checked.
 
-      .. setting:: Always show advanced options
+.. settingsgroup:: Updates
 
-        In the Push, Merge and Rebase dialogs, advanced options are hidden by default and shown only after you click a link or checkbox.
-        If this setting is checked then these options are always shown on those dialogs.
+  .. setting:: Check for updates weekly
 
-      .. setting:: Use Console Emulator for console output in command dialogs
+    Check for newer version every week.
 
-        Using Console Emulator for console output in command dialogs may be useful the running
-        command requires an user input, e.g. push, pull using ssh, confirming gc.
+  .. setting:: Check for release candidate versions
 
-      .. setting:: Auto normalise branch name
+    Include release candidate versions when checking for a newer version.
 
-        Controls whether branch name should be automatically normalised as per git branch
-        naming rules. If enabled, any illegal symbols will be replaced with the replacement symbol of your choice.
+.. settingspage:: Confirmations
 
-    .. settingsgroup:: Commit
+This page allows you to turn off certain confirmation popup windows by unchecking the checkboxes.
 
-      .. setting:: Push forced with lease when Commit & Push action is performed with Amend option checked
+.. settingsgroup:: Confirm actions
 
-        In the Commit dialog, users can commit and push changes with one click. However, if changes are meant to amend
-        an already pushed commit, a standard push action will be rejected by the remote server. If this option is
-        enabled, a push action with ``--force-with-lease`` switch will be performed instead. The ``--force-with-lease``
-        switch will be added only when the ``Amend`` option is checked.
+  .. settingsgroup:: Commits
 
-    .. settingsgroup:: Updates
+  .. setting:: Amend last commit
 
-      .. setting:: Check for updates weekly
+    Display the popup warning about
+    the rewriting of history when you have elected to amend the last committed change.
 
-        Check for newer version every week.
+  .. setting:: Undo last commit
 
-      .. setting:: Check for release candidate versions
+    Display the warning when undoing (resetting) the commit for the current branch in :ref:`browse-main-toolbar`.
 
-        Include release candidate versions when checking for a newer version.
+  .. setting:: Commit when no branch is currently checked out
 
-    .. settingspage:: Confirmations
+    When committing changes and there is no branch currently being checked out, then
+    GitExtensions warns you and proposes to checkout or create a branch.
 
-      This page allows you to turn off certain confirmation popup windows.
+  .. setting:: Rebase on top of selected commit
 
-      .. settingsgroup:: Don’t ask to confirm to
+    Rebase context menu command popup in revision graph.
 
-        .. setting:: Amend last commit
+  .. settingsgroup:: Branches
 
-          If checked, do not display the popup warning about
-          the rewriting of history when you have elected to amend the last committed change.
+  .. setting:: Fetch and prune all
 
-        .. setting:: Commit when no branch is currently checked out
+    Browse fetch/prune popup.
 
-          When committing changes and there is no branch currently being checked out, then
-          GitExtensions warns you and proposes to checkout or create a branch. Enable this
-          option to continue working with no warning.
+  .. setting:: Push a new branch for the remote
 
-        .. setting:: Apply stashed changes after successful pull
+    Warning when pushing a new branch that does not exist on the remote repository.
 
-          In the Pull dialog, if ``Auto stash`` is checked, then any changes will be stashed before the pull is performed.
-          Any stashed changes are then re-applied after the pull is complete.
-          If this setting is checked, the stashed changes are applied with no confirmation popup.
+  .. setting:: Add a tracking reference for newly pushed branch
 
-        .. setting:: Apply stashed changes after successful checkout
+    Warning when you push a local branch to a remote and it doesn’t have a tracking reference,
+    you are asked to confirm whether you want to add such a reference. If this setting is unchecked,
+    a tracking reference will always be added if it does not exist.
 
-          In the Checkout Branch dialog, if ``Stash`` is checked, then any changes will be stashed before the branch is checked out.
-          If this setting is checked, then the stashed changes will be automatically re-applied
-          after successful checkout of the branch with no confirmation popup.
+  .. setting:: Delete unmerged branches
 
-        .. setting:: Drop stash
+    Display the warning when deleting a branch that has not been merged to the current branch (use `--force`).
 
-          Popup when dropping a stash.
+  .. settingsgroup:: Stashes
 
-        .. setting:: Add a tracking reference for newly pushed branch
+  .. setting:: Apply stashed changes after successful pull
 
-          When you push a local branch to a remote and it doesn’t have a tracking reference,
-          you are asked to confirm whether you want to add such a reference. If this setting is checked,
-          a tracking reference will always be added if it does not exist.
+    In the Pull dialog, if ``Auto stash`` is checked, then any changes will be stashed before the pull is performed.
+    Any stashed changes are then re-applied after the pull is complete.
+    If this setting is unchecked, the stashed changes are applied with no confirmation popup.
 
-        .. setting:: Push a new branch for the remote
+  .. setting:: Apply stashed changes after successful checkout
 
-          When pushing a new branch that does not exist on the remote repository,
-          a confirmation popup will normally be displayed. If this setting is checked,
-          then the new branch will be pushed with no confirmation popup.
+    In the Checkout Branch dialog, if ``Stash`` is checked, then any changes will be stashed before the branch is checked out.
+    If this setting is unchecked, then the stashed changes will be automatically re-applied
+    after successful checkout of the branch with no confirmation popup.
 
-        .. setting:: Update submodules on checkout
+  .. setting:: Drop stash
 
-          When you check out a branch from a repository that has submodules,
-          you will be asked to update the submodules. If this setting is checked,
-          the submodules will be updated without asking.
+    Popup when dropping a stash.
 
-        .. setting:: Resolve conflicts
+  .. settingsgroup:: Rebase / conflict resolution
 
-          If enabled, then when conflicts are detected GitExtensions will start the Resolve conflicts dialog
-          automatically without any prompt.
+  .. setting:: Resolve conflicts
 
-        .. setting:: Commit changes after conflicts have been resolved
+    If unchecked, then when conflicts are detected GitExtensions will start the Resolve conflicts dialog
+    automatically without any prompt.
 
-          Enable this option to start the Commit dialog automatically after all conflicts have been resolved.
+  .. setting:: Commit changes after conflicts have been resolved
 
-        .. setting:: Confirm for the second time to abort a merge
+    Uncheck this option to start the Commit dialog automatically after all conflicts have been resolved.
 
-          When aborting a merge, rebase or other operation that caused conflicts to be resolved,
-          an user is warned about the consequences of aborting and asked if he/she wants to continue.
-          If the user chooses to continue the aborting operation, then he/she is asked for the second time
-          if he/she is sure that he/she wants to abort. Enable this option to skip this second confirmation.
+  .. setting:: Confirm for the second time to abort a merge
 
-        .. setting:: Rebase on top of selected commit
+    When aborting a merge, rebase or any other operation that caused conflicts to be resolved,
+    an user is warned about the consequences of aborting and is asked if he/she wants to continue.
+    If the user chooses to continue the aborting operation, then he/she is asked for the second time
+    if he/she is sure that he/she wants to abort. Uncheck this option to skip this second confirmation.
 
-          Rebase context menu command popup in revision graph.
+  .. settingsgroup:: Submodules
 
-        .. setting:: Undo last commit
+  .. setting:: Update submodules on checkout
 
-          Browse Command popup.
+    When you check out a branch from a repository that has submodules,
+    you will be asked to update the submodules. If this setting is not checked,
+    the submodules will be updated without asking.
 
-        .. setting:: Fetch and prune all
+  .. settingsgroup:: Worktrees
 
-          Browse fetch/prune popup.
+  .. setting:: Switch Worktree
 
-        .. setting:: Switch Worktree
+    Switch worktree popup.
+	  
+.. settingspage:: Detailed
 
-          Switch worktree popup.
-		  
-  .. settingspage:: Detailed
+This page allows detailed settings to be modified.
 
-    This page allows detailed settings to be modified.
+.. settingsgroup:: Push window
 
-    .. settingsgroup:: Push window
+    .. setting:: Get remote branches directly from the remote
 
-      .. setting:: Get remote branches directly from the remote
+      Git caches locally remote data. This data is updated each time a fetch operation is performed.
+      For a better performance GitExtensions uses the locally cached remote data to fill out controls
+      on the Push dialog. Enable this option if you want GitExtensions to use remote data received
+      directly from the remote server.
 
-        Git caches locally remote data. This data is updated each time a fetch operation is performed.
-        For a better performance GitExtensions uses the locally cached remote data to fill out controls
-        on the Push dialog. Enable this option if you want GitExtensions to use remote data recieved
-        directly from the remote server.
+.. settingsgroup:: Merge window
 
-    .. settingsgroup:: Merge window
+  .. setting:: Add log messages
 
-      .. setting:: Add log messages
+    If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
+    from at most the given number actual commits that are being merged.
+    See `Git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`_.
 
-        If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
-        from at most the given number actual commits that are being merged.
-        See https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt
+.. settingsgroup:: Email settings for sending patches
+  :id: patches-email
 
-    .. settingspage:: Browse repository window
+  .. setting:: SMTP server name
+    :id: server-name
 
-      .. settingsgroup:: Console emulator
+    SMTP server to use for sending patches.
 
-        .. setting:: Show the Console tab
+  .. setting:: Port
 
-          Show the Console tab in the :ref:`browse-repository` window.
+    SMTP port number to use.
 
-          .. setting:: Console style
+  .. setting:: Use SSL/TLS
+    :id: ssl-tls
 
-            Choose one of the predefined ConEmu schemes. See http://conemu.github.io/en/SettingsColors.html.
+    Check this box if the SMTP server uses SSL or TLS.
 
-          .. setting:: Shell to run
+.. settingspage:: Browse repository window
 
-            Choose one of the predefined terminals.
+.. settingsgroup:: Console emulator
 
-          .. setting:: Font size
+  .. setting:: Default shell
 
-            Console font size.
+    Choose one of the predefined terminals in ``Console`` tab and browser popup.
 
-        .. setting:: Show GPG information
+  .. setting:: Show file history in the main window
 
-          Show tab for GPG information if available.
+    Open file history in :ref:`browse-repository` window instead of the deprecated :ref:`file-history` window.
 
-    .. settingspage:: Commit dialog
+.. settingsgroup:: Tabs
 
-      This page contains settings for the Git Extensions :ref:`commit` dialog. Note that the dialog itself has further options.
+  .. setting:: Show the Console tab
 
-      .. settingsgroup:: Behaviour
+    Show the Console tab in the :ref:`browse-repository` window.
 
-        .. setting:: Provide auto-completion in commit dialog
+  .. setting:: Show GPG information
 
-          Enables auto-completion in commit dialog message box. Auto-completion words
-          are taken from the changed files shown by the commit dialog. For each file type
-          there can be configured a regular expression that decides which words should be
-          considered as candidates for auto-completion. The default regular expressions included
-          with Git Extensions can be found here: https://github.com/gitextensions/gitextensions/blob/master/GitExtensions/AutoCompleteRegexes.txt
-          You can override the default regular expressions by creating an AutoCompleteRegexes.txt file in
-          the Git Extensions installation directory.
+    Show tab for GPG information if available.
 
-        .. setting:: Show errors when staging files
-          :id: staging-errors
+.. settingspage:: Commit dialog
 
-          If an error occurs when files are staged (in the Commit dialog),
-          then the process dialog showing the results of the git command is shown if this setting is checked.
+This page contains settings for the Git Extensions :ref:`commit` dialog. Note that the dialog itself has further options.
 
-        .. setting:: Ensure the second line of commit message is empty
-          :id: empty-second-line
+.. settingsgroup:: Behaviour
 
-          Enforces the second line of a commit message to be blank.
+  .. setting:: Provide auto-completion in commit dialog
 
-        .. setting:: Compose commit messages in Commit dialog
-          :id: compose-message
+  Enables auto-completion in commit dialog message box. Auto-completion words
+  are taken from the changed files shown by the commit dialog. For each file type
+  there can be configured a regular expression that decides which words should be
+  considered as candidates for auto-completion. The default regular expressions included
+  with Git Extensions can be found here: https://github.com/gitextensions/gitextensions/blob/master/GitExtensions/AutoCompleteRegexes.txt
+  You can override the default regular expressions by creating an AutoCompleteRegexes.txt file in
+  the Git Extensions installation directory.
 
-          If this is unchecked, then commit messages cannot be entered in the commit dialog.
-          When the ``Commit`` button is clicked, a new editor window is opened where the commit message can be entered.
+  .. setting:: Show errors when staging files
+    :id: staging-errors
 
-        .. setting:: Number of previous messages in commit dialog
-          :id: prev-messages
+    If an error occurs when files are staged (in the Commit dialog),
+    then the process dialog showing the results of the git command is shown if this setting is checked.
 
-          The number of commit messages, from the top of the current branch,
-          that will be made available from the ``Commit message`` combo box on the Commit dialog.
+  .. setting:: Ensure the second line of commit message is empty
+    :id: empty-second-line
 
-        .. setting:: Remember 'Amend commit' checkbox on commit form close
-          :id: remember-amend
+    Enforces the second line of a commit message to be blank.
 
-          Remembers the state of the 'Amend commit' checkbox when the 'Commit dialog' is being closed.
-          The remembered state will be restored on the next 'Commit dialog' creation.
-          The 'Amend commit' checkbox is being unchecked after each commit.
-          So, when the 'Commit dialog' is being closed automatically after commiting changes,
-          the 'Amend commit' checkbox is going to be unchecked first and its state will be saved after that.
-          Therefore the checked state is remembered only if the 'Commit dialog' is being closed
-          by an user without commiting changes.
+  .. setting:: Compose commit messages in Commit dialog
+    :id: compose-message
 
-        .. setting:: Show additional buttons in commit button area
-          :id: additional-buttons
+    If this is unchecked, then commit messages cannot be entered in the commit dialog.
+    When the ``Commit`` button is clicked, a new editor window is opened where the commit message can be entered.
 
-          Tick the boxes in this sub-group for any of the additional buttons that you wish
-          to have available below the commit button. These buttons are considered additional
-          to basic functionality and have consequences if you should click them accidentally,
-          including resetting unrecorded work.
+  .. setting:: Number of previous messages in commit dialog
+    :id: prev-messages
 
-    .. settingspage:: Diff Viewer
+    The number of commit messages, from the top of the current branch,
+    that will be made available from the ``Commit message`` combo box on the Commit dialog.
 
-      .. setting:: Remember the 'Ignore whitespaces' preference
+  .. setting:: Remember 'Amend commit' checkbox on commit form close
+    :id: remember-amend
 
-        Remember in the GitExtensions settings the latest chosen value of the 'Ignore whitespaces' preference.
-        Use the remembered value the next time GitExtensions is opened.
+    Remembers the state of the 'Amend commit' checkbox when the 'Commit dialog' is being closed.
+    The remembered state will be restored on the next 'Commit dialog' creation.
+    The 'Amend commit' checkbox is being unchecked after each commit.
+    So, when the 'Commit dialog' is being closed automatically after commiting changes,
+    the 'Amend commit' checkbox is going to be unchecked first and its state will be saved after that.
+    Therefore the checked state is remembered only if the 'Commit dialog' is being closed
+    by an user without commiting changes.
 
-      .. setting:: Remember the 'Show nonprinting characters' preference
+  .. setting:: Show additional buttons in commit button area
+    :id: additional-buttons
 
-        Remember in the GitExtensions settings the latest chosen value of the 'Show nonprinting characters' preference.
-        Use the remembered value the next time GitExtensions is opened.
+    Tick the boxes in this sub-group for any of the additional buttons that you wish
+    to have available below the commit button. These buttons are considered additional
+    to basic functionality and have consequences if you should click them accidentally,
+    including resetting unrecorded work.
 
-      .. setting:: Remember the 'Show entire file' preference
+.. settingspage:: Diff Viewer
 
-        Remember in the GitExtensions settings the latest chosen value of the 'Show entire file' preference.
-        Use the remembered value the next time GitExtensions is opened.
+  .. setting:: Remember the 'Ignore whitespaces' preference
 
-      .. setting:: Remember the 'Number of context lines' preference
+    Remember in the GitExtensions settings the latest chosen value of the 'Ignore whitespaces' preference.
+    Use the remembered value the next time GitExtensions is opened.
 
-        Remember in the GitExtensions settings the latest chosen value of the 'Number of context lines' preference.
-        Use the remembered value the next time GitExtensions is opened.
+  .. setting:: Remember the 'Show nonprinting characters' preference
 
-      .. setting:: Omit uninteresting changes from combined diff
+    Remember in the GitExtensions settings the latest chosen value of the 'Show nonprinting characters' preference.
+    Use the remembered value the next time GitExtensions is opened.
 
-        Includes git `--cc` switch when generating a diff. See https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc
+  .. setting:: Remember the 'Show entire file' preference
 
-      .. setting:: Open Submodule Diff in separate window
+    Remember in the GitExtensions settings the latest chosen value of the 'Show entire file' preference.
+    Use the remembered value the next time GitExtensions is opened.
 
-        If enabled then double clicking on a submodule in the Diff file list opens a new instance of
-        GitExtensions with the submodule as the selected repository. If disabled, the File history
-        window is opened for the double clicked submodule.
+  .. setting:: Remember the 'Number of context lines' preference
 
-      .. setting:: Show file differences for all parents in browse dialog
+    Remember in the GitExtensions settings the latest chosen value of the 'Number of context lines' preference.
+    Use the remembered value the next time GitExtensions is opened.
 
-        Enable this option to see diff against each of the revision parents, combined diff including.
+  .. setting:: Remember the 'Show syntax highlighting' preference
 
-      .. setting:: Vertical ruler position
+    Remember in the GitExtensions settings the latest chosen value of the 'Number of context lines' preference.
+    Use the remembered value the next time GitExtensions is opened.
 
-        Position for ruler in TextEditor controls. Set to 0 to disable.
-        (This should be moved to the TextEditor context menu.)
+  .. setting:: Omit uninteresting changes from combined diff
 
-  .. settingspage:: SSH
+    Includes git `--cc` switch when generating a diff. See `git diff-tree <https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc>`
 
-  This page allows you to configure the SSH client you want Git to use. Git Extensions is optimized for PuTTY. Git Extensions
-  will show command line dialogs if you do not use PuTTY and user input is required (unless you have configured SSH to use authentication
-  with key instead of password). Git Extensions can load SSH keys for PuTTY when needed.
+  .. setting:: Enable automatic continuous scroll (without ALT button)
 
-  .. settingsgroup:: Specify which ssh client to use
+    For file status lists like in :ref:`browse-tabs-diff` and :ref:`commit` it is possible to scroll continuously to the next (or previous)
+    file with the mouse wheel and `ALT` button. This setting allows scrolling to the next file with only the mouse wheel.
 
-    .. setting:: PuTTY
+  .. setting:: Open Submodule Diff in separate window
 
-      Use PuTTY as SSH client.
+    If enabled then double clicking on a submodule in the Diff file list opens a new instance of
+    GitExtensions with the submodule as the selected repository. If disabled, the File history
+    window is opened for the double clicked submodule.
 
-    .. setting:: OpenSSH
+  .. setting:: Show file differences for all parents in browse dialog
 
-      Use OpenSSH as SSH client.
+    The :ref:`browse-tabs-diff` can show more than one diff, depending on the selections in :ref:`browse-revision-graph`.
 
-    .. setting:: Other ssh client
+    - For a single selected commit, show the difference with its parent commit.
+    - For a single selected merge commit, show the difference with all parents.
+    - For two selected commits with a common ancestor (BASE) or two *ranges* described below,
+      show the difference between the commits as well as the difference from BASE to the commits.
+      See below for more details about icons and range diffs.
+    - For multiple selected commits (up to four), show the difference for
+      all the first selected with the last selected commit.
+    - For more than four selected commits, show the difference from the first to
+      the last selected commit.
 
-      Use another SSH client. Enter the path to the SSH client you wish to use.
+    .. setting:: Common BASE icons
 
-  .. settingsgroup:: Configure PuTTY
+    If the selected commits have a common BASE, the icons in the file list has an overlay on the icon with information where
+    the file has been changed.
 
-    .. setting:: Path to plink.exe
+    - `A` Change done in first (A) commit.
+    - `B` Change done in selected (B) commit. (Last selected commit.)
+    - `=` Same change in both commits.
+    - `!` Unequal changes are done in the commits.
+    
+    .. image:: /images/settings/diff-common-base-conflict-icons.png
 
-      Enter the path to the plink.exe executable.
+    .. setting:: Range diff
 
-    .. setting:: Path to puttygen
+    `Git range-diff <https://git-scm.com/docs/git-range-diff>` shows the difference between two versions of a
+    patch series with a common BASE. The command can require a lot of resources and it is possible
+    to define the ranges for Git .
 
-      Enter the path to the puttygen.exe executable.
+    - If two commits are selected, all commits from BASE to selected (B) and first (A) are included.
+      With Git this is written as `A...B`, `BASE A B` or `BASE..A BASE..B`.
 
-    .. setting:: Path to pageant
+      Example where one commit differs for two branches (but the branches have identical information).
 
-      Enter the path to the pageant.exe executable.
+      .. image:: /images/settings/range-diff-two-select.png
 
-    .. setting:: Automatically start authentication
+    - If two ranges are selected with four selected commits (where the number indicates the click order)
+      `A1..A2 B3..B4` where
+      `BASE` is parent to `A1` and `B3` as well as `A1` is a parent to `A2` and `B3` is a parent to `B4`.
+      Note that `A2` is considered as first selected commit in the diff.
 
-      If an SSH key has been configured, then when accessing a remote repository the key will automatically be used by the SSH client if this is checked.
+      Example where only two of the commits are compared.
 
-.. settingspage:: Git
+      .. image:: /images/settings/range-diff-multiple-select.png
 
-  The settings that are used by Git are stored in the configuration files of Git. The global settings are stored in the file called
-  ``.gitconfig`` in the user directory. The local settings are stored in the ``.git\config`` file of the repository.
+  .. setting:: Show all available difftools
 
-  .. settingspage:: Paths
+    Git Extensions uses the default Git GUI diff and merge tool in :ref:`settings-config`.
+    This setting enables a submenu for many diff and merge tool menus with all tools known by Git.
+    This enables use of specific tools in certain situations like using `TortoiseGitIDiff` specifically for images.
 
-    This page contains the settings needed to access git repositories. The repositories will be accessed using external
-    tools. For Windows usually "Git for Windows" is used. Git Extensions will try to configure these settings automatically.
+    .. image:: /images/settings/show-all-difftools.png
 
-    .. settingsgroup:: Git
+    .. setting:: Note for WSL Git
+      :id: difftool-wsl-git
+    
+      For :ref:`settings-wsl-git-notes` the Windows Git version is always used for diff and merge tools so
+      the same tools is available in WSL as in Windows.
 
-      .. setting:: Command used to run git (git.cmd or git.exe)
-        :id: git-cmd
+  .. setting:: Vertical ruler position
 
-        Needed for Git Extensions to run Git commands. Set the full command used
-        to run git ("Git for Windows"). Use the ``Browse`` button to
-        find the executable on your file system. (Cygwin Git may work but is not officially supported.)
+    Position for ruler in TextEditor controls. Set to 0 to disable.
+    (This should be moved to the TextEditor context menu.)
 
-      .. setting:: Path to Linux tools (sh).
-        :id: sh-path
+.. settingspage:: SSH
 
-        A few Linux tools are used by Git Extensions. When Git for Windows is
-        installed, these tools are located in the bin directory of Git for
-        Windows. Use the ``Browse`` button to find the directory on your file
-        system. Leave empty when it is in the path.
+This page allows you to configure the SSH client you want Git to use. Git Extensions is optimized for PuTTY. Git Extensions
+will show command line dialogs if you do not use PuTTY and user input is required (unless you have configured SSH to use authentication
+with key instead of password). Git Extensions can load SSH keys for PuTTY when needed.
 
-    .. settingsgroup:: Environment
+.. settingsgroup:: Specify which ssh client to use
 
-      .. settingbutton:: Change HOME
+  .. setting:: PuTTY
 
-        This button opens a dialog where the HOME directory can be changed.
+    Use PuTTY as SSH client.
 
-        The global configuration file used by git will be put in the HOME directory. On some systems the home directory is not set
-        or is pointed to a network drive. Git Extensions will try to detect the optimal setting for your environment. When there is
-        already a global git configuration file, this location will be used. If you need to relocate the home directory for git,
-        click the ``Change HOME`` button to change this setting. Otherwise leave this setting as the default.
+  .. setting:: OpenSSH
 
-  .. settingspage:: Config
+    Use OpenSSH as SSH client.
 
-    This page contains some of the settings of Git that are used by and therefore can be changed from within Git Extensions.
+  .. setting:: Other ssh client
 
-    If you change a Git setting from the Git command line using ``git config`` then the same change in setting can be seen inside
-    Git Extensions. If you change a Git setting from inside Git Extensions then that change can be seen using ``git config --get``.
+    Use another SSH client. Enter the path to the SSH client you wish to use.
 
-    Git configuration can be global or local configuration. Global configuration applies to all repositories. Local configuration overrides
-    the global configuration for the current repository.
+.. settingsgroup:: Configure PuTTY
 
-    .. setting:: User name
+  For PuTTY, the paths to the executable must be specified.
 
-      User name shown in commits and patches.
+  .. setting:: Path to plink.exe
 
-    .. setting:: User email
+    Enter the path to the plink.exe executable.
 
-      User email shown in commits and patches.
+  .. setting:: Path to puttygen
 
-    .. setting:: Editor
+    Enter the path to the puttygen.exe executable.
 
-      Editor that git.exe opens (e.g. for editing commit message).
-      This is not used by Git Extensions, only when you call git.exe from the command line.
-      By default Git will use the built in editor.
+  .. setting:: Path to pageant
 
-    .. setting:: Mergetool
+    Enter the path to the pageant.exe executable.
 
-      Merge tool used to solve merge conflicts. Git Extensions will search for common merge tools on your system.
+  .. setting:: Automatically start authentication
 
-    .. setting:: Path to mergetool
+    If an SSH key has been configured, then when accessing a remote repository the key will automatically be used by the SSH client if this is checked.
 
-      Path to merge tool. Git Extensions will search for common merge tools on your system.
+Git
+---
 
-    .. setting:: Mergetool command
+The settings that are used by Git are stored in the configuration files of Git. The global settings are stored in the file called
+``.gitconfig`` in the user directory. The local settings are stored in the ``.git\config`` file of the repository.
 
-      Command that Git uses to start the merge tool. Git Extensions will try to set this automatically when a merge tool is chosen.
-      This setting can be left empty when Git supports the mergetool (e.g. kdiff3).
+.. settingspage:: Paths
 
-    .. setting:: Keep backup (.orig) after merge
-      :id: keep-backup
+This page contains the settings needed to access git repositories. The repositories will be accessed using external
+tools. For Windows usually "Git for Windows" is used. Git Extensions will try to configure these settings automatically.
 
-      Check to save the state of the original file before modifying to solve merge conflicts. Refer to Git configuration setting ```mergetool.keepBackup```.
+.. settingsgroup:: Git
 
-    .. setting:: Difftool
+  .. setting:: Command used to run git (git.cmd or git.exe)
+    :id: git-cmd
 
-      Diff tool that is used to show differences between source files. Git Extensions will search for common diff tools on your system.
+    Needed for Git Extensions to run Git commands. Set the full command used
+    to run git ("Git for Windows"). Use the ``Browse`` button to
+    find the executable on your file system. (Cygwin Git may work but is not officially supported.)
 
-    .. setting:: Path to difftool
+  .. setting:: Path to Linux tools (sh).
+    :id: sh-path
 
-      The path to the diff tool. Git Extensions will search for common diff tools on your system.
+    A few Linux tools are used by Git Extensions. When Git for Windows is
+    installed, these tools are located in the bin directory of Git for
+    Windows. Use the ``Browse`` button to find the directory on your file
+    system. Leave empty when it is in the path.
 
-    .. setting:: DiffTool command
+.. settingsgroup:: Environment
 
-      Command that Git uses to start the diff tool. This setting should only be filled in when Git doesn’t support the diff tool.
+  .. settingbutton:: Change HOME
 
-  .. setting:: Path to commit template
+    This button opens a dialog where the HOME directory can be changed.
+    The global configuration file used by git will be put in the HOME directory. On some systems the home directory is not set
+    or is pointed to a network drive. Git Extensions will try to detect the optimal setting for your environment. When there is
+    already a global git configuration file, this location will be used. If you need to relocate the home directory for git,
+    click the ``Change HOME`` button to change this setting. Otherwise leave this setting as the default.
 
-    A path to a file whose contents are used to pre-populate the commit message in the commit dialog.
+.. settingsgroup:: Notes for WSL Git
+  :id: wsl-git-notes
 
-  .. settingsgroup:: Line endings
+  For Git repos stored in ``\\wsl$`` directories, Git Extensions executes the WSL Git executable
+  where possible to improve performance. WSL Git is several times faster than Windows Git (native) application.
 
-    .. setting:: Checkout/commit radio buttons
+  The paths internal to Git Extensions are always in Windows format.
+  Therefore, paths in both inputs and outputs for WSL Git commands must be translated.
+  For instance ``\\wsl$\Ubuntu\repo`` to ``/repo`` and ``c:\repo`` to ``/mnt/c/repo``.
 
-      Choose how git should handle line endings when checking out and checking in files.
-      Refer to https://help.github.com/articles/dealing-with-line-endings/#platform-all
+  The Git Extensions Windows (native) Git executable is still used for the following:
 
-  .. setting:: Files content encoding
+  - All handling and settings related to Git in Settings. This includes display of Git version as well.
+    However, if the WSL Git version is too old to be supported, Git Extensions will report this in a popup.
+  - Custom merge implementation in FormResolveConflicts.
+  - Custom difftool/mergetool list, see :ref:`settings-diff-viewer-show-all-available-difftools-difftool-wsl-git`.
+  - ScriptRunner and some built-in plugins like FindLargeFiles always use Windows Git.
 
-    The default encoding for files content.
+  Some notes:
+  - Git repos accessed in ``\\wsl.localhost`` or mapped to a drive letter will not use the special WSL handling but Windows Git.
+  - Files modified in WSL are not reported by Windows FileSystemWatcher, so the
+  GitStatusMonitor will only report issues at explicit refresh and every minute.
+  - The WSL executable occasionally fail (for instance when the WSL machine is busy) which will be seen as
+  a Git failure that will result in a popup. You may have to ignore the popup, refresh or even
+  reopen the application to recover from these failures.
 
-  .. settingspage:: Advanced
+  See also :ref:`worktrees` for other limitations.
 
-  Various settings for Git.
+.. settingspage:: Config
 
-.. settingspage:: Plugins
+This page contains some of the settings of Git that are used by and therefore can be changed from within Git Extensions.
+If you change a Git setting from the Git command line using ``git config`` then the same change in setting can be seen inside
+Git Extensions.
 
-  Plugins provide extra functionality for Git Extensions. Please refer to :ref:`plugins`.
+If you change a Git setting from inside Git Extensions then that change can be seen using ``git config --get``.
+Git configuration can be global or local configuration. Global configuration applies to all repositories. Local configuration overrides
+the global configuration for the current repository.
+
+.. setting:: User name
+
+  User name shown in commits and patches.
+
+.. setting:: User email
+
+  User email shown in commits and patches.
+
+.. setting:: Editor
+
+  Editor that git.exe opens (e.g. for editing commit message).
+  This is not used by Git Extensions, only when you call git.exe from the command line.
+  By default Git will use the built in editor.
+
+.. setting:: Mergetool
+
+  Merge tool used to solve merge conflicts. Git Extensions will search for common merge tools on your system.
+
+.. setting:: Path to mergetool
+
+  Path to merge tool. Git Extensions will search for common merge tools on your system.
+
+.. setting:: Mergetool command
+
+  Command that Git uses to start the merge tool. Git Extensions will try to set this automatically when a merge tool is chosen.
+  This setting can be left empty when Git supports the mergetool (e.g. kdiff3).
+
+.. setting:: Difftool
+
+  Diff tool that is used to show differences between source files. Git Extensions will search for common diff tools on your system.
+
+.. setting:: Path to difftool
+
+  The path to the diff tool. Git Extensions will search for common diff tools on your system.
+
+.. setting:: DiffTool command
+
+  Command that Git uses to start the diff tool. This setting should only be filled in when Git doesn’t support the diff tool.
+
+.. setting:: Path to commit template
+
+  A path to a file whose contents are used to pre-populate the commit message in the commit dialog.
+
+.. settingsgroup:: Line endings
+
+  .. setting:: Checkout/commit radio buttons
+
+    Choose how git should handle line endings when checking out and checking in files.
+    Refer to https://help.github.com/articles/dealing-with-line-endings/#platform-all
+
+.. setting:: Files content encoding
+
+  The default encoding for files content.
+
+.. settingspage:: Advanced
+
+Various settings for Git.
+
+Plugins
+-------
+
+Plugins provide extra functionality for Git Extensions. Please refer to :ref:`plugins`.

@@ -1,3 +1,5 @@
+.. _stash:
+
 Stash
 =====
 
@@ -13,5 +15,5 @@ You can create multiple stashes if needed. The latest stash is shown in the comm
 
 .. image:: /images/commit_log_stash.png
 
-The stash is especially useful when pulling remote changes into a dirty working directory. If you want a more permanent
-stash, you should create a branch.
+The stash is especially useful when pulling remote changes into a dirty working directory.
+If you want to store information more permanently, you should create a branch.

@@ -13,7 +13,7 @@ A commit is a set of changes with some extra information. Every commit contains 
 
 Each commit creates a new revision of the source. Revisions are not tracked per file; each change creates a new
 revision of the complete source. Unlike most traditional source control management systems, revisions are not named
-using a revision number. Each revision is named using a SHA1, a 41 long characters cryptographically strong hash.
+using a revision number. Each revision is named using a SHA1, a 40 long characters cryptographically strong hash.
 
 Commit changes
 --------------
@@ -132,3 +132,8 @@ forgot some changes. This function rewrites history; it deletes the last commit 
 changes. 
 
 See also :ref:`modify_history`, especially if you have published the changes to a repote repository already.
+
+Reset author
+------------
+
+Reset the commit author and timestamp to the current comment.

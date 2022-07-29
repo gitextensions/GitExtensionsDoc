@@ -36,7 +36,7 @@ branch and choose to create a local tracking branch.
 Git Credential Manager
 ----------------------
 
-The Git Credential Manager can be used to authenticate http links. For more information and instructions, see https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+The Git Credential Manager can be used to authenticate https links. For more information and instructions, see https://github.com/GitCredentialManager/git-credential-manager
 
 Create SSH key
 --------------

@@ -1,7 +1,9 @@
 build
+source/_build/
 *.orig
 tx.exe
 GitExtensions.settings.backup
+.vscode/
 source/locale/.doctrees/
 /source/__pycache__/
 /source/extensions/__pycache__/
