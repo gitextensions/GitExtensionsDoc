@@ -711,8 +711,8 @@ Refer :ref:`settings-confirm-actions`.
 
   .. setting:: Auto normalise branch name
 
-    Controls whether branch name should be automatically normalised as per git branch
-    naming rules. If enabled, any illegal symbols will be replaced with the replacement symbol of your choice.
+    Controls whether branch name should be automatically normalized as per git branch
+    naming rules. If checked, any illegal symbols will be replaced with the replacement symbol of your choice.
 
 .. settingsgroup:: Commit
 
@@ -720,7 +720,7 @@ Refer :ref:`settings-confirm-actions`.
 
     In the Commit dialog, users can commit and push changes with one click. However, if changes are meant to amend
     an already pushed commit, a standard push action will be rejected by the remote server. If this option is
-    enabled, a push action with ``--force-with-lease`` switch will be performed instead. The ``--force-with-lease``
+    checked, a push action with ``--force-with-lease`` switch will be performed instead. The ``--force-with-lease``
     switch will be added only when the ``Amend`` option is checked.
 
 .. settingsgroup:: Updates
@@ -735,7 +735,7 @@ Refer :ref:`settings-confirm-actions`.
 
 .. settingspage:: Confirmations
 
-This page allows you to turn off certain confirmation popup windows.
+This page allows you to turn off certain confirmation popup windows by unchecking the checkboxes.
 
 .. settingsgroup:: Confirm actions
 
@@ -743,18 +743,17 @@ This page allows you to turn off certain confirmation popup windows.
 
   .. setting:: Amend last commit
 
-    If checked, display the popup warning about
+    Display the popup warning about
     the rewriting of history when you have elected to amend the last committed change.
 
   .. setting:: Undo last commit
 
-    Do not display the warning when undoing (resetting) the commit for the current branch in :ref:`browse-main-toolbar`.
+    Display the warning when undoing (resetting) the commit for the current branch in :ref:`browse-main-toolbar`.
 
   .. setting:: Commit when no branch is currently checked out
 
     When committing changes and there is no branch currently being checked out, then
-    GitExtensions warns you and proposes to checkout or create a branch. Enable this
-    option to continue working with no warning.
+    GitExtensions warns you and proposes to checkout or create a branch.
 
   .. setting:: Rebase on top of selected commit
 
@@ -768,19 +767,17 @@ This page allows you to turn off certain confirmation popup windows.
 
   .. setting:: Push a new branch for the remote
 
-    When pushing a new branch that does not exist on the remote repository,
-    a confirmation popup will normally be displayed. If this setting is checked,
-    then the new branch will be pushed with no confirmation popup.
+    Warning when pushing a new branch that does not exist on the remote repository.
 
   .. setting:: Add a tracking reference for newly pushed branch
 
-    When you push a local branch to a remote and it doesn’t have a tracking reference,
-    you are asked to confirm whether you want to add such a reference. If this setting is checked,
+    Warning when you push a local branch to a remote and it doesn’t have a tracking reference,
+    you are asked to confirm whether you want to add such a reference. If this setting is unchecked,
     a tracking reference will always be added if it does not exist.
 
   .. setting:: Delete unmerged branches
 
-    Do not display the warning when deleting a branch that has not been merged to the current branch (use `--force`).
+    Display the warning when deleting a branch that has not been merged to the current branch (use `--force`).
 
   .. settingsgroup:: Stashes
 
@@ -788,12 +785,12 @@ This page allows you to turn off certain confirmation popup windows.
 
     In the Pull dialog, if ``Auto stash`` is checked, then any changes will be stashed before the pull is performed.
     Any stashed changes are then re-applied after the pull is complete.
-    If this setting is checked, the stashed changes are applied with no confirmation popup.
+    If this setting is unchecked, the stashed changes are applied with no confirmation popup.
 
   .. setting:: Apply stashed changes after successful checkout
 
     In the Checkout Branch dialog, if ``Stash`` is checked, then any changes will be stashed before the branch is checked out.
-    If this setting is checked, then the stashed changes will be automatically re-applied
+    If this setting is unchecked, then the stashed changes will be automatically re-applied
     after successful checkout of the branch with no confirmation popup.
 
   .. setting:: Drop stash
@@ -804,26 +801,26 @@ This page allows you to turn off certain confirmation popup windows.
 
   .. setting:: Resolve conflicts
 
-    If enabled, then when conflicts are detected GitExtensions will start the Resolve conflicts dialog
+    If unchecked, then when conflicts are detected GitExtensions will start the Resolve conflicts dialog
     automatically without any prompt.
 
   .. setting:: Commit changes after conflicts have been resolved
 
-    Enable this option to start the Commit dialog automatically after all conflicts have been resolved.
+    Uncheck this option to start the Commit dialog automatically after all conflicts have been resolved.
 
   .. setting:: Confirm for the second time to abort a merge
 
-    When aborting a merge, rebase or other operation that caused conflicts to be resolved,
-    an user is warned about the consequences of aborting and asked if he/she wants to continue.
+    When aborting a merge, rebase or any other operation that caused conflicts to be resolved,
+    an user is warned about the consequences of aborting and is asked if he/she wants to continue.
     If the user chooses to continue the aborting operation, then he/she is asked for the second time
-    if he/she is sure that he/she wants to abort. Enable this option to skip this second confirmation.
+    if he/she is sure that he/she wants to abort. Uncheck this option to skip this second confirmation.
 
   .. settingsgroup:: Submodules
 
   .. setting:: Update submodules on checkout
 
     When you check out a branch from a repository that has submodules,
-    you will be asked to update the submodules. If this setting is checked,
+    you will be asked to update the submodules. If this setting is not checked,
     the submodules will be updated without asking.
 
   .. settingsgroup:: Worktrees

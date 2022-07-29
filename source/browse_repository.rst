@@ -115,7 +115,7 @@ Diff
 ^^^^
 
 See also 
-:ref:`settings-diff-viewer-show-file-differences-for-all-parents-in-browse-dialog`
+:ref:`settings-diff-viewer-show-file-differences-for-all-parents-in-browse-dialog` and
 :ref:`settings-diff-viewer-show-all-available-difftools`
 
 The file viewer will by default show the diff, but may also show Blame for the selected file.
