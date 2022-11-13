@@ -92,7 +92,7 @@ Once we are on the master branch, select the feature/refactor branch and select 
 
 .. image:: /images/merge_context_menu.png
 
-In the merge dialog you can verify which branch you are working on. Select the branch to merge with then click the ``Merge`` button.
+In the merge dialog you can verify which branch you are working on, as well as set advanced merge options (see :ref:`Advanced Merge Options`). Select the branch to merge with then click the ``Merge`` button.
 
 .. image:: /images/merge_dialog.png
 
@@ -109,6 +109,40 @@ instead delete the feature/refactor branch if it is not used anymore.
 .. note::
 
   During a merge conflicts can occur. See :ref:`merge_conflicts` for more information.
+
+.. _Advanced Merge Options:
+
+Advanced Merge Options
+^^^^^^^^^^^^^^^^^^^^^^
+
+The `Show advanced options` checkbox will show the following options when activated:
+
+* Use non-default merge strategy, with a drop-down field for selecting the alternate merge strategy. The strategies are:
+
+  * **resolve**
+
+    * This can only resolve two heads (i.e. the current branch and another branch you pulled from) using a 3-way merge algorithm. It tries to carefully detect criss-cross merge ambiguities and is considered generally safe and fast.
+
+  * **recursive**
+
+    * This can only resolve two heads using a 3-way merge algorithm. When there is more than one common ancestor that can be used for 3-way merge, it creates a merged tree of the common ancestors and uses that as the reference tree for the 3-way merge. Additionally this can detect and handle merges involving renames. This is the default merge strategy when pulling or merging one branch.
+
+  * **octopus**
+
+    * This resolves cases with more than two heads, but refuses to do a complex merge that needs manual resolution. It is primarily meant to be used for bundling topic branch heads together. This is the default merge strategy when pulling or merging more than one branch.
+
+  * **ours**
+
+    * This resolves any number of heads, but the resulting tree of the merge is always that of the current branch head, effectively ignoring all changes from all other branches. It is meant to be used to supersede old development history of side branches.
+
+  * **subtree**
+
+    * This is a modified recursive strategy. When merging trees A and B, if B corresponds to a subtree of A, B is first adjusted to match the tree structure of A, instead of reading the trees at the same level. This adjustment is also done to the common ancestor tree.
+
+* Squash commits
+* Allow unrelated histories
+* Add log messages, with an input field for specifying number of log messages to add
+* Specify merge message, with an input field for specifying a custom merge message
 
 Rebase branch
 -------------
