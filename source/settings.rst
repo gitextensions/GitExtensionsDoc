@@ -83,7 +83,7 @@ This page contains general settings for Git Extensions.
 
     If the current local checkout branch is tracking a remote branch, show the number of commits the branch
     is ahead (changed locally) and behind (changed on the remote) on the status bar in :ref:`browse-main-toolbar`
-    and for branches on the :ref:`browse-side-panel`.
+    and for branches on the :ref:`browse-left-panel`.
 
   .. setting:: Check for uncommitted changes in checkout branch dialog
     :id: uncommitted-changes
@@ -183,7 +183,7 @@ This page contains general settings for Git Extensions.
 
   .. setting:: Show current branch names in the dashboard and the recent repositories dropdown menu
 
-    Also show the branch in :ref:`browse-side-panel`.
+    Also show the branch in :ref:`browse-left-panel`.
 
   .. setting:: Show current branch in Visual Studio
     :id: show-current-branch-vs
@@ -205,7 +205,7 @@ This page contains general settings for Git Extensions.
   .. setting:: Sort branches by
     :id: sort-branches-by
 
-    The sort order for branches in :ref:`browse-main-toolbar` and :ref:`browse-side-panel` in a dropdown.
+    The sort order for branches in :ref:`browse-main-toolbar` and :ref:`browse-left-panel` in a dropdown.
 
   .. setting:: Order branches
 
@@ -632,7 +632,7 @@ This page contains general settings for Git Extensions.
 
   #. Commit: The page displayed when a Commit is requested via the ``Commit`` User Menu button or the ``Commands/Commit`` menu option.
   #. Browse: The Revision Graph page (the page displayed after a repository is selected from the dashboard (Start Page)).
-  #. LeftPanel: The left side panel for ``Browse`` with branches etc.
+  #. LeftPanel: The left panel for ``Browse`` with branches etc.
   #. RevisionGrid: The list of commits in Browse and other forms.
   #. FileViewer: The page displayed when viewing the contents of a file.
   #. FormMergeConflicts: The page displayed when merge conflicts are detected that need correcting.

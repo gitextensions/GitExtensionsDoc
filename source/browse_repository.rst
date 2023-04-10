@@ -11,9 +11,9 @@ The Browse window contains of several parts:
 * `Main toolbar`_
 * `Revision graph`_
 * `Tabs`_
-* `Sidepanel`_
+* `Left panel`_
 
-The `Sidepanel`_, `Tabs`_ and the toolbar can be hidden, as well as showing the `Commit`_ tab as a panel in the revision graph.
+The `Left panel`_, `Tabs`_ and the toolbar can be hidden, as well as showing the `Commit`_ tab as a panel in the revision graph.
 
 .. _browse-main-toolbar:
 
@@ -141,9 +141,9 @@ Build report
 Optional, only shown if the build server plugin is configured for the repo and if it has found a build for the selected commit.
 :ref:`settings-tabs-show-build-result-page`
 
-.. _browse-side-panel:
+.. _browse-left-panel:
 
-Sidepanel
+Left panel
 ---------
 
 Show local and remote branches, git remotes, tags and submodules.
