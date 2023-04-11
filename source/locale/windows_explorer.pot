@@ -16,14 +16,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../notes.rst:2
-msgid "Notes"
+#: ../windows_explorer.rst:4
+msgid "Windows Explorer"
 msgstr ""
 
-#: ../notes.rst:4
-msgid "Notes can be added to a commit. Notes will be stored separately and will not be pushed. To add a new note choose ``add notes`` in the context menu of the commit information box."
+#: ../windows_explorer.rst:6
+msgid "The common commands can be started from Windows Explorer using the shell extensions. This option is only available when Shell Extensions are installed and configured in :ref:`settings-shell-extension`."
 msgstr ""
 
-#: ../notes.rst:9
-msgid "The editor that has been configured in the settings dialog will be used to enter or edit the notes. The Git Extensions editor is advised."
+#: ../windows_explorer.rst:11
+msgid "If the folder do not have a Git repository, you can clone."
 msgstr ""

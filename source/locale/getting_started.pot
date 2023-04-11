@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013, GitExtensions
+# Copyright (C) 2008-2019, GitExtensions
 # This file is distributed under the same license as the GitExtensions package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GitExtensions 2.49\n"
+"Project-Id-Version: GitExtensions 4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-28 18:30+0300\n"
+"POT-Creation-Date: 2023-04-11 22:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,297 +16,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\getting_started.rst:2
+#: ../getting_started.rst:2
 msgid "Getting Started"
 msgstr ""
 
-#: ..\getting_started.rst:4
-msgid "This section is primarily written for Windows users. There are extra sections about installing Git Extensions on Linux and Mac OS X."
-msgstr ""
-
-#: ..\getting_started.rst:8
+#: ../getting_started.rst:5
 msgid "Installation"
 msgstr ""
 
-#: ..\getting_started.rst:10
-msgid "The single click Git Extensions installer can be found `here <https://github.com/gitextensions/gitextensions/releases/latest>`_."
+#: ../getting_started.rst:7
+msgid "See :ref:`installation`."
 msgstr ""
 
-#: ..\getting_started.rst:17
-msgid "Git Extensions depends heavily on Git for Windows."
+#: ../getting_started.rst:12
+msgid "Dashboard"
 msgstr ""
 
-#: ..\getting_started.rst:24
-msgid "Choose the options to install."
+#: ../getting_started.rst:14
+msgid "The dashboard contains the most common tasks, recently opened repositories and favourites. Favourite repositories can be added, grouped under Category headings in the right panel."
 msgstr ""
 
-#: ..\getting_started.rst:28
-msgid "Choose the SSH client to use. PuTTY is the default because it has better Windows integration."
+#: ../getting_started.rst:18
+msgid "Recent Repositories can be moved to favourites using the repository context menu. Choose ``Categories / Add new`` to create a new category and add the repository to it, or you can add the repository to an existing category (e.g. 'Currents' as shown below)."
 msgstr ""
 
-#: ..\getting_started.rst:33
-msgid "Installation (Linux)"
+#: ../getting_started.rst:23
+msgid "To open an existing repository, simply click the link to the repository, or select Open repository (from where you can select a repository to open from your local file system)."
 msgstr ""
 
-#: ..\getting_started.rst:34
-msgid "You can watch this video as a starting point: `Install Git Extensions on Ubuntu 11.04  <http://www.youtube.com/watch?v=zk2MMUQuW4s>`_"
-msgstr ""
-
-#: ..\getting_started.rst:36
-msgid "For further help go to https://groups.google.com/forum/?fromgroups=#!forum/gitextensions"
-msgstr ""
-
-#: ..\getting_started.rst:38
-msgid "This section only covers mono installation, you should have git installed in your Linux at this point. Please refer to https://git-scm.com/download/linux"
-msgstr ""
-
-#: ..\getting_started.rst:40
-msgid "First, make sure you have the latest mono version on your Linux. This section will cover installation of Mono 4.6 on a Linux."
-msgstr ""
-
-#: ..\getting_started.rst:42
-msgid "Install mono latest version. You can always check for this here: http://www.mono-project.com/download/#download-lin"
-msgstr ""
-
-#: ..\getting_started.rst:43
-#: ..\getting_started.rst:72
-msgid "If everything went okay, you should open your terminal and check mono version::"
-msgstr ""
-
-#: ..\getting_started.rst:56
-#: ..\getting_started.rst:86
-msgid "Now download Git Extensions latest version from https://github.com/gitextensions/gitextensions/releases/latest. Remember to select the appropriate package otherwise you could have problems."
-msgstr ""
-
-#: ..\getting_started.rst:57
-#: ..\getting_started.rst:87
-msgid "Browse into the folder where you extracted the package and just run mono command, like the example below::"
-msgstr ""
-
-#: ..\getting_started.rst:62
-msgid "Installation (macOS)"
-msgstr ""
-
-#: ..\getting_started.rst:64
-msgid "This section only covers mono installation, you should have git installed in your Mac at this point. Please refer to https://git-scm.com/download/mac"
-msgstr ""
-
-#: ..\getting_started.rst:66
-msgid "First, make sure you have the latest mono version on your Mac. This section will cover installation of Mono 4.6 on a Mac."
-msgstr ""
-
-#: ..\getting_started.rst:68
-msgid "Download mono latest version. You can always check for this here: http://www.mono-project.com/download/#download-mac"
-msgstr ""
-
-#: ..\getting_started.rst:69
-msgid "After you have completed the download, you will see a .dmg file. Double click it to open the package."
-msgstr ""
-
-#: ..\getting_started.rst:70
-msgid "Inside the .dmg file you will have MonoFramework-{version}.pkg. Double click to start the installation process."
-msgstr ""
-
-#: ..\getting_started.rst:71
-msgid "Follow the wizard until it's completion."
-msgstr ""
-
-#: ..\getting_started.rst:91
-msgid "This is the minimal setup you need in order to run Git Extensions."
-msgstr ""
-
-#: ..\getting_started.rst:94
-msgid "Troubleshooting Mac Installation"
-msgstr ""
-
-#: ..\getting_started.rst:96
-msgid "If your Git Extensions crashes with an exception that a font is missing (generic sans serif), you probably can fix this by installing Xquartz. This is a version of the X.Org X Windows System that runs on OS X. I am not sure what the side effects are. This can be installed from here: http://xquartz.macosforge.org/landing/"
-msgstr ""
-
-#: ..\getting_started.rst:97
-msgid "If Git Extensions still crashes because it is unable to load a plugin, empty the plugins folder."
-msgstr ""
-
-#: ..\getting_started.rst:100
-msgid "Settings"
-msgstr ""
-
-#: ..\getting_started.rst:102
-msgid "All settings will be verified when Git Extensions is started for the first time. If Git Extensions requires any settings to be changed, the Settings dialog will be shown. All incorrect settings will be marked in red. You can ask Git Extensions to try to fix the setting for you by clicking on it. When installing Git Extensions for the first time (and you do not have Git already installed on your system), you will normally be required to configure your username and email address."
-msgstr ""
-
-#: ..\getting_started.rst:108
-msgid "The settings dialog can be invoked at any time by selecting ``Settings`` from the ``Tools`` menu option."
-msgstr ""
-
-#: ..\getting_started.rst:112
-msgid "For further information see :ref:`settings`."
-msgstr ""
-
-#: ..\getting_started.rst:117
-msgid "Start Page"
-msgstr ""
-
-#: ..\getting_started.rst:119
-msgid "The start page contains the most common tasks, recently opened repositories and favourites. The left side of the start page (Common Actions and Recent Repositories) is static. The right side of the page is where favourite repositories can be added, grouped under Category headings."
-msgstr ""
-
-#: ..\getting_started.rst:124
-msgid "Recent Repositories can be moved to favourites using the repository context menu. Choose ``Move to category / New category`` to create a new category and add the repository to it, or you can add the repository to an existing category (e.g. 'Currents' as shown below)."
-msgstr ""
-
-#: ..\getting_started.rst:129
-msgid "A context menu is available for both the category and the repositories listed underneath it."
-msgstr ""
-
-#: ..\getting_started.rst:131
-msgid "Entries on Category context menu"
-msgstr ""
-
-#: ..\getting_started.rst:134
-msgid "Move Up"
-msgstr ""
-
-#: ..\getting_started.rst:134
-msgid "Move the category (and any repositories under it) higher on the page."
-msgstr ""
-
-#: ..\getting_started.rst:136
-msgid "Move Down"
-msgstr ""
-
-#: ..\getting_started.rst:136
-msgid "Move the category (and any repositories under it) lower on the page."
-msgstr ""
-
-#: ..\getting_started.rst:138
-#: ..\getting_started.rst:154
-msgid "Remove"
-msgstr ""
-
-#: ..\getting_started.rst:138
-msgid "Remove the category (and any repositories under it) from the page. Note: Git repositories are *not* physically removed either locally or remotely."
-msgstr ""
-
-#: ..\getting_started.rst:141
-#: ..\getting_started.rst:157
-msgid "Edit"
-msgstr ""
-
-#: ..\getting_started.rst:141
-#: ..\getting_started.rst:157
-msgid "Shows the Start Page settings window where both category and repository details can be modified. See :ref:`settings-start-page`."
-msgstr ""
-
-#: ..\getting_started.rst:145
-msgid "Entries on repository context menu"
-msgstr ""
-
-#: ..\getting_started.rst:148
-msgid "Move to category"
-msgstr ""
-
-#: ..\getting_started.rst:148
-msgid "Move the repository to a new or existing category."
-msgstr ""
-
-#: ..\getting_started.rst:150
-msgid "Move up"
-msgstr ""
-
-#: ..\getting_started.rst:150
-msgid "Move the repository higher (within the category)."
-msgstr ""
-
-#: ..\getting_started.rst:152
-msgid "Move down"
-msgstr ""
-
-#: ..\getting_started.rst:152
-msgid "Move the repository lower (within the category)."
-msgstr ""
-
-#: ..\getting_started.rst:154
-msgid "Remove the repository from the category. Note: the repository is *not* physically removed either locally or remotely."
-msgstr ""
-
-#: ..\getting_started.rst:160
-msgid "Show current branch"
-msgstr ""
-
-#: ..\getting_started.rst:160
-msgid "Toggles the display of the branch name next to the repository name. This identifies the currently checked out branch for the repository."
-msgstr ""
-
-#: ..\getting_started.rst:164
-msgid "To open an existing repository, simply click the link to the repository under Recent Repositories or within the Categories that you have set up, or select Open repository (from where you can select a repository to open from your local file system)."
-msgstr ""
-
-#: ..\getting_started.rst:167
+#: ../getting_started.rst:26
 msgid "To create a new repository, one of the following options under Common Actions can be selected."
 msgstr ""
 
-#: ..\getting_started.rst:170
-msgid "Clone repository"
-msgstr ""
-
-#: ..\getting_started.rst:172
-msgid "You can clone an existing repository using this option. It displays the following dialog."
-msgstr ""
-
-#: ..\getting_started.rst:176
-msgid "The repository you want to clone could be on a network share or could be a repository that is accessed through an internet or intranet connection. Depending on the protocol (http or ssh) you might need to load a SSH key into PuTTY. You also need to specify where the cloned repository will be created and the initial branch that is checked out. If the cloned repository contains submodules, then these can be initialised using their default settings if required."
-msgstr ""
-
-#: ..\getting_started.rst:181
-msgid "There are two different types of repositories you can create when making a clone. A personal repository contains the complete history and also contains a working copy of the source tree. A central repository is used as a public repository where developers push the changes they want to share with others to. A central repository contains the complete history but does not have a working directory like personal repositories."
-msgstr ""
-
-#: ..\getting_started.rst:187
-msgid "Clone SVN repository"
-msgstr ""
-
-#: ..\getting_started.rst:189
-msgid "You can clone an existing SVN repository using this option, which creates a Git repository from the SVN repository you specify. For further information refer to the `Pro Git book <https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git>`_."
-msgstr ""
-
-#: ..\getting_started.rst:193
-msgid "Clone Github repository"
-msgstr ""
-
-#: ..\getting_started.rst:195
-msgid "This option allows you to"
-msgstr ""
-
-#: ..\getting_started.rst:197
-msgid "Fork a repository on GitHub so it is created in your personal space on GitHub."
-msgstr ""
-
-#: ..\getting_started.rst:198
-msgid "Clone any repositories on your personal space on GitHub so that it becomes a local repository on your machine."
-msgstr ""
-
-#: ..\getting_started.rst:200
-msgid "You can see your own personal repositories on GitHub, and also search for repositories using the ``Search for repositories`` tab."
-msgstr ""
-
-#: ..\getting_started.rst:205
+#: ../getting_started.rst:29
 msgid "Create new repository"
 msgstr ""
 
-#: ..\getting_started.rst:207
+#: ../getting_started.rst:31
 msgid "When you do not want to work on an existing project, you can create your own repository using this option."
 msgstr ""
 
-#: ..\getting_started.rst:211
+#: ../getting_started.rst:35
 msgid "Select a directory where the repository is to be created. You can choose to create a Personal repository or a Central repository."
 msgstr ""
 
-#: ..\getting_started.rst:213
+#: ../getting_started.rst:37
 msgid "A personal repository looks the same as a normal working directory but has a directory named ``.git`` at the root level containing the version history. This is the most common repository."
 msgstr ""
 
-#: ..\getting_started.rst:216
+#: ../getting_started.rst:40
 msgid "Central repositories only contain the version history. Because a central repository has no working directory you cannot checkout a revision in a central repository. It is also impossible to merge or pull changes in a central repository. This repository type can be used as a public repository where developers can push changes to or pull changes from."
 msgstr ""
 
+#: ../getting_started.rst:45
+msgid "Open repository"
+msgstr ""
+
+#: ../getting_started.rst:47
+msgid "Opens a Git repo already existing on the file system."
+msgstr ""
+
+#: ../getting_started.rst:52
+msgid "Clone repository"
+msgstr ""
+
+#: ../getting_started.rst:54
+msgid "You can clone an existing repository using this option."
+msgstr ""
+
+#: ../getting_started.rst:58
+msgid "The repository you want to clone could be on a network share or could be a repository that is accessed through an internet or intranet connection. Depending on the protocol (http or ssh) you might need to load a SSH key into PuTTY. You also need to specify where the cloned repository will be created and the initial branch that is checked out. If the cloned repository contains submodules, then these can be initialised using their default settings if required."
+msgstr ""
+
+#: ../getting_started.rst:63
+msgid "There are two different types of repositories you can create when making a clone. A personal repository contains the complete history and also contains a working copy of the source tree. A central (bare) repository is used as a public repository where developers push the changes they want to share with others to. A central repository contains the complete history but does not have a working directory like personal repositories."
+msgstr ""
+
+#: ../getting_started.rst:69
+msgid "Clone Github repository"
+msgstr ""
+
+#: ../getting_started.rst:71
+msgid "This option allows you to"
+msgstr ""
+
+#: ../getting_started.rst:73
+msgid "Fork a repository on GitHub so it is created in your personal space on GitHub."
+msgstr ""
+
+#: ../getting_started.rst:74
+msgid "Clone any repositories on your personal space on GitHub so that it becomes a local repository on your machine."
+msgstr ""
+
+#: ../getting_started.rst:76
+msgid "You can see your own personal repositories on GitHub, and also search for repositories using the ``Search for repositories`` tab."
+msgstr ""

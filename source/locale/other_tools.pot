@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2019, GitExtensions
+# This file is distributed under the same license as the GitExtensions package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GitExtensions 4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-11 22:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../other_tools.rst:3
+msgid "Other tools"
+msgstr ""
+
+#: ../other_tools.rst:5
+msgid "Git Extensions can be started from :ref:`windows-explorer` and other tools."
+msgstr ""
+
+#: ../other_tools.rst:8
+msgid "Visual Studio Code"
+msgstr ""
+
+#: ../other_tools.rst:10
+msgid "3rd party extensions are available from the Marketplace `pmiossec`_ and `ForEvolve`_."
+msgstr ""
+
+#: ../other_tools.rst:18
+msgid "Visual Studio"
+msgstr ""
+
+#: ../other_tools.rst:20
+msgid "The Visual Studio extension is available from Visual Studio application or `Marketplace`_."
+msgstr ""
+
+#: ../other_tools.rst:25
+msgid "Menu"
+msgstr ""
+
+#: ../other_tools.rst:27
+msgid "Most functions can be started from the ``Extensions / GitExt`` menu in Visual Studio."
+msgstr ""
+
+#: ../other_tools.rst:32
+msgid "Toolbar"
+msgstr ""
+
+#: ../other_tools.rst:34
+msgid "A Git Extensions toolbar allows you to perform the most common actions. The buttons can be customized, same functions as in the menu."
+msgstr ""
+
+#: ../other_tools.rst:39
+msgid "The current branch name can be shown in the commit button."
+msgstr ""
+
+#: ../other_tools.rst:44
+msgid "Context menu"
+msgstr ""
+
+#: ../other_tools.rst:46
+msgid "Options in the context menu on files and in Solution Explorer:"
+msgstr ""
+
+#: ../other_tools.rst:48
+msgid "Diff changes to the commit index"
+msgstr ""
+
+#: ../other_tools.rst:49
+msgid "View the file history by choosing the ‘File history’ option."
+msgstr ""
+
+#: ../other_tools.rst:50
+msgid "Reset the file changes to the last committed revision."
+msgstr ""
