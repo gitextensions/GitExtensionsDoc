@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013, GitExtensions
+# Copyright (C) 2008-2019, GitExtensions
 # This file is distributed under the same license as the GitExtensions package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GitExtensions 2.48\n"
+"Project-Id-Version: GitExtensions 4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 23:16+0300\n"
+"POT-Creation-Date: 2023-04-11 22:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\index.rst:2
+#: ../index.rst:2
 msgid "Git Extensions |release| Manual"
 msgstr ""
-

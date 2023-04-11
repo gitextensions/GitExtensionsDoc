@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013, GitExtensions
+# Copyright (C) 2008-2019, GitExtensions
 # This file is distributed under the same license as the GitExtensions package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GitExtensions 2.48\n"
+"Project-Id-Version: GitExtensions 4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 23:16+0300\n"
+"POT-Creation-Date: 2023-04-11 22:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,76 +16,294 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\plugins.rst:2
+#: ../plugins.rst:4
 msgid "Plugins"
 msgstr ""
 
-#: ..\plugins.rst:5
-msgid "List of the available plugins"
+#: ../plugins.rst:6
+msgid "Git Extensions has a possibility to add functionality in external plugins. Some are distributed with the main program."
 msgstr ""
 
-#: ..\plugins.rst:7
-msgid "Auto Compile Submodules"
+#: ../plugins.rst:8
+msgid "Most plugins has settings in :ref:`settings`. Most plugins also have UI forms accessible from the main menu in :ref:`browse-repository`."
 msgstr ""
 
-#: ..\plugins.rst:8
-msgid "Background Fetch"
+#: ../plugins.rst:10
+msgid "This list is incomplete."
 msgstr ""
 
-#: ..\plugins.rst:9
-msgid "Create Local Tracking Branches"
+#: ../plugins.rst:13
+msgid "Bundled"
 msgstr ""
 
-#: ..\plugins.rst:10
-msgid "Delete Unused Branches"
+#: ../plugins.rst:30
+msgid "auto-compile-submodules"
 msgstr ""
 
-#: ..\plugins.rst:11
-msgid "Find Large Files"
+#: ../plugins.rst:17
+msgid "This plugin proposes (confirmation required) that you automatically build submodules after they are updated via the GitExtensions Update submodules command."
 msgstr ""
 
-#: ..\plugins.rst:12
-msgid "Gerrit Code Review"
+#: ../plugins.rst:21
+msgid "Enter true to enable the plugin, or false to disable."
 msgstr ""
 
-#: ..\plugins.rst:13
-#: ..\plugins.rst:22
-msgid "GitFlow"
+#: ../plugins.rst:25
+msgid "Enter the path to the msbuild.exe executable."
 msgstr ""
 
-#: ..\plugins.rst:14
-msgid "GitUIPluginInterfaces"
+#: ../plugins.rst:29
+msgid "Enter any arguments to msbuild."
 msgstr ""
 
-#: ..\plugins.rst:15
-msgid "Github"
+#: ../plugins.rst:53
+msgid "bitbucket-server"
 msgstr ""
 
-#: ..\plugins.rst:16
-msgid "Gource"
+#: ../plugins.rst:33
+msgid "For repositories is hosted on Atlassian Bitbucket Server, the plugin cannot be used for bitbucket.org. For more information see: https://www.atlassian.com/software/bitbucket/server"
 msgstr ""
 
-#: ..\plugins.rst:17
-msgid "Proxy Switcher"
+#: ../plugins.rst:36
+msgid "This plugin will enable you to view and create pull requests for Bitbucket."
 msgstr ""
 
-#: ..\plugins.rst:18
-msgid "Release Notes Generator"
+#: ../plugins.rst:40
+msgid "The username required to access Bitbucket."
 msgstr ""
 
-#: ..\plugins.rst:19
-msgid "Statistics"
+#: ../plugins.rst:44
+msgid "The password required to access Bitbucket."
 msgstr ""
 
-#: ..\plugins.rst:24
+#: ../plugins.rst:48
+msgid "The URL from which you will access Bitbucket."
+msgstr ""
+
+#: ../plugins.rst:52
+msgid "Check this option if you do not require SSL verification to access Bitbucket Server."
+msgstr ""
+
+#: ../plugins.rst:58
+msgid "create-local-tracking-branches"
+msgstr ""
+
+#: ../plugins.rst:56
+msgid "This plugin will create local tracking branches for all branches on a remote repository. The remote repository is specified when the plugin is run."
+msgstr ""
+
+#: ../plugins.rst:72
+msgid "delete-obsolete-branches"
+msgstr ""
+
+#: ../plugins.rst:61
+msgid "This plugin allows you to delete obsolete branches i.e. those branches that are fully merged to another branch. It will display a list of obsolete branches for review before deletion."
+msgstr ""
+
+#: ../plugins.rst:67
+msgid "Select branches created greater than the specified number of days ago."
+msgstr ""
+
+#: ../plugins.rst:71
+msgid "The name of the branch where a branch must have been merged into to be considered obsolete."
+msgstr ""
+
+#: ../plugins.rst:80
+msgid "find-large-files"
+msgstr ""
+
+#: ../plugins.rst:75
+msgid "Finds large files in the repository and allows you to delete them."
+msgstr ""
+
+#: ../plugins.rst:79
+msgid "Specify what size is considered a 'large' file."
+msgstr ""
+
+#: ../plugins.rst:90
+msgid "github"
+msgstr ""
+
+#: ../plugins.rst:83
+msgid "This plugin will create an OAuth token so that some common GitHub actions can be integrated with Git Extensions."
+msgstr ""
+
+#: ../plugins.rst:85
+msgid "For more information see: https://github.com/"
+msgstr ""
+
+#: ../plugins.rst:89
+msgid "The token generated and retrieved from GitHub."
+msgstr ""
+
+#: ../plugins.rst:92
+msgid "gitflow"
+msgstr ""
+
+#: ../plugins.rst:93
 msgid "This plugin permit to manage your _branching model: http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension"
 msgstr ""
 
-#: ..\plugins.rst:26
+#: ../plugins.rst:95
 msgid "You should have GitFlow installed to use this plugin."
 msgstr ""
 
-#: ..\plugins.rst:28
+#: ../plugins.rst:97
 msgid "The GitFlow plugin permit to : - init gitflow in your git repository - create your feature, hotfix, release or support branch - manage (pull, publish or finish) your existing gitflow branches"
 msgstr ""
 
+#: ../plugins.rst:115
+msgid "gource"
+msgstr ""
+
+#: ../plugins.rst:104
+msgid "Gource is a software version control visualization tool."
+msgstr ""
+
+#: ../plugins.rst:106
+msgid "For more information see: http://gource.io/"
+msgstr ""
+
+#: ../plugins.rst:110
+msgid "Enter the path to the gource software."
+msgstr ""
+
+#: ../plugins.rst:114
+msgid "Enter any arguments to gource."
+msgstr ""
+
+#: ../plugins.rst:120
+msgid "impact-graph"
+msgstr ""
+
+#: ../plugins.rst:118
+msgid "This plugin shows in a graphical format the number of commits and counts of changed lines in the repository performed by each person who has committed a change."
+msgstr ""
+
+#: ../plugins.rst:145
+msgid "periodic-background-fetch"
+msgstr ""
+
+#: ../plugins.rst:123
+msgid "This plugin keeps your remote tracking branches up-to-date automatically by fetching periodically."
+msgstr ""
+
+#: ../plugins.rst:127
+msgid "Enter the git command and its arguments into the edit box. The default command is ``fetch --all``, which will fetch all branches from all remotes. You can modify the command if you would prefer, for example, to fetch only a specific remote, e.g. ``fetch upstream``."
+msgstr ""
+
+#: ../plugins.rst:133
+msgid "Enter the number of seconds to wait between each fetch. Enter 0 to disable this plugin."
+msgstr ""
+
+#: ../plugins.rst:137
+msgid "If checked, the commit log and branch labels will be refreshed after the fetch. If you are browsing the commit log and comparing revisions you may wish to disable the refresh to avoid unexpected changes to the commit log."
+msgstr ""
+
+#: ../plugins.rst:143
+msgid "If checked, also perform ``git fetch --all`` recursively on all configured submodules as part of the periodic background fetch."
+msgstr ""
+
+#: ../plugins.rst:165
+msgid "proxy-switcher"
+msgstr ""
+
+#: ../plugins.rst:148
+msgid "This plugin can set/unset the value for the http.proxy git config file key as per the settings entered here."
+msgstr ""
+
+#: ../plugins.rst:152
+msgid "The user name needed to access the proxy."
+msgstr ""
+
+#: ../plugins.rst:156
+msgid "The password attached to the username."
+msgstr ""
+
+#: ../plugins.rst:160
+msgid "Proxy Server URL."
+msgstr ""
+
+#: ../plugins.rst:164
+msgid "Proxy Server port number."
+msgstr ""
+
+#: ../plugins.rst:171
+msgid "release-notes-generator"
+msgstr ""
+
+#: ../plugins.rst:168
+msgid "This plugin will generate 'release notes'. This involves summarising all commits between the specified from and to commit expressions when the plugin is started. This output can be copied to the clipboard in various formats."
+msgstr ""
+
+#: ../plugins.rst:188
+msgid "statistics"
+msgstr ""
+
+#: ../plugins.rst:174
+msgid "This plugin provides various statistics (and a pie chart) about the current Git repository. For example, number of commits by author, lines of code per language."
+msgstr ""
+
+#: ../plugins.rst:179
+msgid "Specifies extensions of files that are considered code files."
+msgstr ""
+
+#: ../plugins.rst:183
+msgid "Ignore these directories when calculating statistics."
+msgstr ""
+
+#: ../plugins.rst:187
+msgid "Ignore submodules when calculating statistics (true/false)."
+msgstr ""
+
+#: ../plugins.rst:190
+msgid "Third party extensions"
+msgstr ""
+
+#: ../plugins.rst:198
+msgid "gerrit-code-review"
+msgstr ""
+
+#: ../plugins.rst:194
+msgid "The Gerrit plugin provides integration with Gerrit for GitExtensions. This plugin has been based on the git-review tool."
+msgstr ""
+
+#: ../plugins.rst:197
+msgid "For more information see: https://www.gerritcodereview.com/"
+msgstr ""
+
+#: ../plugins.rst:202
+msgid "jira-commit-hint"
+msgstr ""
+
+#: ../plugins.rst:203
+msgid "Provides hints for Atlassian Jira issues in the commit form. For example, you can configure Key - Summary message for all your in progress tasks."
+msgstr ""
+
+#: ../plugins.rst:208
+msgid "Whether plugin enabled or not."
+msgstr ""
+
+#: ../plugins.rst:212
+msgid "Link to your Jira server."
+msgstr ""
+
+#: ../plugins.rst:216
+msgid "Your username."
+msgstr ""
+
+#: ../plugins.rst:220
+msgid "Your password."
+msgstr ""
+
+#: ../plugins.rst:224
+msgid "Query to Jira, results of which you want to show in \"Commit Templates\" in Commit Form. For more information see: https://confluence.atlassian.com/jiracoreserver073/advanced-searching-861257209.html"
+msgstr ""
+
+#: ../plugins.rst:228
+msgid "Key words that you can use in Message Template."
+msgstr ""
+
+#: ../plugins.rst:232
+msgid "Result format to insert into message text box after some line from \"Commit Templates\" selected."
+msgstr ""

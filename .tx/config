@@ -1,122 +1,151 @@
 [main]
-host = https://www.transifex.com
+host = https://app.transifex.com
 
-[git-extensions-manual.branches]
-file_filter = source/locale/<lang>/LC_MESSAGES/branches.po
-source_file = source/locale/pot/branches.pot
-source_lang = en
-type = PO
-
-[git-extensions-manual.browse_repository]
+[o:git-extensions:p:git-extensions-manual:r:browse_repository]
 file_filter = source/locale/<lang>/LC_MESSAGES/browse_repository.po
 source_file = source/locale/pot/browse_repository.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.command_line]
-file_filter = source/locale/<lang>/LC_MESSAGES/command_line.po
-source_file = source/locale/pot/command_line.pot
+[o:git-extensions:p:git-extensions-manual:r:branches]
+file_filter = source/locale/<lang>/LC_MESSAGES/branches.po
+source_file = source/locale/pot/branches.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.commit]
-file_filter = source/locale/<lang>/LC_MESSAGES/commit.po
-source_file = source/locale/pot/commit.pot
+[o:git-extensions:p:git-extensions-manual:r:command_line]
+file_filter  = source/locale/<lang>/LC_MESSAGES/command_line.po
+source_file  = source/locale/command_line.pot
+type         = po
+
+[o:git-extensions:p:git-extensions-manual:r:file_history]
+file_filter = source/locale/<lang>/LC_MESSAGES/file_history.po
+source_file = source/locale/pot/file_history.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.getting_started]
+[o:git-extensions:p:git-extensions-manual:r:getting_started]
 file_filter = source/locale/<lang>/LC_MESSAGES/getting_started.po
 source_file = source/locale/pot/getting_started.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.git_extensions]
+[o:git-extensions:p:git-extensions-manual:r:git_extensions]
 file_filter = source/locale/<lang>/LC_MESSAGES/git_extensions.po
 source_file = source/locale/pot/git_extensions.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.Index]
+[o:git-extensions:p:git-extensions-manual:r:index]
 file_filter = source/locale/<lang>/LC_MESSAGES/index.po
 source_file = source/locale/pot/index.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.integration]
+[o:git-extensions:p:git-extensions-manual:r:install]
+file_filter = source/locale/<lang>/LC_MESSAGES/install.po
+source_file = source/locale/pot/install.pot
+source_lang = en
+type        = PO
+
+[o:git-extensions:p:git-extensions-manual:r:integration]
 file_filter = source/locale/<lang>/LC_MESSAGES/integration.po
 source_file = source/locale/pot/integration.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.maintenance]
+[o:git-extensions:p:git-extensions-manual:r:maintenance]
 file_filter = source/locale/<lang>/LC_MESSAGES/maintenance.po
 source_file = source/locale/pot/maintenance.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.merge_conflicts]
+[o:git-extensions:p:git-extensions-manual:r:merge_conflicts]
 file_filter = source/locale/<lang>/LC_MESSAGES/merge_conflicts.po
 source_file = source/locale/pot/merge_conflicts.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.modify_history]
+[o:git-extensions:p:git-extensions-manual:r:modify_history]
 file_filter = source/locale/<lang>/LC_MESSAGES/modify_history.po
 source_file = source/locale/pot/modify_history.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.notes]
+[o:git-extensions:p:git-extensions-manual:r:notes]
 file_filter = source/locale/<lang>/LC_MESSAGES/notes.po
 source_file = source/locale/pot/notes.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.patches]
+[o:git-extensions:p:git-extensions-manual:r:other_tools]
+file_filter = source/locale/<lang>/LC_MESSAGES/other_tools.po
+source_file = source/locale/pot/other_tools.pot
+source_lang = en
+type        = PO
+
+[o:git-extensions:p:git-extensions-manual:r:patches]
 file_filter = source/locale/<lang>/LC_MESSAGES/patches.po
 source_file = source/locale/pot/patches.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.plugins]
+[o:git-extensions:p:git-extensions-manual:r:plugins]
 file_filter = source/locale/<lang>/LC_MESSAGES/plugins.po
 source_file = source/locale/pot/plugins.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.remote_feature]
+[o:git-extensions:p:git-extensions-manual:r:remote_feature]
 file_filter = source/locale/<lang>/LC_MESSAGES/remote_feature.po
 source_file = source/locale/pot/remote_feature.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.settings]
+[o:git-extensions:p:git-extensions-manual:r:settings]
 file_filter = source/locale/<lang>/LC_MESSAGES/settings.po
 source_file = source/locale/pot/settings.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.submodules]
+[o:git-extensions:p:git-extensions-manual:r:stash]
+file_filter = source/locale/<lang>/LC_MESSAGES/stash.po
+source_file = source/locale/pot/stash.pot
+source_lang = en
+type        = PO
+
+[o:git-extensions:p:git-extensions-manual:r:submodules]
 file_filter = source/locale/<lang>/LC_MESSAGES/submodules.po
 source_file = source/locale/pot/submodules.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.tag]
+[o:git-extensions:p:git-extensions-manual:r:tag]
 file_filter = source/locale/<lang>/LC_MESSAGES/tag.po
 source_file = source/locale/pot/tag.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.translations]
+[o:git-extensions:p:git-extensions-manual:r:translations]
 file_filter = source/locale/<lang>/LC_MESSAGES/translations.po
 source_file = source/locale/pot/translations.pot
 source_lang = en
-type = PO
+type        = PO
 
-[git-extensions-manual.z_appendix]
-file_filter = source/locale/<lang>/LC_MESSAGES/z_appendix.po
-source_file = source/locale/pot/z_appendix.pot
+[o:git-extensions:p:git-extensions-manual:r:windows_explorer]
+file_filter = source/locale/<lang>/LC_MESSAGES/windows_explorer.po
+source_file = source/locale/pot/windows_explorer.pot
 source_lang = en
-type = PO
+type        = PO
+
+[o:git-extensions:p:git-extensions-manual:r:worktrees]
+file_filter = source/locale/<lang>/LC_MESSAGES/worktrees.po
+source_file = source/locale/pot/worktrees.pot
+source_lang = en
+type        = PO
+
+[o:git-extensions:p:git-extensions-manual:r:z_appendix]
+file_filter = source/locale/<lang>/LC_MESSAGES/z_appendix.po
+source_file = source/locale/z_appendix.pot
+source_lang = en
+type        = PO

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013, GitExtensions
+# Copyright (C) 2008-2019, GitExtensions
 # This file is distributed under the same license as the GitExtensions package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GitExtensions 2.48\n"
+"Project-Id-Version: GitExtensions 4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 23:16+0300\n"
+"POT-Creation-Date: 2023-04-11 22:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,91 +16,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\merge_conflicts.rst:2
+#: ../merge_conflicts.rst:4
 msgid "Merge Conflicts"
 msgstr ""
 
-#: ..\merge_conflicts.rst:4
-msgid "When merging branches or commits you can get merge conflicts. Git will try to resolve these, but some conflicts need to be resolved manually. Git Extensions will show warnings when there is a merge conflict."
+#: ../merge_conflicts.rst:6
+msgid "When merging or rebasing branches or commits you can get conflicts. Git will try to resolve these, but some conflicts need to be resolved manually. Git Extensions will show warnings when there is a merge conflict in the status bar in the bottom right corner."
 msgstr ""
 
-#: ..\merge_conflicts.rst:10
+#: ../merge_conflicts.rst:12
 msgid "Handle merge conflicts"
 msgstr ""
 
-#: ..\merge_conflicts.rst:12
-msgid "To solve merge conflicts just click on a warning or open the merge conflict dialog from the menu. A dialog will prompt showing all conflicts. You can solve a conflict by double-click on a filename."
+#: ../merge_conflicts.rst:14
+msgid "To solve merge conflicts just click on a warning or open the ``Solve merge conflicts...`` dialog from the Commands menu. A dialog will prompt showing all conflicts."
 msgstr ""
 
-#: ..\merge_conflicts.rst:17
+#: ../merge_conflicts.rst:19
+msgid "The context menu shows the actions to resolve the conflicts. Double-click on a filename will start the mergetool."
+msgstr ""
+
+#: ../merge_conflicts.rst:24
 msgid "There are three kinds of conflicts:"
 msgstr ""
 
-#: ..\merge_conflicts.rst:20
+#: ../merge_conflicts.rst:27
 msgid "File deleted and changed"
 msgstr ""
 
-#: ..\merge_conflicts.rst:20
+#: ../merge_conflicts.rst:27
 msgid "Use modified or deleted file?"
 msgstr ""
 
-#: ..\merge_conflicts.rst:22
+#: ../merge_conflicts.rst:29
 msgid "File deleted and created"
 msgstr ""
 
-#: ..\merge_conflicts.rst:22
+#: ../merge_conflicts.rst:29
 msgid "Use created or deleted file?"
 msgstr ""
 
-#: ..\merge_conflicts.rst:24
+#: ../merge_conflicts.rst:31
 msgid "File changed both locally and remotely"
 msgstr ""
 
-#: ..\merge_conflicts.rst:24
+#: ../merge_conflicts.rst:31
 msgid "Start merge tool."
 msgstr ""
 
-#: ..\merge_conflicts.rst:28
-msgid "If the file is deleted in one commit and changed in another commit, a dialog will ask to keep the modified file or delete the file. When there is a conflicting change the merge tool will be started. You can configure the tool you want to use for merge conflicts. The image below shows Perforce P4Merge a free to use merge tool. Git Extensions is packaged with KDiff3, an open source merge tool."
+#: ../merge_conflicts.rst:35
+msgid "If the file is deleted in one commit and changed in another commit, a dialog will ask to keep the modified file or delete the file. When there is a conflicting change the merge tool will be started. You can configure the tool you want to use for merge conflicts. The image below shows Perforce P4Merge, a merge tool free to use for small teams."
 msgstr ""
 
-#: ..\merge_conflicts.rst:33
+#: ../merge_conflicts.rst:39
 msgid "In the merge tool you will see four versions of the same file:"
 msgstr ""
 
-#: ..\merge_conflicts.rst:36
+#: ../merge_conflicts.rst:42
 msgid "Base"
 msgstr ""
 
-#: ..\merge_conflicts.rst:36
+#: ../merge_conflicts.rst:42
 msgid "The latest version of the file that exist in both repositories"
 msgstr ""
 
-#: ..\merge_conflicts.rst:38
+#: ../merge_conflicts.rst:44
 msgid "Local"
 msgstr ""
 
-#: ..\merge_conflicts.rst:38
+#: ../merge_conflicts.rst:44
 msgid "The latest local version of the file"
 msgstr ""
 
-#: ..\merge_conflicts.rst:40
+#: ../merge_conflicts.rst:46
 msgid "Remote"
 msgstr ""
 
-#: ..\merge_conflicts.rst:40
+#: ../merge_conflicts.rst:46
 msgid "The latest remote version of the file"
 msgstr ""
 
-#: ..\merge_conflicts.rst:42
+#: ../merge_conflicts.rst:48
 msgid "Merged"
 msgstr ""
 
-#: ..\merge_conflicts.rst:42
+#: ../merge_conflicts.rst:48
 msgid "The result of the merge"
 msgstr ""
 
-#: ..\merge_conflicts.rst:47
+#: ../merge_conflicts.rst:53
 msgid "When you are in the middle of a merge the file named local represents your file. When you are in the middle of a rebase the file named remote represents your file. This can be confusing, so double check if you are in doubt."
 msgstr ""
-
