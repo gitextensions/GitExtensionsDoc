@@ -100,15 +100,13 @@ After the merge the commit log will show the new commit containing the merge. No
 by this merge. If you want to continue working on the feature/refactor branch you can merge the feature/refactor branch with master. You can
 instead delete the feature/refactor branch if it is not used anymore.
 
-.. image:: /images/merge3.png
+  .. image:: /images/merge3.png
 
-.. note::
+  .. note::
 
     When you need to merge with an unnamed branch you can use a tag to give it a temporary name.
 
-.. note::
-
-  During a merge conflicts can occur. See :ref:`merge_conflicts` for more information.
+    During a merge conflicts can occur. See :ref:`merge_conflicts` for more information.
 
 .. _Advanced Merge Options:
 
@@ -164,10 +162,10 @@ A rebase of feature/refactor on top of master will perform the following actions
 * The branch feature/refactor will be recreated on the master branch
 * All commits will be recommitted in the new feature/refactor branch
 
-.. note::
+  .. note::
 
-  During a rebase merge conflicts can occur. You need to solve the merge conflicts for each commit that is rebased. The
-  rebase function in Git Extensions will guide you through all steps needed for a successful rebase. See :ref:`merge_conflicts` for more information.
+    During a rebase merge conflicts can occur. You need to solve the merge conflicts for each commit that is rebased. The
+    rebase function in Git Extensions will guide you through all steps needed for a successful rebase. See :ref:`merge_conflicts` for more information.
 
 .. image:: /images/rebase_dialog.png
 

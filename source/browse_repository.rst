@@ -15,7 +15,7 @@ The Browse window contains of several parts:
 
 The `Left panel`_, `Tabs`_ and the toolbar can be hidden, as well as showing the `Commit`_ tab as a panel in the revision graph.
 
-.. _browse-main-toolbar:
+.. _browse-repository-main-toolbar:
 
 Main toolbar
 ------------
@@ -23,7 +23,7 @@ Main toolbar
 The main toolbar in Browse contains contains menus for other commands like
 :ref:`commit`, :ref:`stash` and :ref:`maintenance`.
 
-.. _browse-revision-graph:
+.. _browse-repository-revision-graph:
 
 Revision graph
 --------------
@@ -78,8 +78,6 @@ author and/or the committer.
 
 .. image:: /images/quick_filter.png
 
-.. _filter-file:
-
 In the context menu of the commit log you can open the advanced filter dialog. The advanced filter dialog allows you to
 filter for more specific commits. To remove the filter either remove the filter in the toolbar and press enter or remove the
 filter in the advanced filter dialog.
@@ -90,18 +88,22 @@ When a filter is set, the icon for the advanced filter is changed and you see th
 
 .. image:: /images/advance_filter_dialog.png
 
-.. _browse-reflog:
+.. _browse-repository-reflog:
 
 Reflog
 """"""
 
-By default, Git will not show any commits that are not reachable and do not have any references, such as a branch or a tag. Such commits will be purged when Git runs maintenance.
+By default, Git will not show any commits that are not reachable and do not have any references, such as a branch or a tag.
+See `Git reflog <https://git-scm.com/docs/git-reflog>`_.
+Such commits will be purged when Git runs maintenance.
 By enabling ``Reflog`` via the toolbar button or in the ``View`` menu these commits will be shown too.
+
+.. _browse-repository-tabs:
 
 Tabs
 ----
 
-:ref:`settings-tabs`
+For settings and further description, see :ref:`settings-tabs`.
 
 Commit
 ^^^^^^
@@ -109,7 +111,7 @@ Commit
 Commit information and message as well as branch and tag information for the selected commit.
 This tab can be moved to the revision grid.
 
-.. _browse-tabs-diff:
+.. _browse-repository-tabs-diff:
 
 Diff
 ^^^^
@@ -120,10 +122,18 @@ See also
 
 The file viewer will by default show the diff, but may also show Blame for the selected file.
 
+.. _browse-repository-tabs-file-tree:
+
 File tree
 ^^^^^^^^^
 
-Show the file tree for the commit. By default this shows Blame for a file.
+Show the file tree for the commit.
+
+The file viewer will by default show the file contents, but may also show Blame for the selected file.
+
+You could search a file in the file tree using the default keyboard shortcut `Ctrl + Shift + F` (configurable in :ref:`settings-hotkeys`).
+
+.. image:: /images/find_in_file_tree.png
 
 GPG
 ^^^
@@ -139,11 +149,11 @@ Build report
 ^^^^^^^^^^^^
 
 Optional, only shown if the build server plugin is configured for the repo and if it has found a build for the selected commit.
-:ref:`settings-tabs-show-build-result-page`
+:ref:`settings-build-server-integration-show-build-result-page`
 
-.. _browse-left-panel:
+.. _browse-repository-left-panel:
 
 Left panel
----------
+----------
 
-Show local and remote branches, git remotes, tags and submodules.
+Show local and remote branches, git remotes, tags, submodules and stashes.

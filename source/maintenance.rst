@@ -21,8 +21,8 @@ Normally Git will not delete files right away when you remove something from you
 can restore deleted items if you need to. Git will delete removed items when they are older then 15 days and you run ``Compress
 git database``.
 
-Commits without branches or tags can be shown with Git reflog https://git-scm.com/docs/git-reflog
-The easiest way to view the commits is to show :ref:`browse-reflog` :ref:`browse-repository`.
+Commits without branches or tags can be shown with `Git reflog <https://git-scm.com/docs/git-reflog>`_.
+The easiest way to view the commits is to show :ref:`browse-repository-reflog`.
 
 .. image:: /images/reflog_show.png
 

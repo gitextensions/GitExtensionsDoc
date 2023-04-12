@@ -6,6 +6,8 @@ the commit log of Git Extensions with a tag indicating version [3.00.00].
 
 .. image:: /images/tag.png
 
+Tags are also available in the :ref:`browse-repository-left-panel`.
+
 Create tag
 ----------
 

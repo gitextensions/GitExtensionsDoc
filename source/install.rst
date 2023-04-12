@@ -6,7 +6,7 @@ Installation
 Windows installer
 -----------------
 
-This section only covers Git Extensions installation, you will need to have Git for Windows installed: https://git-scm.com/download/win
+This section only covers Git Extensions installation, you will need `Git for Windows <https://git-scm.com/download/win>`_.
 
 The Git Extensions installer can be found on `GitHub <https://github.com/gitextensions/gitextensions/releases/latest>`_.
 
