@@ -5,10 +5,12 @@ Large projects can be split into smaller parts using submodules. A submodule con
 another repository. To create a submodule in an existing git repository you need to add a link to another repository
 containing the files of the submodule.
 
-.. image:: /images/submodules.png
+The structure of the submodules can be seen in the submodule toolbar and the :ref:`browse-repository-left-panel`.
 
 Manage submodules
 -----------------
+
+.. image:: /images/submodules.png
 
 The current state of the submodules can be viewed with the ``Manage submodules`` function. All submodules are shown in
 the list on the left.

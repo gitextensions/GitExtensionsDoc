@@ -82,8 +82,8 @@ This page contains general settings for Git Extensions.
   .. setting:: Show ahead and behind information on status bar in browse window
 
     If the current local checkout branch is tracking a remote branch, show the number of commits the branch
-    is ahead (changed locally) and behind (changed on the remote) on the status bar in :ref:`browse-main-toolbar`
-    and for branches on the :ref:`browse-left-panel`.
+    is ahead (changed locally) and behind (changed on the remote) on the status bar in :ref:`browse-repository-main-toolbar`
+    and for branches on the :ref:`browse-repository-left-panel`.
 
   .. setting:: Check for uncommitted changes in checkout branch dialog
     :id: uncommitted-changes
@@ -122,7 +122,7 @@ This page contains general settings for Git Extensions.
     This algorithm is useful in situations where two files have diverged significantly and the default algorithm
     may become ‘misaligned’, resulting in a totally unusable conflict file.
 
-  .. setting:: Include untracked files in stash
+  .. setting:: Include untracked files in autostash
     :id: stash-untracked
 
     If checked, when a stash is performed as a result of any action except a manual stash request,
@@ -132,7 +132,7 @@ This page contains general settings for Git Extensions.
 
     Update the commits for submodules when updating the commit for the current repository.
 
-  .. setting:: Follow renames in file history (experimental)
+  .. setting:: Follow renames in file history
     :id: follow-renames
 
     Try to follow file renames in the file history.
@@ -155,7 +155,7 @@ This page contains general settings for Git Extensions.
 
   .. setting:: Default pull action
 
-    The default action for `Pull` in :ref:`browse-main-toolbar`, see the dropdown list.
+    The default action for `Pull` in :ref:`browse-repository-main-toolbar`, see the dropdown list.
     
   .. setting:: Revision grid quick search timeout [ms]
     :id: quick-search-timeout
@@ -183,7 +183,7 @@ This page contains general settings for Git Extensions.
 
   .. setting:: Show current branch names in the dashboard and the recent repositories dropdown menu
 
-    Also show the branch in :ref:`browse-left-panel`.
+    Also show the branch in :ref:`browse-repository-left-panel`.
 
   .. setting:: Show current branch in Visual Studio
     :id: show-current-branch-vs
@@ -477,7 +477,7 @@ This page contains general settings for Git Extensions.
 
   .. setting:: Show build result page
 
-    Show a page with build information in :ref:`browse-tabs`.
+    Show a page with build information in :ref:`browse-repository-tabs`.
 
   .. setting:: Build server type
 
@@ -748,7 +748,7 @@ This page allows you to turn off certain confirmation popup windows by uncheckin
 
   .. setting:: Undo last commit
 
-    Display the warning when undoing (resetting) the commit for the current branch in :ref:`browse-main-toolbar`.
+    Display the warning when undoing (resetting) the commit for the current branch in :ref:`browse-repository-main-toolbar`.
 
   .. setting:: Commit when no branch is currently checked out
 
@@ -848,7 +848,7 @@ This page allows detailed settings to be modified.
 
     If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
     from at most the given number actual commits that are being merged.
-    See `Git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`_.
+    See `Git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`.
 
 .. settingsgroup:: Email settings for sending patches
   :id: patches-email
@@ -869,7 +869,7 @@ This page allows detailed settings to be modified.
 
 .. settingspage:: Browse repository window
 
-.. settingsgroup:: Console emulator
+.. settingsgroup:: General
 
   .. setting:: Default shell
 
@@ -878,6 +878,10 @@ This page allows detailed settings to be modified.
   .. setting:: Show file history in the main window
 
     Open file history in :ref:`browse-repository` window instead of the deprecated :ref:`file-history` window.
+
+  .. setting:: Show blame in diff view
+
+    Show blame in the diff view tab :ref:`browse-repository-tabs-diff` instead of switching to  :ref:`browse-repository-tabs-file-tree` tab.
 
 .. settingsgroup:: Tabs
 
@@ -947,6 +951,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     to basic functionality and have consequences if you should click them accidentally,
     including resetting unrecorded work.
 
+  Settings for :ref:`browse-repository-diff`.
 .. settingspage:: Diff Viewer
 
   .. setting:: Remember the 'Ignore whitespaces' preference
@@ -980,7 +985,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Enable automatic continuous scroll (without ALT button)
 
-    For file status lists like in :ref:`browse-tabs-diff` and :ref:`commit` it is possible to scroll continuously to the next (or previous)
+    For file status lists like in :ref:`browse-repository-tabs-diff` and :ref:`commit` it is possible to scroll continuously to the next (or previous)
     file with the mouse wheel and `ALT` button. This setting allows scrolling to the next file with only the mouse wheel.
 
   .. setting:: Open Submodule Diff in separate window
@@ -991,7 +996,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Show file differences for all parents in browse dialog
 
-    The :ref:`browse-tabs-diff` can show more than one diff, depending on the selections in :ref:`browse-revision-graph`.
+    The :ref:`browse-repository-tabs-diff` can show more than one diff, depending on the selections in :ref:`browse-repository-revision-graph`.
 
     - For a single selected commit, show the difference with its parent commit.
     - For a single selected merge commit, show the difference with all parents.
@@ -1017,7 +1022,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     .. setting:: Range diff
 
-    `Git range-diff <https://git-scm.com/docs/git-range-diff>` shows the difference between two versions of a
+    `git range-diff <https://git-scm.com/docs/git-range-diff>` shows the difference between two versions of a
     patch series with a common BASE. The command can require a lot of resources and it is possible
     to define the ranges for Git .
 
@@ -1055,6 +1060,31 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     Position for ruler in TextEditor controls. Set to 0 to disable.
     (This should be moved to the TextEditor context menu.)
+
+.. settingspage:: Blame viewer
+
+  Settings for blame in :ref:`browse-repository-tabs-file-tree` and :ref:`browse-repository-tabs-diff`.
+
+  .. settingsgroup:: Blame settings
+
+    .. setting:: Ignore whitespace
+    .. _git blame -w: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w
+
+      See `git blame -w`.
+
+    .. setting:: Detect move and copy in this file
+    .. _git blame -M: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt
+
+      See `Git blame -M`.
+
+    .. setting:: Detect move and copy in all files
+    .. _git blame -C: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt
+
+      See `Git blame -C`_.
+
+  .. settingsgroup:: Display result settings
+
+    Various settings for the blame viewer.
 
 .. settingspage:: SSH
 

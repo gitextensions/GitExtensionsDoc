@@ -85,12 +85,14 @@ To see the line changes that have been staged select the entry for the file in t
 changed lines from a file, select that file in the staged changes pane, then select the line or lines in the diff view, right
 -click, and choose ``Unstage selected line(s)`` or press the ``[U]`` key.
 
-.. note:: If you select an entire line including the end-of-line character then staging or unstaging that line will include
-    both the selected line and the next line. To select a single line to stage or unstage you may simply click onto the line
-    without selecting any particular characters.
+.. note::
 
-.. note:: Staging and unstaging individual lines from a file does not change the file itself. It is simply choosing which
-    changes from within that file will be included in the next commit.
+   If you select an entire line including the end-of-line character then staging or unstaging that line will include
+   both the selected line and the next line. To select a single line to stage or unstage you may simply click onto the line
+   without selecting any particular characters.
+
+   Staging and unstaging individual lines from a file does not change the file itself. It is simply choosing which
+   changes from within that file will be included in the next commit.
 
 Undoing or resetting changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

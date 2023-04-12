@@ -8,7 +8,7 @@ changes committed by others, you need to fetch/pull.
 Manage remote repositories
 --------------------------
 
-You can manage the remote repositories in the ``Remotes`` menu.
+You can manage the remote repositories in the ``Remotes`` menu or in the :ref:`browse-repository-left-panel`.
 
 .. image:: /images/manage_remote_repositories.png
 
@@ -56,7 +56,7 @@ PuTTY and github
 PuTTY is SSH client that for Windows that is a bit more user friendly then OpenSSH. Unfortunately PuTTY does not work with
 all servers. In this paragraph I will show how to generate a key for github using putty.
 
-First make sure GitExtensions is configured to use PuTTY and all paths are correct, see :ref:`settings-git-extensions-ssh`
+First make sure GitExtensions is configured to use PuTTY and all paths are correct, see :ref:`settings-ssh`
 
 .. image:: /images/putty_generate_or_import_key.png
 
@@ -85,7 +85,7 @@ This is done in the ``Manage remote repositories`` dialog.
 OpenSSH and github
 ^^^^^^^^^^^^^^^^^^
 
-To configure GitExtensions to use OpenSSH, see :ref:`settings-git-extensions-ssh`.
+To configure GitExtensions to use OpenSSH, see :ref:`settings-ssh`.
 
 OpenSSH is the best SSH client there is but it lacks Windows support. Therefore it is slightly more complex to use.
 Another drawback is that GitExtensions cannot control OpenSSH and needs to show the command line dialogs when OpenSSH might

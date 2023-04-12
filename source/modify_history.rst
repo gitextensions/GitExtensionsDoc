@@ -79,7 +79,7 @@ You will be prompted by a text editor displaying all the commits that will be re
 
 .. image:: /images/rebase_interactive.png
 
-You could have a look to this _documentation: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History to better understand all the possibilities offered.
+You could have a look to `Git documentation <https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History>`_ to better understand all the possibilities offered.
 
 The options offered are :
 

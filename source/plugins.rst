@@ -1,7 +1,7 @@
 .. _plugins:
 
 Plugins
-==========
+=======
 
 Git Extensions has a possibility to add functionality in external plugins. Some are distributed with the main program.
 
@@ -80,13 +80,18 @@ Bundled
 
 .. settingspage:: GitHub
 
-    This plugin will create an OAuth token so that some common GitHub actions can be integrated with Git Extensions.
+    This plugin adds a GitHub menu item in the main toolbar.
 
-    For more information see: https://github.com/
+    * Fork/Clone repository
+    * View pull requests
+    * Create pull requests
+    * Add upstream remote
 
-    .. setting:: OAuth Token
 
-      The token generated and retrieved from GitHub.
+    .. setting:: Personal Access Token
+
+      The plugin adds configuration for the token generated and retrieved from GitHub.
+      For more information see: https://github.com/ or the links in the plugin settings.
 
 .. settingspage:: GitFlow
 
@@ -142,6 +147,10 @@ The GitFlow plugin permit to :
 
       If checked, also perform ``git fetch --all`` recursively on all configured
       submodules as part of the periodic background fetch.
+
+.. settingspage:: Plugin Manager
+
+  Plugin to manage third party plugins.
 
 .. settingspage:: Proxy Switcher
 
