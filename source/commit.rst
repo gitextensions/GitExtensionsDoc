@@ -61,10 +61,10 @@ which of the changed files, or individual changes from within those files, will 
 changes in Git Extensions. Staging changes in Git Extensions is the same as using ``git add`` on the Git command line.
 
 You can stage the changes you want to commit by selecting the files in the top-left or "Unstaged changes" pane and pressing
-the ``Stage`` button or pressing the ``[S]`` key. The file entries will move to the lower left or "Staged changes" pane. You
+the ``Stage`` button or pressing the ``S`` key. The file entries will move to the lower left or "Staged changes" pane. You
 need to stage deleted files because you stage the change and not the file. If you have staged changes from a file and you
 wish to exclude those changes from the commit, select the entry in the staged changes pane and press the ``Unstage``
-button or press the ``[U]`` key.
+button or press the ``U`` key.
 
 If the file that is selected in either the unstaged or staged changes pane is text format, Git Extensions will show a
 Git "diff" view in the right side pane of the window.
@@ -77,13 +77,13 @@ from within a file such that only the chosen lines will be included in your next
 will appear as unstaged changes for the next commit.
 
 In the diff view on the right, select the line or lines that you want to stage then right-click and choose ``Stage selected
-line(s)`` or press the ``[S]`` key. The file will now appear in both the staged changes and unstaged changes panes on the left
+line(s)`` or press the ``S`` key. The file will now appear in both the staged changes and unstaged changes panes on the left
 since now there are both staged and unstaged changes in the same file. The change that was selected will disappear from the
 diff view on the right because the diff view is showing only the unstaged changes.
 
 To see the line changes that have been staged select the entry for the file in the staged changes pane. To unstage selected
 changed lines from a file, select that file in the staged changes pane, then select the line or lines in the diff view, right
--click, and choose ``Unstage selected line(s)`` or press the ``[U]`` key.
+-click, and choose ``Unstage selected line(s)`` or press the ``U`` key.
 
 .. note::
 
@@ -100,13 +100,13 @@ Undoing or resetting changes
 You can undo or reset changes to files from the commit dialog. You can only do this from the top-left or "Unstaged changes"
 pane. If you have already staged the changes then you must first unstage them as described above. To reset the changes in a
 file, select the file in the unstaged changes pane, right-click and choose ``Reset file or directory changes`` or press the
-``[R]`` key.
+``R`` key.
 
 .. image:: /images/commit_reset_changes.png
 
 You can reset individual changed lines in a similar way to staging and unstaging individual lines, which are described above.
 To reset an individual line, select the line or lines in the diff view on the right then right-click and choose ``Reset
-selected lines`` or press the ``[R]`` key.
+selected lines`` or press the ``R`` key.
 
 .. warning:: Resetting changes modifies the file, discarding either all of the changes or the changes on the selected lines.
 
@@ -135,6 +135,10 @@ changes.
 
 See also :ref:`modify_history`, especially if you have published the changes to a remote repository already.
 
-.. image:: /images/commit_amend_reset_author.png
+Amend also enables the following options:
 
-By checking the ``Reset Author`` checkbox the author and date of the commit will also be overwritten.
+  - By checking the ``Reset Author`` checkbox the author and date of the commit will also be overwritten.
+
+  - `Reset soft`: Perform a soft reset to the previous commit; leaves working directory and index untouched
+
+.. image:: /images/commit_amend_reset_author.png

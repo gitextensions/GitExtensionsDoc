@@ -47,7 +47,7 @@ to anyone. SSH will encrypt whatever you send using your secret private key. The
 to decrypt the data.
 
 This encryption will not protect the data itself but it protects the authenticity. Because the private key is only available to
-the sender, the receiver can be sure about the origin of the data. In practise the key pair is only used for the authentication
+the sender, the receiver can be sure about the origin of the data. In practice the key pair is only used for the authentication
 process. The data itself will be encrypted using a key that is exchanged during this initial phase.
 
 PuTTY and github
@@ -75,7 +75,7 @@ Now you have a key pair you need to give github the public key. This can be done
 .. image:: /images/github_account_settings.png
 
 After telling github what public key to use to decrypt, you need to tell GitExtensions what private key to use to encrypt.
-Load the private key into the PuTTY authentication agent in Clone dialoge or by starting the PuTTY authentication agent and choose ``add key`` in the context menu in the system tray.
+Load the private key into the PuTTY authentication agent in Clone dialogue or by starting the PuTTY authentication agent and choose ``add key`` in the context menu in the system tray.
 
 GitExtensions can load the private keys automatically for you when communicating with a remote. You need to configure the
 private key for the remote.

@@ -196,21 +196,6 @@ This page contains general settings for Git Extensions.
 
     Automatically resize controls and their contents according to the current system resolution of the display, measured in dots per inch (DPI).
 
-  .. setting:: Sort revisions by
-    :id: sort-author-date
-
-    This setting causes commits in the revision grid to be sorted by Git default (commit date), author date or topology.
-    Sorting by other than Git default may delay rendering of the revision graph.
-
-  .. setting:: Sort branches by
-    :id: sort-branches-by
-
-    The sort order for branches in :ref:`browse-main-toolbar` and :ref:`browse-left-panel` in a dropdown.
-
-  .. setting:: Order branches
-
-    Order the branches within the sorting in :ref:`settings-general-sort-branches-by`.
-
   .. setting:: Truncate long filenames
     :id: truncate-long-filenames
 
@@ -296,6 +281,37 @@ This page contains general settings for Git Extensions.
     :id: dictionary
 
     Choose the dictionary to use for the spelling checker in the Commit dialog.
+
+.. settingspage:: Sorting
+
+  .. setting:: Sort revisions by
+    :id: sort-author-date
+
+    This setting causes commits in the revision grid to be sorted by Git default (commit date), author date or topology.
+    Sorting by other than Git default may delay rendering of the revision graph.
+
+  .. setting:: Sort branches by
+    :id: sort-branches-by
+
+    The sort order for branches in :ref:`browse-repository-main-toolbar` and :ref:`browse-repository-left-panel` in a dropdown.
+
+  .. setting:: Order branches
+
+    Order the branches within the sorting in :ref:`settings-sorting-sort-branches-by`.
+
+  .. setting:: Prioritized branches
+    :id: sort-prioritized-branches
+
+    Regex to prioritize branch names in the left panel and commit info.
+    The branches matching the pattern will be shown before the others.
+    Separate the priorities with ';'.
+
+  .. setting:: Prioritized remotes
+    :id: sort-prioritized-remotes
+
+    Regex to prioritize branch names in the left panel and commit info.
+    The branches matching the pattern will be shown before the others.
+    Separate the priorities with ';'.
 
 .. settingspage:: Colors
 
@@ -600,7 +616,7 @@ This page contains general settings for Git Extensions.
 
       Select an icon to be displayed in a menu item when the script is marked to be shown in the user menu bar.
 
-  .. settingsgroup:: Script Behavior
+  .. settingsgroup:: Script behavior
 
     .. setting:: Ask confirmation
 
@@ -617,7 +633,7 @@ This page contains general settings for Git Extensions.
       If the :ref:`settings-scripts-script-behavior-run-in-background` is checked, the powershell console is closed after finishing. If not,
       the powershell console is left for the user to close it manually.
 
-  .. settingsgroup:: Script Context
+  .. settingsgroup:: Script context
 
     .. setting:: Show in RevisionGrid
 
@@ -658,19 +674,24 @@ This page contains general settings for Git Extensions.
 
     Resets all keyboard shortcuts to the defaults (i.e. the values when Git Extensions was first installed).
 
-.. settingspage:: Shell Extension
+.. settingspage:: Shell extension
 
-When installed, Git Extensions adds items to the context menu when a file/folder is right-clicked within Windows Explorer. One of these items
-is ``Git Extensions`` from which a further (cascaded) menu can be opened.
-This settings page determines which items will appear on that cascaded
-menu and which will appear in the main context menu. Items that are checked will appear in the cascaded menu.
+  .. setting:: Windows explorer integration
 
-To the right side of the list of check boxes is a preview that shows you how the Git Extensions menu items will be arranged with
-your current choices.
+    Enable Git Extensions to add items to the context menu when a file/folder is right-clicked within Windows Explorer. One of these items
+    is ``Git Extensions`` from which a further (cascaded) menu can be opened.
 
-By default, what is displayed in the context menu also depends on what item is right-clicked in Windows Explorer; a file or a folder
-(and whether the folder is a Git repository or not). If you want Git Extensions to always include all of its context menu items,
-check the box ``Always show all commands``.
+  .. settingsgroup:: Cascaded context menu
+
+    This settings page determines which items will appear on that cascaded
+    menu and which will appear in the main context menu. Items that are checked will appear in the cascaded menu.
+
+    To the right side of the list of check boxes is a preview that shows you how the Git Extensions menu items will be arranged with
+    your current choices.
+
+    By default, what is displayed in the context menu also depends on what item is right-clicked in Windows Explorer; a file or a folder
+    (and whether the folder is a Git repository or not). If you want Git Extensions to always include all of its context menu items,
+    check the box ``Always show all commands``.
 
 .. settingspage:: Advanced
 
@@ -951,8 +972,9 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     to basic functionality and have consequences if you should click them accidentally,
     including resetting unrecorded work.
 
-  Settings for :ref:`browse-repository-diff`.
-.. settingspage:: Diff Viewer
+.. settingspage:: Diff viewer
+
+  Settings for :ref:`browse-repository-tabs-diff`.
 
   .. setting:: Remember the 'Ignore whitespaces' preference
 
@@ -1167,7 +1189,7 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
 .. settingsgroup:: Notes for WSL Git
   :id: wsl-git-notes
 
-  For Git repos stored in ``\\wsl$`` directories, Git Extensions executes the WSL Git executable
+  For Git repos stored in ``\\wsl$`` or ``\\wsl.localhost`` directories, Git Extensions executes the WSL Git executable
   where possible to improve performance. WSL Git is several times faster than Windows Git (native) application.
 
   The paths internal to Git Extensions are always in Windows format.
@@ -1183,7 +1205,8 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
   - ScriptRunner and some built-in plugins like FindLargeFiles always use Windows Git.
 
   Some notes:
-  - Git repos accessed in ``\\wsl.localhost`` or mapped to a drive letter will not use the special WSL handling but Windows Git.
+  - Git repos accessed in ``\\wsl.localhost`` will be displayed as ``\\wsl$`` (so only one occurrence in recent lists etc).
+  - Git repos mapped to a drive letter will not use the special WSL handling but Windows Git.
   - Files modified in WSL are not reported by Windows FileSystemWatcher, so the
   GitStatusMonitor will only report issues at explicit refresh and every minute.
   - The WSL executable occasionally fail (for instance when the WSL machine is busy) which will be seen as

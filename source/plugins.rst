@@ -12,7 +12,7 @@ This list is incomplete.
 Bundled
 -------
 
-.. settingspage:: Auto compile SubModules
+.. settingspage:: Auto compile submodules
 
     This plugin proposes (confirmation required) that you automatically build submodules after they are updated via the GitExtensions Update submodules command.
 
