@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2016\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,15 +20,15 @@ msgstr ""
 
 #: ..\command_line.rst:2
 msgid "Command line"
-msgstr ""
+msgstr "Командная строка"
 
 #: ..\command_line.rst:5
 msgid "Git Extensions command line"
-msgstr ""
+msgstr "Командная строка Git Extensions"
 
 #: ..\command_line.rst:7
 msgid ""
 "Most features can be started from the command line. It is recommended to add"
 " ``gitex.cmd`` to the path when using from the command line. It is typically"
 " stored in the ``C:\\Program Files (x86)\\GitExtensions`` folder."
-msgstr ""
+msgstr "Больше возможностей есть у командной строки. Рекомендуется добавить \"gitex.cmd\" к пути при использовании из командной строки. Обычно это сохраняется в папке \"C:\\Program Files (x86)\\GitExtensions\"."

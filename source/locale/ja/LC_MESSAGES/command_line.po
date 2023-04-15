@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Yuki Shira <shirayuking@gmail.com>, 2019,2022-2023
+# 浮穴 卓弥 <ukiana@kbit.co.jp>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2019,2022-2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,15 +21,15 @@ msgstr ""
 
 #: ..\command_line.rst:2
 msgid "Command line"
-msgstr ""
+msgstr "コマンド ライン"
 
 #: ..\command_line.rst:5
 msgid "Git Extensions command line"
-msgstr ""
+msgstr "Git Extensions コマンド ライン"
 
 #: ..\command_line.rst:7
 msgid ""
 "Most features can be started from the command line. It is recommended to add"
 " ``gitex.cmd`` to the path when using from the command line. It is typically"
 " stored in the ``C:\\Program Files (x86)\\GitExtensions`` folder."
-msgstr ""
+msgstr "ほとんどの機能はコマンドラインから実行できます。コマンドラインを使用する際には ``gitex.cmd`` をPathに追加するといいでしょう。通常、``C:\\Program Files (x86)\\GitExtensions`` にあります。"

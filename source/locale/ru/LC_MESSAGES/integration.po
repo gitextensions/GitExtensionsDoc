@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,38 +20,38 @@ msgstr ""
 
 #: ..\integration.rst:2
 msgid "Integration"
-msgstr ""
+msgstr "Интеграция"
 
 #: ..\integration.rst:4
 msgid ""
 "During installation you can choose to install the Visual Studio plug-in and "
 "shell extensions."
-msgstr ""
+msgstr "Во время установки вы можете установить плагин Visual Studio и расширения оболочки."
 
 #: ..\integration.rst:7
 msgid "Visual Studio"
-msgstr ""
+msgstr "Visual Studio"
 
 #: ..\integration.rst:9
 msgid "There are two options in the context menu on files:"
-msgstr ""
+msgstr "В контекстном меню файлов есть две опции:"
 
 #: ..\integration.rst:11
 msgid "View the file history by choosing the ‘File history’ option."
-msgstr ""
+msgstr "Просмотрите историю файлов, выбрав 'История файлов'."
 
 #: ..\integration.rst:12
 msgid "Reset the file changes to the last committed revision."
-msgstr ""
+msgstr "Сбросить изменения файла до последнего зафиксированного коммита."
 
 #: ..\integration.rst:16
 msgid ""
 "A Git Extensions toolbar allows you to perform the most common actions."
-msgstr ""
+msgstr "Панель инструментов Git Extensions позволяет вам выполнять самые распространенные действия."
 
 #: ..\integration.rst:19
 msgid "Commit (branch)"
-msgstr ""
+msgstr "Зафиксировать (ветка)"
 
 #: ..\integration.rst:21
 msgid "Browse"
@@ -58,36 +59,36 @@ msgstr ""
 
 #: ..\integration.rst:23
 msgid "Pull"
-msgstr ""
+msgstr "Получить"
 
 #: ..\integration.rst:25
 msgid "Push"
-msgstr ""
+msgstr "Получить"
 
 #: ..\integration.rst:27
 msgid "Stash changes"
-msgstr ""
+msgstr "Спрятать изменения"
 
 #: ..\integration.rst:29
 msgid "Settings"
-msgstr ""
+msgstr "Настройки"
 
 #: ..\integration.rst:34
 msgid ""
 "Almost all function can be started from the ``Git`` menu in Visual Studio."
-msgstr ""
+msgstr "Почти все функции могут быть вызваны из меню ``Git`` в Visual Studio."
 
 #: ..\integration.rst:39
 msgid "Windows Explorer"
-msgstr ""
+msgstr "Проводник Windows"
 
 #: ..\integration.rst:41
 msgid ""
 "The common commands can be started from Windows Explorer using the shell "
 "extensions. This option is only available when Shell Extensions are "
 "installed."
-msgstr ""
+msgstr "Общие команды могут быть вызваны из проводника Windows с использованием расширений оболочки. Эта опция доступна только при установленных расширениях оболочки."
 
 #: ..\integration.rst:46
 msgid "You can even create or clone a repository in any non git folder."
-msgstr ""
+msgstr "Вы даже можете создать или клонировать репозиторий в любую папку, не относящуюся к git."

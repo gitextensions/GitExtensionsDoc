@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/git-extensions-manual/language/pt_BR/)\n"
+"Last-Translator: Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015\n"
+"Language-Team: Portuguese (Brazil) (http://app.transifex.com/git-extensions/git-extensions-manual/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\z_appendix.rst:2
 msgid "Appendix"
@@ -27,31 +28,31 @@ msgstr ""
 
 #: ..\z_appendix.rst:8
 msgid "Action"
-msgstr ""
+msgstr "Ação"
 
 #: ..\z_appendix.rst:8
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ..\z_appendix.rst:10
 msgid "Create new repository"
-msgstr ""
+msgstr "Criar novo repositório"
 
 #: ..\z_appendix.rst:10
 msgid "`$ git init`"
-msgstr ""
+msgstr "`$ git init`"
 
 #: ..\z_appendix.rst:12
 msgid "Create shared repository"
-msgstr ""
+msgstr "Criar repositório compartilhado"
 
 #: ..\z_appendix.rst:12
 msgid "`$ git init –-bare –-shared=all`"
-msgstr ""
+msgstr "`$ git init –-bare –-shared=all`"
 
 #: ..\z_appendix.rst:14
 msgid "Clone repository"
-msgstr ""
+msgstr "Clonar repositório"
 
 #: ..\z_appendix.rst:14
 msgid "`$ git clone c:/demo1 c:/demo2`"
@@ -71,7 +72,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:18
 msgid "`$ git branch <name>`"
-msgstr ""
+msgstr "`$ git branch <nome>`"
 
 #: ..\z_appendix.rst:20
 msgid "Delete branch"
@@ -79,7 +80,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:20
 msgid "`$ git branch -d <name>`"
-msgstr ""
+msgstr "`$ git branch -d <nome>`"
 
 #: ..\z_appendix.rst:22
 msgid "Merge branch (from the branch to merge into):"
@@ -87,7 +88,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:22
 msgid "`$ git merge PDC`"
-msgstr ""
+msgstr "`$ git merge PDC`"
 
 #: ..\z_appendix.rst:24 ..\z_appendix.rst:41 ..\z_appendix.rst:50
 msgid "Solve conflicts (add --tool=kdiff3 if no mergetool is specified)"
@@ -95,7 +96,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:24
 msgid "`$ git mergetool` `$ git commit`"
-msgstr ""
+msgstr "`$ git mergetool` `$ git commit`"
 
 #: ..\z_appendix.rst:27
 msgid "Create tag"
@@ -103,7 +104,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:27
 msgid "`$ git tag <name>`"
-msgstr ""
+msgstr "`$ git tag <nome>`"
 
 #: ..\z_appendix.rst:29
 msgid "Add files/changes (. for all files)"
@@ -111,7 +112,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:29
 msgid "`$ git add .`"
-msgstr ""
+msgstr "`$ git add .`"
 
 #: ..\z_appendix.rst:31
 msgid "Commit added files/changes (--amend to amend to last commit)"
@@ -127,7 +128,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:33
 msgid "`$ git reset --hard`"
-msgstr ""
+msgstr "`$ git reset --hard`"
 
 #: ..\z_appendix.rst:35
 msgid "Create patch (-M = detect renames –C = detect copies)"
@@ -135,7 +136,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:35
 msgid "`$ git format-patch –M –C origin`"
-msgstr ""
+msgstr "`$ git format-patch –M –C origin`"
 
 #: ..\z_appendix.rst:37
 msgid "Apply patch without merging"
@@ -155,11 +156,11 @@ msgstr ""
 
 #: ..\z_appendix.rst:0 ..\z_appendix.rst:0
 msgid "`$ git mergetool`"
-msgstr ""
+msgstr "`$ git mergetool`"
 
 #: ..\z_appendix.rst:0
 msgid "`$ git am –-3way -–resolved`"
-msgstr ""
+msgstr "`$ git am –-3way -–resolved`"
 
 #: ..\z_appendix.rst:44
 msgid "Stash changes"
@@ -167,7 +168,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:44
 msgid "`$ git stash`"
-msgstr ""
+msgstr "`$ git stash`"
 
 #: ..\z_appendix.rst:46
 msgid "Apply stashed changes"
@@ -175,7 +176,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:46
 msgid "`$ git stash apply`"
-msgstr ""
+msgstr "`$ git stash apply`"
 
 #: ..\z_appendix.rst:48
 msgid "Pull changes (add --rebase to rebase instead of merge)"
@@ -207,11 +208,11 @@ msgstr ""
 
 #: ..\z_appendix.rst:57
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: ..\z_appendix.rst:57
 msgid "`$ git <command> --help`"
-msgstr ""
+msgstr "`$ git <comando> --help`"
 
 #: ..\z_appendix.rst:60
 msgid "Here are some default names used by Git."

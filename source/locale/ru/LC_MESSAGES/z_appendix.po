@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2016
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +21,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:2
 msgid "Appendix"
-msgstr ""
+msgstr "Допонительно"
 
 #: ..\z_appendix.rst:5
 msgid "Git Cheat Sheet"
@@ -27,59 +29,59 @@ msgstr ""
 
 #: ..\z_appendix.rst:8
 msgid "Action"
-msgstr ""
+msgstr "Действие"
 
 #: ..\z_appendix.rst:8
 msgid "Command"
-msgstr ""
+msgstr "Команда"
 
 #: ..\z_appendix.rst:10
 msgid "Create new repository"
-msgstr ""
+msgstr "Создать новый репозиторий"
 
 #: ..\z_appendix.rst:10
 msgid "`$ git init`"
-msgstr ""
+msgstr "`$ git init`"
 
 #: ..\z_appendix.rst:12
 msgid "Create shared repository"
-msgstr ""
+msgstr "Создать общий репозиторий"
 
 #: ..\z_appendix.rst:12
 msgid "`$ git init –-bare –-shared=all`"
-msgstr ""
+msgstr "`$ git init –-bare –-shared=all`"
 
 #: ..\z_appendix.rst:14
 msgid "Clone repository"
-msgstr ""
+msgstr "Клонировать репозиторий"
 
 #: ..\z_appendix.rst:14
 msgid "`$ git clone c:/demo1 c:/demo2`"
-msgstr ""
+msgstr "`$ git clone c:/demo1 c:/demo2`"
 
 #: ..\z_appendix.rst:16
 msgid "Checkout branch"
-msgstr ""
+msgstr "Переключиться на ветку"
 
 #: ..\z_appendix.rst:16
 msgid "`$ git checkout <name>`"
-msgstr ""
+msgstr "`$ git checkout <name>`"
 
 #: ..\z_appendix.rst:18
 msgid "Create branch"
-msgstr ""
+msgstr "Создать ветку"
 
 #: ..\z_appendix.rst:18
 msgid "`$ git branch <name>`"
-msgstr ""
+msgstr "`$ git branch <name>`"
 
 #: ..\z_appendix.rst:20
 msgid "Delete branch"
-msgstr ""
+msgstr "Создать ветку"
 
 #: ..\z_appendix.rst:20
 msgid "`$ git branch -d <name>`"
-msgstr ""
+msgstr "`$ git branch -d <name>`"
 
 #: ..\z_appendix.rst:22
 msgid "Merge branch (from the branch to merge into):"
@@ -87,7 +89,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:22
 msgid "`$ git merge PDC`"
-msgstr ""
+msgstr "`$ git merge PDC`"
 
 #: ..\z_appendix.rst:24 ..\z_appendix.rst:41 ..\z_appendix.rst:50
 msgid "Solve conflicts (add --tool=kdiff3 if no mergetool is specified)"
@@ -95,23 +97,23 @@ msgstr ""
 
 #: ..\z_appendix.rst:24
 msgid "`$ git mergetool` `$ git commit`"
-msgstr ""
+msgstr "`$ git mergetool` `$ git commit`"
 
 #: ..\z_appendix.rst:27
 msgid "Create tag"
-msgstr ""
+msgstr "Создать метку"
 
 #: ..\z_appendix.rst:27
 msgid "`$ git tag <name>`"
-msgstr ""
+msgstr "`$ git tag <name>`"
 
 #: ..\z_appendix.rst:29
 msgid "Add files/changes (. for all files)"
-msgstr ""
+msgstr "Добавить файлы/изменения (. для всех файлов)"
 
 #: ..\z_appendix.rst:29
 msgid "`$ git add .`"
-msgstr ""
+msgstr "`$ git add .`"
 
 #: ..\z_appendix.rst:31
 msgid "Commit added files/changes (--amend to amend to last commit)"
@@ -119,31 +121,31 @@ msgstr ""
 
 #: ..\z_appendix.rst:31
 msgid "`$ git commit –m “Enter commit message”`"
-msgstr ""
+msgstr "`$ git commit –m “Enter commit message”`"
 
 #: ..\z_appendix.rst:33
 msgid "Discard changes"
-msgstr ""
+msgstr "Сбросить изменения"
 
 #: ..\z_appendix.rst:33
 msgid "`$ git reset --hard`"
-msgstr ""
+msgstr "`$ git reset --hard`"
 
 #: ..\z_appendix.rst:35
 msgid "Create patch (-M = detect renames –C = detect copies)"
-msgstr ""
+msgstr "Создать патч (-M = обнаружить переименования –C = обнаружить копии)"
 
 #: ..\z_appendix.rst:35
 msgid "`$ git format-patch –M –C origin`"
-msgstr ""
+msgstr "`$ git format-patch –M –C origin`"
 
 #: ..\z_appendix.rst:37
 msgid "Apply patch without merging"
-msgstr ""
+msgstr "Применить патч без слияния"
 
 #: ..\z_appendix.rst:37
 msgid "`$ git apply c:/patch/01-emp.patch`"
-msgstr ""
+msgstr "`$ git apply c:/patch/01-emp.patch`"
 
 #: ..\z_appendix.rst:39
 msgid "Merge patch"
@@ -151,31 +153,31 @@ msgstr ""
 
 #: ..\z_appendix.rst:39
 msgid "`$ git am -–3way –-signoff c:/patch/01-emp.patch`"
-msgstr ""
+msgstr "`$ git am -–3way –-signoff c:/patch/01-emp.patch`"
 
 #: ..\z_appendix.rst:0 ..\z_appendix.rst:0
 msgid "`$ git mergetool`"
-msgstr ""
+msgstr "`$ git mergetool`"
 
 #: ..\z_appendix.rst:0
 msgid "`$ git am –-3way -–resolved`"
-msgstr ""
+msgstr "`$ git am –-3way -–resolved`"
 
 #: ..\z_appendix.rst:44
 msgid "Stash changes"
-msgstr ""
+msgstr "Спрятать изменения"
 
 #: ..\z_appendix.rst:44
 msgid "`$ git stash`"
-msgstr ""
+msgstr "`$ git stash`"
 
 #: ..\z_appendix.rst:46
 msgid "Apply stashed changes"
-msgstr ""
+msgstr "Применить спрятанные изменения"
 
 #: ..\z_appendix.rst:46
 msgid "`$ git stash apply`"
-msgstr ""
+msgstr "`$ git stash apply`"
 
 #: ..\z_appendix.rst:48
 msgid "Pull changes (add --rebase to rebase instead of merge)"
@@ -183,11 +185,11 @@ msgstr ""
 
 #: ..\z_appendix.rst:48
 msgid "`$ git pull c:/demo1 master`"
-msgstr ""
+msgstr "`$ git pull c:/demo1 master`"
 
 #: ..\z_appendix.rst:0
 msgid "`$ git commit`"
-msgstr ""
+msgstr "`$ git commit`"
 
 #: ..\z_appendix.rst:53
 msgid "Push changes (in branch $ git push c:/demo1 master master:<new>)"
@@ -195,23 +197,23 @@ msgstr ""
 
 #: ..\z_appendix.rst:53
 msgid "`$ git push c:/demo1`"
-msgstr ""
+msgstr "`$ git push c:/demo1`"
 
 #: ..\z_appendix.rst:55
 msgid "Blame"
-msgstr ""
+msgstr "Авторы изменений"
 
 #: ..\z_appendix.rst:55
 msgid "`$ git blame –M –w <filename>`"
-msgstr ""
+msgstr "`$ git blame –M –w <filename>`"
 
 #: ..\z_appendix.rst:57
 msgid "Help"
-msgstr ""
+msgstr "Помощь"
 
 #: ..\z_appendix.rst:57
 msgid "`$ git <command> --help`"
-msgstr ""
+msgstr "`$ git <command> --help`"
 
 #: ..\z_appendix.rst:60
 msgid "Here are some default names used by Git."
@@ -219,47 +221,47 @@ msgstr ""
 
 #: ..\z_appendix.rst:63
 msgid "Default names"
-msgstr ""
+msgstr "Имена по умолчанию"
 
 #: ..\z_appendix.rst:65
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ..\z_appendix.rst:65
 msgid "default branch"
-msgstr ""
+msgstr "ветка по умолчанию"
 
 #: ..\z_appendix.rst:67
 msgid "origin"
-msgstr ""
+msgstr "origin"
 
 #: ..\z_appendix.rst:67
 msgid "default upstream repository"
-msgstr ""
+msgstr "внешний репозиторий по умолчанию"
 
 #: ..\z_appendix.rst:69
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 #: ..\z_appendix.rst:69
 msgid "current branch"
-msgstr ""
+msgstr "текущая ветка"
 
 #: ..\z_appendix.rst:71
 msgid "HEAD^"
-msgstr ""
+msgstr "HEAD^"
 
 #: ..\z_appendix.rst:71
 msgid "parent of HEAD"
-msgstr ""
+msgstr "родитель HEAD"
 
 #: ..\z_appendix.rst:73
 msgid "HEAD~4"
-msgstr ""
+msgstr "HEAD~4"
 
 #: ..\z_appendix.rst:73
 msgid "the great-great grandparent of HEAD"
-msgstr ""
+msgstr "пра-пра-прадед HEAD"
 
 #: ..\z_appendix.rst:78
 msgid "Menu map"

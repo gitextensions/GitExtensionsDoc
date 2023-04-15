@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ..\patches.rst:2
 msgid "Patches"
-msgstr ""
+msgstr "Патчи"
 
 #: ..\patches.rst:4
 msgid ""
@@ -30,11 +31,11 @@ msgid ""
 " you cannot push directly you can create patches. Patches can be e-mailed to"
 " someone with access to the repository. Each patch contains an entire commit"
 " including the commit message and the SHA1."
-msgstr ""
+msgstr "Каждый коммит содержит набор изменений, дату фиксации, имя коммиттера, сообщение о фиксации и криптографический хэш SHA1. Локальные коммиты могут быть опубликованы путем отправки их в удаленный репозиторий. Чтобы иметь возможность публиковать, вам нужно иметь достаточно прав и иметь доступ к удаленному репозиторию. Когда вы не можете отправить изменения, вы можете создать патчи. Патчи могут быть отправлены по электронной почте кому-либо, имеющему доступ к репозиторию. Каждый патч содержит полный коммит, включая сообщение коммита и SHA1."
 
 #: ..\patches.rst:13
 msgid "Create patch"
-msgstr ""
+msgstr "Создать патч"
 
 #: ..\patches.rst:15
 msgid ""
@@ -42,16 +43,16 @@ msgid ""
 "need to select the newest commit first and then select the oldest commit "
 "using ctrl-click. You can also select an interrupted patch series, but this "
 "is not recommended because the files will not be numbered."
-msgstr ""
+msgstr "Отформатируйте один патч или серию патчей, используя диалог форматирования патча. Вам нужно сначала выбрать самый новый коммит, а затем выбрать самый старый коммит, нажав Ctrl. Вы также можете выбрать прерванную серию патчей, но это не рекомендуется, поскольку файлы не будут пронумерованы."
 
 #: ..\patches.rst:21
 msgid ""
 "When the patches are created successfully the following dialog will appear."
-msgstr ""
+msgstr "Когда патчи будут успешно созданы, появится следующее диалоговое окно."
 
 #: ..\patches.rst:26
 msgid "Apply patches"
-msgstr ""
+msgstr "Применить патчи"
 
 #: ..\patches.rst:28
 msgid ""
@@ -59,4 +60,4 @@ msgid ""
 "When there are merge conflicts applying the patch you need to resolve them "
 "before you can continue. Git Extensions will help you applying all patches "
 "by marking the next recommended step."
-msgstr ""
+msgstr "Можно применить один файл патча или все патчи в каталоге. Если при использовании патча возникают конфликты слияния, вам необходимо разрешить их, прежде чем продолжить. Git Extensions поможет вам применить все патчи, отметив следующий рекомендуемый шаг."

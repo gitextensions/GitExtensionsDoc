@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,18 +20,18 @@ msgstr ""
 
 #: ..\tag.rst:2
 msgid "Tag"
-msgstr ""
+msgstr "Метка"
 
 #: ..\tag.rst:4
 msgid ""
 "Tags are used to mark a specific version. Usually a tag will not be moved "
 "anymore. The image below shows the commit log of Git Extensions with two "
 "tags indicating version [1.08] and [1.06]."
-msgstr ""
+msgstr "Метки используются для обозначения конкретной версии. Обычно метка больше не перемещается. На рисунке ниже показан журнал коммитов Git Extensions с двумя метками, указывающими версии [1.08] и [1.06]."
 
 #: ..\tag.rst:10
 msgid "Create tag"
-msgstr ""
+msgstr "Создать метку"
 
 #: ..\tag.rst:12
 msgid ""
@@ -38,17 +39,17 @@ msgid ""
 "the commit log context menu. A dialog will prompt for the name of the tag. "
 "You can also choose ``Create tag`` from the ``Commands`` menu, which will "
 "show a dialog to choose the revision and enter the tag name."
-msgstr ""
+msgstr "В Git Extensions вы можете пометить коммит, выбрав ``Создать новую метку`` в контекстном меню журнала фиксации. В диалоговом окне будет предложено ввести имя метки. Вы также можете выбрать ``Создать метку`` из меню `` Команды``, которое покажет диалоговое окно для выбора коммита и ввода имени метки."
 
 #: ..\tag.rst:18
 msgid ""
 "Once a tag is created, it cannot be moved again. You need to delete the tag "
 "and create it again to move it."
-msgstr ""
+msgstr "После создания метки ее нельзя переместить. Вам нужно удалить метку и создать ее снова, чтобы переместить на другой коммит."
 
 #: ..\tag.rst:21
 msgid "Delete tag"
-msgstr ""
+msgstr "Удалить метку"
 
 #: ..\tag.rst:23
 msgid ""
@@ -56,15 +57,15 @@ msgid ""
 " uses SHA1 hashes to name each commit. When you want to merge with an "
 "unnamed branch it is good practise to tag the unnamed branch, merge with the"
 " tag and then delete the tag again."
-msgstr ""
+msgstr "Для некоторых операций очень полезно создавать метки для временного использования. Git использует хэши SHA1 для именования каждого коммита. Если вы хотите объединить с неназванной ветвью, рекомендуется пометить неназванную ветвь, объединить с меткой и затем удалить метку."
 
 #: ..\tag.rst:30
 msgid "Re-Tag?"
-msgstr ""
+msgstr "Пометить повторно?"
 
 #: ..\tag.rst:32
 msgid ""
 "Read about \"What should you do when you tag a wrong commit and you would "
-"want to re-tag?\" here: https://www.kernel.org/pub/software/scm/git/docs"
-"/git-tag.html#_on_re_tagging"
-msgstr ""
+"want to re-tag?\" here: "
+"https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging"
+msgstr "Прочитайте о том «Что делать, если вы пометили неверный коммит и хотите пометить его повторно?» здесь: https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging"

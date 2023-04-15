@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Jorg722, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/git-extensions-manual/language/fr/)\n"
+"Last-Translator: Jorg722, 2019\n"
+"Language-Team: French (http://app.transifex.com/git-extensions/git-extensions-manual/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\tag.rst:2
 msgid "Tag"
-msgstr ""
+msgstr "Étiquette"
 
 #: ..\tag.rst:4
 msgid ""
@@ -30,7 +31,7 @@ msgstr ""
 
 #: ..\tag.rst:10
 msgid "Create tag"
-msgstr ""
+msgstr "Créer une étiquette"
 
 #: ..\tag.rst:12
 msgid ""
@@ -44,11 +45,11 @@ msgstr ""
 msgid ""
 "Once a tag is created, it cannot be moved again. You need to delete the tag "
 "and create it again to move it."
-msgstr ""
+msgstr "Une fois qu'une étiquette est créée, elle ne peut plus être déplacée. Vous devez supprimer l'étiquette et en créer une nouvelle pour la déplacer."
 
 #: ..\tag.rst:21
 msgid "Delete tag"
-msgstr ""
+msgstr "Supprimer une étiquette"
 
 #: ..\tag.rst:23
 msgid ""
@@ -60,11 +61,11 @@ msgstr ""
 
 #: ..\tag.rst:30
 msgid "Re-Tag?"
-msgstr ""
+msgstr "Re-étiqueter?"
 
 #: ..\tag.rst:32
 msgid ""
 "Read about \"What should you do when you tag a wrong commit and you would "
-"want to re-tag?\" here: https://www.kernel.org/pub/software/scm/git/docs"
-"/git-tag.html#_on_re_tagging"
+"want to re-tag?\" here: "
+"https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging"
 msgstr ""

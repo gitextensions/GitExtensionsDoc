@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/git-extensions-manual/language/pt_BR/)\n"
+"Last-Translator: Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015\n"
+"Language-Team: Portuguese (Brazil) (http://app.transifex.com/git-extensions/git-extensions-manual/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\plugins.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ..\plugins.rst:5
 msgid "List of the available plugins"
-msgstr ""
+msgstr "Lista de plugins disponíveis"
 
 #: ..\plugins.rst:7
 msgid "Auto Compile Submodules"
@@ -59,7 +60,7 @@ msgstr ""
 
 #: ..\plugins.rst:15
 msgid "Github"
-msgstr ""
+msgstr "Github"
 
 #: ..\plugins.rst:16
 msgid "Gource"
@@ -75,12 +76,12 @@ msgstr ""
 
 #: ..\plugins.rst:19
 msgid "Statistics"
-msgstr ""
+msgstr "Estatísticas"
 
 #: ..\plugins.rst:24
 msgid ""
-"This plugin permit to manage your _branching model: http://nvie.com/posts/a"
-"-successful-git-branching-model/ with _GitFlow: "
+"This plugin permit to manage your _branching model: "
+"http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: "
 "https://github.com/nvie/gitflow in GitExtension"
 msgstr ""
 

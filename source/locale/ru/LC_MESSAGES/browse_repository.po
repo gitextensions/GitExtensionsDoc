@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2016,2019
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2016,2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +21,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:2
 msgid "Browse Repository"
-msgstr ""
+msgstr "Просмотр репозитория"
 
 #: ..\browse_repository.rst:4
 msgid ""
@@ -31,7 +33,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:8
 msgid "View commit log"
-msgstr ""
+msgstr "Обзор истории коммитов"
 
 #: ..\browse_repository.rst:10
 msgid ""
@@ -49,7 +51,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:21
 msgid "Search or filter the commit history"
-msgstr ""
+msgstr "Поиск или фильтр истории коммитов"
 
 #: ..\browse_repository.rst:23
 msgid ""
@@ -60,7 +62,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:27
 msgid "Quick search in history"
-msgstr ""
+msgstr "Быстрый поиск по истории"
 
 #: ..\browse_repository.rst:29
 msgid ""
@@ -81,7 +83,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:38
 msgid "Go to a specific commit"
-msgstr ""
+msgstr "Перейти к указанному коммиту"
 
 #: ..\browse_repository.rst:40
 msgid ""
@@ -95,7 +97,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:46
 msgid "Filter history"
-msgstr ""
+msgstr "Фильтр истории"
 
 #: ..\browse_repository.rst:48
 msgid ""
@@ -115,7 +117,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:61
 msgid "Singe file history"
-msgstr ""
+msgstr "История файла"
 
 #: ..\browse_repository.rst:63
 msgid ""
@@ -141,7 +143,7 @@ msgstr ""
 
 #: ..\browse_repository.rst:80
 msgid "Blame"
-msgstr ""
+msgstr "Авторы изменений"
 
 #: ..\browse_repository.rst:82
 msgid ""

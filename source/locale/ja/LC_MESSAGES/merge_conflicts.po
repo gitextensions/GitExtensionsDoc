@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Yuki Shira <shirayuking@gmail.com>, 2022-2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2022-2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,53 +20,53 @@ msgstr ""
 
 #: ..\merge_conflicts.rst:2
 msgid "Merge Conflicts"
-msgstr ""
+msgstr "マージ競合"
 
 #: ..\merge_conflicts.rst:4
 msgid ""
 "When merging branches or commits you can get merge conflicts. Git will try "
 "to resolve these, but some conflicts need to be resolved manually. Git "
 "Extensions will show warnings when there is a merge conflict."
-msgstr ""
+msgstr "ブランチやコミットをマージする際に、マージ競合が発生することがあります。Git はこれらを解決しようとしますが、いくつかの競合は手動で解決する必要があります。Git Extensions は、マージ競合が発生したときに警告を表示します。"
 
 #: ..\merge_conflicts.rst:10
 msgid "Handle merge conflicts"
-msgstr ""
+msgstr "マージ競合の処理"
 
 #: ..\merge_conflicts.rst:12
 msgid ""
 "To solve merge conflicts just click on a warning or open the merge conflict "
 "dialog from the menu. A dialog will prompt showing all conflicts. You can "
 "solve a conflict by double-click on a filename."
-msgstr ""
+msgstr "マージ競合を解決するには、警告をクリックするか、メニューからマージ競合ダイアログを開いてください。ダイアログが表示され、すべての競合が表示されます。ファイル名をダブルクリックすると、競合を解決できます。"
 
 #: ..\merge_conflicts.rst:17
 msgid "There are three kinds of conflicts:"
-msgstr ""
+msgstr "競合には 3 種類あります:"
 
 #: ..\merge_conflicts.rst:20
 msgid "File deleted and changed"
-msgstr ""
+msgstr "ファイル削除と変更"
 
 #: ..\merge_conflicts.rst:20
 msgid "Use modified or deleted file?"
-msgstr ""
+msgstr "ファイル変更と削除のどちらを使用するか?"
 
 #: ..\merge_conflicts.rst:22
 msgid "File deleted and created"
-msgstr ""
+msgstr "ファイル削除と作成"
 
 #: ..\merge_conflicts.rst:22
 msgid "Use created or deleted file?"
-msgstr ""
+msgstr "ファイル作成と削除のどちらを使用するか?"
 
 #: ..\merge_conflicts.rst:24
 msgid "File changed both locally and remotely"
-msgstr ""
+msgstr "ファイルをローカルとリモートの両方で変更"
 
 #: ..\merge_conflicts.rst:24
 msgid "Start merge tool."
-msgstr ""
+msgstr "マージツールを開始します。"
 
 #: ..\merge_conflicts.rst:28
 msgid ""
@@ -75,43 +76,43 @@ msgid ""
 "tool you want to use for merge conflicts. The image below shows Perforce "
 "P4Merge a free to use merge tool. Git Extensions is packaged with KDiff3, an"
 " open source merge tool."
-msgstr ""
+msgstr "あるコミットでファイルが削除され、別のコミットで変更された場合、変更されたファイルを残すか、ファイルを削除するかを尋ねるダイアログが表示されます。競合する変更がある場合、マージツールが開始されます。マージ競合に使用するツールを設定できます。下の画像は Perforce P4Merge であり無料で使えるマージツールです。Git Extensions には、オープンソースのマージツールである KDiff3 が同梱されています。"
 
 #: ..\merge_conflicts.rst:33
 msgid "In the merge tool you will see four versions of the same file:"
-msgstr ""
+msgstr "マージツールには、同じファイルの 4 つのバージョンが表示されます:"
 
 #: ..\merge_conflicts.rst:36
 msgid "Base"
-msgstr ""
+msgstr "ベース"
 
 #: ..\merge_conflicts.rst:36
 msgid "The latest version of the file that exist in both repositories"
-msgstr ""
+msgstr "両方のリポジトリに存在するファイルの最新版"
 
 #: ..\merge_conflicts.rst:38
 msgid "Local"
-msgstr ""
+msgstr "ローカル"
 
 #: ..\merge_conflicts.rst:38
 msgid "The latest local version of the file"
-msgstr ""
+msgstr "ローカルにあるファイルの最新版"
 
 #: ..\merge_conflicts.rst:40
 msgid "Remote"
-msgstr ""
+msgstr "リモート"
 
 #: ..\merge_conflicts.rst:40
 msgid "The latest remote version of the file"
-msgstr ""
+msgstr "リモートにあるファイルの最新版"
 
 #: ..\merge_conflicts.rst:42
 msgid "Merged"
-msgstr ""
+msgstr "マージ済"
 
 #: ..\merge_conflicts.rst:42
 msgid "The result of the merge"
-msgstr ""
+msgstr "マージの結果"
 
 #: ..\merge_conflicts.rst:47
 msgid ""
@@ -119,4 +120,4 @@ msgid ""
 "file. When you are in the middle of a rebase the file named remote "
 "represents your file. This can be confusing, so double check if you are in "
 "doubt."
-msgstr ""
+msgstr "マージの途中には、ローカルという名前のファイルがあなたのファイル (your file) を表します。リベースの途中には、リモートという名前のファイルがあなたのファイル (your file) を表します。これは混乱する可能性があるので、疑問がある場合は再確認してください。"

@@ -3,33 +3,35 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Jorg722, 2019
+# Nicolas Renault <nichca@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/git-extensions-manual/language/fr/)\n"
+"Last-Translator: Jorg722, 2019\n"
+"Language-Team: French (http://app.transifex.com/git-extensions/git-extensions-manual/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\maintenance.rst:2
 msgid "Maintenance"
-msgstr ""
+msgstr "Maintenance"
 
 #: ..\maintenance.rst:4
 msgid ""
 "In this chapter some of the functions to maintain a repository are "
 "discussed."
-msgstr ""
+msgstr "Dans ce chapitre, nous allons parler des fonctionnalités permettant de maintenir un dépôt."
 
 #: ..\maintenance.rst:7
 msgid "Compress Git database"
-msgstr ""
+msgstr "Compresser la base de données Git"
 
 #: ..\maintenance.rst:9
 msgid ""
@@ -80,7 +82,7 @@ msgstr ""
 
 #: ..\maintenance.rst:41
 msgid "Fix user names"
-msgstr ""
+msgstr "Corriger les noms d'utilisateurs"
 
 #: ..\maintenance.rst:43
 msgid ""
@@ -91,11 +93,11 @@ msgstr ""
 
 #: ..\maintenance.rst:48
 msgid "Fix user name using commit email:"
-msgstr ""
+msgstr "Corriger le nom d'utilisateur en utilisant l'email de soumission :"
 
 #: ..\maintenance.rst:54
 msgid "Fix email address using commit email:"
-msgstr ""
+msgstr "Corriger l'email en utilisant l'email de soumission :"
 
 #: ..\maintenance.rst:60
 msgid "Fix email address and name using commit email:"
@@ -107,7 +109,7 @@ msgstr ""
 
 #: ..\maintenance.rst:73
 msgid "Ignore files"
-msgstr ""
+msgstr "Ignorer les fichiers"
 
 #: ..\maintenance.rst:75
 msgid ""
@@ -121,19 +123,19 @@ msgstr ""
 
 #: ..\maintenance.rst:81
 msgid "A short overview of the syntax:"
-msgstr ""
+msgstr "Un petit aperçu de la syntaxe :"
 
 #: ..\maintenance.rst:84
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ..\maintenance.rst:84
 msgid "Lines started with ``#`` are handled as comments"
-msgstr ""
+msgstr "Les lignes commençant par \"#\" sont considérées comme des commentaires"
 
 #: ..\maintenance.rst:86
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ..\maintenance.rst:86
 msgid "Lines started with ``!`` are exclude patterns"
@@ -141,23 +143,23 @@ msgstr ""
 
 #: ..\maintenance.rst:88
 msgid "[Dd]"
-msgstr ""
+msgstr "[Dd]"
 
 #: ..\maintenance.rst:88
 msgid "Characters inside ``[..]`` means that 1 of the characters must match"
-msgstr ""
+msgstr "Les caractères à l'intérieur de \"[...]\" signifient que 1 des caractères doit correspondre"
 
 #: ..\maintenance.rst:90
 msgid "\\*"
-msgstr ""
+msgstr "\\*"
 
 #: ..\maintenance.rst:90
 msgid "Wildcard"
-msgstr ""
+msgstr "Joker"
 
 #: ..\maintenance.rst:92 ..\maintenance.rst:95
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ..\maintenance.rst:92
 msgid ""
@@ -178,4 +180,4 @@ msgstr ""
 msgid ""
 "For more `detailed information "
 "<http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_."
-msgstr ""
+msgstr "Pour des 'informations plus détaillées <http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_."
