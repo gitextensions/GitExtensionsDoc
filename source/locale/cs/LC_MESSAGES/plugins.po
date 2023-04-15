@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# teofilko <teofil.kvak@yandex.ru>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/git-extensions-manual/language/cs/)\n"
+"Last-Translator: teofilko <teofil.kvak@yandex.ru>, 2021\n"
+"Language-Team: Czech (http://app.transifex.com/git-extensions/git-extensions-manual/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: ..\plugins.rst:2
 msgid "Plugins"
@@ -27,7 +28,7 @@ msgstr ""
 
 #: ..\plugins.rst:7
 msgid "Auto Compile Submodules"
-msgstr ""
+msgstr "Automaticky přeložit podmoduly"
 
 #: ..\plugins.rst:8
 msgid "Background Fetch"
@@ -79,8 +80,8 @@ msgstr ""
 
 #: ..\plugins.rst:24
 msgid ""
-"This plugin permit to manage your _branching model: http://nvie.com/posts/a"
-"-successful-git-branching-model/ with _GitFlow: "
+"This plugin permit to manage your _branching model: "
+"http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: "
 "https://github.com/nvie/gitflow in GitExtension"
 msgstr ""
 

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Yuki Shira <shirayuking@gmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ..\patches.rst:2
 msgid "Patches"
-msgstr ""
+msgstr "パッチ"
 
 #: ..\patches.rst:4
 msgid ""
@@ -30,11 +31,11 @@ msgid ""
 " you cannot push directly you can create patches. Patches can be e-mailed to"
 " someone with access to the repository. Each patch contains an entire commit"
 " including the commit message and the SHA1."
-msgstr ""
+msgstr "すべてのコミットには、変更セット、コミット日時、コミッター名、コミットメッセージ、暗号化された SHA1 ハッシュが含まれます。ローカルコミットは、リモートリポジトリにプッシュすることで公開できます。プッシュするには、十分な権限とリモートリポジトリへのアクセス権が必要です。直接プッシュできない場合は、パッチを作成できます。パッチは、リポジトリにアクセスできる人にメールで送信できます。各パッチには、コミットメッセージと SHA1 を含むコミット全体が含まれています。"
 
 #: ..\patches.rst:13
 msgid "Create patch"
-msgstr ""
+msgstr "パッチの作成"
 
 #: ..\patches.rst:15
 msgid ""
@@ -42,16 +43,16 @@ msgid ""
 "need to select the newest commit first and then select the oldest commit "
 "using ctrl-click. You can also select an interrupted patch series, but this "
 "is not recommended because the files will not be numbered."
-msgstr ""
+msgstr "パッチ整形ダイアログを使用して、単一のパッチまたは一連のパッチを整形します。まず最新のコミットを選択し、次に Ctrl-クリック で最も古いコミットを選択する必要があります。中断された一連のパッチを選択することもできますが、ファイルに番号が付かないためお勧めできません。"
 
 #: ..\patches.rst:21
 msgid ""
 "When the patches are created successfully the following dialog will appear."
-msgstr ""
+msgstr "パッチが正常に作成されると、以下のダイアログが表示されます。"
 
 #: ..\patches.rst:26
 msgid "Apply patches"
-msgstr ""
+msgstr "パッチの適用"
 
 #: ..\patches.rst:28
 msgid ""
@@ -59,4 +60,4 @@ msgid ""
 "When there are merge conflicts applying the patch you need to resolve them "
 "before you can continue. Git Extensions will help you applying all patches "
 "by marking the next recommended step."
-msgstr ""
+msgstr "単一のパッチファイルまたはディレクトリ内のすべてのパッチを適用できます。パッチを適用する際にマージ競合が発生した場合は、それを解決してから続行する必要があります。Git Extensions は、次の推奨ステップに印をつけることで、すべてのパッチを適用する手助けをします。"

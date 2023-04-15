@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2019,2022-2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2016-10-28 18:30+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2019,2022-2023\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:2
 msgid "Remote feature"
-msgstr ""
+msgstr "Функция удалённого управления"
 
 #: ..\remote_feature.rst:4
 msgid ""
@@ -31,7 +32,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:9
 msgid "Manage remote repositories"
-msgstr ""
+msgstr "Управление удалёнными репозиториями"
 
 #: ..\remote_feature.rst:11
 msgid "You can manage the remote repositories in the ``Remotes`` menu."
@@ -80,7 +81,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:37
 msgid "Create SSH key"
-msgstr ""
+msgstr "Создание ключа SSH"
 
 #: ..\remote_feature.rst:39
 msgid ""
@@ -103,7 +104,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:49
 msgid "PuTTY and github"
-msgstr ""
+msgstr "PuTTY и GitHub"
 
 #: ..\remote_feature.rst:51
 msgid ""
@@ -160,7 +161,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:86
 msgid "OpenSSH and github"
-msgstr ""
+msgstr "OpenSSH и GitHub"
 
 #: ..\remote_feature.rst:88
 msgid ""
@@ -204,7 +205,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:116
 msgid "Pull changes"
-msgstr ""
+msgstr "Извлечение изменений"
 
 #: ..\remote_feature.rst:118
 msgid ""
@@ -237,7 +238,7 @@ msgstr ""
 #: ..\remote_feature.rst:135
 msgid ""
 "When you choose to merge the remote branch after fetching the changes a "
-"branch will be created, and will be merged you’re your commit. Doing this "
+"branch will be created, and will be merged into your commit. Doing this "
 "creates a lot of branches and merges, making the history harder to read."
 msgstr ""
 
@@ -257,7 +258,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:150
 msgid "Solve conflicts"
-msgstr ""
+msgstr "Разрешить конфликты"
 
 #: ..\remote_feature.rst:150
 msgid ""
@@ -266,7 +267,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:152
 msgid "Stash changes"
-msgstr ""
+msgstr "Спрятать изменения"
 
 #: ..\remote_feature.rst:152
 msgid ""
@@ -286,7 +287,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:156
 msgid "Load SSH key"
-msgstr ""
+msgstr "Загрузить ключ SSH"
 
 #: ..\remote_feature.rst:156
 msgid ""
@@ -297,7 +298,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:161
 msgid "Push changes"
-msgstr ""
+msgstr "Отправить изменения"
 
 #: ..\remote_feature.rst:163
 msgid ""

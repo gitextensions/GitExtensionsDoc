@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# f1e57333c301aa30774de1f162383f38_1231ade <60a210b9eee1a0230b3bfa6835c19cf2_792293>, 2019
+# Yuki Shira <shirayuking@gmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,18 +21,18 @@ msgstr ""
 
 #: ..\tag.rst:2
 msgid "Tag"
-msgstr ""
+msgstr "タグ"
 
 #: ..\tag.rst:4
 msgid ""
 "Tags are used to mark a specific version. Usually a tag will not be moved "
 "anymore. The image below shows the commit log of Git Extensions with two "
 "tags indicating version [1.08] and [1.06]."
-msgstr ""
+msgstr "タグは、特定のバージョンに印を付けるために使用されます。通常、タグが移動されることはありません。下の図は、Git Extensions のコミットログで、バージョン [1.08] と [1.06] を示す 2 つのタグが表示されています。"
 
 #: ..\tag.rst:10
 msgid "Create tag"
-msgstr ""
+msgstr "タグの作成"
 
 #: ..\tag.rst:12
 msgid ""
@@ -38,17 +40,17 @@ msgid ""
 "the commit log context menu. A dialog will prompt for the name of the tag. "
 "You can also choose ``Create tag`` from the ``Commands`` menu, which will "
 "show a dialog to choose the revision and enter the tag name."
-msgstr ""
+msgstr "Git Extensions では、コミットログのコンテキストメニューから「タグを新規作成」を選択することで、リビジョンにタグを付けられます。タグの名前を入力するダイアログが表示されます。また、コマンドメニューから「タグを作成」を選択すると、リビジョンを選択するダイアログが表示され、タグの名前を入力できます。"
 
 #: ..\tag.rst:18
 msgid ""
 "Once a tag is created, it cannot be moved again. You need to delete the tag "
 "and create it again to move it."
-msgstr ""
+msgstr "一度作成したタグは、再度移動させることはできません。移動させるには、タグを削除して再作成する必要があります。"
 
 #: ..\tag.rst:21
 msgid "Delete tag"
-msgstr ""
+msgstr "タグの削除"
 
 #: ..\tag.rst:23
 msgid ""
@@ -56,15 +58,15 @@ msgid ""
 " uses SHA1 hashes to name each commit. When you want to merge with an "
 "unnamed branch it is good practise to tag the unnamed branch, merge with the"
 " tag and then delete the tag again."
-msgstr ""
+msgstr "一部の操作では、一時的な使用のためにタグを作成すると非常に便利です。Git では、各コミットの名前として SHA1 ハッシュを使用しています。名前のないブランチとマージしたいときは、名前のないブランチにタグを付け、そのタグとマージした後でタグを削除するのがいい方法です。"
 
 #: ..\tag.rst:30
 msgid "Re-Tag?"
-msgstr ""
+msgstr "タグの付け直し?"
 
 #: ..\tag.rst:32
 msgid ""
 "Read about \"What should you do when you tag a wrong commit and you would "
-"want to re-tag?\" here: https://www.kernel.org/pub/software/scm/git/docs"
-"/git-tag.html#_on_re_tagging"
-msgstr ""
+"want to re-tag?\" here: "
+"https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging"
+msgstr "「タグ付けを間違えてしまい、再度タグ付けをしたい場合はどうすればいいのか」についてはこちらを参照してください: https://www.kernel.org/pub/software/scm/git/docs/git-tag.html#_on_re_tagging"

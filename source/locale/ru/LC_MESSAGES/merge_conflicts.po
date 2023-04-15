@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,53 +20,53 @@ msgstr ""
 
 #: ..\merge_conflicts.rst:2
 msgid "Merge Conflicts"
-msgstr ""
+msgstr "Конфликты слияния"
 
 #: ..\merge_conflicts.rst:4
 msgid ""
 "When merging branches or commits you can get merge conflicts. Git will try "
 "to resolve these, but some conflicts need to be resolved manually. Git "
 "Extensions will show warnings when there is a merge conflict."
-msgstr ""
+msgstr "При слиянии веток или коммитов вы можете получить конфликты слияния. Git попытается разрешить их, но некоторые конфликты необходимо разрешить вручную. Git Extensions будет показывать предупреждения при конфликте слияния."
 
 #: ..\merge_conflicts.rst:10
 msgid "Handle merge conflicts"
-msgstr ""
+msgstr "Обработка конфликтов слияния"
 
 #: ..\merge_conflicts.rst:12
 msgid ""
 "To solve merge conflicts just click on a warning or open the merge conflict "
 "dialog from the menu. A dialog will prompt showing all conflicts. You can "
 "solve a conflict by double-click on a filename."
-msgstr ""
+msgstr "Для разрешения конфликтов слияния, просто нажмите на предупреждение или откройте диалоговое окно конфликта слияния из меню. Появится диалоговое окно с указанием всех конфликтов. Вы можете решить конфликт, дважды щелкнув по имени файла."
 
 #: ..\merge_conflicts.rst:17
 msgid "There are three kinds of conflicts:"
-msgstr ""
+msgstr "Существует три вида конфликтов:"
 
 #: ..\merge_conflicts.rst:20
 msgid "File deleted and changed"
-msgstr ""
+msgstr "Файл удален и изменен"
 
 #: ..\merge_conflicts.rst:20
 msgid "Use modified or deleted file?"
-msgstr ""
+msgstr "Применить изменение или удалить файл?"
 
 #: ..\merge_conflicts.rst:22
 msgid "File deleted and created"
-msgstr ""
+msgstr "Файл удален и создан"
 
 #: ..\merge_conflicts.rst:22
 msgid "Use created or deleted file?"
-msgstr ""
+msgstr "Применить создание или удалить файл?"
 
 #: ..\merge_conflicts.rst:24
 msgid "File changed both locally and remotely"
-msgstr ""
+msgstr "Файл изменен локально и во внешнем"
 
 #: ..\merge_conflicts.rst:24
 msgid "Start merge tool."
-msgstr ""
+msgstr "Запустить инструмент слияния."
 
 #: ..\merge_conflicts.rst:28
 msgid ""
@@ -75,43 +76,43 @@ msgid ""
 "tool you want to use for merge conflicts. The image below shows Perforce "
 "P4Merge a free to use merge tool. Git Extensions is packaged with KDiff3, an"
 " open source merge tool."
-msgstr ""
+msgstr "Если файл был удален в одном коммите и изменен в другом коммите, диалоговое окно предложит сохранить измененный файл или удалить его. При наличии противоречивых изменений запускается инструмент слияния. Вы можете настроить инструмент, который вы хотите использовать для конфликтов слияния. На изображении ниже показан Perforce P4Merge - бесплатный инструмент для слияния. Git Extensions поставляется с KDiff3, инструментом слияния с открытым исходным кодом."
 
 #: ..\merge_conflicts.rst:33
 msgid "In the merge tool you will see four versions of the same file:"
-msgstr ""
+msgstr "В инструменте слияния вы увидите четыре версии одного и того же файла:"
 
 #: ..\merge_conflicts.rst:36
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #: ..\merge_conflicts.rst:36
 msgid "The latest version of the file that exist in both repositories"
-msgstr ""
+msgstr "Последняя версия файла, которая существует в обоих репозиториях"
 
 #: ..\merge_conflicts.rst:38
 msgid "Local"
-msgstr ""
+msgstr "Local"
 
 #: ..\merge_conflicts.rst:38
 msgid "The latest local version of the file"
-msgstr ""
+msgstr "Последняя локальная версия файла"
 
 #: ..\merge_conflicts.rst:40
 msgid "Remote"
-msgstr ""
+msgstr "Remote"
 
 #: ..\merge_conflicts.rst:40
 msgid "The latest remote version of the file"
-msgstr ""
+msgstr "Последняя внешняя версия файла"
 
 #: ..\merge_conflicts.rst:42
 msgid "Merged"
-msgstr ""
+msgstr "Merged"
 
 #: ..\merge_conflicts.rst:42
 msgid "The result of the merge"
-msgstr ""
+msgstr "Результат слияния"
 
 #: ..\merge_conflicts.rst:47
 msgid ""
@@ -119,4 +120,4 @@ msgid ""
 "file. When you are in the middle of a rebase the file named remote "
 "represents your file. This can be confusing, so double check if you are in "
 "doubt."
-msgstr ""
+msgstr "Когда вы находитесь в середине слияния, файл с именем local представляет ваш файл. Когда вы находитесь в середине перебазирования, файл с именем remote представляет ваш файл. Это может сбить с толку, так что дважды проверьте, если у вас есть сомнения."

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Валерий Максимов <maximovvalery@gmail.com>, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ..\submodules.rst:2
 msgid "Submodules"
-msgstr ""
+msgstr "Субмодули"
 
 #: ..\submodules.rst:4
 msgid ""
@@ -31,7 +32,7 @@ msgstr ""
 
 #: ..\submodules.rst:11
 msgid "Manage submodules"
-msgstr ""
+msgstr "Управление субмодулями"
 
 #: ..\submodules.rst:13
 msgid ""
@@ -41,15 +42,15 @@ msgstr ""
 
 #: ..\submodules.rst:19 ..\submodules.rst:32
 msgid "Add submodule"
-msgstr ""
+msgstr "Добавить субмодуль"
 
 #: ..\submodules.rst:19
 msgid "Add a new submodule to the repository"
-msgstr ""
+msgstr "Добавить новый субмодуль репозиторию"
 
 #: ..\submodules.rst:21
 msgid "Synchronize"
-msgstr ""
+msgstr "Синхронизировать"
 
 #: ..\submodules.rst:21
 msgid ""
@@ -70,7 +71,7 @@ msgstr ""
 
 #: ..\submodules.rst:27
 msgid "Update"
-msgstr ""
+msgstr "Обновить"
 
 #: ..\submodules.rst:27
 msgid ""
@@ -86,7 +87,7 @@ msgstr ""
 
 #: ..\submodules.rst:39
 msgid "Path to submodule"
-msgstr ""
+msgstr "Путь к субмодулю"
 
 #: ..\submodules.rst:39
 msgid "Path to the remote repository to use as submodule."
@@ -94,7 +95,7 @@ msgstr ""
 
 #: ..\submodules.rst:41
 msgid "Local path"
-msgstr ""
+msgstr "Локальный путь"
 
 #: ..\submodules.rst:41
 msgid ""
@@ -104,7 +105,7 @@ msgstr ""
 
 #: ..\submodules.rst:43
 msgid "Branch"
-msgstr ""
+msgstr "Ветка"
 
 #: ..\submodules.rst:43
 msgid "Branch to track."
@@ -112,7 +113,7 @@ msgstr ""
 
 #: ..\submodules.rst:47
 msgid "Remove submodule"
-msgstr ""
+msgstr "Удалить субмодуль"
 
 #: ..\submodules.rst:49
 msgid ""

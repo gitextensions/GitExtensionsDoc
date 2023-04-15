@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
-"PO-Revision-Date: 2016-09-27 03:19+0000\n"
-"Last-Translator: María Inés Parnisari <maineparnisari@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
+"POT-Creation-Date: 2016-10-28 18:30+0300\n"
+"PO-Revision-Date: 2015-05-24 19:19+0000\n"
+"Last-Translator: María Inés Parnisari <maineparnisari@gmail.com>, 2016\n"
+"Language-Team: Spanish (http://app.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\remote_feature.rst:2
 msgid "Remote feature"
@@ -238,7 +238,7 @@ msgstr ""
 #: ..\remote_feature.rst:135
 msgid ""
 "When you choose to merge the remote branch after fetching the changes a "
-"branch will be created, and will be merged you’re your commit. Doing this "
+"branch will be created, and will be merged into your commit. Doing this "
 "creates a lot of branches and merges, making the history harder to read."
 msgstr ""
 
@@ -267,7 +267,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:152
 msgid "Stash changes"
-msgstr ""
+msgstr "Cambios Stash"
 
 #: ..\remote_feature.rst:152
 msgid ""

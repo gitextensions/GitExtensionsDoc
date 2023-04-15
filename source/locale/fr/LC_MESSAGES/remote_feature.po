@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Jorg722, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2016-10-28 18:30+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/git-extensions-manual/language/fr/)\n"
+"Last-Translator: Jorg722, 2019\n"
+"Language-Team: French (http://app.transifex.com/git-extensions/git-extensions-manual/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\remote_feature.rst:2
 msgid "Remote feature"
@@ -31,7 +32,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:9
 msgid "Manage remote repositories"
-msgstr ""
+msgstr "Gérer les dépôts distants"
 
 #: ..\remote_feature.rst:11
 msgid "You can manage the remote repositories in the ``Remotes`` menu."
@@ -61,11 +62,11 @@ msgstr ""
 
 #: ..\remote_feature.rst:26
 msgid "Throw away remote branches that do not exist on the remote anymore."
-msgstr ""
+msgstr "Nettoyer les branches distantes qui n'existent plus."
 
 #: ..\remote_feature.rst:28
 msgid "Update all remote branch info"
-msgstr ""
+msgstr "Mettre à jour les informations des branches distantes"
 
 #: ..\remote_feature.rst:28
 msgid "Fetch all remote branch information."
@@ -80,7 +81,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:37
 msgid "Create SSH key"
-msgstr ""
+msgstr "Créer une clé SSH"
 
 #: ..\remote_feature.rst:39
 msgid ""
@@ -103,7 +104,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:49
 msgid "PuTTY and github"
-msgstr ""
+msgstr "PuTTY et GitHub"
 
 #: ..\remote_feature.rst:51
 msgid ""
@@ -116,11 +117,11 @@ msgstr ""
 msgid ""
 "First make sure GitExtensions is configured to use PuTTY and all paths are "
 "correct."
-msgstr ""
+msgstr "Veuillez vous assurer que GitExtensions est configuré pour utiliser PuTTY et que les chemins sont corrects."
 
 #: ..\remote_feature.rst:60
 msgid "can choose ``Generate or import key`` to start the key generator."
-msgstr ""
+msgstr "peut choisir \"Générer ou Importer une clé\" pour démarrer le générateur de clé."
 
 #: ..\remote_feature.rst:66
 msgid ""
@@ -156,17 +157,17 @@ msgstr ""
 
 #: ..\remote_feature.rst:83
 msgid "This is done in the ``Manage remote repositories`` dialog."
-msgstr ""
+msgstr "Cela est fait dans la fenêtre \"Gérer les dépôts distants\"."
 
 #: ..\remote_feature.rst:86
 msgid "OpenSSH and github"
-msgstr ""
+msgstr "OpenSSH et GitHub"
 
 #: ..\remote_feature.rst:88
 msgid ""
 "When you choose to use OpenSSH you need to configure GitExtensions as shown "
 "in the screenshot below."
-msgstr ""
+msgstr "Quand vous choisissez d'utiliser OpenSSH, vous devez configurer GitExtensions comme dans la capture d'écran ci-dessous."
 
 #: ..\remote_feature.rst:92
 msgid ""
@@ -204,7 +205,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:116
 msgid "Pull changes"
-msgstr ""
+msgstr "Importer les modifications"
 
 #: ..\remote_feature.rst:118
 msgid ""
@@ -237,7 +238,7 @@ msgstr ""
 #: ..\remote_feature.rst:135
 msgid ""
 "When you choose to merge the remote branch after fetching the changes a "
-"branch will be created, and will be merged you’re your commit. Doing this "
+"branch will be created, and will be merged into your commit. Doing this "
 "creates a lot of branches and merges, making the history harder to read."
 msgstr ""
 
@@ -253,16 +254,16 @@ msgstr ""
 
 #: ..\remote_feature.rst:147
 msgid "Next to the pull button there are some buttons that can be useful:"
-msgstr ""
+msgstr "A proximité du bouton d'import, il y a quelques boutons qui peuvent être utiles : "
 
 #: ..\remote_feature.rst:150
 msgid "Solve conflicts"
-msgstr ""
+msgstr "Résoudre les conflits"
 
 #: ..\remote_feature.rst:150
 msgid ""
 "When there are merge conflicts, you can solve them by pressing this button."
-msgstr ""
+msgstr "Quand il y a des conflits de fusion, vous pouvez les résoudre en appuyant sur ce bouton."
 
 #: ..\remote_feature.rst:152
 msgid "Stash changes"
@@ -286,7 +287,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:156
 msgid "Load SSH key"
-msgstr ""
+msgstr "Charger la clé SSH"
 
 #: ..\remote_feature.rst:156
 msgid ""
@@ -297,7 +298,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:161
 msgid "Push changes"
-msgstr ""
+msgstr "Pousser les modifications"
 
 #: ..\remote_feature.rst:163
 msgid ""
@@ -310,7 +311,7 @@ msgstr ""
 
 #: ..\remote_feature.rst:169
 msgid "To push the changes press ``Push`` in the toolbar."
-msgstr ""
+msgstr "Pour pousser les modifications, appuyer sur \"Pousser\" dans la barre d'outil."
 
 #: ..\remote_feature.rst:173
 msgid ""

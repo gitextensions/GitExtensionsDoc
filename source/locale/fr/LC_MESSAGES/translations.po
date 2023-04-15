@@ -3,38 +3,39 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Jorg722, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/git-extensions-manual/language/fr/)\n"
+"Last-Translator: Jorg722, 2019\n"
+"Language-Team: French (http://app.transifex.com/git-extensions/git-extensions-manual/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Traductions"
 
 #: ..\translations.rst:5
 msgid "Change language"
-msgstr ""
+msgstr "Changer le langage"
 
 #: ..\translations.rst:7
 msgid ""
 "In the settings dialog a translation can be chosen. The translation files "
 "are located in a directory located in the Git Extensions installation "
 "directory. The files are readable xml files."
-msgstr ""
+msgstr "Dans la fenêtre des paramètres, une traduction peut être choisie. Les fichiers de traductions sont localisés dans un dossier placé dans le répertoire d'installation de Git Extensions. Les fichiers sont des fichiers XML lisibles."
 
 #: ..\translations.rst:13
 msgid "Translate Git Extensions"
-msgstr ""
+msgstr "Traduire Git Extensions"
 
 #: ..\translations.rst:15
 msgid ""

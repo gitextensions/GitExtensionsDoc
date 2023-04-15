@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Yuki Shira <shirayuking@gmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,254 +20,254 @@ msgstr ""
 
 #: ..\z_appendix.rst:2
 msgid "Appendix"
-msgstr ""
+msgstr "付録"
 
 #: ..\z_appendix.rst:5
 msgid "Git Cheat Sheet"
-msgstr ""
+msgstr "Git チートシート"
 
 #: ..\z_appendix.rst:8
 msgid "Action"
-msgstr ""
+msgstr "操作"
 
 #: ..\z_appendix.rst:8
 msgid "Command"
-msgstr ""
+msgstr "コマンド"
 
 #: ..\z_appendix.rst:10
 msgid "Create new repository"
-msgstr ""
+msgstr "リポジトリの新規作成"
 
 #: ..\z_appendix.rst:10
 msgid "`$ git init`"
-msgstr ""
+msgstr "`$ git init`"
 
 #: ..\z_appendix.rst:12
 msgid "Create shared repository"
-msgstr ""
+msgstr "共有リポジトリの作成"
 
 #: ..\z_appendix.rst:12
 msgid "`$ git init –-bare –-shared=all`"
-msgstr ""
+msgstr "`$ git init –-bare –-shared=all`"
 
 #: ..\z_appendix.rst:14
 msgid "Clone repository"
-msgstr ""
+msgstr "リポジトリをクローン"
 
 #: ..\z_appendix.rst:14
 msgid "`$ git clone c:/demo1 c:/demo2`"
-msgstr ""
+msgstr "`$ git clone c:/demo1 c:/demo2`"
 
 #: ..\z_appendix.rst:16
 msgid "Checkout branch"
-msgstr ""
+msgstr "ブランチのチェックアウト"
 
 #: ..\z_appendix.rst:16
 msgid "`$ git checkout <name>`"
-msgstr ""
+msgstr "`$ git checkout <名前>`"
 
 #: ..\z_appendix.rst:18
 msgid "Create branch"
-msgstr ""
+msgstr "ブランチの作成"
 
 #: ..\z_appendix.rst:18
 msgid "`$ git branch <name>`"
-msgstr ""
+msgstr "`$ git branch <名前>`"
 
 #: ..\z_appendix.rst:20
 msgid "Delete branch"
-msgstr ""
+msgstr "ブランチの削除"
 
 #: ..\z_appendix.rst:20
 msgid "`$ git branch -d <name>`"
-msgstr ""
+msgstr "`$ git branch -d <名前>`"
 
 #: ..\z_appendix.rst:22
 msgid "Merge branch (from the branch to merge into):"
-msgstr ""
+msgstr "ブランチのマージ (ブランチをここにマージ):"
 
 #: ..\z_appendix.rst:22
 msgid "`$ git merge PDC`"
-msgstr ""
+msgstr "`$ git merge PDC`"
 
 #: ..\z_appendix.rst:24 ..\z_appendix.rst:41 ..\z_appendix.rst:50
 msgid "Solve conflicts (add --tool=kdiff3 if no mergetool is specified)"
-msgstr ""
+msgstr "競合の解決 (mergetool が未指定の場合は --tool=kdiff3 を追加)"
 
 #: ..\z_appendix.rst:24
 msgid "`$ git mergetool` `$ git commit`"
-msgstr ""
+msgstr "`$ git mergetool` `$ git commit`"
 
 #: ..\z_appendix.rst:27
 msgid "Create tag"
-msgstr ""
+msgstr "タグの作成"
 
 #: ..\z_appendix.rst:27
 msgid "`$ git tag <name>`"
-msgstr ""
+msgstr "`$ git tag <名前>`"
 
 #: ..\z_appendix.rst:29
 msgid "Add files/changes (. for all files)"
-msgstr ""
+msgstr "ファイル/変更の追加 (すべてのファイルの場合は「.」)"
 
 #: ..\z_appendix.rst:29
 msgid "`$ git add .`"
-msgstr ""
+msgstr "`$ git add .`"
 
 #: ..\z_appendix.rst:31
 msgid "Commit added files/changes (--amend to amend to last commit)"
-msgstr ""
+msgstr "追加されたファイル/変更をコミット (最新のコミットを修正するには --amend)"
 
 #: ..\z_appendix.rst:31
 msgid "`$ git commit –m “Enter commit message”`"
-msgstr ""
+msgstr "`$ git commit –m “ここにコミットメッセージを入力”`"
 
 #: ..\z_appendix.rst:33
 msgid "Discard changes"
-msgstr ""
+msgstr "変更の破棄"
 
 #: ..\z_appendix.rst:33
 msgid "`$ git reset --hard`"
-msgstr ""
+msgstr "`$ git reset --hard`"
 
 #: ..\z_appendix.rst:35
 msgid "Create patch (-M = detect renames –C = detect copies)"
-msgstr ""
+msgstr "パッチの作成 (-M = 名前の変更を検出、-C = コピーを検出)"
 
 #: ..\z_appendix.rst:35
 msgid "`$ git format-patch –M –C origin`"
-msgstr ""
+msgstr "`$ git format-patch –M –C origin`"
 
 #: ..\z_appendix.rst:37
 msgid "Apply patch without merging"
-msgstr ""
+msgstr "マージなしでパッチを適用"
 
 #: ..\z_appendix.rst:37
 msgid "`$ git apply c:/patch/01-emp.patch`"
-msgstr ""
+msgstr "`$ git apply c:/patch/01-emp.patch`"
 
 #: ..\z_appendix.rst:39
 msgid "Merge patch"
-msgstr ""
+msgstr "パッチをマージ"
 
 #: ..\z_appendix.rst:39
 msgid "`$ git am -–3way –-signoff c:/patch/01-emp.patch`"
-msgstr ""
+msgstr "`$ git am -–3way –-signoff c:/patch/01-emp.patch`"
 
 #: ..\z_appendix.rst:0 ..\z_appendix.rst:0
 msgid "`$ git mergetool`"
-msgstr ""
+msgstr "`$ git mergetool`"
 
 #: ..\z_appendix.rst:0
 msgid "`$ git am –-3way -–resolved`"
-msgstr ""
+msgstr "`$ git am –-3way -–resolved`"
 
 #: ..\z_appendix.rst:44
 msgid "Stash changes"
-msgstr ""
+msgstr "変更をスタッシュ"
 
 #: ..\z_appendix.rst:44
 msgid "`$ git stash`"
-msgstr ""
+msgstr "`$ git stash`"
 
 #: ..\z_appendix.rst:46
 msgid "Apply stashed changes"
-msgstr ""
+msgstr "スタッシュされた変更の適用"
 
 #: ..\z_appendix.rst:46
 msgid "`$ git stash apply`"
-msgstr ""
+msgstr "`$ git stash apply`"
 
 #: ..\z_appendix.rst:48
 msgid "Pull changes (add --rebase to rebase instead of merge)"
-msgstr ""
+msgstr "変更をプル (マージではなくリベースするには --rebase を追加)"
 
 #: ..\z_appendix.rst:48
 msgid "`$ git pull c:/demo1 master`"
-msgstr ""
+msgstr "`$ git pull c:/demo1 master`"
 
 #: ..\z_appendix.rst:0
 msgid "`$ git commit`"
-msgstr ""
+msgstr "`$ git commit`"
 
 #: ..\z_appendix.rst:53
 msgid "Push changes (in branch $ git push c:/demo1 master master:<new>)"
-msgstr ""
+msgstr "変更をプッシュ (ブランチで $ git push c:/demo1 master master:<new>)"
 
 #: ..\z_appendix.rst:53
 msgid "`$ git push c:/demo1`"
-msgstr ""
+msgstr "`$ git push c:/demo1`"
 
 #: ..\z_appendix.rst:55
 msgid "Blame"
-msgstr ""
+msgstr "追求 (Blame)"
 
 #: ..\z_appendix.rst:55
 msgid "`$ git blame –M –w <filename>`"
-msgstr ""
+msgstr "`$ git blame –M –w <ファイル名>`"
 
 #: ..\z_appendix.rst:57
 msgid "Help"
-msgstr ""
+msgstr "ヘルプ"
 
 #: ..\z_appendix.rst:57
 msgid "`$ git <command> --help`"
-msgstr ""
+msgstr "`$ git <コマンド> --help`"
 
 #: ..\z_appendix.rst:60
 msgid "Here are some default names used by Git."
-msgstr ""
+msgstr "Git が使うデフォルトの名前をいくつか紹介します:"
 
 #: ..\z_appendix.rst:63
 msgid "Default names"
-msgstr ""
+msgstr "デフォルトの名前"
 
 #: ..\z_appendix.rst:65
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ..\z_appendix.rst:65
 msgid "default branch"
-msgstr ""
+msgstr "デフォルトのブランチ"
 
 #: ..\z_appendix.rst:67
 msgid "origin"
-msgstr ""
+msgstr "origin"
 
 #: ..\z_appendix.rst:67
 msgid "default upstream repository"
-msgstr ""
+msgstr "デフォルトの上流リポジトリ"
 
 #: ..\z_appendix.rst:69
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 #: ..\z_appendix.rst:69
 msgid "current branch"
-msgstr ""
+msgstr "現在のブランチ"
 
 #: ..\z_appendix.rst:71
 msgid "HEAD^"
-msgstr ""
+msgstr "HEAD^"
 
 #: ..\z_appendix.rst:71
 msgid "parent of HEAD"
-msgstr ""
+msgstr "HEAD の親"
 
 #: ..\z_appendix.rst:73
 msgid "HEAD~4"
-msgstr ""
+msgstr "HEAD~4"
 
 #: ..\z_appendix.rst:73
 msgid "the great-great grandparent of HEAD"
-msgstr ""
+msgstr "HEAD の 4 世代前"
 
 #: ..\z_appendix.rst:78
 msgid "Menu map"
-msgstr ""
+msgstr "メニューのマップ"
 
 #: ..\z_appendix.rst:79
 msgid ""
 "The following image shows GitExtensions' menu structure at one glance "
 "(v2.43):"
-msgstr ""
+msgstr "以下の画像では、GitExtensions (v2.43) のメニュー構成を一目でわかるようにします:"

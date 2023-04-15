@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Alex, 2023
+# Juan Ramón Rodríguez <juanrarodriguez18@gmail.com>, 2017
 # María Inés Parnisari <maineparnisari@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
-"PO-Revision-Date: 2016-09-27 03:15+0000\n"
-"Last-Translator: María Inés Parnisari <maineparnisari@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
+"PO-Revision-Date: 2015-05-24 19:18+0000\n"
+"Last-Translator: Alex, 2023\n"
+"Language-Team: Spanish (http://app.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\branches.rst:2
 msgid "Branches"
@@ -49,7 +51,7 @@ msgstr ""
 
 #: ..\branches.rst:23
 msgid "Create branch"
-msgstr ""
+msgstr "Crear rama"
 
 #: ..\branches.rst:25
 msgid ""
@@ -83,7 +85,7 @@ msgstr ""
 
 #: ..\branches.rst:45
 msgid "Orphan branches"
-msgstr ""
+msgstr "Ramas huérfanas"
 
 #: ..\branches.rst:46
 msgid ""
@@ -95,7 +97,7 @@ msgstr ""
 
 #: ..\branches.rst:49
 msgid "The newly created branch will have no parent commits."
-msgstr ""
+msgstr "La nueva rama creada no tendrá commits de ramas padres"
 
 #: ..\branches.rst:51
 msgid ""
@@ -106,7 +108,7 @@ msgstr ""
 
 #: ..\branches.rst:55
 msgid "Checkout branch"
-msgstr ""
+msgstr "Checkout rama"
 
 #: ..\branches.rst:57
 msgid ""
@@ -122,7 +124,7 @@ msgstr ""
 
 #: ..\branches.rst:64
 msgid "``Don't change``"
-msgstr ""
+msgstr "``No cambiar``"
 
 #: ..\branches.rst:64
 msgid ""
@@ -132,7 +134,7 @@ msgstr ""
 
 #: ..\branches.rst:66
 msgid "``Merge``"
-msgstr ""
+msgstr "``Merge``"
 
 #: ..\branches.rst:66
 msgid ""
@@ -142,7 +144,7 @@ msgstr ""
 
 #: ..\branches.rst:68
 msgid "``Stash``"
-msgstr ""
+msgstr "``Stash``"
 
 #: ..\branches.rst:68
 msgid ""
@@ -152,7 +154,7 @@ msgstr ""
 
 #: ..\branches.rst:70
 msgid "``Reset``"
-msgstr ""
+msgstr "\"Restablecer\""
 
 #: ..\branches.rst:70
 msgid ""
@@ -163,7 +165,7 @@ msgstr ""
 
 #: ..\branches.rst:76
 msgid "Merge branches"
-msgstr ""
+msgstr "Unir ramas"
 
 #: ..\branches.rst:78
 msgid ""

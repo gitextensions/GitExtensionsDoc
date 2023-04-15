@@ -3,27 +3,29 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Eugenio Avila <avilamqz@hotmail.com>, 2017
+# María Inés Parnisari <maineparnisari@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/git-extensions-manual/language/es/)\n"
+"Last-Translator: Eugenio Avila <avilamqz@hotmail.com>, 2017\n"
+"Language-Team: Spanish (http://app.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\z_appendix.rst:2
 msgid "Appendix"
-msgstr ""
+msgstr "Apéndice"
 
 #: ..\z_appendix.rst:5
 msgid "Git Cheat Sheet"
-msgstr ""
+msgstr "Machete de Git"
 
 #: ..\z_appendix.rst:8
 msgid "Action"
@@ -31,7 +33,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:8
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ..\z_appendix.rst:10
 msgid "Create new repository"
@@ -59,7 +61,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:16
 msgid "Checkout branch"
-msgstr ""
+msgstr "Checkout rama"
 
 #: ..\z_appendix.rst:16
 msgid "`$ git checkout <name>`"
@@ -67,7 +69,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:18
 msgid "Create branch"
-msgstr ""
+msgstr "Crear rama"
 
 #: ..\z_appendix.rst:18
 msgid "`$ git branch <name>`"
@@ -99,7 +101,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:27
 msgid "Create tag"
-msgstr ""
+msgstr "Crear etiqueta"
 
 #: ..\z_appendix.rst:27
 msgid "`$ git tag <name>`"
@@ -163,7 +165,7 @@ msgstr ""
 
 #: ..\z_appendix.rst:44
 msgid "Stash changes"
-msgstr ""
+msgstr "Cambios Stash"
 
 #: ..\z_appendix.rst:44
 msgid "`$ git stash`"

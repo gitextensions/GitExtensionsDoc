@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Yuki Shira <shirayuking@gmail.com>, 2022-2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/git-extensions-manual/language/ja/)\n"
+"Last-Translator: Yuki Shira <shirayuking@gmail.com>, 2022-2023\n"
+"Language-Team: Japanese (http://app.transifex.com/git-extensions/git-extensions-manual/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +20,17 @@ msgstr ""
 
 #: ..\maintenance.rst:2
 msgid "Maintenance"
-msgstr ""
+msgstr "メンテナンス"
 
 #: ..\maintenance.rst:4
 msgid ""
 "In this chapter some of the functions to maintain a repository are "
 "discussed."
-msgstr ""
+msgstr "この章では、リポジトリを保守するための機能のいくつかを説明します。"
 
 #: ..\maintenance.rst:7
 msgid "Compress Git database"
-msgstr ""
+msgstr "Git データベースの圧縮"
 
 #: ..\maintenance.rst:9
 msgid ""
@@ -38,18 +39,18 @@ msgid ""
 "also garbage collect all unused objects that are older then 15 days. When a "
 "database is fragmented into a many small files compressing the database can "
 "increase performance."
-msgstr ""
+msgstr "Git は多くのファイルを作成します。「Git データベースを圧縮」を実行すると、リポジトリを構築しているすべての小さなファイル群を 1 つの大きなファイルにまとめられます。さらに、Git は15日以上前の未使用のオブジェクトをすべてガベージコレクションします。データベースが多くの小さなファイルに断片化されている場合、データベースを圧縮することでパフォーマンスを向上できます。"
 
 #: ..\maintenance.rst:16
 msgid "Recover lost objects"
-msgstr ""
+msgstr "消してしまったオブジェクトを復元"
 
 #: ..\maintenance.rst:18
 msgid ""
 "If you accidently deleted a commit you can try to recover it using the "
 "``Recover lost objects`` function. A dialog will show you all dangling "
 "objects and will allow you to review and recover them."
-msgstr ""
+msgstr "誤ってコミットを削除してしまった場合、「消してしまったオブジェクトを復元」機能を使ってコミットを復元できます。ダイアログでぶら下がっているオブジェクトがすべて表示され、確認や復元ができます。"
 
 #: ..\maintenance.rst:23
 msgid ""
@@ -57,7 +58,7 @@ msgid ""
 " your repository. The reason for this is that you can restore deleted items "
 "if you need to. Git will delete removed items when they are older then 15 "
 "days and you run ``Compress git database``."
-msgstr ""
+msgstr "通常、リポジトリから何かを除去しても、Git がすぐにファイルを削除することはありません。その理由は、削除したアイテムを必要なときに復元できるようにするためです。Git は、削除されたアイテムが15日以上経過してから「Git データベースを圧縮」を実行すると、それらを削除します。"
 
 #: ..\maintenance.rst:29
 msgid ""
@@ -67,7 +68,7 @@ msgid ""
 "get more/less results. Double-click on on item to view the content. When you"
 " located the item you want to recover you can tag it using the ``Tag "
 "selected object`` button."
-msgstr ""
+msgstr "消してしまったアイテムを見つけるのに便利な機能がいくつかあります。デフォルトでは、Git Extensions はコミットのみを表示します。すべてのアイテムを表示するには、「コミットのみを表示」オプションのチェックを外してください。他のオプションもチェックしたり外したりすることで、より多くの、またはより少ない結果が得られます。アイテムをダブルクリックすると、内容が表示されます。復元したいアイテムが見つかったら、「選択オブジェクトにタグを作成」ボタンを使ってタグ付けできます。"
 
 #: ..\maintenance.rst:34
 msgid ""
@@ -76,38 +77,38 @@ msgid ""
 "you would like to recover. After recovering a commit using the ``Tag all "
 "lost commits`` button, you can remove all tags using the ``Delete all "
 "LOST_AND_FOUND tags`` button."
-msgstr ""
+msgstr "Git Extensions は、消してしまったオブジェクトにタグを付けることもできます。こうすることで、消してしまったオブジェクトが再び見えるようになり、復元したいコミットを見つけるのがとても簡単になります。「消してしまったコミットにすべてタグ付けする」ボタンを使ってコミットを復元した後、「LOST_AND_FOUND タグをすべて削除」ボタンを使ってタグをすべて除去できます。"
 
 #: ..\maintenance.rst:41
 msgid "Fix user names"
-msgstr ""
+msgstr "ユーザー名を修正"
 
 #: ..\maintenance.rst:43
 msgid ""
 "When someone accidentally committed using a wrong username this can be fixed"
 " using the ``Edit .mailmap`` function. Git will use the username for an "
 "email address when it is set in the ``.mailmap`` file."
-msgstr ""
+msgstr "誰かが誤って間違ったユーザー名を使ってコミットしてしまった場合、「.mailmap を編集」機能を使って修正できます。Git は、``.mailmap`` ファイルに設定された各メールアドレスのユーザー名を使用します。"
 
 #: ..\maintenance.rst:48
 msgid "Fix user name using commit email:"
-msgstr ""
+msgstr "コミットのメールアドレスを使用してユーザー名を修正:"
 
 #: ..\maintenance.rst:54
 msgid "Fix email address using commit email:"
-msgstr ""
+msgstr "コミットのメールアドレスを使用してメールアドレスを修正:"
 
 #: ..\maintenance.rst:60
 msgid "Fix email address and name using commit email:"
-msgstr ""
+msgstr "コミットのメールアドレスを使用してメールアドレスと名前を修正:"
 
 #: ..\maintenance.rst:66
 msgid "Fix email address and name using commit name and email:"
-msgstr ""
+msgstr "コミットの名前とメールアドレスを使用してメールアドレスと名前を修正:"
 
 #: ..\maintenance.rst:73
 msgid "Ignore files"
-msgstr ""
+msgstr "ファイルを無視"
 
 #: ..\maintenance.rst:75
 msgid ""
@@ -117,53 +118,53 @@ msgid ""
 "and regular expressions. All entries are case sensitive. The button ``Add "
 "default ignores`` will add files that should be ignored when using Visual "
 "Studio."
-msgstr ""
+msgstr "Git は、作業ディレクトリ内のすべてのファイルを追跡します。通常、コンパイラによって作成されるファイルをすべて除外したいわけではありません。無視すべきファイルを .gitignore ファイルに追加できます。ワイルドカードや正規表現を使用できます。すべての項目は大文字/小文字を区別します。ボタン「デフォルトの無視ファイルを追加」は、Visual Studio を使用する際に無視されるべきファイルを追加します。"
 
 #: ..\maintenance.rst:81
 msgid "A short overview of the syntax:"
-msgstr ""
+msgstr "構文の短い概要:"
 
 #: ..\maintenance.rst:84
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ..\maintenance.rst:84
 msgid "Lines started with ``#`` are handled as comments"
-msgstr ""
+msgstr "「#」で始まる行はコメントとして扱われます"
 
 #: ..\maintenance.rst:86
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ..\maintenance.rst:86
 msgid "Lines started with ``!`` are exclude patterns"
-msgstr ""
+msgstr "「!」で始まる行は除外パターンです"
 
 #: ..\maintenance.rst:88
 msgid "[Dd]"
-msgstr ""
+msgstr "[Dd]"
 
 #: ..\maintenance.rst:88
 msgid "Characters inside ``[..]`` means that 1 of the characters must match"
-msgstr ""
+msgstr "``[..]`` 内の文字群は、これらの文字のいずれか 1 つと一致する必要が有ることを意味します"
 
 #: ..\maintenance.rst:90
 msgid "\\*"
-msgstr ""
+msgstr "\\*"
 
 #: ..\maintenance.rst:90
 msgid "Wildcard"
-msgstr ""
+msgstr "ワイルドカード"
 
 #: ..\maintenance.rst:92 ..\maintenance.rst:95
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ..\maintenance.rst:92
 msgid ""
 "A leading slash matches the beginning of the pathname; for example, ``/*.c``"
 " matches ``cat-file.c`` but not ``mozilla-sha1/sha1.c``"
-msgstr ""
+msgstr "先頭のスラッシュは、パス名の先頭に一致します。例えば ``/*.c`` は ``cat-file.c`` に一致しますが、``mozilla-sha1/sha1.c`` には一致しません。"
 
 #: ..\maintenance.rst:95
 msgid ""
@@ -172,10 +173,10 @@ msgid ""
 "other words, foo/ will match a directory foo and paths underneath it, but "
 "will not match a regular file or a symbolic link foo (this is consistent "
 "with the way how pathspec works in general in git)."
-msgstr ""
+msgstr "パターンの末尾がスラッシュである場合、以下の説明のためにスラッシュは除去されますが、それはディレクトリとの一致が見つかるだけでしょう。つまり、foo/ はディレクトリ foo とその配下のパスに一致しますが、通常のファイルやシンボリックリンクの foo には一致しません (これは git における pathspec の一般的な動作方法と一致します)。"
 
 #: ..\maintenance.rst:100
 msgid ""
 "For more `detailed information "
 "<http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_."
-msgstr ""
+msgstr "`詳細情報 <http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_"

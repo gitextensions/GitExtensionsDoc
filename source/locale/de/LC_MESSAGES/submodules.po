@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Mike <michaelbenz@gmx.net>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/git-extensions-manual/language/de/)\n"
+"Last-Translator: Mike <michaelbenz@gmx.net>, 2016\n"
+"Language-Team: German (http://app.transifex.com/git-extensions/git-extensions-manual/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ..\submodules.rst:2
 msgid "Submodules"
-msgstr ""
+msgstr "Untermodule"
 
 #: ..\submodules.rst:4
 msgid ""
@@ -27,111 +28,111 @@ msgid ""
 " contains the name, url and revision of another repository. To create a "
 "submodule in an existing git repository you need to add a link to another "
 "repository containing the files of the submodule."
-msgstr ""
+msgstr "Große Projekte könnten mit Hilfe von Untermodulen in kleinere Teile aufgesplittet werden. Ein Untermodul enthält den Namen, die URL und die Revision eines anderen Repository. Um ein Untermodul in einem existierenden Git Repository anzulegen, müssen sie einen Verweis auf ein anderes Repository mit den Dateien des Untermoduls anlegen."
 
 #: ..\submodules.rst:11
 msgid "Manage submodules"
-msgstr ""
+msgstr "Untermodule verwalten"
 
 #: ..\submodules.rst:13
 msgid ""
 "The current state of the submodules can be viewed with the ``Manage "
 "submodules`` function. All submodules are shown in the list on the left."
-msgstr ""
+msgstr "Den aktuellen Status des Untermoduls können Sie einsehen über die Funktion ``Untermodule verwalten``. Alle Untermodule werden in der Liste auf der linken Seite angezeigt."
 
 #: ..\submodules.rst:19 ..\submodules.rst:32
 msgid "Add submodule"
-msgstr ""
+msgstr "Untermodul hinzufügen"
 
 #: ..\submodules.rst:19
 msgid "Add a new submodule to the repository"
-msgstr ""
+msgstr "Ein neues Untermodul zum Repository hinzufügen"
 
 #: ..\submodules.rst:21
 msgid "Synchronize"
-msgstr ""
+msgstr "Synchronisieren"
 
 #: ..\submodules.rst:21
 msgid ""
 "Synchronizes the remote URL configuration setting to the value specified in "
 "``.gitmodules`` for the selected submodule."
-msgstr ""
+msgstr "Synchronisiert die Remote URL Konfiguration mit den Werten die in der ``.gitmodules`` für das ausgewählte Untermodul angegeben sind."
 
 #: ..\submodules.rst:24
 msgid "Initialize"
-msgstr ""
+msgstr "Initialisieren"
 
 #: ..\submodules.rst:24
 msgid ""
 "Initialize the selected submodules, i.e. register each submodule name and "
 "url found in ``.gitmodules`` into ``.git/config``. The submodule will also "
 "be updated."
-msgstr ""
+msgstr "Initialisiert die ausgewählten Untermodule, z. B. Registrierung aller Namen der Untermodule und URLs die in ``.gitmodules`` gefunden werden in der ``.git/config``. Die Untermodule werden ebenfalls aktualisiert."
 
 #: ..\submodules.rst:27
 msgid "Update"
-msgstr ""
+msgstr "Updaten"
 
 #: ..\submodules.rst:27
 msgid ""
 "Update the registered submodules, i.e. clone missing submodules and checkout"
 " the commit specified in the index of the containing repository."
-msgstr ""
+msgstr "Aktualisiert die registrierten Untermodule, z. B. durch Klonen von fehlenden Untermodulen und dem Checkout des angegeben Commits im Indes aus dem angegeben Repository."
 
 #: ..\submodules.rst:34
 msgid ""
 "To add a new submodule choose ``Add submodule`` in the ``Manage submodules``"
 " dialog."
-msgstr ""
+msgstr "Um ein neues Untermodul hinzuzufügen wählen Sie ``Untermodul hinzufügen`` im ``Untermodule verwalten`` Dialog."
 
 #: ..\submodules.rst:39
 msgid "Path to submodule"
-msgstr ""
+msgstr "Pfad zum Untermodul"
 
 #: ..\submodules.rst:39
 msgid "Path to the remote repository to use as submodule."
-msgstr ""
+msgstr "Pfad zum Remote Repository das als Untermodul verwendet wird"
 
 #: ..\submodules.rst:41
 msgid "Local path"
-msgstr ""
+msgstr "Lokaler Pfad"
 
 #: ..\submodules.rst:41
 msgid ""
 "Local path to this submodule, relative to the root of the current "
 "repository."
-msgstr ""
+msgstr "Lokaler Pfad zu diesem Untermodul. Relativ zum Wurzelverzeichnis des aktuellen Repository."
 
 #: ..\submodules.rst:43
 msgid "Branch"
-msgstr ""
+msgstr "Branch"
 
 #: ..\submodules.rst:43
 msgid "Branch to track."
-msgstr ""
+msgstr "Branch der verfolgt werden soll"
 
 #: ..\submodules.rst:47
 msgid "Remove submodule"
-msgstr ""
+msgstr "Untermodul entfernen"
 
 #: ..\submodules.rst:49
 msgid ""
 "It is currently not possible to remove a submodule using the Git Extensions "
 "user interface. To remove a submodule you need to manually:"
-msgstr ""
+msgstr "Es ist aktuell nicht möglich ein Untermodul über die Git Extensions Benutzeroberfläche zu entfernen. Um ein Untermodul zu entfernen müssen Sie manuell:"
 
 #: ..\submodules.rst:52
 msgid "Delete the relevant line from the ``.gitmodules`` file."
-msgstr ""
+msgstr "Löschen der relevanten Zeile aus der ``.gitmodules`` Datei."
 
 #: ..\submodules.rst:53
 msgid "Delete the relevant section from ``.git/config``."
-msgstr ""
+msgstr "Löschen des relevanten Bereichs aus der ``.git/config``."
 
 #: ..\submodules.rst:54
 msgid "Run ``git rm --cached path_to_submodule`` (no trailing slash)."
-msgstr ""
+msgstr "Ausführen von ``git rm --cached Pfad_zum_Untermodul`` (keine abschließenden Slashes)."
 
 #: ..\submodules.rst:55
 msgid "Commit and delete the now untracked submodule files."
-msgstr ""
+msgstr "Committe und lösche die jetzt nicht mehr überwachten Dateien des Untermoduls."

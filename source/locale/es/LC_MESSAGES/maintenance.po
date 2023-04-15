@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Alex, 2023
+# Eugenio Avila <avilamqz@hotmail.com>, 2017
 # María Inés Parnisari <maineparnisari@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
-"PO-Revision-Date: 2016-09-27 03:11+0000\n"
-"Last-Translator: María Inés Parnisari <maineparnisari@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
+"PO-Revision-Date: 2015-05-24 19:18+0000\n"
+"Last-Translator: Alex, 2023\n"
+"Language-Team: Spanish (http://app.transifex.com/git-extensions/git-extensions-manual/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\maintenance.rst:2
 msgid "Maintenance"
@@ -26,11 +28,11 @@ msgstr "Mantenimiento"
 msgid ""
 "In this chapter some of the functions to maintain a repository are "
 "discussed."
-msgstr ""
+msgstr "En este capitulo se discuten varias de la funciones para mantener un repositorio."
 
 #: ..\maintenance.rst:7
 msgid "Compress Git database"
-msgstr ""
+msgstr "Comprimir base datos Git"
 
 #: ..\maintenance.rst:9
 msgid ""
@@ -39,11 +41,11 @@ msgid ""
 "also garbage collect all unused objects that are older then 15 days. When a "
 "database is fragmented into a many small files compressing the database can "
 "increase performance."
-msgstr ""
+msgstr "Gir puede crear muchos archivos. Puedes usar ``Comprimir base de datos git`` para empaquetar los archivos pequeños creando un repositorio más grande. Git puede recopilar todos los objetos sin usar que tengan 15 días. Cuando una base de datos esta fragmentada en partes pequeñas, la base de datos puede mejorar el rendimiento."
 
 #: ..\maintenance.rst:16
 msgid "Recover lost objects"
-msgstr ""
+msgstr "Recuperar objetos perdidos"
 
 #: ..\maintenance.rst:18
 msgid ""
@@ -81,34 +83,34 @@ msgstr ""
 
 #: ..\maintenance.rst:41
 msgid "Fix user names"
-msgstr ""
+msgstr "Arreglar nombres de usuario"
 
 #: ..\maintenance.rst:43
 msgid ""
 "When someone accidentally committed using a wrong username this can be fixed"
 " using the ``Edit .mailmap`` function. Git will use the username for an "
 "email address when it is set in the ``.mailmap`` file."
-msgstr ""
+msgstr "Cuando alguien accidentalmente hace un commit usando un usuario incorrecto, se puede arreglar usando la función ``Editar .mailmap``. Git usa el nombre de usuario para una dirección email cuando se establece en el archivo ``.mailmap``"
 
 #: ..\maintenance.rst:48
 msgid "Fix user name using commit email:"
-msgstr ""
+msgstr "Arreglar nombre de usuario usando el email de commit:"
 
 #: ..\maintenance.rst:54
 msgid "Fix email address using commit email:"
-msgstr ""
+msgstr "Arreglar dirección de email usando el email del commit:"
 
 #: ..\maintenance.rst:60
 msgid "Fix email address and name using commit email:"
-msgstr ""
+msgstr "Arreglar dirección de email y nombre usando el email del commit:"
 
 #: ..\maintenance.rst:66
 msgid "Fix email address and name using commit name and email:"
-msgstr ""
+msgstr "Arreglar dirección de email y nombre usando el nombre y email del commit:"
 
 #: ..\maintenance.rst:73
 msgid "Ignore files"
-msgstr ""
+msgstr "Ignorar archivos"
 
 #: ..\maintenance.rst:75
 msgid ""
@@ -118,53 +120,53 @@ msgid ""
 "and regular expressions. All entries are case sensitive. The button ``Add "
 "default ignores`` will add files that should be ignored when using Visual "
 "Studio."
-msgstr ""
+msgstr "Git puede seguir todos los ficheros que estén en el directorio de trabajo. Normalmente no se suele excluir archivos que están creados por el compilador. Puedes añadir archivos que son ignorados al archivo .gitignore. Puedes usar comodines y expresiones regulares. Todas las entradas son sensibles a mayúsculas. El botón 'Añadir ignorados por defecto' añade los archivos que son ignorados cuando se usa Visual Studio."
 
 #: ..\maintenance.rst:81
 msgid "A short overview of the syntax:"
-msgstr ""
+msgstr "Una breve descripción de la sintaxis:"
 
 #: ..\maintenance.rst:84
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ..\maintenance.rst:84
 msgid "Lines started with ``#`` are handled as comments"
-msgstr ""
+msgstr "Las lineas que inician con ``#`` son manejadas como comentarios "
 
 #: ..\maintenance.rst:86
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ..\maintenance.rst:86
 msgid "Lines started with ``!`` are exclude patterns"
-msgstr ""
+msgstr "Las líneas que empiezan por  ``!`` son patrones de exclusión"
 
 #: ..\maintenance.rst:88
 msgid "[Dd]"
-msgstr ""
+msgstr "[Dd]"
 
 #: ..\maintenance.rst:88
 msgid "Characters inside ``[..]`` means that 1 of the characters must match"
-msgstr ""
+msgstr "Los caracteres dentro de ``[..]`` indica que 1 de los caracteres debe de coincidir. "
 
 #: ..\maintenance.rst:90
 msgid "\\*"
-msgstr ""
+msgstr "\\*"
 
 #: ..\maintenance.rst:90
 msgid "Wildcard"
-msgstr ""
+msgstr "Comodin"
 
 #: ..\maintenance.rst:92 ..\maintenance.rst:95
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ..\maintenance.rst:92
 msgid ""
 "A leading slash matches the beginning of the pathname; for example, ``/*.c``"
 " matches ``cat-file.c`` but not ``mozilla-sha1/sha1.c``"
-msgstr ""
+msgstr "Una barra inicial que esté al inicio de la ruta ; por ejemplo, ``/*.c`` coincide con ``cat-file.c`` pero no con ``mozilla-sha1/sha1.c``"
 
 #: ..\maintenance.rst:95
 msgid ""
@@ -179,4 +181,4 @@ msgstr ""
 msgid ""
 "For more `detailed information "
 "<http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_."
-msgstr ""
+msgstr "Para más información `detallada <http://www.kernel.org/pub/software/scm/git/docs/gitignore.html>`_."

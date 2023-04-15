@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2019,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:18+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2019,2022\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +20,17 @@ msgstr ""
 
 #: ..\maintenance.rst:2
 msgid "Maintenance"
-msgstr ""
+msgstr "Сопровождение"
 
 #: ..\maintenance.rst:4
 msgid ""
 "In this chapter some of the functions to maintain a repository are "
 "discussed."
-msgstr ""
+msgstr "В этой главе рассматриваются некоторые функции для сопровождения репозитория."
 
 #: ..\maintenance.rst:7
 msgid "Compress Git database"
-msgstr ""
+msgstr "Сжатие базы данных Git"
 
 #: ..\maintenance.rst:9
 msgid ""
@@ -42,7 +43,7 @@ msgstr ""
 
 #: ..\maintenance.rst:16
 msgid "Recover lost objects"
-msgstr ""
+msgstr "Восстановление потерянных объектов"
 
 #: ..\maintenance.rst:18
 msgid ""
@@ -80,7 +81,7 @@ msgstr ""
 
 #: ..\maintenance.rst:41
 msgid "Fix user names"
-msgstr ""
+msgstr "Исправление имён пользователей"
 
 #: ..\maintenance.rst:43
 msgid ""
@@ -91,7 +92,7 @@ msgstr ""
 
 #: ..\maintenance.rst:48
 msgid "Fix user name using commit email:"
-msgstr ""
+msgstr "Исправление имени пользователя с помощью эл. почты коммита:"
 
 #: ..\maintenance.rst:54
 msgid "Fix email address using commit email:"
@@ -107,7 +108,7 @@ msgstr ""
 
 #: ..\maintenance.rst:73
 msgid "Ignore files"
-msgstr ""
+msgstr "Игнорирование файлов"
 
 #: ..\maintenance.rst:75
 msgid ""
@@ -125,7 +126,7 @@ msgstr ""
 
 #: ..\maintenance.rst:84
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ..\maintenance.rst:84
 msgid "Lines started with ``#`` are handled as comments"
@@ -133,7 +134,7 @@ msgstr ""
 
 #: ..\maintenance.rst:86
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ..\maintenance.rst:86
 msgid "Lines started with ``!`` are exclude patterns"
@@ -149,15 +150,15 @@ msgstr ""
 
 #: ..\maintenance.rst:90
 msgid "\\*"
-msgstr ""
+msgstr "\\*"
 
 #: ..\maintenance.rst:90
 msgid "Wildcard"
-msgstr ""
+msgstr "Символ подстановки"
 
 #: ..\maintenance.rst:92 ..\maintenance.rst:95
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ..\maintenance.rst:92
 msgid ""

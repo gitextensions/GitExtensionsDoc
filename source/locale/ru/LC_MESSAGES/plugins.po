@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the GitExtensions package.
 # 
 # Translators:
+# Andrei Stepanov, 2019
+# Валерий Максимов <maximovvalery@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Extensions Manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 21:53+0300\n"
+"POT-Creation-Date: 2015-05-24 23:16+0300\n"
 "PO-Revision-Date: 2015-05-24 19:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/git-extensions-manual/language/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2019\n"
+"Language-Team: Russian (http://app.transifex.com/git-extensions/git-extensions-manual/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,78 +21,78 @@ msgstr ""
 
 #: ..\plugins.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Плагины"
 
 #: ..\plugins.rst:5
 msgid "List of the available plugins"
-msgstr ""
+msgstr "Список доступных плагинов"
 
 #: ..\plugins.rst:7
 msgid "Auto Compile Submodules"
-msgstr ""
+msgstr "Автоматически компилировать субмодули"
 
 #: ..\plugins.rst:8
 msgid "Background Fetch"
-msgstr ""
+msgstr "Периодически забирать в фоне"
 
 #: ..\plugins.rst:9
 msgid "Create Local Tracking Branches"
-msgstr ""
+msgstr "Создать локально отслеживающие ветки"
 
 #: ..\plugins.rst:10
 msgid "Delete Unused Branches"
-msgstr ""
+msgstr "Удалить устаревшие ветки"
 
 #: ..\plugins.rst:11
 msgid "Find Large Files"
-msgstr ""
+msgstr "Найти большие файлы"
 
 #: ..\plugins.rst:12
 msgid "Gerrit Code Review"
-msgstr ""
+msgstr "Code Review используя Gerrit"
 
 #: ..\plugins.rst:13 ..\plugins.rst:22
 msgid "GitFlow"
-msgstr ""
+msgstr "GitFlow"
 
 #: ..\plugins.rst:14
 msgid "GitUIPluginInterfaces"
-msgstr ""
+msgstr "GitUIPluginInterfaces"
 
 #: ..\plugins.rst:15
 msgid "Github"
-msgstr ""
+msgstr "Github"
 
 #: ..\plugins.rst:16
 msgid "Gource"
-msgstr ""
+msgstr "Gource"
 
 #: ..\plugins.rst:17
 msgid "Proxy Switcher"
-msgstr ""
+msgstr "Переключение Proxy"
 
 #: ..\plugins.rst:18
 msgid "Release Notes Generator"
-msgstr ""
+msgstr "Генератор Release Notes"
 
 #: ..\plugins.rst:19
 msgid "Statistics"
-msgstr ""
+msgstr "Статистика"
 
 #: ..\plugins.rst:24
 msgid ""
-"This plugin permit to manage your _branching model: http://nvie.com/posts/a"
-"-successful-git-branching-model/ with _GitFlow: "
+"This plugin permit to manage your _branching model: "
+"http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: "
 "https://github.com/nvie/gitflow in GitExtension"
-msgstr ""
+msgstr "Этот плагин позволяет управлять вашей _разветвленной моделью: http://nvie.com/posts/a-successful-git-branching-model/ с _GitFlow: https://github.com/nvie/gitflow в GitExtension"
 
 #: ..\plugins.rst:26
 msgid "You should have GitFlow installed to use this plugin."
-msgstr ""
+msgstr "Вы должны установить GitFlow, чтобы использовать этот плагин."
 
 #: ..\plugins.rst:28
 msgid ""
 "The GitFlow plugin permit to : - init gitflow in your git repository - "
 "create your feature, hotfix, release or support branch - manage (pull, "
 "publish or finish) your existing gitflow branches"
-msgstr ""
+msgstr "Плагин GitFlow позволяет: - инициировать gitflow в вашем репозитории git - создавать ветки фич, исправлений, релизов или сервисные - управлять (получать, отправлять или завершать) вашими существующими gitflow ветками"
