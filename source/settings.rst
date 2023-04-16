@@ -257,7 +257,7 @@ This page contains general settings for Git Extensions.
     The URL template syntax consists of regular URLs to avatar images, that can be enriched with variables, which are substituted before
     evaluation. Those variables are encoded using curly brackets ``{}`` and can be used like this: ``https://example.avatar.service/u/{email}/avatar.png``.
     If a request fails (http 400 and 500 errors) or does not provide a valid image, the next URL is used. More URLs can be specified by chaining them
-    together with semicolons (";") like so: ``http://provider1.com/{sha1}.png;http://provider2.com/{sha1}.png``. If all custom URLs fail to provide
+    together with semicolons (";") like so: ``https://provider1.com/{sha1}.png;https://provider2.com/{sha1}.png``. If all custom URLs fail to provide
     an avatar image, the applications internal fallback mechanism will provide one for that user.
     The variable names are case insensitive. If a variable is not found (for example because of typo or it does not exist), it is substituted
     with an empty string, so the resulting URL never contains the curly brackets.
@@ -377,7 +377,7 @@ This page contains general settings for Git Extensions.
 
     .. setting:: Console style
 
-      Choose one of the predefined ConEmu schemes. See http://conemu.github.io/en/SettingsColors.html.
+      Choose one of the predefined ConEmu schemes. See https://conemu.github.io/en/SettingsColors.html.
 
     .. setting:: Font
 
@@ -1220,7 +1220,7 @@ the global configuration for the current repository.
   .. setting:: Checkout/commit radio buttons
 
     Choose how git should handle line endings when checking out and checking in files.
-    Refer to https://help.github.com/articles/dealing-with-line-endings/#platform-all
+    Refer to https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
 
 .. setting:: Files content encoding
 

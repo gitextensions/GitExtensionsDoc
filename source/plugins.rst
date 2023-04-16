@@ -31,7 +31,7 @@ Bundled
 .. settingspage:: Bitbucket Server
 
     For repositories is hosted on Atlassian Bitbucket Server, the plugin cannot be used for bitbucket.org.
-    For more information see: https://www.atlassian.com/software/bitbucket/server
+    For more information see: https://www.atlassian.com/software/bitbucket/enterprise/data-center
 
     This plugin will enable you to view and create pull requests for Bitbucket.
 
@@ -90,7 +90,7 @@ Bundled
 
 .. settingspage:: GitFlow
 
-This plugin permit to manage your _branching model: http://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension
+This plugin permit to manage your _branching model: https://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension
 
 You should have GitFlow installed to use this plugin.
 
@@ -103,7 +103,7 @@ The GitFlow plugin permit to :
 
     Gource is a software version control visualization tool.
 
-    For more information see: http://gource.io/
+    For more information see: https://gource.io/
 
     .. setting:: Path to "gource"
 

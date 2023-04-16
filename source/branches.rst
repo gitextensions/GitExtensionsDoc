@@ -193,7 +193,7 @@ Squash
 ------
 
 Git has no native squash operation, it can be done with various combinations of rebase and reset.
-This is described in the `Git Extensions wiki <https://github.com/gitextensions/gitextensions/wiki/How-To%3A-Squash-and-Rebase-your-changes#squash>`_.
+This is described in the `Git Extensions wiki <https://github.com/gitextensions/gitextensions/wiki/How-To%3A-Squash-and-Rebase-your-changes>`_.
 
 See :ref:`modify_history` and `Git documentation <https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History>`_ for more information.
 
