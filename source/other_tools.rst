@@ -9,8 +9,8 @@ Visual Studio Code
 
 3rd party extensions are available from the Marketplace `pmiossec`_ and `ForEvolve`_.
 
-.. _pmiossec: <https://marketplace.visualstudio.com/items?itemName=pmiossec.vscode-gitextensions>
-.. _ForEvolve: <https://marketplace.visualstudio.com/items?itemName=forevolve.git-extensions-for-vs-code>
+.. _pmiossec: https://marketplace.visualstudio.com/items?itemName=pmiossec.vscode-gitextensions
+.. _ForEvolve: https://marketplace.visualstudio.com/items?itemName=forevolve.git-extensions-for-vs-code
 
 .. _visual_studio:
 
@@ -19,7 +19,7 @@ Visual Studio
 
 The Visual Studio extension is available from Visual Studio application or `Marketplace`_.
 
-.. _Marketplace: <https://marketplace.visualstudio.com/items?itemName=forevolve.git-extensions-for-vs-code>
+.. _Marketplace: https://marketplace.visualstudio.com/items?itemName=forevolve.git-extensions-for-vs-code
 
 Menu
 ----

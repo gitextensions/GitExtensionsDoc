@@ -36,7 +36,7 @@ branch and choose to create a local tracking branch.
 Git Credential Manager
 ----------------------
 
-The Git Credential Manager can be used to authenticate https links. For more information and instructions, see https://github.com/GitCredentialManager/git-credential-manager
+The Git Credential Manager can be used to authenticate https links. For more information and instructions, see https://github.com/git-ecosystem/git-credential-manager.
 
 Create SSH key
 --------------
@@ -106,7 +106,7 @@ key with a password. This is not necessary. By default the public and private ke
 
 You do not need to tell GitExtensions about the private key because OpenSSH will load it for you. Now open the public
 key using notepad and copy the key to github. This can be done in ``Account Settings`` in the tab ``SSH Public Keys``
-on `GitHub <http://www.github.com>`_.
+on `GitHub <https://github.com>`_.
 
 Pull changes
 ------------
