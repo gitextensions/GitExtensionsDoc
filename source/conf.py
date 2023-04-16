@@ -342,6 +342,3 @@ pdf_use_numbered_links = False
 
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
-
-locale_dirs = ['locale']
-gettext_compact = False
