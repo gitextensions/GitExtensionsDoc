@@ -1,0 +1,1 @@
+docker run --rm -v %CD%:/docs sphinxdoc/sphinx sphinx-build -b html -d build/doctrees source build/html

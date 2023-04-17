@@ -23,6 +23,12 @@ The following installs and build the GE html documentation for any Python packag
 - pip install -U sphinx
 - sphinx-build -b html -d build/doctrees source build/html
 
+If you have docker installed, you could also generate the documentation using the command in a `cmd` prompt (or run the file `make-html_docker.cmd`):
+
+```
+docker run --rm -v %CD%:/docs sphinxdoc/sphinx sphinx-build -b html -d build/doctrees source build/html
+```
+
 ### HTML
 
 Simply run `make-html.cmd`. You can also use `make-singlehtml.cmd` to generate a single HTML
