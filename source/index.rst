@@ -6,26 +6,25 @@ Git Extensions |release| Manual
 
   git_extensions
   install
-  getting_started
-  settings
+  dashboard
   browse_repository
-  file_history
   commit
-  stash
-  tag
   branches
-  patches
+  tag
   remote_feature
-  merge_conflicts
-  modify_history
-  notes
   submodules
   worktrees
+  stash
+  modify_history
+  patches
+  notes
+  file_history
   maintenance
+  settings
+  plugins
+  github
   translations
   windows_explorer
   other_tools
   command_line
   z_appendix
-  plugins
-
