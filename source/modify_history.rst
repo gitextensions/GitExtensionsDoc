@@ -3,7 +3,7 @@
 Modify Git history
 ==================
 
-A Git commit cannot be changed, the sha for the commit will replaced at all changes. However, the contents of a commit can be modified and committed again as a new commit with a new sha and the branch/tag can be moved to the modified (new) commit.
+A Git commit cannot be changed, the sha for the commit will be replaced at all changes. However, the contents of a commit can be modified and committed again as a new commit with a new sha and the branch/tag can be moved to the modified (new) commit.
 
 .. todo The revert/cherry-picking should maybe be moved somewhere else
 
@@ -84,7 +84,7 @@ You could have a look to `Git documentation <https://git-scm.com/book/en/v2/Git-
 The options offered are :
 
 - reorder the lines to reorder the commits,
-- delete a line to throw away a commit and the changes introduced by the commit,
+- remove a line to throw away a commit and the changes introduced by the commit,
 - write `r` or `reword` in front of a commit to rewrite the commit message,
 - write `f` or `fixup` in front of a commit to meld the commit with the previous commit and with keeping the commit message of the first commit,
 - write `s` or `squash` in front of a commit to meld the commit with the previous commit and with rewriting the commit message.
@@ -132,6 +132,30 @@ Edit/reword commit
 These options are the same as starting an interactive rebase on the parent to the selected commit and doing an ``edit`` (allow to amend to the commit) or ``reword`` (editing the commit message) and then run an interactive rebase in the background.
 
 Note especially that this functionality will fail if you try to edit/reword a commit that is not a parent to the current checkout.
+
+Rebase onto
+^^^^^^^^^^^
+
+When you would like to rebase a branch, it could happen that you don't want to rebase all the commits of the branch that git will by default determine to rebase.
+
+One possibility is to do an interactive rebase and when git open the editor to let you decide what actions you will do on commits, you keep only the lines corresponding to the commit(s) you want to rebase (See interactive rebase to throw away a commit!)
+
+If that is the last commit(s) of the branch that you want to rebase, you could instead do a `Rebase onto` where you select the range of commits to rebase by defining from which commit (not included!) you will start the rebase.
+
+.. image:: /images/history/rebase_onto.png
+
+To select the base commit from which the range selection will be made, you have to options in Git Extensions:
+
+- You can use the commit selection popup-up:
+
+.. image:: /images/history/rebase_onto_commit_selection.png
+
+- Or you could do it by selecting two commits from the revision grid. The first one selected will fill the `from` field. The second will be the target commit when the branch will be rebased `onto`:
+
+.. image:: /images/history/rebase_onto_commit_selection_from_revision_grid.png
+
+Warning: When doing a rebase onto, the `from` commit defining the range of commit(s) that will be rebased *must* be an ancestor of the current branch checked out that will be rebased.
+
 .. _merge_conflicts:
 
 Merge Conflicts
