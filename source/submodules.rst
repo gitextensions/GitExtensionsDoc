@@ -10,12 +10,12 @@ The structure of the submodules can be seen in the submodule toolbar and the :re
 Manage submodules
 -----------------
 
-.. image:: /images/submodules.png
+.. image:: /images/submodules/submodules.png
 
 The current state of the submodules can be viewed with the ``Manage submodules`` function. All submodules are shown in
 the list on the left.
 
-.. image:: /images/submodules_dialog.png
+.. image:: /images/submodules/submodules_dialog.png
 
 +--------------+-----------------------------------------------------------------------------------------------------------------+
 |Add submodule | Add a new submodule to the repository                                                                           |
@@ -39,7 +39,7 @@ Add submodule
 
 To add a new submodule choose ``Add submodule`` in the ``Manage submodules`` dialog.
 
-.. image:: /images/add_submodules.png
+.. image:: /images/submodules/add_submodules.png
 
 +------------------+-------------------------------------------------------------------------------+
 |Path to submodule | Path to the remote repository to use as submodule.                            |

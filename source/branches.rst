@@ -3,7 +3,7 @@
 Branches
 ========
 
-.. image:: /images/branch.png
+.. image:: /images/branches/branch.png
     :align: right
 
 Branches are used to commit changes separate from other commits. It is very common to create a new branch when you
@@ -19,7 +19,7 @@ Git Extensions will show ``(no branch)`` in place of a branch name in the toolba
 mode". In Git you can refer to your current branch or commit by the special reference ``HEAD`` in place of the
 branch name or commit reference.
 
-.. image:: /images/branch_toolbar.png
+.. image:: /images/branches/branch_toolbar.png
 
 Create branch
 -------------
@@ -27,18 +27,18 @@ Create branch
 In Git Extensions there are multiple ways to create a new branch. In the image below I create a new branch from the
 context menu in the commit log. This will create a new branch on the revision that is selected.
 
-.. image:: /images/new_branch.png
+.. image:: /images/branches/new_branch.png
 
-I will create a new branch called ``feature/refactor``. In this branch I can do whatever I want without affecting others.
+I will create a new branch called ``feature/my_branch``. In this branch I can do whatever I want without affecting others.
 The default in Git Extensions is to check out a new branch after it is created. If you want to create a new branch
 but remain on your current branch, uncheck the ``Checkout after create`` checkbox in the ``Create branch`` dialog.
 
-.. image:: /images/create_branch_dialog.png
+.. image:: /images/branches/create_branch_dialog.png
 
-When the branch is created you will see the new branch ``feature/refactor`` in the commit log. If you chose to checkout this
+When the branch is created you will see the new branch ``feature/my_branch`` in the commit log. If you chose to checkout this
 branch the next commit will be committed to the new branch.
 
-.. image:: /images/refactor_branch.png
+.. image:: /images/branches/refactor_branch.png
 
 Creating branches in Git requires only 41 bytes of space in the repository. Creating a new branch is very easy and
 fast. The complete work flow of Git is optimized for branching and merging.
@@ -72,7 +72,7 @@ can choose between four options for your local uncommitted changes:
 | ``Reset``        | Your local changes are discarded and the new branch is checked out. Use caution with this option as Git has no record of uncommitted changes so they cannot be retrieved. |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /images/checkout_branch.png
+.. image:: /images/branches/checkout_branch.png
 
 Merge branches
 --------------
@@ -82,31 +82,27 @@ into the feature/refactor branch. If we do this, the feature/refactor branch wil
 As long as we are working on the feature/refactor branch we cannot touch the master branch itself. We can merge the sources of
 master into our branch, but cannot make any change to the master branch.
 
-.. image:: /images/merge1.png
+.. image:: /images/branches/merge1.png
 
 To merge the feature/refactor branch into the master branch, we first need to switch to the master branch.
 
-.. image:: /images/merge2.png
+.. image:: /images/branches/merge2.png
 
 Once we are on the master branch, select the feature/refactor branch and select merge. Alternatively choose ``Merge branches`` from the ``Commands`` menu and select the feature/refactor branch. 
 
-.. image:: /images/merge_context_menu.png
+.. image:: /images/branches/merge_context_menu.png
 
 In the merge dialog you can verify which branch you are working on, as well as set advanced merge options (see :ref:`Advanced Merge Options`). Select the branch to merge with then click the ``Merge`` button.
 
-.. image:: /images/merge_dialog.png
+.. image:: /images/branches/merge_dialog.png
 
 After the merge the commit log will show the new commit containing the merge. Notice that the feature/refactor branch is not changed
 by this merge. If you want to continue working on the feature/refactor branch you can merge the feature/refactor branch with master. You can
 instead delete the feature/refactor branch if it is not used anymore.
 
-  .. image:: /images/merge3.png
+  .. image:: /images/branches/merge3.png
 
-  .. note::
-
-    When you need to merge with an unnamed branch you can use a tag to give it a temporary name.
-
-    During a merge conflicts can occur. See :ref:`merge_conflicts` for more information.
+  For more information about merge conflicts and further options, see :ref:`merge_conflicts`.
 
 .. _Advanced Merge Options:
 
@@ -145,34 +141,32 @@ The `Show advanced options` checkbox will show the following options when activa
 Rebase branch
 -------------
 
-The rebase command is the most complex command in Git. The rebase command is very similar to the merge command. Both rebase
+The rebase command is very similar to the merge command. Both rebase
 and merge are used to get a branch up-to-date. The main difference is that rebase can be used to keep the history linear
 contrary to merges.
 
-.. image:: /images/rebase1.png
+.. image:: /images/branches/merge1.png
 
 Select the commit where you want to to rebase the current branch.
 
-.. image:: /images/merge_context_menu.png
+.. image:: /images/branches/rebase_context_menu.png
 
 A rebase of feature/refactor on top of master will perform the following actions:
 
-* All commits specific to the feature/refactor branch will be stashed in a temporary location
-* The branch feature/refactor will be removed
-* The branch feature/refactor will be recreated on the master branch
-* All commits will be recommitted in the new feature/refactor branch
+* The branch feature/refactor will be moved to the master branch
+* The commits in the previous feature/refactor branch will be recommitted in the moved feature/refactor branch
 
   .. note::
 
     During a rebase merge conflicts can occur. You need to solve the merge conflicts for each commit that is rebased. The
     rebase function in Git Extensions will guide you through all steps needed for a successful rebase. See :ref:`merge_conflicts` for more information.
 
-.. image:: /images/rebase_dialog.png
+.. image:: /images/branches/rebase_dialog.png
 
 The image below shows the commit log after the rebase. Notice that the history is changed and it seems like the commits on
 the feature/refactor branch are created after the commits on the master branch.
 
-.. image:: /images/rebase2.png
+.. image:: /images/branches/rebase2.png
 
 .. warning::
 
@@ -209,4 +203,4 @@ also part of another branch.
 You can delete a branch using ``Delete branch`` from the ``Commands`` menu. If you want to delete a branch that is not merged into
 your current branch (``HEAD`` in Git), you need to check the ``Force delete`` checkbox.
 
-.. image:: /images/delete_branch.png
+.. image:: /images/branches/delete_branch.png

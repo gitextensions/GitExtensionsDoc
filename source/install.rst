@@ -10,21 +10,25 @@ This section only covers Git Extensions installation, you will need `Git for Win
 
 The Git Extensions installer can be found on `GitHub <https://github.com/gitextensions/gitextensions/releases/latest>`_.
 
-.. figure:: /images/install/welcome.png
+.. image:: /images/install/welcome.png
 
-    Start installation.
+Start installation.
 
-.. figure:: /images/install/scope.png
+.. image:: /images/install/scope.png
 
-    Installation scope.
+Installation scope.
 
-.. figure:: /images/install/destination.png
+.. image:: /images/install/destination.png
 
-    Destination folder.
+Destination folder.
 
-.. figure:: /images/install/options.png
+.. image:: /images/install/options.png
 
-    Choose the options to install.
+Choose the options to install.
+
+.. image:: /images/install/telemetry.png
+
+Allow telemetry to allow the app to collect anonymous data to improve the application.
 
 .. image:: /images/install/ready.png
 

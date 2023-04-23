@@ -7,7 +7,7 @@ rights and you need to have access to the remote repository. When you cannot pus
 Patches can be e-mailed to someone with access to the repository. Each patch contains an entire commit including the commit
 message and the SHA1.
 
-.. image:: /images/patche.png
+.. image:: /images/patches/patche.png
 
 Create patch
 ------------
@@ -16,11 +16,11 @@ Format a single patch or patch series using the format patch dialog. You need to
 select the oldest commit using ctrl-click. You can also select an interrupted patch series, but this is not recommended
 because the files will not be numbered.
 
-.. image:: /images/patche_dialog.png
+.. image:: /images/patches/patche_dialog.png
 
 When the patches are created successfully the following dialog will appear.
 
-.. image:: /images/patche_dialog_result.png
+.. image:: /images/patches/patche_dialog_result.png
 
 Apply patches
 -------------
@@ -31,4 +31,4 @@ recommended step.
 
 Use 'Sign-Off' checkbox to sign off commits of applying patch. Git Extensions will remember your choice.
 
-.. image:: /images/apply_patche.png
+.. image:: /images/patches/apply_patche.png

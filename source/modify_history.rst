@@ -29,11 +29,11 @@ Cherry pick commit
 A commit can be recommitted by using the cherry pick function. This can be very useful when you want to make the same change
 on multiple branches. Select the commit (or range of commits) you want to cheery pick:
 
-.. image:: /images/cherry_pick_context_menu.png
+.. image:: /images/modify_history/cherry_pick_context_menu.png
 
 The confirm dialog opens:
 
-.. image:: /images/cherry_pick.png
+.. image:: /images/modify_history/cherry_pick.png
 
 Revert commit
 -------------
@@ -42,11 +42,11 @@ A commit cannot be deleted once it is published. If you need to undo the changes
 commit that undoes the changes. This is called a revert commit. 
 A revert commit is similar to a cherry pick, but the cherry pick tries to apply the same changes as the original commit, a revert will try to reverse the changes.
 
-.. image:: /images/revert_commit_context_menu.png
+.. image:: /images/modify_history/revert_commit_context_menu.png
 
 The confirm dialog opens:
 
-.. image:: /images/revert_commit_dialog.png
+.. image:: /images/modify_history/revert_commit_dialog.png
 
 Modify the last commit
 ----------------------
@@ -57,7 +57,7 @@ If the commit message text area was empty, it is now filled with the message of 
 You could now just update the commit message and commit or also add some more changes in the staging area to
 add them to the commit.
 
-.. image:: /images/history/amend_commit.png
+.. image:: /images/modify_history/amend_commit.png
 
 Modify an older commit
 ----------------------
@@ -73,11 +73,11 @@ First, you should create a commit containing the changes you want to add to a pr
 Then use the `rebase` feature in interactive mode on a base commit older than the one that you want to modify.
 See :ref:`branches` for how to start a rebase, start an interactive rebase from the context menu or by selecting the checkbox in the rebase dialog.
 
-.. image:: /images/rebase_dialog.png
+.. image:: /images/branches/rebase_dialog.png
 
 You will be prompted by a text editor displaying all the commits that will be rebased
 
-.. image:: /images/rebase_interactive.png
+.. image:: /images/modify_history/rebase_interactive.png
 
 You could have a look to `Git documentation <https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History>`_ to better understand all the possibilities offered.
 
@@ -108,7 +108,7 @@ Right click on the commit in the history, you know that you want to "modify".
 
 And choose the suitable option...
 
-.. image:: /images/history/rebase_interactive_fixup_commit.png
+.. image:: /images/modify_history/rebase_interactive_fixup_commit.png
 
 If you have not the changes prior to open the dialog, do them now.
 
@@ -117,7 +117,7 @@ Do not change the commit message and commit all the changes needed.
 
 Then process to the interactive rebase, like describe in the previous paragraph but with enabling the option `Autosquash`.
 
-.. image:: /images/history/rebase_interactive_autosquash.png
+.. image:: /images/modify_history/rebase_interactive_autosquash.png
 
 Launch the rebase by clicking on `Rebase`.
 
@@ -142,17 +142,17 @@ One possibility is to do an interactive rebase and when git open the editor to l
 
 If that is the last commit(s) of the branch that you want to rebase, you could instead do a `Rebase onto` where you select the range of commits to rebase by defining from which commit (not included!) you will start the rebase.
 
-.. image:: /images/history/rebase_onto.png
+.. image:: /images/modify_history/rebase_onto.png
 
 To select the base commit from which the range selection will be made, you have to options in Git Extensions:
 
 - You can use the commit selection popup-up:
 
-.. image:: /images/history/rebase_onto_commit_selection.png
+.. image:: /images/modify_history/rebase_onto_commit_selection.png
 
 - Or you could do it by selecting two commits from the revision grid. The first one selected will fill the `from` field. The second will be the target commit when the branch will be rebased `onto`:
 
-.. image:: /images/history/rebase_onto_commit_selection_from_revision_grid.png
+.. image:: /images/modify_history/rebase_onto_commit_selection_from_revision_grid.png
 
 Warning: When doing a rebase onto, the `from` commit defining the range of commit(s) that will be rebased *must* be an ancestor of the current branch checked out that will be rebased.
 
@@ -164,7 +164,7 @@ Merge Conflicts
 When merging or rebasing branches or commits you can get conflicts. Git will try to resolve these, but some conflicts
 need to be resolved manually. Git Extensions will show warnings when there is a merge conflict in the status bar in the bottom right corner.
 
-.. image:: /images/merge_conflicts.png
+.. image:: /images/modify_history/merge_conflicts.png
 
 Handle merge conflicts
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -172,11 +172,11 @@ Handle merge conflicts
 To solve merge conflicts just click on a warning or open the ``Solve merge conflicts...`` dialog from the Commands menu. A dialog will prompt
 showing all conflicts.
 
-.. image:: /images/resolve_merge_conflicts.png
+.. image:: /images/modify_history/resolve_merge_conflicts.png
 
 The context menu shows the actions to resolve the conflicts. Double-click on a filename will start the mergetool.
 
-.. image:: /images/resolve_merge_conflicts_menu.png
+.. image:: /images/modify_history/resolve_merge_conflicts_menu.png
 
 
 There are three kinds of conflicts:
@@ -211,4 +211,4 @@ In the merge tool you will see four versions of the same file:
     When you are in the middle of a merge the file named local represents your file. When you are in the middle of a rebase the
     file named remote represents your file. This can be confusing, so double check if you are in doubt.
 
-.. image:: /images/perforce_p4merge.png
+.. image:: /images/modify_history/perforce_p4merge.png

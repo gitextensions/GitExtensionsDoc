@@ -31,11 +31,11 @@ Revision graph
 The full commit history can be browsed. There is a graph that shows branches and merges. You can show the difference
 between any two revisions by selecting them using ctrl-click.
 
-.. image:: /images/commit_diff_view.png
+.. image:: /images/browse/commit_diff_view.png
 
 The context menu for a commit can both execute Git commands and change the appearance for the form.
 
-.. image:: /images/commit_contextual_menu.png
+.. image:: /images/browse/commit_contextual_menu.png
 
 Search
 ^^^^^^
@@ -76,17 +76,17 @@ The history can be filtered using regular expressions and basic filter terms. Fi
 that are shown in the Git Extensions commit history. The quick filter in the toolbar filters by the commit message, the
 author and/or the committer.
 
-.. image:: /images/quick_filter.png
+.. image:: /images/browse/quick_filter.png
 
-In the context menu of the commit log you can open the advanced filter dialog. The advanced filter dialog allows you to
-filter for more specific commits. To remove the filter either remove the filter in the toolbar and press enter or remove the
-filter in the advanced filter dialog.
+In the toolbar or context menu of the commit log you can open the advanced filter dialog. The advanced filter dialog allows you to
+filter for more specific commits.
 
-.. image:: /images/advance_filter_dialog-menu.png
+.. image:: /images/browse/advance_filter_dialog-menu.png
 
 When a filter is set, the icon for the advanced filter is changed and you see the current filter as a tooltip for the button.
+To remove the filter either remove the filter in the toolbar and press enter or remove the filter in the advanced filter dialog.
 
-.. image:: /images/advance_filter_dialog.png
+.. image:: /images/browse/advance_filter_dialog.png
 
 .. _browse-repository-reflog:
 
@@ -133,7 +133,7 @@ The file viewer will by default show the file contents, but may also show Blame 
 
 You could search a file in the file tree using the default keyboard shortcut `Ctrl + Shift + F` (configurable in :ref:`settings-hotkeys`).
 
-.. image:: /images/find_in_file_tree.png
+.. image:: /images/browse/find_in_file_tree.png
 
 GPG
 ^^^

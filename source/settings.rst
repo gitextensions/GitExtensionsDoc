@@ -1213,7 +1213,7 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
   a Git failure that will result in a popup. You may have to ignore the popup, refresh or even
   reopen the application to recover from these failures.
 
-  See also :ref:`worktrees` for other limitations.
+  See also :ref:`worktrees` for Git limitations.
 
 .. settingspage:: Config
 

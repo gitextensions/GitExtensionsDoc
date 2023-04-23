@@ -3,7 +3,8 @@
 Dashboard
 =========
 
-The dashboard contains the most common tasks, recently opened repositories and favourites. Favourite repositories can be added, grouped under Category headings in the right panel.
+The dashboard contains the most common tasks, recently opened repositories and categories (favourites).
+Categories can be added, grouped in the repository context menu.
 
 .. image:: /images/dashboard/start_page.png
 

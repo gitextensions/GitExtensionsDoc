@@ -14,21 +14,21 @@ and select ``File history`` or ``Blame``.
 
 The single file history viewer shows all revisions of a single file or submodules.
 
-.. image:: /images/context_menu_blame.png
+.. image:: /images/file_history/context_menu_blame.png
 
 Commit
 ------
 
 The ``Commit`` tab contains the information about the commit, including the other files in the commit.
 
-.. image:: /images/file_history_commit.png
+.. image:: /images/file_history/file_history_commit.png
 
 Diff
 ----
 
 You can view the difference report from the commit in the ``Diff`` tab.
 
-.. image:: /images/file_history_diff.png
+.. image:: /images/file_history/file_history_diff.png
 
 .. note::
 
@@ -39,13 +39,13 @@ View
 
 You can view the content of the file in after each commit in the ``View`` tab.
 
-.. image:: /images/file_history_view.png
+.. image:: /images/file_history/file_history_view.png
 
 Blame
 -----
 
 There is a blame function in the file history browser. The commit for the selected line is displayed.
 
-.. image:: /images/file_history_blame.png
+.. image:: /images/file_history/file_history_blame.png
 
 Double clicking on a code line shows the full commit introducing the change.
