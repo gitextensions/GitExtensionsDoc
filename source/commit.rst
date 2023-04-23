@@ -22,7 +22,7 @@ Changes can be committed to the local repository. Unlike centralised source cont
 checkout files before you start editing. You can just start editing files, and review all the changes you made in the commit
 dialog later. When you open the commit dialog, all changes are listed in the top-left.
 
-.. image:: /images/commit_dialog.png
+.. image:: /images/commit/commit_dialog.png
 
 There are three kinds of changes:
 
@@ -42,7 +42,7 @@ staging them, but they will show every time. You can instead add them to the ``.
 in the ``.gitignore`` file will not show up in the commit dialog again. You can open the ``.gitignore`` editor from the menu
 ``Working dir changes`` by selecting ``Edit ignored files``.
 
-.. image:: /images/commit_menu_edit_ignored.png
+.. image:: /images/commit/commit_menu_edit_ignored.png
 
 Making a commit is a two step procedure:
 
@@ -102,7 +102,7 @@ pane. If you have already staged the changes then you must first unstage them as
 file, select the file in the unstaged changes pane, right-click and choose ``Reset file or directory changes`` or press the
 ``R`` key.
 
-.. image:: /images/commit_reset_changes.png
+.. image:: /images/commit/commit_reset_changes.png
 
 You can reset individual changed lines in a similar way to staging and unstaging individual lines, which are described above.
 To reset an individual line, select the line or lines in the diff view on the right then right-click and choose ``Reset
@@ -115,7 +115,7 @@ Making the commit
 
 When all the changes you want to commit are staged, enter a commit message into the lower-right pane and press the commit button.
 
-.. image:: /images/commit_dialog_commit.png
+.. image:: /images/commit/commit_dialog_commit.png
 
 There is a built-in spelling checker that checks the commit message. Incorrectly spelled words are underlined with a wavey red line.
 Right-click on the misspelled word to choose the correct spelling or choose one of the other options.
@@ -124,7 +124,7 @@ Git Extensions installs a number of dictionaries by default. You can choose anot
 spelling checker or in the settings dialog. To add a new spelling dictionary add the dictionary file to the ``Dictionaries``
 folder inside the Git Extensions installation folder.
 
-.. image:: /images/commit_dialog_spellchecker.png
+.. image:: /images/commit/commit_dialog_spellchecker.png
 
 Amend commit
 ------------
@@ -141,4 +141,4 @@ Amend also enables the following options:
 
   - `Reset soft`: Perform a soft reset to the previous commit; leaves working directory and index untouched
 
-.. image:: /images/commit_amend_reset_author.png
+.. image:: /images/commit/commit_amend_reset_author.png
