@@ -568,7 +568,7 @@ This page contains general settings for Git Extensions.
     
   .. setting:: Project ID
   
-    Use ``Get Project ID from server`` link to obtaint it automatically (required valid access token or public access rights for project). Alternativelly you can enter the Project ID from Gitlab instance website.
+    Use ``Get Project ID from server`` link to obtain it automatically (required valid access token or public access rights for project). Alternatively, you can enter the Project ID from Gitlab website.
     
   .. setting:: Api Token
   
