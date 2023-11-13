@@ -559,6 +559,20 @@ This page contains general settings for Git Extensions.
   .. setting:: Build Id Filter
 
     Enter a regexp filter for which build results you want to retrieve in the case that your build project creates multiple builds. For example, if your project includes both devBuild and docBuild you may wish to apply a filter of “devBuild” to retrieve the results from only the program build.
+    
+.. settingsgroup:: Gitlab
+
+  .. setting:: Gitlab server URL
+  
+    Enter the URL of the server (and port, if applicable).
+    
+  .. setting:: Project ID
+  
+    Use ``Get Project ID from server`` link to obtain it automatically (required valid access token or public access rights for project). Alternatively, you can enter the Project ID from Gitlab website.
+    
+  .. setting:: Api Token
+  
+   Open ``Edit Profile`` -> ``Access Tokens`` menu on Gitlab instance website to generate new access token. Required ``read_api`` permission. Can be empty for projects with public access rights.
 
 .. settingspage:: Scripts
 
