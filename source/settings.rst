@@ -883,7 +883,7 @@ This page allows detailed settings to be modified.
 
     If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
     from at most the given number actual commits that are being merged.
-    See `Git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`.
+    See `git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`_.
 
 .. settingsgroup:: Email settings for sending patches
   :id: patches-email
@@ -1019,7 +1019,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Omit uninteresting changes from combined diff
 
-    Includes git `--cc` switch when generating a diff. See `git diff-tree <https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc>`
+    Includes git `--cc` switch when generating a diff. See `git diff-tree <https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc>`_.
 
   .. setting:: Enable automatic continuous scroll (without ALT button)
 
@@ -1112,14 +1112,14 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Git word diff
 
-    The appearance uses Git word diff as described in `GitDiff#--word-diff <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt>`_
+    The appearance uses Git word diff as described in `git diff#--word-diff <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt>`_.
 
     This is not a "patch" view, and so cannot be used to apply line patches.
-    It is intended as a contrast to the default view why Git default view is changed to show a minimal diff.
-    `GitDiff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_
+    It is intended as a contrast to the default view why Git default view is changed to show a minimal diff, see
+    `git diff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_.
 
-    You can control the setting from Git (Git Extensions will not override user settings.)
-    `GitDiff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_
+    You can control the setting from Git (Git Extensions will not override user settings), see
+    `git diff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_.
 
     Note that the Git feature is slightly buggy and will not always display as expected.
 
@@ -1152,7 +1152,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     Note that the Difftastic output is intended to be a command line tool, the parsing to display the file is imperfect.
     For instance `--display="inline"` has multiple display issues.
 
-    While the parsing is customized for Difftastic, any other commandline difftool could be used to display output in the Git Extensions diff viewer. Line numbers and navigation will probably not work.
+    While the parsing is customized for Difftastic, any other command line difftool could be used to display output in the Git Extensions diff viewer. Line numbers and navigation will probably not work.
 
 .. settingsgroup:: Diff coloring
 
@@ -1190,19 +1190,16 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
   .. settingsgroup:: Blame settings
 
     .. setting:: Ignore whitespace
-    .. _git blame -w: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w
 
-      See `git blame -w`.
+      See `git blame -w https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w`_.
 
     .. setting:: Detect move and copy in this file
-    .. _git blame -M: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt
 
-      See `Git blame -M`.
+      See `git blame -M https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt`_.
 
     .. setting:: Detect move and copy in all files
-    .. _git blame -C: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt
 
-      See `Git blame -C`_.
+      See `git blame -C https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt`_.
 
   .. settingsgroup:: Display result settings
 

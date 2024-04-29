@@ -94,7 +94,7 @@ Reflog
 """"""
 
 By default, Git will not show any commits that are not reachable and do not have any references, such as a branch or a tag.
-See `Git reflog <https://git-scm.com/docs/git-reflog>`_.
+See `git reflog <https://git-scm.com/docs/git-reflog>`_.
 Such commits will be purged when Git runs maintenance.
 By enabling ``Reflog`` via the toolbar button or in the ``View`` menu these commits will be shown too.
 
