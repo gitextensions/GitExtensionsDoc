@@ -1171,7 +1171,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     The output can be configured in Git to some extent. By default, Git uses named colors that Git Extensions interprets according to the theme.
     To use a private color theme, override the colors. Example overriding color for added text the the Git Extensions theme color:
 
-    ``git config --global color.diff.new "#000000 #c8ffc8"``
+       git config --global color.diff.new "#000000 #c8ffc8"
 
     Git Extensions changes (if not set by the user):
 
@@ -1191,15 +1191,15 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     .. setting:: Ignore whitespace
 
-      See `git blame -w https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w`_.
+      See `git blame -w <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w>`_.
 
     .. setting:: Detect move and copy in this file
 
-      See `git blame -M https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt`_.
+      See `git blame -M <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt>`_.
 
     .. setting:: Detect move and copy in all files
 
-      See `git blame -C https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt`_.
+      See `git blame -C <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt>`_.
 
   .. settingsgroup:: Display result settings
 
