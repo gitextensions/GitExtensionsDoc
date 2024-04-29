@@ -1112,14 +1112,14 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Git word diff
 
-    The appearance uses Git word diff as described in https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt
+    The appearance uses Git word diff as described in `GitDiff#--word-diff <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt>`_
 
     This is not a "patch" view, cannot be used to apply line patches.
     It is intended as a contrast to the default view why Git default view is changed to show a minimal diff.
-    https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt
+    `GitDiff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_
 
     You can control the setting from Git (Git Extensions will not override user settings.)
-    https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex
+    `GitDiff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_
 
     Note that the Git feature is slightly buggy and will not always display as expected.
 
@@ -1127,14 +1127,13 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     The `Difftastic <https://github.com/Wilfred/difftastic>`_ view shows structural diff, compares files based on their syntax.
 
-    To use the view, download the binary and add a Git difftool named `difftastic` to ~/.gitconfig
+    To use the view, download the binary and add a Git difftool named `difftastic` to `~/.gitconfig`::
 
-    ``[difftool "difftastic"]
-        cmd = /c/temp/bin/difft.exe "$LOCAL" "$REMOTE"``
+       [difftool "difftastic"]
+           cmd = /c/temp/bin/difft.exe "$LOCAL" "$REMOTE"
 
     Git Extensions tries to configure the display to be similar to the default "patch" view
-    by applying environmental variables as described in the `Difftastic source code:
-       <https://github.com/Wilfred/difftastic/blob/master/src/options.rs#L181>`_:
+    by applying environmental variables as described in the `Difftastic source code <https://github.com/Wilfred/difftastic/blob/master/src/options.rs#L181>`_:
 
     - `DFT_COLOR` "always"
     - `DFT_BACKGROUND` "light" (from the theme).
@@ -1145,10 +1144,10 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     It is possible to override the Git Extensions settings in the Git difftool configuration.
     In addition, the theme colors are applied (which not alway plays well with the Difftastic syntax highlighting).
     For example the environmental variable `DFT_DISPLAY` how changes are aligned. The default is *adaptive*, *Patch* uses *inline*. 
-    The following forces a side-by-side view.
+    The following forces a side-by-side view::
 
-    ``[difftool "difftastic"]
-        cmd = /c/temp/bin/difft.exe --display="side-by-side-show-both" "$LOCAL" "$REMOTE"``
+       [difftool "difftastic"]
+           cmd = /c/temp/bin/difft.exe --display="side-by-side-show-both" "$LOCAL" "$REMOTE"
 
     Note that the Difftastic output is intended to be a command line tool, the parsing to display the file is imperfect.
     For instance `--display="inline"` has multiple display issues.
