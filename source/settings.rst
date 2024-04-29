@@ -1114,7 +1114,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     The appearance uses Git word diff as described in `GitDiff#--word-diff <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt>`_
 
-    This is not a "patch" view, cannot be used to apply line patches.
+    This is not a "patch" view, and so cannot be used to apply line patches.
     It is intended as a contrast to the default view why Git default view is changed to show a minimal diff.
     `GitDiff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_
 
@@ -1125,9 +1125,9 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Difftastic
 
-    The `Difftastic <https://github.com/Wilfred/difftastic>`_ view shows structural diff, compares files based on their syntax.
+    The `Difftastic <https://github.com/Wilfred/difftastic>`_ view shows structural diff and compares files based on their syntax.
 
-    To use the view, download the binary and add a Git difftool named `difftastic` to `~/.gitconfig`::
+    To use this view, download the binary and add a Git difftool named `difftastic` to `~/.gitconfig`::
 
        [difftool "difftastic"]
            cmd = /c/temp/bin/difft.exe "$LOCAL" "$REMOTE"
@@ -1142,8 +1142,8 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     - `DFT_WIDTH` Guess a reasonable width, so scrollbar is (barely) activated.
 
     It is possible to override the Git Extensions settings in the Git difftool configuration.
-    In addition, the theme colors are applied (which not alway plays well with the Difftastic syntax highlighting).
-    For example the environmental variable `DFT_DISPLAY` how changes are aligned. The default is *adaptive*, *Patch* uses *inline*. 
+    In addition, the theme colors are applied (which not always plays well with the Difftastic syntax highlighting).
+    For example the environmental variable `DFT_DISPLAY` that defines how changes are aligned. The default is *adaptive*, *Patch* uses *inline*. 
     The following forces a side-by-side view::
 
        [difftool "difftastic"]
