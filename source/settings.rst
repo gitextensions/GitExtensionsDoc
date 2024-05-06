@@ -1123,6 +1123,9 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     Note that the Git feature is slightly buggy and will not always display as expected.
 
+    Note for WSL, applies to all overrides: To have an effect in WSL, the setting must be overridden in Windows too
+    (but the setting in Windows or WSL can be different).
+
   .. setting:: Difftastic
 
     The `Difftastic <https://github.com/Wilfred/difftastic>`_ view shows structural diff and compares files based on their syntax.
@@ -1152,7 +1155,8 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     Note that the Difftastic output is intended to be a command line tool, the parsing to display the file is imperfect.
     For instance `--display="inline"` has multiple display issues.
 
-    While the parsing is customized for Difftastic, any other command line difftool could be used to display output in the Git Extensions diff viewer. Line numbers and navigation will probably not work.
+    While the parsing is customized for Difftastic, any other command line difftool could be used to display output in the Git Extensions diff viewer.
+    Line numbers and navigation will probably not work.
 
 .. settingsgroup:: Diff coloring
 
@@ -1175,7 +1179,9 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     Git Extensions changes (if not set by the user):
 
-    - `diff.colorMoved <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMoved>`_ Set explicitly to `zebra` (current default in Git).
+    - `diff.colorMoved <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMoved>`_ 
+      Set explicitly to `dimmed-zebra` (current default in Git is `zebra`), to better mark the border for changed lines.
+      The diff colors are overridden to show the default zebra colors but dimmed for moved lines.
 
     - `diffwsErrorHighlight <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMovedWS>`_ Set to `no`.
 
