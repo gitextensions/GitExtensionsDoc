@@ -1142,6 +1142,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     - `DFT_BACKGROUND` "light" (from the theme).
     - `DFT_SYNTAX_HIGHLIGHT` Set by *Show Syntax Highlighting* as for *Patch*.
     - `DFT_CONTEXT` Set as for *Patch*.
+    - `DFT_STRIP_CR` "on" if any ignore whitespace setting is set.
     - `DFT_WIDTH` Guess a reasonable width, so scrollbar is (barely) activated.
 
     It is possible to override the Git Extensions settings in the Git difftool configuration.
