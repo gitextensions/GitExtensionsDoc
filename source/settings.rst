@@ -1119,7 +1119,8 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     `git diff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_.
 
     You can control the setting from Git (Git Extensions will not override user settings), see
-    `git diff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_.
+    `git diff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_,
+    by default set to `[a-z0-9_]+|.`.
 
     Note that the Git feature is slightly buggy and will not always display as expected.
 
