@@ -870,6 +870,16 @@ This page allows you to turn off certain confirmation popup windows by uncheckin
 
 This page allows detailed settings to be modified.
 
+.. settingsgroup:: Revision graph
+
+  Settings affecting how the grid is rendered.
+
+  .. setting:: Merge graph lanes having common parent
+
+  .. setting:: Render graph with diagonals
+
+  .. setting:: Straighten graph diagonals
+
 .. settingsgroup:: Push window
 
     .. setting:: Get remote branches directly from the remote
@@ -921,6 +931,8 @@ This page allows detailed settings to be modified.
     Show blame in the diff view tab :ref:`browse-repository-tabs-diff` instead of switching to  :ref:`browse-repository-tabs-file-tree` tab.
 
 .. settingsgroup:: Tabs
+
+  Changes to tabs settings require a restart of Git Extensions in order to have effect.
 
   .. setting:: Show the Console tab
 
