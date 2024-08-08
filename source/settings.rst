@@ -352,6 +352,8 @@ This page contains general settings for Git Extensions.
 
   For more information see the README in the themes folder or `GitHub <https://github.com/gitextensions/gitextensions/blob/master/GitUI/Themes/README.md>`_.
 
+  Note that the Git Extensions support for themes is quite limited since version 4.0 due to restrictions in .NET.
+
   .. settingbutton:: Open Theme folder
 
     Open the folder with the themes in Windows Explorer.
@@ -1147,12 +1149,12 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
     - `DFT_WIDTH` Guess a reasonable width, so scrollbar is (barely) activated.
 
     It is possible to override the Git Extensions settings in the Git difftool configuration.
-    In addition, the theme colors are applied (which not always plays well with the Difftastic syntax highlighting).
+    In addition, the theme colors are applied (including green/red reverse text).
     For example the environmental variable `DFT_DISPLAY` that defines how changes are aligned. The default is *adaptive*, *Patch* uses *inline*. 
     The following forces a side-by-side view::
 
        [difftool "difftastic"]
-           cmd = /c/temp/bin/difft.exe --display="side-by-side-show-both" "$LOCAL" "$REMOTE"
+           cmd = /c/Downloads/bin/difft.exe --display="side-by-side-show-both" "$LOCAL" "$REMOTE"
 
     Note that the Difftastic output is intended to be a command line tool, the parsing to display the file is imperfect.
     For instance `--display="inline"` has multiple display issues.
@@ -1162,20 +1164,24 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
 .. settingsgroup:: Diff coloring
 
-  Control how diff appearance `Patch` is colored.
-  In addition to to these settings, see also diff tab.
+  Control how diff appearance `Diff` is colored.
+  In addition to these settings, see also diff tab.
 
-  Regardless of this setting, The Git Extensions addition that tries to highlight the core changes with a brighter color is always used.
-  Also, the setting applies only for the normal Patch appearance. Git-word-diff appearance as well as git-range-diff and git-grep always use Git coloring.
+  The colors for patch outputs are configured in the theme settings, setting the colors for ANSI terminal colors.
+  For instance `AnsiTerminalGreenBackNormal` sets the background color for added lines and `AnsiTerminalGreenBackBold` for the changed text.
 
   .. setting:: Git coloring
 
-    If this is not set, the Git Extensions built-in coloring engine is set. (This is quite limited, just highlighting changed lines.)
+    If this is not set, the Git Extensions built-in coloring engine is set for patch outputs. (This is quite limited, just highlighting changed lines.)
+    Git-word-diff appearance as well as git-range-diff and git-grep always use Git coloring.
 
     If this is set, the Git coloring engine is used. This is more advanced and can highlight moved lines.
 
-    The output can be configured in Git to some extent. By default, Git uses named colors that Git Extensions interprets according to the theme.
-    To use a private color theme, override the colors. Example overriding color for added text the the Git Extensions theme color:
+    The colors can be configured in the theme as Git uses named colors. (The default configuration including attributes are described in Git source `diff.c <https://github.com/git/git/blob/master/diff.c#L83>`_).
+    It is also possible to override individual Git color "slots" with some attributes like `bold`, `dim` and `reverse`. 
+    See `color.diff.<slot> <https://git-scm.com/docs/git-config#Documentation/git-config.txt-colordiffltslotgt>`_ for a description of the slots.
+
+    The color can also be overridden to use colors not in the theme. Example overriding color for added text the the Git Extensions theme color:
 
        git config --global color.diff.new "#000000 #c8ffc8"
 
@@ -1183,13 +1189,13 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     - `diff.colorMoved <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMoved>`_ 
       Set explicitly to `dimmed-zebra` (current default in Git is `zebra`), to better mark the border for changed lines.
-      The diff colors are overridden to show the default zebra colors but dimmed for moved lines.
+      The diff colors are overridden to dim moved lines but keep the colors.
 
     - `diffwsErrorHighlight <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMovedWS>`_ Set to `no`.
 
-  .. setting:: Use theme coloring
+  .. setting:: Reverse background color
 
-    Override the Git colors for added and removed text (`color.diff.new` and `color.diff.old`). (Git changes the font color by default, the Git Extensions theme colors applies background colors.)
+    Color the background for changes (invert colors). Git changes the foreground text by default, this option overrides the Git `color.diff.<slot>` config to color the background instead.
 
 .. settingspage:: Blame viewer
 
