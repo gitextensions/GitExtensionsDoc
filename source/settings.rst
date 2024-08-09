@@ -352,6 +352,8 @@ This page contains general settings for Git Extensions.
 
   For more information see the README in the themes folder or `GitHub <https://github.com/gitextensions/gitextensions/blob/master/GitUI/Themes/README.md>`_.
 
+  Note that the Git Extensions support for themes is quite limited since version 4.0 due to restrictions in .NET.
+
   .. settingbutton:: Open Theme folder
 
     Open the folder with the themes in Windows Explorer.
@@ -868,6 +870,16 @@ This page allows you to turn off certain confirmation popup windows by uncheckin
 
 This page allows detailed settings to be modified.
 
+.. settingsgroup:: Revision graph
+
+  Settings affecting how the grid is rendered.
+
+  .. setting:: Merge graph lanes having common parent
+
+  .. setting:: Render graph with diagonals
+
+  .. setting:: Straighten graph diagonals
+
 .. settingsgroup:: Push window
 
     .. setting:: Get remote branches directly from the remote
@@ -883,7 +895,7 @@ This page allows detailed settings to be modified.
 
     If enabled, then in addition to branch names, git will populate the log message with one-line descriptions
     from at most the given number actual commits that are being merged.
-    See `Git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`.
+    See `git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`_.
 
 .. settingsgroup:: Email settings for sending patches
   :id: patches-email
@@ -919,6 +931,8 @@ This page allows detailed settings to be modified.
     Show blame in the diff view tab :ref:`browse-repository-tabs-diff` instead of switching to  :ref:`browse-repository-tabs-file-tree` tab.
 
 .. settingsgroup:: Tabs
+
+  Changes to tabs settings require a restart of Git Extensions in order to have effect.
 
   .. setting:: Show the Console tab
 
@@ -990,6 +1004,8 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   Settings for :ref:`browse-repository-tabs-diff`.
 
+.. settingsgroup:: General
+
   .. setting:: Remember the 'Ignore whitespaces' preference
 
     Remember in the GitExtensions settings the latest chosen value of the 'Ignore whitespaces' preference.
@@ -1017,7 +1033,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Omit uninteresting changes from combined diff
 
-    Includes git `--cc` switch when generating a diff. See `git diff-tree <https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc>`
+    Includes git `--cc` switch when generating a diff. See `git diff-tree <https://git-scm.com/docs/git-diff-tree#Documentation/git-diff-tree.txt---cc>`_.
 
   .. setting:: Enable automatic continuous scroll (without ALT button)
 
@@ -1058,7 +1074,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
     .. setting:: Range diff
 
-    `git range-diff <https://git-scm.com/docs/git-range-diff>` shows the difference between two versions of a
+    `git range-diff <https://git-scm.com/docs/git-range-diff>`_ shows the difference between two versions of a
     patch series with a common BASE. The command can require a lot of resources and it is possible
     to define the ranges for Git .
 
@@ -1095,7 +1111,103 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
   .. setting:: Vertical ruler position
 
     Position for ruler in TextEditor controls. Set to 0 to disable.
-    (This should be moved to the TextEditor context menu.)
+
+.. settingsgroup:: Diff appearance
+
+  Control how diffs are presented. This is set in the diff viewer context menu.
+
+    .. image:: /images/settings/diff-appearance.png
+
+  .. setting:: Patch view
+
+    The patch view shows the changes in a file as a patch. This is the default view.
+
+    The appearance can to some extent be controlled by Git Settings, see also :ref:`settings-diff-coloring`.
+
+  .. setting:: Git word diff
+
+    The appearance uses Git word diff as described in `git diff#--word-diff <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt>`_.
+
+    This is not a "patch" view, and so cannot be used to apply line patches.
+    It is intended as a contrast to the default view why Git default view is changed to show a minimal diff, see
+    `git diff#--word-diff-regex <https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diff-regexltregexgt>`_.
+
+    You can control the setting from Git (Git Extensions will not override user settings), see
+    `git diff#diff.wordRegex <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwordRegex>`_,
+    by default set to `[a-z0-9_]+|.`.
+
+    Note that the Git feature is slightly buggy and will not always display as expected.
+
+    Note for WSL, applies to all overrides: To have an effect in WSL, the setting must be overridden in Windows too
+    (but the setting in Windows or WSL can be different).
+
+  .. setting:: Difftastic
+
+    The `Difftastic <https://github.com/Wilfred/difftastic>`_ view shows structural diff and compares files based on their syntax.
+
+    To use this view, download the binary and add a Git difftool named `difftastic` to `~/.gitconfig`::
+
+       [difftool "difftastic"]
+           cmd = /c/temp/bin/difft.exe "$LOCAL" "$REMOTE"
+
+    Git Extensions tries to configure the display to be similar to the default "patch" view
+    by applying environmental variables as described in the `Difftastic source code <https://github.com/Wilfred/difftastic/blob/master/src/options.rs#L181>`_:
+
+    - `DFT_COLOR` "always"
+    - `DFT_BACKGROUND` "light" (from the theme).
+    - `DFT_SYNTAX_HIGHLIGHT` Set by *Show Syntax Highlighting* as for *Patch*.
+    - `DFT_CONTEXT` Set as for *Patch*.
+    - `DFT_STRIP_CR` "on" if any ignore whitespace setting is set.
+    - `DFT_WIDTH` Guess a reasonable width, so scrollbar is (barely) activated.
+
+    It is possible to override the Git Extensions settings in the Git difftool configuration.
+    In addition, the theme colors are applied (including green/red reverse text).
+    For example the environmental variable `DFT_DISPLAY` that defines how changes are aligned. The default is *adaptive*, *Patch* uses *inline*. 
+    The following forces a side-by-side view::
+
+       [difftool "difftastic"]
+           cmd = /c/Downloads/bin/difft.exe --display="side-by-side-show-both" "$LOCAL" "$REMOTE"
+
+    Note that the Difftastic output is intended to be a command line tool, the parsing to display the file is imperfect.
+    For instance `--display="inline"` has multiple display issues.
+
+    While the parsing is customized for Difftastic, any other command line difftool could be used to display output in the Git Extensions diff viewer.
+    Line numbers and navigation will probably not work.
+
+.. settingsgroup:: Diff coloring
+
+  Control how diff appearance `Diff` is colored.
+  In addition to these settings, see also diff tab.
+
+  The colors for patch outputs are configured in the theme settings, setting the colors for ANSI terminal colors.
+  For instance `AnsiTerminalGreenBackNormal` sets the background color for added lines and `AnsiTerminalGreenBackBold` for the changed text.
+
+  .. setting:: Git coloring
+
+    If this is not set, the Git Extensions built-in coloring engine is set for patch outputs. (This is quite limited, just highlighting changed lines.)
+    Git-word-diff appearance as well as git-range-diff and git-grep always use Git coloring.
+
+    If this is set, the Git coloring engine is used. This is more advanced and can highlight moved lines.
+
+    The colors can be configured in the theme as Git uses named colors. (The default configuration including attributes are described in Git source `diff.c <https://github.com/git/git/blob/master/diff.c#L83>`_).
+    It is also possible to override individual Git color "slots" with some attributes like `bold`, `dim` and `reverse`. 
+    See `color.diff.<slot> <https://git-scm.com/docs/git-config#Documentation/git-config.txt-colordiffltslotgt>`_ for a description of the slots.
+
+    The color can also be overridden to use colors not in the theme. Example overriding color for added text the the Git Extensions theme color:
+
+       git config --global color.diff.new "#000000 #c8ffc8"
+
+    Git Extensions changes (if not set by the user):
+
+    - `diff.colorMoved <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMoved>`_ 
+      Set explicitly to `dimmed-zebra` (current default in Git is `zebra`), to better mark the border for changed lines.
+      The diff colors are overridden to dim moved lines but keep the colors.
+
+    - `diffwsErrorHighlight <https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffcolorMovedWS>`_ Set to `no`.
+
+  .. setting:: Reverse background color
+
+    Color the background for changes (invert colors). Git changes the foreground text by default, this option overrides the Git `color.diff.<slot>` config to color the background instead.
 
 .. settingspage:: Blame viewer
 
@@ -1104,19 +1216,16 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
   .. settingsgroup:: Blame settings
 
     .. setting:: Ignore whitespace
-    .. _git blame -w: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w
 
-      See `git blame -w`.
+      See `git blame -w <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--w>`_.
 
     .. setting:: Detect move and copy in this file
-    .. _git blame -M: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt
 
-      See `Git blame -M`.
+      See `git blame -M <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Mltnumgt>`_.
 
     .. setting:: Detect move and copy in all files
-    .. _git blame -C: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt
 
-      See `Git blame -C`_.
+      See `git blame -C <https://git-scm.com/docs/git-blame#Documentation/git-blame.txt--Cltnumgt>`_.
 
   .. settingsgroup:: Display result settings
 
