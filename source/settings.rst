@@ -1328,6 +1328,7 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
   - ScriptRunner and some built-in plugins like FindLargeFiles always use Windows Git.
 
   Some notes:
+
   - Git repos accessed in ``\\wsl.localhost`` will be displayed as ``\\wsl$`` (so only one occurrence in recent lists etc).
   - Git repos mapped to a drive letter will not use the special WSL handling but Windows Git.
   - Windows Git can be forced by adding the key ``WslGitEnabled`` to ``GitExtensions.settings``.
