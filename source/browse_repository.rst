@@ -76,6 +76,9 @@ The history can be filtered using regular expressions and basic filter terms. Fi
 that are shown in the Git Extensions commit history. The quick filter in the toolbar filters by the commit message, the
 author and/or the committer.
 
+Advanced: Also ``Branches`` and ``Filter`` (with ``Commit message`` set) text boxes accepts git-log arguments if the
+first argument starts with ``--``. Separate the arguments with spaces.
+
 .. image:: /images/browse/quick_filter.png
 
 In the toolbar or context menu of the commit log you can open the advanced filter dialog. The advanced filter dialog allows you to
@@ -117,8 +120,8 @@ Diff
 ^^^^
 
 See also 
-:ref:`settings-diff-viewer-show-file-differences-for-all-parents-in-browse-dialog` and
-:ref:`settings-diff-viewer-show-all-available-difftools`
+:ref:`settings-general-show-file-differences-for-all-parents-in-browse-dialog` and
+:ref:`settings-general-show-all-available-difftools`
 
 The file viewer will by default show the diff, but may also show Blame for the selected file.
 

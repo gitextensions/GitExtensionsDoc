@@ -1330,6 +1330,8 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
   Some notes:
   - Git repos accessed in ``\\wsl.localhost`` will be displayed as ``\\wsl$`` (so only one occurrence in recent lists etc).
   - Git repos mapped to a drive letter will not use the special WSL handling but Windows Git.
+  - Windows Git can be forced by adding the key ``WslGitEnabled`` to ``GitExtensions.settings``.
+  Accepted values: ``true|false`` (default: ``false``).
   - Files modified in WSL are not reported by Windows FileSystemWatcher, so the
   GitStatusMonitor will only report issues at explicit refresh and every minute.
   - The WSL executable occasionally fail (for instance when the WSL machine is busy) which will be seen as
