@@ -66,9 +66,9 @@ See :doc:`github`.
 Organizing your repositories with categories
 --------------------------------------------
 
-Over time, the list of repositories you deal with can grow long.  As it does, it can become difficult to
+Over time, the list of repositories you deal with can grow long. As it does, it can become difficult to
 find a repository you are looking for in the "Recent repositories" list when you have opened many other
-repositories since you opened the one you are looking for.  To help find repositories quickly, you can
+repositories since you opened the one you are looking for. To help find repositories quickly, you can
 group your repositories into categories that will display in alphabetical order on the Dashboard.
 
 Create new category
@@ -88,6 +88,7 @@ where you can quickly find it again later no matter where it appears in the "Rec
 
 Rename a category
 ^^^^^^^^^^^^^^^^^
+
 If you later decide you want a category to have a different name:
 
 - click the "Actions" menu to the right of that category,
@@ -99,6 +100,7 @@ Your category will now show its new name, and be sorted among the other categori
 
 Delete a category
 ^^^^^^^^^^^^^^^^^
+
 When you no longer need a category:
 
 - click the "Actions" menu to the right of that category,
