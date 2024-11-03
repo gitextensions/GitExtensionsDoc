@@ -942,6 +942,23 @@ This page allows detailed settings to be modified.
 
     Show tab for GPG information if available.
 
+  .. setting:: Show output history as tab (otherwise as panel)
+
+    The output displayed in the process dialog and the trace output is retained and shown in the output history.
+
+    - With this set, the output history is displayed in a tab in the lower pane of the :ref:`browse-repository` window.
+    - With this unset, the output history is displayed in a panel docked to the lower left corner of the :ref:`browse-repository` window.
+
+      The panel also uses some space of the file status list of the :ref:`browse-repository-tabs-diff` tab.
+
+      The visibility of the panel can be toggled using the hotkey `Ctrl+9` (default value configurable in settings). The same hotkey focuses the output history.
+
+  .. setting:: Process history depth
+
+    The number of process and trace output to be retained in the process history.
+
+    0 disables the process history.
+
 .. settingspage:: Commit dialog
 
 This page contains settings for the Git Extensions :ref:`commit` dialog. Note that the dialog itself has further options.
@@ -1328,6 +1345,7 @@ tools. For Windows usually "Git for Windows" is used. Git Extensions will try to
   - ScriptRunner and some built-in plugins like FindLargeFiles always use Windows Git.
 
   Some notes:
+
   - Git repos accessed in ``\\wsl.localhost`` will be displayed as ``\\wsl$`` (so only one occurrence in recent lists etc).
   - Git repos mapped to a drive letter will not use the special WSL handling but Windows Git.
   - Windows Git can be forced by adding the key ``WslGitEnabled`` to ``GitExtensions.settings``.
