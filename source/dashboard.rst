@@ -79,7 +79,7 @@ by doing the following:
 
 - right click the repository you want to group into a category,
 - select "Categories",
-- select "Add new..." from the resulting fly-out menu,
+- select "Add new..." from the resulting submenu,
 - type the name of the new category,
 - click the [OK] button.
 
