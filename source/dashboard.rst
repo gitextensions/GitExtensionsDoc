@@ -3,7 +3,7 @@
 Dashboard
 =========
 
-The dashboard contains the most common tasks, recently opened repositories and categories (favourites).
+The Dashboard contains the most common tasks, recently opened repositories and categories (favourites).
 Categories can be added, grouped in the repository context menu.
 
 .. image:: /images/dashboard/start_page.png
@@ -62,3 +62,50 @@ Clone Github repository
 -----------------------
 
 See :doc:`github`.
+
+Organizing your repositories with categories
+--------------------------------------------
+
+Over time, the list of repositories you deal with can grow long. As it does, it can become difficult to
+find a repository you are looking for in the "Recent repositories" list when you have opened many other
+repositories since you opened the one you are looking for. To help find repositories quickly, you can
+group your repositories into categories that will display in alphabetical order on the Dashboard.
+
+Create new category
+^^^^^^^^^^^^^^^^^^^
+
+While the Dashboard is being displayed (after application start-up), you create a new repository category
+by doing the following:
+
+- right click the repository you want to group into a category,
+- select "Categories",
+- select "Add new..." from the resulting submenu,
+- type the name of the new category,
+- click the [OK] button.
+
+The originally-right-clicked repository will now additionally appear in your new category (repository group),
+where you can quickly find it again later no matter where it appears in the "Recent repositories" list.
+
+Rename a category
+^^^^^^^^^^^^^^^^^
+
+If you later decide you want a category to have a different name:
+
+- click the "Actions" menu to the right of that category,
+- select "Rename category",
+- edit the current name to the new name you want,
+- click the [OK] button.
+
+Your category will now show its new name, and be sorted among the other categories accordingly.
+
+Delete a category
+^^^^^^^^^^^^^^^^^
+
+When you no longer need a category:
+
+- click the "Actions" menu to the right of that category,
+- select "Delete category",
+- read the warning displayed (deleting a category cannot be undone),
+- click the [Yes] button to delete it, or [No] to preserve it.
+
+If you clicked [Yes], the selected category will no longer be displayed on the Dashboard.
