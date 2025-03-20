@@ -27,4 +27,5 @@ Git Extensions |release| Manual
   windows_explorer
   other_tools
   command_line
+  manual_settings
   z_appendix
