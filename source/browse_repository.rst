@@ -130,7 +130,7 @@ The file viewer will by default show the diff, but may also show Blame for the s
 File tree
 ^^^^^^^^^
 
-Show the file tree for the commit. Only files tracked by Git are listed.
+Show the file tree for the commit. (For worktree, only files tracked by Git are listed.)
 
 The file list can be filtered for contained text and for file names using regular expressions.
 
