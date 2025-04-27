@@ -130,9 +130,12 @@ The file viewer will by default show the diff, but may also show Blame for the s
 File tree
 ^^^^^^^^^
 
-Show the file tree for the commit.
+Show the file tree for the commit. (For worktree, only files tracked by Git are listed.)
+
+The file list can be filtered for contained text and for file names using regular expressions.
 
 The file viewer will by default show the file contents, but may also show Blame for the selected file.
+(Blame does not include uncommitted changes, not even if an artificial commit "Working dir" or "Index" is selected.)
 
 You could search a file in the file tree using the default keyboard shortcut `Ctrl + Shift + F` (configurable in :ref:`settings-hotkeys`).
 
