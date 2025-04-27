@@ -1430,3 +1430,8 @@ Plugins
 -------
 
 Plugins provide extra functionality for Git Extensions. Please refer to :ref:`plugins`.
+
+Manual Settings
+---------------
+
+See :doc:`manual_settings`.
