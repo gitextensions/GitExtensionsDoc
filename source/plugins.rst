@@ -28,29 +28,6 @@ Bundled
 
       Enter any arguments to msbuild.
 
-.. settingspage:: Bitbucket Server
-
-    For repositories is hosted on Atlassian Bitbucket Server, the plugin cannot be used for bitbucket.org.
-    For more information see: https://www.atlassian.com/software/bitbucket/enterprise/data-center
-
-    This plugin will enable you to view and create pull requests for Bitbucket.
-
-    .. setting:: Bitbucket Username
-
-      The username required to access Bitbucket.
-
-    .. setting:: Bitbucket Password
-
-      The password required to access Bitbucket.
-
-    .. setting:: Specify the base URL to Bitbucket
-
-      The URL from which you will access Bitbucket.
-
-    .. setting:: Disable SSL verification
-
-      Check this option if you do not require SSL verification to access Bitbucket Server.
-
 .. settingspage:: Create local tracking branches
 
     This plugin will create local tracking branches for all branches on a remote repository.
@@ -92,17 +69,6 @@ Bundled
 
       The plugin adds configuration for the token generated and retrieved from GitHub.
       For more information see: https://github.com/ or the links in the plugin settings.
-
-.. settingspage:: GitFlow
-
-This plugin permit to manage your _branching model: https://nvie.com/posts/a-successful-git-branching-model/ with _GitFlow: https://github.com/nvie/gitflow in GitExtension
-
-You should have GitFlow installed to use this plugin.
-
-The GitFlow plugin permit to :
-- init gitflow in your git repository
-- create your feature, hotfix, release or support branch
-- manage (pull, publish or finish) your existing gitflow branches
 
 .. settingspage:: Gource
 
@@ -148,10 +114,6 @@ The GitFlow plugin permit to :
       If checked, also perform ``git fetch --all`` recursively on all configured
       submodules as part of the periodic background fetch.
 
-.. settingspage:: Plugin Manager
-
-  Plugin to manage third party plugins.
-
 .. settingspage:: Proxy Switcher
 
     This plugin can set/unset the value for the http.proxy git config file key as per the settings entered here.
@@ -195,6 +157,10 @@ The GitFlow plugin permit to :
 
       Ignore submodules when calculating statistics (true/false).
 
+.. settingspage:: Plugin Manager
+
+  Plugin to manage third party plugins.
+
 Third party extensions
 ----------------------
 
@@ -204,38 +170,3 @@ Third party extensions
     This plugin has been based on the git-review tool.
 
     For more information see: https://www.gerritcodereview.com/
-
-.. settingspage:: Jira Commit Hint
-
-  .. image:: /images/plugins/jira_commit_hint.png
-
-Provides hints for Atlassian Jira issues in the commit form.
-For example, you can configure Key - Summary message for all your in progress tasks.
-
-    .. setting:: Jira hint plugin enabled
-
-      Whether plugin enabled or not.
-
-    .. setting:: Jira URL
-
-      Link to your Jira server.
-
-    .. setting:: Jira user
-
-      Your username.
-
-    .. setting:: Jira password
-
-      Your password.
-
-    .. setting:: JQL Query
-
-      Query to Jira, results of which you want to show in "Commit Templates" in Commit Form. For more information see: https://confluence.atlassian.com/jiracoreserver073/advanced-searching-861257209.html
-
-    .. setting:: Jira fields
-
-      Key words that you can use in Message Template.
-
-    .. setting:: Message Template
-
-      Result format to insert into message text box after some line from "Commit Templates" selected.

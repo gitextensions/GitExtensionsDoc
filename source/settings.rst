@@ -348,11 +348,10 @@ This page contains general settings for Git Extensions.
 .. settingsgroup:: Theme
 
   Git Extensions allows that some application colors are changed.
-  A few themes are included.
+  The default theme is selected from the Windows dark mode settings, but there are slightly darker Dark+ and Light+ themes too.
 
   For more information see the README in the themes folder or `GitHub <https://github.com/gitextensions/gitextensions/blob/master/GitUI/Themes/README.md>`_.
-
-  Note that the Git Extensions support for themes is quite limited since version 4.0 due to restrictions in .NET.
+  This also describes some WinForms dark mode limitations.
 
   .. settingbutton:: Open Theme folder
 
@@ -897,23 +896,6 @@ This page allows detailed settings to be modified.
     from at most the given number actual commits that are being merged.
     See `git merge <https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---logltngt>`_.
 
-.. settingsgroup:: Email settings for sending patches
-  :id: patches-email
-
-  .. setting:: SMTP server name
-    :id: server-name
-
-    SMTP server to use for sending patches.
-
-  .. setting:: Port
-
-    SMTP port number to use.
-
-  .. setting:: Use SSL/TLS
-    :id: ssl-tls
-
-    Check this box if the SMTP server uses SSL or TLS.
-
 .. settingspage:: Browse repository window
 
 .. settingsgroup:: General
@@ -929,6 +911,16 @@ This page allows detailed settings to be modified.
   .. setting:: Show blame in diff view
 
     Show blame in the diff view tab :ref:`browse-repository-tabs-diff` instead of switching to  :ref:`browse-repository-tabs-file-tree` tab.
+
+  .. setting:: Show 'Find in commit files using git-grep'
+
+    Show 'Find in commit files using git-grep' search box in the diff and file tree tabs..
+
+  .. setting:: Show revision tooltips (restart required)
+
+    Show revision tooltips in the revision graph. The tooltip contains the commit message and the list of changed files.
+
+    Open file tree in :ref:`browse-repository` window instead of the deprecated :ref:`file-tree` window.
 
 .. settingsgroup:: Tabs
 
@@ -1405,7 +1397,7 @@ the global configuration for the current repository.
 
 .. setting:: DiffTool command
 
-  Command that Git uses to start the diff tool. This setting should only be filled in when Git doesn’t support the diff tool.
+  Command that Git uses to start the diff tool. This setting should only be filled in when Git does not support the diff tool.
 
 .. setting:: Path to commit template
 
@@ -1424,7 +1416,8 @@ the global configuration for the current repository.
 
 .. settingspage:: Advanced
 
-Various settings for Git.
+Various settings in Git. Refer to `git config <https://git-scm.com/docs/git-config>`_ for more information about these settings
+(search for the names in the brackets).
 
 Plugins
 -------
