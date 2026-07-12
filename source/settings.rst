@@ -1045,7 +1045,7 @@ This page contains settings for the Git Extensions :ref:`commit` dialog. Note th
 
   .. setting:: Remember the 'Show syntax highlighting' preference
 
-    Remember in the GitExtensions settings the latest chosen value of the 'Number of context lines' preference.
+    Remember in the GitExtensions settings the latest chosen value of the 'Show syntax highlighting' preference.
     Use the remembered value the next time GitExtensions is opened.
 
   .. setting:: Omit uninteresting changes from combined diff
