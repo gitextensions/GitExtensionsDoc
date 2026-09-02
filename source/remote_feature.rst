@@ -157,7 +157,7 @@ Push changes
 ------------
 
 In the browse window you can check if there are local commits that are not pushed to a remote repository yet. In the image
-below the green labels mark the position of the master branch on the remote repository. The red label marks the position of
+below the red labels mark the position of the master branch on the remote repository. The green label marks the position of
 the master branch on the local repository. The local repository is ahead one commit.
 
 To push the changes press ``Push`` in the toolbar.
